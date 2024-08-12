@@ -1,0 +1,55 @@
+{% extends "main.html" %}
+{% block tabs %}
+{{ super() }}
+<link rel="stylesheet" href="stylesheets/home.css?cb={{ build_date_utc.strftime('%S%f') }}">
+<!-- Header -->
+<section class="container">
+    <div class="md-grid md-typeset">
+        <div class="header">
+            <div class="header-content">
+                <h1> BeyondATC Help Center </h1>
+                <p>Welcome to the BeyondATC Help Center where you will find all the information about the software that will bring the most realistic ATC experience in Microsoft Flight Simulator</p>
+                <p>You will find resources that will help you start your journey with BeyondATC such as tutorials, information about the software, frequent asked questions and more.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="card-container">
+    <div class="card">
+        <div class="icon">
+            <span class="twemoji">{% include ".icons/simple/tower.svg" %}</span>
+        </div>
+        <h3>Discover BeyondATC</h3>
+        <p>BeyondATC is a software that transforms your Microsoft Flight Simulator experience by delivering a modern and immersive ATC experience. Discover how BeyondATC can elevate your flight simulation experience to new heights!</p>
+    </div>
+    <div class="card">
+        <div class="icon">
+            <span class="twemoji">{% include ".icons/material/airplane.svg" %}</span>
+        </div>
+        <h3>Tutorial</h3>
+        <p>Looking for guidance to complete your first flight with BeyondATC? Check out our Beginner's Guide, which walks you through the essential steps of ATC communication, from clearance delivery to touchdown at your destination.</p>
+    </div>
+    <div class="card">
+        <div class="icon">
+            <span class="twemoji">{% include ".icons/material/help.svg" %}</span>
+        </div>
+        <h3>Support</h3>
+        <p>Need assistance? Visit our support section for detailed guidance on reporting bugs, getting help with account or billing issues, and accessing answers to frequently asked questions, including troubleshooting tips and step-by-step solutions.</p>
+    </div>
+</div>
+
+<div class="background-div">
+    <div class="content">
+        <div class="text-block">
+            <h1>Couldn't find what you are looking for?</h1>
+            <p>Head over to our Discord</p>
+        </div>
+        <div class="button-block">
+            <a href="https://discord.gg/beyondatc" class="btn">Discord</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+{% block content %}{% endblock %}

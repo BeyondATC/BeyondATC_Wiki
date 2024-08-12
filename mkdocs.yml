@@ -1,0 +1,64 @@
+site_name: BeyondATC Help Center
+copyright: Created with 🧡 by Dialex
+theme:
+  name: material
+  custom_dir: overrides
+  features:
+  - content.code.annotate
+  - content.code.copy
+  - content.tabs.link
+  - announce.dismiss
+  - navigation.footer
+  - navigation.indexes
+  - navigation.sections
+  - navigation.tabs
+  - navigation.top
+  - navigation.tracking
+  - navigation.instant
+  - search.highlight
+  - search.share
+  - search.suggest
+  - toc.integrate
+  - instant
+
+  palette:
+    # Dark mode
+    - scheme: batc-dark
+      accent: deep purple
+
+  logo: assets/logo.png
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  admonition: {}
+  pymdownx.details: {}
+  pymdownx.superfences: {}
+  def_list: {}
+  attr_list: {}
+  pymdownx.emoji:
+    emoji_index: !!python/name:material.extensions.emoji.twemoji
+    emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  
+nav:
+  - Home: 'index.md'
+  - Onboarding:
+    - 'Features': 'onboarding/features.md'
+    - 'Pricing': 'onboarding/pricing.md'
+    - 'Getting started': 'onboarding/getting-started.md'
+  - Beginner Guide:
+    - 'Preflight': 'beginner-guide/preflight.md'
+    - 'Departure': 'beginner-guide/departure.md'
+    - 'Cruise': 'beginner-guide/cruise.md'
+    - 'Arrival': 'beginner-guide/arrival.md'
+  - Resources:
+    - 'Resources': 'resources/resources.md'
+  - Support:
+    - 'Bug reporting': 'support/bug-reporting.md'
+    - 'FAQ': 'support/faq.md'
+
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/beyondatc
