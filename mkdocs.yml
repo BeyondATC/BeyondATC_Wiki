@@ -44,6 +44,7 @@ markdown_extensions:
 nav:
   - Home: 'index.md'
   - Onboarding:
+    - 'Overview': 'onboarding/overview.md'
     - 'Features': 'onboarding/features.md'
     - 'Pricing': 'onboarding/pricing.md'
     - 'Getting started': 'onboarding/getting-started.md'
