@@ -1,7 +1,7 @@
 # Features
 
 !!! question "Where can I suggest a feature?"
-    If you want to share your ideas, please send your suggestion here: https://beyondatc.nolt.io
+    If you want to share your ideas, please send your suggestion here: [https://beyondatc.nolt.io](https://beyondatc.nolt.io)
 
  
 List of all available features:
