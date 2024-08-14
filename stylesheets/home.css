@@ -17,26 +17,20 @@
     background-position-y: center;
 }
 
-.img hero-image {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.hero {
+.header {
     margin: 15px 1.5rem;
     color: var(--md-primary-bg-color);
     justify-content: center;
 }
 
-.hero h1 {
+.header h1 {
     font-family: var(--header-font), sans-serif;
     margin-bottom: 1.15rem;
-    font-weight: 650;
+    font-weight: bold;
     text-transform: none;
 }
 
-.hero-content {
+.header-content {
     padding-bottom: 1rem;
     margin: 0 auto;
 }
@@ -53,13 +47,8 @@
         background-position: 35%;
     }
 
-    .hero h1 {
+    .header h1 {
         font-size: 2rem
-    }
-
-    .f-box:hover {
-        background-color: #3D6575;
-        border-radius: 3px;
     }
 }
 
@@ -68,47 +57,17 @@
         display: none
     }
 
-    .hero {
+    .header {
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .hero-content {
+    .header-content {
         max-width: 20rem;
         margin-top: 3rem;
         margin-bottom: 3rem;
         margin-right: 2rem;
-    }
-
-    .f-box:hover {
-        background-color: #3D6575;
-        border-radius: 3px;
-    }
-}
-
-@media screen and (min-width:1120px) {
-    .md-sidebar--primary {
-        display: none
-    }
-
-    .feature-margin {
-        width: 100%;
-        display: flex;
-        max-width: 80rem;
-        margin-right: auto;
-        margin-left: auto;
-        padding: 0 .5rem;
-    }
-
-    .f-box {
-        flex: 1;
-        min-width: 0;
-    }
-
-    .f-box:hover {
-        background-color: #3D6575;
-        border-radius: 3px;
     }
 }
 
@@ -146,6 +105,13 @@
 
 .card:hover {
     transform: translateY(-5px);
+}
+
+.card a{
+    color: white;
+}
+.card a:hover{
+    color: white;
 }
 
 .icon {
@@ -196,7 +162,7 @@ p {
     }
 }
 
-/*2nd hero*/
+/*2nd header*/
 
 .background-div {
     display: flex;
