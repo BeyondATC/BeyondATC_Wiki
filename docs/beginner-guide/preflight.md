@@ -6,13 +6,13 @@ To start your flight preparation, you’ll need to create a flight plan using Si
 
 ### Flight Info
 
-![Simbrief flight info](https://media.discordapp.net/attachments/1258758109908828190/1272212273833971762/Capture_decran_2024-08-11_171614.png?ex=66ba2782&is=66b8d602&hm=4edff13f772718ab1e8f510cff74fee8e4ba7a012600b006b432f1546b918344&=&format=webp&quality=lossless)
+![Simbrief flight info](../assets/tutorial/simbrief-flight-info.png)
 
 In the Flight Info section, you need to enter the essential details for your flight plan. Input your airline’s ICAO code and flight number, which BeyondATC will use to define your callsign (if you don't provide a callsign in the next section). Make sure the ICAO code is from a legitimate FAA-registered airline or a virtual airline recognized by the BeyondATC development team. Also, provide the ICAO codes for both your departure and arrival airports.
 
 ### Aircraft Info
 
-![Simbrief aircraft info](https://media.discordapp.net/attachments/1258758109908828190/1272212274110533662/Capture_decran_2024-08-11_171710.png?ex=66ba2782&is=66b8d602&hm=fd819e030efe69cac175e29257d589c3b63e74e321c6889094fe2515a2a1b123&=&format=webp&quality=lossless)
+![Simbrief aircraft info](../assets/tutorial/simbrief-aircraft-info.png)
 
 For the Aircraft Info section, select the aircraft you will be using for the flight. Choose the appropriate aircraft type and, if available, the specific airframe used in Microsoft Flight Simulator. Correctly selecting the airframe ensures accurate performance calculations, including fuel requirements. You can leave other fields at their default settings unless you have specific needs.
 
@@ -46,18 +46,18 @@ There are two ways of setting your callsign depending on whether you’re flying
     2. In Aircraft Info, click on **Open Airframe Editor** and edit the airframe you will be using.
     3. Enter the registration number in the Registration field. Remove any hyphens, so HB-FLB would be entered as HBFLB.
 
-    ![alt text](https://media.discordapp.net/attachments/1237019137864241244/1237019476688502925/image.png?ex=66ba0129&is=66b8afa9&hm=8a5e6e1666324200b4c385bfc53594a55be95199cfe8d3ff665dabfde02e40f8&=&format=webp&quality=lossless)
+    ![Simbrief airframe info](../assets/tutorial/simbrief-airframe-info.png)
 
 
 ### Selections
 
-![alt text](https://media.discordapp.net/attachments/1258758109908828190/1272212709227892876/Capture_decran_2024-08-11_171858.png?ex=66ba27ea&is=66b8d66a&hm=8ca2394617251a8ddcd92e3bcce98e0588386816bfe26471880206ea4c319b6e&=&format=webp&quality=lossless)
+![Simbrief selections](../assets/tutorial/simbrief-selections.png)
 
 In the Selections section, adjust settings for your flight plan. To ensure BeyondATC has all the relevant information, make sure the **Detailed Navlog** option is checked. Other settings can be adjusted based on your preferences or left at their default values. 
 
 ### Optional Entries
 
-![alt text](https://media.discordapp.net/attachments/1258758109908828190/1272212910780841985/Capture_decran_2024-08-11_171941.png?ex=66ba281a&is=66b8d69a&hm=9b00e23e9c9bc7b154f7f963d1c79deeb768a9c1c37dbd7c5ae187d8df5b6cc2&=&format=webp&quality=lossless)
+![Optional entries in Simbrief](../assets/tutorial/simbrief-optional-entries.png)
 
 The options in this section are not required and can be left at their default settings. Although you can specify departure and arrival runways, it is generally best to leave these fields on default. BeyondATC generates its own ATIS and assigns an active runway, which may differ from your initial plan.
 

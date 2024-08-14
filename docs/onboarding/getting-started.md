@@ -35,7 +35,7 @@ You need to insert your [Simbrief Pilot ID](https://dispatch.simbrief.com/accoun
 
 Go into options to set BeyondATC settings
 
-![Option page in BeyondATC](image-2.png)
+![Option page in BeyondATC](../assets/getting-started/batc-settings.png)
 
 Settings in details:
 
@@ -113,5 +113,5 @@ Under Piloting, turn off:
 
 - AI Radio Communications
 
-![Assistance options to disable in user experience](image.png)
-![Assistance option to disable in piloting](image-1.png)
+![Assistance options to disable in user experience](../assets/getting-started/msfs-assistance-options-1.png)
+![Assistance option to disable in piloting](../assets/getting-started/msfs-assistance-options-2.png)
