@@ -132,6 +132,7 @@ After reviewing the ATIS broadcast and noting the essential information, the nex
     > Geneva Delivery, Swiss 3PH, A320 at stand 10 with information Oscar, request IFR clearance to Schiphol
 
     In this example:
+    
     - **Geneva Delivery** is the frequency or sector you are communicating with.
     - **Swiss 3PH** is your aircraft’s callsign.
     - **A320** is the type of aircraft you are flying.
