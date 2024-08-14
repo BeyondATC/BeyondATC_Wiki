@@ -107,6 +107,13 @@
     transform: translateY(-5px);
 }
 
+.card a{
+    color: white;
+}
+.card a:hover{
+    color: white;
+}
+
 .icon {
     width: 60px;
     height: 60px;
