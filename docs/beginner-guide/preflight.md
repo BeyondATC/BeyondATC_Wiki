@@ -129,6 +129,7 @@ After reviewing the ATIS broadcast and noting the essential information, the nex
 1. **Tune to the Clearance Delivery Frequency:** Use the appropriate frequency for Clearance Delivery, which can usually be found on the airport’s ATC frequency list or provided by the ATIS.
 
 2. **Contact Clearance Delivery:** Make your call using the following format:
+
     > Geneva Delivery, Swiss 3PH, A320 at stand 10 with information Oscar, request IFR clearance to Schiphol
 
     In this example:
