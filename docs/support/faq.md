@@ -29,6 +29,11 @@
 ??? info "Is BeyondATC powered by AI?"
     We use the latest in AI technologies to process your voice, decide what the ATC should do, and generate highly realistic responses with AI voices. However, to keep the program affordable we do not use a LLM (Large Language Model) such as Gemini or ChatGPT.
 
+??? info "Do I need a Navigraph subscription to use BeyondATC?"
+    You don’t need a Navigraph subscription to use BeyondATC. The software pulls information directly from your simulator, including airport data, approaches, waypoints, and more, using the scenery and AIRAC cycle already available in your sim. However, if you generate a flight plan in Simbrief using a different AIRAC cycle than what’s in your simulator, you may encounter specific discrepancies.
+
+    If desired, you can opt for a one-month Navigraph subscription to update both your simulator and Simbrief with the latest AIRAC cycle, ensuring everything is synchronized to the same source.
+
 ## ATC questions
 
 ??? info "Why am I regularly getting Squawk 1000?"
@@ -74,6 +79,11 @@
 
     You can read our [Beginner Guide about descent planning](../../beginner-guide/cruise/#descent-planning) if you need help.
 
+??? info "Why isn't BeyondATC using the runway specified in my flight plan?"
+    In real-world aviation, runways are not pre-assigned in flight plans. Instead, they are determined by Air Traffic Control (ATC) based on current conditions like wind direction, runway availability, and traffic volume.
+
+    SimBrief provides a suggested runway based on standard conditions at the time of planning, but the actual runway assignment can change when you’re closer to your departure or arrival. BeyondATC simulates this real-world ATC behavior by assigning runways dynamically, just as in actual flight operations.
+
 ## Troubleshooting issues
 
 ??? info "Why can't I type anything in the Simbrief ID field?"
@@ -92,4 +102,23 @@
 
 ??? info "Simbrief cannot be reached. What can I do?"
     Make sure you have filed a flight plan in Simbrief and Detailed Navlog is checked.
+
+??? info "BeyondATC freezes when I press my PTT button."
+    This happens when BeyondATC can't access your microphone. If you have that issue:
+
+    - Check that your microphone is connected and working
+    - Go to Settings > Privacy and security > Microphone and check that apps are allowed to use the microphone (at the bottom of the section)
+    - Open BATC, disconnect and reconnect your microphone
     
+??? info "BeyondATC cannot connect to the simulator"
+    Fistly, ensure the simulator is running at least as far as the main menu, preferably with you on the ground at your departure airport. If the issue persists trying the following steps, retrying to use BATC after each step:
+
+    1. Restart MSFS and BeyondATC - check task manager also and make sure any simconnect_ws.exe process is killed if still running after BATC is closed.
+    2. Ensure your antivirus and firewall are not blocking BATC from connecting to the internet.
+    3. Run BeyondATC as admin
+    4. Restart your PC
+    5. Uninstall BeyondATC, redownload from the website and install as admin
+    6. While BATC is still open, return to Main Menu in MSFS and retry BATC. It should display a message "The connection to the simulator has been lost". Spawn into the airport again and when ready, BATC should connect.
+    7. Alternatively, start BATC when in Main Menu. Before spawning at airport.
+    8. Try using a VPN (users from Turkey and Hong Kong may have issues using the software without)
+    9. Check if your Antivirus or Windows Security blocked any file from BeyondATC (especially the simconnect file). You will need to restore it to allow BATC to connect to the simulator. Then, add the entire BATC folder as an exception.
