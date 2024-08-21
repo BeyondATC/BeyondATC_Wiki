@@ -910,6 +910,11 @@
 <summary>Is BeyondATC powered by AI?</summary>
 <p>We use the latest in AI technologies to process your voice, decide what the ATC should do, and generate highly realistic responses with AI voices. However, to keep the program affordable we do not use a LLM (Large Language Model) such as Gemini or ChatGPT.</p>
 </details>
+<details class="info">
+<summary>Do I need a Navigraph subscription to use BeyondATC?</summary>
+<p>You don’t need a Navigraph subscription to use BeyondATC. The software pulls information directly from your simulator, including airport data, approaches, waypoints, and more, using the scenery and AIRAC cycle already available in your sim. However, if you generate a flight plan in Simbrief using a different AIRAC cycle than what’s in your simulator, you may encounter specific discrepancies.</p>
+<p>If desired, you can opt for a one-month Navigraph subscription to update both your simulator and Simbrief with the latest AIRAC cycle, ensuring everything is synchronized to the same source.</p>
+</details>
 <h2 id="atc-questions">ATC questions</h2>
 <details class="info">
 <summary>Why am I regularly getting Squawk 1000?</summary>
@@ -954,6 +959,11 @@
 <p>As the pilot in command, <strong>it is your responsibility to request descent when needed</strong>. While ATC typically prompts you to descend, there may be times when they don't, or when their instruction comes later than you require. This can happen for several reasons, one being that ATC does not have precise knowledge of your TOD. The TOD is specific to your aircraft's performance and the descent planning you've calculated, which ATC cannot determine. Therefore, it’s essential to monitor your descent profile and, when necessary, report that you are ready for descent so ATC can issue the appropriate clearance.</p>
 <p>You can read our <a href="../../beginner-guide/cruise/#descent-planning">Beginner Guide about descent planning</a> if you need help.</p>
 </details>
+<details class="info">
+<summary>Why isn't BeyondATC using the runway specified in my flight plan?</summary>
+<p>In real-world aviation, runways are not pre-assigned in flight plans. Instead, they are determined by Air Traffic Control (ATC) based on current conditions like wind direction, runway availability, and traffic volume.</p>
+<p>SimBrief provides a suggested runway based on standard conditions at the time of planning, but the actual runway assignment can change when you’re closer to your departure or arrival. BeyondATC simulates this real-world ATC behavior by assigning runways dynamically, just as in actual flight operations.</p>
+</details>
 <h2 id="troubleshooting-issues">Troubleshooting issues</h2>
 <details class="info">
 <summary>Why can't I type anything in the Simbrief ID field?</summary>
@@ -975,6 +985,30 @@
 <details class="info">
 <summary>Simbrief cannot be reached. What can I do?</summary>
 <p>Make sure you have filed a flight plan in Simbrief and Detailed Navlog is checked.</p>
+</details>
+<details class="info">
+<summary>BeyondATC freezes when I press my PTT button.</summary>
+<p>This happens when BeyondATC can't access your microphone. If you have that issue:</p>
+<ul>
+<li>Check that your microphone is connected and working</li>
+<li>Go to Settings &gt; Privacy and security &gt; Microphone and check that apps are allowed to use the microphone (at the bottom of the section)</li>
+<li>Open BATC, disconnect and reconnect your microphone</li>
+</ul>
+</details>
+<details class="info">
+<summary>BeyondATC cannot connect to the simulator</summary>
+<p>Fistly, ensure the simulator is running at least as far as the main menu, preferably with you on the ground at your departure airport. If the issue persists trying the following steps, retrying to use BATC after each step:</p>
+<ol>
+<li>Restart MSFS and BeyondATC - check task manager also and make sure any simconnect_ws.exe process is killed if still running after BATC is closed.</li>
+<li>Ensure your antivirus and firewall are not blocking BATC from connecting to the internet.</li>
+<li>Run BeyondATC as admin</li>
+<li>Restart your PC</li>
+<li>Uninstall BeyondATC, redownload from the website and install as admin</li>
+<li>While BATC is still open, return to Main Menu in MSFS and retry BATC. It should display a message "The connection to the simulator has been lost". Spawn into the airport again and when ready, BATC should connect.</li>
+<li>Alternatively, start BATC when in Main Menu. Before spawning at airport.</li>
+<li>Try using a VPN (users from Turkey and Hong Kong may have issues using the software without)</li>
+<li>Check if your Antivirus or Windows Security blocked any file from BeyondATC (especially the simconnect file). You will need to restore it to allow BATC to connect to the simulator. Then, add the entire BATC folder as an exception.</li>
+</ol>
 </details>
 
 
