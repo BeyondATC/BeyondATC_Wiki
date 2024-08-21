@@ -81,3 +81,11 @@
 .md-search-result__meta {
   background-color: var(--md-primary-fg-color);
 }
+
+/* Mobile Menu fix */
+
+@media screen and (max-width: 76.234375em) {
+  .md-nav--primary .md-nav__title {
+      background-color: var(--md-default-bg-color);
+  }
+}
