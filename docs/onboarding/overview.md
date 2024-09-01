@@ -15,22 +15,8 @@ BeyondATC offers a significant upgrade to your flight simulation experience, com
 
 ## Technical information
 
-**Compatible with:**
-
-- Microsoft Flight Simulator (2020)
-- Support of Microsoft Flight Simulator 2024 planned
-
-**Platform:**
-
-PC
-
-**Price:**
-
-29.99$ (please have a look at our [pricing model page](/onboarding/pricing) for more information)
-
-
-**Requirements:**
-
-- Microsoft Flight Simulator 2020
-- Internet Connection
-- Simbrief
+| Title                     | Detail                                                                                                           |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| Compatibility             | :material-check: Microsoft Flight Simulator 2020 <br> :material-check: Microsoft Flight Simulator 2024 (planned) |
+| Platform                  | :material-check: Steam <br> :material-check: Microsoft Store <br> :material-close: Xbox |
+| Requirements              | :material-check: Microsoft Flight Simulator<br>:material-check: Internet Connection<br>:material-check: Simbrief |
