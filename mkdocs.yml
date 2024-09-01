@@ -37,6 +37,8 @@ markdown_extensions:
   pymdownx.superfences: {}
   def_list: {}
   attr_list: {}
+  md_in_html: {}
+  tables: {}
   pymdownx.emoji:
     emoji_index: !!python/name:material.extensions.emoji.twemoji
     emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -58,6 +60,7 @@ nav:
   - Support:
     - 'Bug reporting': 'support/bug-reporting.md'
     - 'FAQ': 'support/faq.md'
+    - 'Known issues': 'support/known-issues.md'
 
 extra:
   social:
