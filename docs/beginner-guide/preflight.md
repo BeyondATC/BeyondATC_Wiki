@@ -4,13 +4,13 @@
 
 To start your flight preparation, you’ll need to create a flight plan using Simbrief. Go to [Simbrief Dispatch](https://dispatch.simbrief.com/) and click on **New Flight**. Complete all required fields to generate your flight plan. Below is a breakdown of each section you’ll encounter.
 
-### Flight Info
+### Flight info
 
 ![Simbrief flight info](../assets/tutorial/simbrief-flight-info.png)
 
 In the Flight Info section, you need to enter the essential details for your flight plan. Input your airline’s ICAO code and flight number, which BeyondATC will use to define your callsign (if you don't provide a callsign in the next section). Make sure the ICAO code is from a legitimate FAA-registered airline or a virtual airline recognized by the BeyondATC development team. Also, provide the ICAO codes for both your departure and arrival airports.
 
-### Aircraft Info
+### Aircraft info
 
 ![Simbrief aircraft info](../assets/tutorial/simbrief-aircraft-info.png)
 
@@ -55,17 +55,17 @@ There are two ways of setting your callsign depending on whether you’re flying
 
 In the Selections section, adjust settings for your flight plan. To ensure BeyondATC has all the relevant information, make sure the **Detailed Navlog** option is checked. Other settings can be adjusted based on your preferences or left at their default values. 
 
-### Optional Entries
+### Optional entries
 
 ![Optional entries in Simbrief](../assets/tutorial/simbrief-optional-entries.png)
 
 The options in this section are not required and can be left at their default settings. Although you can specify departure and arrival runways, it is generally best to leave these fields on default. BeyondATC generates its own ATIS and assigns an active runway, which may differ from your initial plan.
 
-### Other Sections
+### Other sections
 
 Any additional sections and options are optional and can be customized according to your preferences or left at their default values. For more guidance, consider exploring Simbrief tutorials or seeking help in our Discord ATC discussion channel, where community members are available to assist and provide additional resources.
 
-### Generate Your Flight Plan
+### Generate your flight plan
 
 Once you’ve filled out all the relevant information, click the **Generate Flight** button at the top of the page to create your flight plan. You are all set!
 
@@ -83,42 +83,39 @@ To listen to the ATIS broadcast in BeyondATC:
 2. **Listen Carefully:** Pay attention to the broadcasted information, which will include a letter code designating the current ATIS message (e.g., ATIS Information Alpha, Bravo, etc.).
 3. **Note Key Details:** Take note of the weather conditions, active runways, and any special instructions provided in the ATIS broadcast.
 
-Here is an example of an ATIS broadcast: 
-> Geneva Airport Information Oscar. One eight two four zulu. Wind zero one at six. Flew clouds at six thousand four hundred. Temperature one eight. Dewpoint zero six. QNH one zero one six. Landing and departing runway zero four. Transition level zero seven zero. Numerous cranes in operation around Geneva. Advise on initial contact you have information Oscar.
-
 !!! tip "Replay the ATIS broadcast"
     You can listen to the ATIS broadcast as many times as needed, so don't worry if you miss any information initially. Take your time to ensure you capture all the details. For users with Premium Characters, the ATIS broadcast is generated once and then continuously looped. Replaying the broadcast will not consume additional Premium Characters.
 
+Here is an example of an ATIS broadcast: 
 
-**Breaking down the ATIS broadcast:**
+| ATIS Broadcast |
+| -------------- |
+| Geneva Airport Information Oscar. One eight two four zulu. Wind zero one at six. Flew clouds at six thousand four hundred. Temperature one eight. Dewpoint zero six. QNH one zero one six. Landing and departing runway zero four. Transition level zero seven zero. Numerous cranes in operation around Geneva. Advise on initial contact you have information Oscar. |
 
-- **Information Oscar:** This letter indicates the current ATIS information. ATIS messages are updated periodically, with each new message assigned a sequential letter. Make a note of this letter as you will need to inform ATC that you have this information when asking for IFR clearance.
+??? note "Understand the ATIS Broadcast"
 
-- **Time (One eight two four zulu):** This is the time when the ATIS was last updated, given in UTC (Zulu) time. Knowing the time helps you gauge how current the information is.
-
-- **Wind (Wind zero one at six):** The wind is coming from 010 degrees at 6 knots. This information is crucial for understanding the wind direction and strength for takeoff and landing.
-
-- **Clouds (Few clouds at six thousand four hundred):** This indicates that there are a few clouds at 6,400 feet above ground level. This helps in assessing the visibility and potential weather conditions you might encounter.
-
-- **Temperature (Temperature one eight):** The air temperature is 18°C. Temperature affects aircraft performance, including takeoff and landing distances.
-
-- **Dewpoint (Dewpoint zero six):** The dewpoint is 6°C. The dewpoint helps determine the likelihood of fog or other weather phenomena.
-
-- **QNH (QNH one zero one six):** This is the atmospheric pressure at sea level, measured in millibars (1016 mb). Set this on your altimeter to ensure accurate altitude readings in your aircraft.
-
-- **Runway Information (Landing and departing runway zero four):** The active runway for landing and departure is Runway 04. This information is important for planning your approach and departure.
-
-- **Transition Level (Transition level zero seven zero):** This is the altitude above which you should use standard pressure (1013 mb) for altitude assignments. Below this level, local pressure settings are used.
-
-- **Special Notices (Numerous cranes in operation around Geneva):** This includes any hazards or special conditions, such as construction or wildlife activities that might affect your flight.
+    | Information  | Explanation |
+    | ------------ | ----------- |
+    | Information Oscar | This letter indicates the current ATIS information. ATIS messages are updated periodically, with each new message assigned a sequential letter. Make a note of this letter as you will need to inform ATC that you have this information when asking for IFR clearance. |
+    | Time (One eight two four zulu)   | This is the time when the ATIS was last updated, given in UTC (Zulu) time. Knowing the time helps you gauge how current the information is. |
+    | Wind (Wind zero one at six) | The wind is coming from 010 degrees at 6 knots. This information is crucial for understanding the wind direction and strength for takeoff and landing. |
+    | Clouds (Few clouds at six thousand four hundred) | The wind is coming from 010 degrees at 6 knots. This information is crucial for understanding the wind direction and strength for takeoff and landing. |
+    | Temperature (Temperature one eight) | The air temperature is 18°C. Temperature affects aircraft performance, including takeoff and landing distances. |
+    | Dewpoint (Dewpoint zero six) | The dewpoint is 6°C. The dewpoint helps determine the likelihood of fog or other weather phenomena. |
+    | QNH (QNH one zero one six) | The dewpoint is 6°C. The dewpoint helps determine the likelihood of fog or other weather phenomena. |
+    | Runway Information (Landing and departing runway zero four) | The active runway for landing and departure is Runway 04. This information is important for planning your approach and departure. |
+    | Transition Level (Transition level zero seven zero) | This is the altitude above which you should use standard pressure (1013 mb) for altitude assignments. Below this level, local pressure settings are used. |
+    | Special Notices (Numerous cranes in operation around Geneva) | This includes any hazards or special conditions, such as construction or wildlife activities that might affect your flight. |
 
 **What to Listen For:**
 
-1. **ATIS Information Letter:** Note the letter in the ATIS broadcast. You need to communicate to ATC that you have this specific information.
-2. **Weather Conditions:** Pay close attention to wind, clouds, temperature, and pressure. These factors affect your flight planning and operations.
-3. **Runway and Transition Information:** Know which runway is in use and the transition level for accurate altitude assignments.
+1. **ATIS information letter:** Note the letter in the ATIS broadcast. You need to communicate to ATC that you have this specific information.
+2. **Weather conditions:** Pay close attention to wind, clouds, temperature, and pressure. These factors affect your flight planning and operations.
+3. **Runway and tansition information:** Know which runway is in use and the transition level for accurate altitude assignments.
 
 ---
+
+<div style="background-image: url(https://images.unsplash.com/photo-1530469353049-18df0403f42b?q=80&w=2059&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); background-position:center; background-size: cover; min-height:250px;"></div>
 
 ## IFR Clearance
 
@@ -126,29 +123,32 @@ After reviewing the ATIS broadcast and noting the essential information, the nex
 
 ### Requesting IFR Clearance
 
-1. **Tune to the Clearance Delivery Frequency:** Use the appropriate frequency for Clearance Delivery, which can usually be found on the airport’s ATC frequency list or provided by the ATIS.
+1. **Tune to the clearance delivery frequency:** Use the appropriate frequency for Clearance Delivery, which can usually be found on the airport’s ATC frequency list or provided by the ATIS.
 
-2. **Contact Clearance Delivery:** Make your call using the following format:
+2. **Contact clearance delivery:** Make your call using the following format:
 
-    > Geneva Delivery, Swiss 3PH, A320 at stand 10 with information Oscar, request IFR clearance to Schiphol
+    | Speaker                        | Response                                                                                                 |
+    | ------------------------------ | -------------------------------------------------------------------------------------------------------- |
+    | :material-airplane: SWR3PH     |  Geneva Delivery, Swiss 3PH, A320 with information Oscar, request IFR clearance to Schiphol  |
 
     In this example:
     
     - **Geneva Delivery** is the frequency or sector you are communicating with.
     - **Swiss 3PH** is your aircraft’s callsign.
     - **A320** is the type of aircraft you are flying.
-    - **Stand 10** indicates your current location on the airport.
     - **With information Oscar** means you have the current ATIS information Oscar.
     - **Request IFR clearance to Schiphol** specifies your destination airport.
 
-### Understanding your IFR Clearance
+### Understanding your IFR clearance
 
 After requesting your IFR clearance, you will receive a response from Clearance Delivery with specific instructions. Here’s an example of what you might hear:
 
-> Swiss 3PH, thanks for information Oscar, expect runway 04, ARBO 8N departure, squawk 1000.
+| Speaker                        | Response                                                                                   |
+| ------------------------------ | ------------------------------------------------------------------------------------------ |
+| :simple-tower: Geneva Delivery | Swiss 3PH, thanks for information Oscar, expect runway 04, ARBO 8N departure, squawk 1000. |
 
 !!! warning
-    Be aware that not all IFR clearances will include an initial climb instruction. In ICAO phraseology, the initial climb may be omitted if it is already specified in the Standard Instrument Departure (SID) procedure. Always check the SID charts for detailed climb instructions and other pertinent information.
+    Be aware that not all IFR clearances will include an initial climb instruction. In older ICAO phraseology, the initial climb could be omitted if it was already specified in the Standard Instrument Departure (SID) procedure. This might be updated in the future. In the meantime, please refer to your charts.
 
 In this example: 
 
@@ -159,9 +159,13 @@ In this example:
 
 Following this, you will have to readback all the information to show that you understood correctly.
 
-> Expect runway 04, ARBO 8N departure, Squawk 1000, Swiss 3PH
+| Speaker                        | Response                                                                                   |
+| ------------------------------ | ------------------------------------------------------------------------------------------ |
+| :material-airplane: SWR3PH     | Expect runway 04, ARBO 8N departure, Squawk 1000, Swiss 3PH                                |
 
 ATC will confirm the readback:
 
-> **Geneva Delivery**: Swiss 3PH, readback correct. Contact ground 121.855 when ready for push or start.  
-> **Pilot**: 121.855 when ready, Swiss 3PH
+| Speaker                        | Response                                                                                   |
+| ------------------------------ | ------------------------------------------------------------------------------------------ |
+| :simple-tower: Geneva Delivery | Swiss 3PH, readback correct. Contact ground 121.855 when ready for push or start.          |
+| :material-airplane: SWR3PH     | 121.855 when ready, Swiss 3PH                                                              |

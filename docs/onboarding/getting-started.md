@@ -40,48 +40,45 @@ Go into options to set BeyondATC settings
 Settings in details:
 
 ??? note "General"
-    - **Low performance mode**  
-    Used to reduce computing power (but can affect quality of traffic movement)
-    - **Streamer Mode**  
-    Hide the Simbrief ID on launch
-    - **Radio Degradation Simulation**  
-    Simulates the loss of radio quality over large distances
-    - **Use International Basic Accents**  
-    If this option is activated, accents will be used with Basic Voices. Please note that these accents may be difficult to understand as they are not natively english based models.
-    *This option has no effects if you use Premium Voices*
-    - **Prefer VA Callsigns**  
-    If you want to fly a virtual airline, you can activate this option. It will use any virtual airline callsign that is registered by BeyondATC
+
+    | Setting                             | Detail                                                                            |
+    | ----------------------------------- | --------------------------------------------------------------------------------- |
+    | Low performance mode                | Used to reduce computing power (but can affect quality of traffic movement)       |
+    | Streamer Mode                       | Hide the Simbrief ID on launch                                                    |
+    | Radio Degradation Simulation        | Simulates the loss of radio quality over large distances                          |
+    | Use International Basic Accents     | If this option is activated, accents will be used with Basic Voices. Please note that these accents may be difficult to understand as they are not natively english based models. *This option has no effects if you use Premium Voices* |
+    | Prefer VA Callsigns                 | If you want to fly a virtual airline, you can activate this option. It will use any virtual airline callsign that is registered by BeyondATC |
     
     !!! question "How do I add a VA Callsign?"
         You need to submit a request to the BeyondATC team. You can suggest a VA Callsign here: https://beyondatc.nolt.io
         
 ??? note "Key Bindings"
-    - **Push to Talk**  
-    You can set up to two bindings to activate the push to talk option
-    - **Toggle Bring to Front**  
-    The binding will bring the BeyondATC to front and hide it
-    - **Fire Action 1**  
-    This binding will activate the first option in the list of actions
+
+    | Setting                             | Detail                                                                            |
+    | ----------------------------------- | --------------------------------------------------------------------------------- |
+    | Push to Talk                        | You can set up to two bindings to activate the push to talk option                |
+    | Toggle Bring to Front               | The binding will bring the BeyondATC to front and hide it                         |
+    | Fire Action 1                       | This binding will activate the first option in the list of actions                |
         
 ??? note "Audio"
-    - **Voice Volume**  
-    Set voice volume from ATC and traffic
-    - **UI Sounds**  
-    Turn on/off UI sounds. The beeps acknowledge successful activation of PTT and message reception from ATC.
-    - **Input device**  
-    Select the input device you want to use
-    - **Auto Respond Voice**  
-    You can select the voice that will be used with the auto respond function.
+
+    | Setting                    | Detail                                                                                                    |
+    | -------------------------- | --------------------------------------------------------------------------------------------------------- |
+    | Voice Volume               | Set voice volume from ATC and traffic                                                                     |
+    | UI Sounds                  | Turn on/off UI sounds. The beeps acknowledge successful activation of PTT and message reception from ATC. |
+    | Input device               | Select the input device you want to use                                                                   |
+    | Auto Respond Voice         | You can select the voice that will be used with the auto respond function.                                |
         
 ??? note "AI Traffic"
     AI Traffic is not implemented yet.
         
 ??? note "Voice Quality"
-    - **Controller Voice Model**  
-    Voices that will be used for controllers. You can select basic (free) or premium voices (will use Premium Characters)
-    - **Traffic Voice Model**  
-    Voices that will be used for traffic. You can select basic (free) or premium voices (will use Premium Characters)
 
+    | Setting                | Detail                                                                            |
+    | ---------------------- | --------------------------------------------------------------------------------- |
+    | Controller Voice Model | Voices that will be used for controllers. You can select basic (free) or premium voices (will use Premium Characters) |
+    | Traffic Voice Model    | Voices that will be used for traffic. You can select basic (free) or premium voices (will use Premium Characters) |
+    
 ---
 
 ## Setting up your microphone
