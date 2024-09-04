@@ -99,10 +99,10 @@ Here is an example of an ATIS broadcast:
     | Information Oscar | This letter indicates the current ATIS information. ATIS messages are updated periodically, with each new message assigned a sequential letter. Make a note of this letter as you will need to inform ATC that you have this information when asking for IFR clearance. |
     | Time (One eight two four zulu)   | This is the time when the ATIS was last updated, given in UTC (Zulu) time. Knowing the time helps you gauge how current the information is. |
     | Wind (Wind zero one at six) | The wind is coming from 010 degrees at 6 knots. This information is crucial for understanding the wind direction and strength for takeoff and landing. |
-    | Clouds (Few clouds at six thousand four hundred) | The wind is coming from 010 degrees at 6 knots. This information is crucial for understanding the wind direction and strength for takeoff and landing. |
+    | Clouds (Few clouds at six thousand four hundred) | This indicates that there are a few clouds at 6,400 feet above ground level. This helps in assessing the visibility and potential weather conditions you might encounter. |
     | Temperature (Temperature one eight) | The air temperature is 18°C. Temperature affects aircraft performance, including takeoff and landing distances. |
     | Dewpoint (Dewpoint zero six) | The dewpoint is 6°C. The dewpoint helps determine the likelihood of fog or other weather phenomena. |
-    | QNH (QNH one zero one six) | The dewpoint is 6°C. The dewpoint helps determine the likelihood of fog or other weather phenomena. |
+    | QNH (QNH one zero one six) | This is the atmospheric pressure at sea level, measured in millibars (1016 mb). Set this on your altimeter to ensure accurate altitude readings in your aircraft. |
     | Runway Information (Landing and departing runway zero four) | The active runway for landing and departure is Runway 04. This information is important for planning your approach and departure. |
     | Transition Level (Transition level zero seven zero) | This is the altitude above which you should use standard pressure (1013 mb) for altitude assignments. Below this level, local pressure settings are used. |
     | Special Notices (Numerous cranes in operation around Geneva) | This includes any hazards or special conditions, such as construction or wildlife activities that might affect your flight. |
@@ -111,7 +111,7 @@ Here is an example of an ATIS broadcast:
 
 1. **ATIS information letter:** Note the letter in the ATIS broadcast. You need to communicate to ATC that you have this specific information.
 2. **Weather conditions:** Pay close attention to wind, clouds, temperature, and pressure. These factors affect your flight planning and operations.
-3. **Runway and tansition information:** Know which runway is in use and the transition level for accurate altitude assignments.
+3. **Runway and transition information:** Know which runway is in use and the transition level for accurate altitude assignments.
 
 ---
 
