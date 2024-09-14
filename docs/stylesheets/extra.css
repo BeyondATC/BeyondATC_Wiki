@@ -1,17 +1,17 @@
 /* BATC DARK MODE */
 
 [data-md-color-scheme="batc-dark"] {
-    --md-primary-fg-color: #20252e;
-    --md-default-fg-color: rgb(225, 225, 225);
+    --md-primary-fg-color: hsl(219 18% 11% / 1);
+    --md-default-fg-color: rgb(255, 255, 255);
     --md-default-fg-color--light: rgb(235, 235, 235);
     --md-default-fg-color--lighter: rgb(245, 245, 245);
     --md-default-fg-color--lightest: rgb(255, 255, 255);
-    --md-default-bg-color: rgb(42, 45, 59);
+    --md-default-bg-color: hsl(229 17% 16% / 1);
     --md-default-bg-color--light: hsla(var(--md-hue),15%,14%,0.54);
     --md-default-bg-color--lighter: hsla(var(--md-hue),15%,14%,0.26);
     --md-default-bg-color--lightest: hsla(var(--md-hue),15%,14%,0.07);
-    --md-code-fg-color: hsla(var(--md-hue),18%,86%,0.82);
-    --md-code-bg-color: hsla(var(--md-hue),15%,18%,1);
+    --md-code-fg-color: hsla(var(--md-hue),18%,86%,0.90);
+    --md-code-bg-color: hsla(var(--md-hue),15%,10%,1);
     --md-code-hl-color: #2977ff;
     --md-code-hl-color--light: #2977ff1a;
     --md-code-hl-number-color: #e6695b;
@@ -36,7 +36,7 @@
     --md-typeset-table-color--light: hsla(var(--md-hue),15%,95%,0.035);
     --md-admonition-fg-color: var(--md-default-fg-color);
     --md-admonition-bg-color: var(--md-default-bg-color);
-    --md-footer-bg-color: #20252e;
+    --md-footer-bg-color: hsl(219 18% 13% / 1);
     --md-footer-bg-color--dark: hsla(var(--md-hue),15%,8%,1);
     --md-shadow-z1: 0 0.2rem 0.5rem #0000000d,0 0 0.05rem #0000001a;
     --md-shadow-z2: 0 0.2rem 0.5rem #00000040,0 0 0.05rem #00000040;
@@ -56,6 +56,17 @@
 .md-header__button.md-logo img, .md-header__button.md-logo png {
     height: 2rem;
     width: 2rem;
+}
+
+/* Titles & text */
+
+.md-typeset h1, .md-typeset h2, .md-typeset h3{
+  color: hsl(269.13deg 80% 75%);
+  font-weight: 500;
+}
+
+.md-typeset{
+  font-weight: 300;
 }
 
 /* Admonitions */
