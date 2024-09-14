@@ -63,6 +63,12 @@ nav:
   - Support:
     - 'Bug reporting': 'support/bug-reporting.md'
     - 'FAQ': 'support/faq.md'
+    - 'Common issues':
+      - "BeyondATC update failed": 'support/common-issues/update.md'
+      - "Can't connect to the simulator": 'support/common-issues/simconnect.md'
+      - "Change the output device": 'support/common-issues/output.md'
+      - "No AI traffic": 'support/common-issues/notraffic.md'
+      - "Simbrief cannot be reached": 'support/common-issues/simbrief.md'
 
 extra:
   social:
