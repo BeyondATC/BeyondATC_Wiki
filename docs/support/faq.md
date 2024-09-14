@@ -84,6 +84,68 @@
 
     SimBrief provides a suggested runway based on standard conditions at the time of planning, but the actual runway assignment can change when you’re closer to your departure or arrival. BeyondATC simulates this real-world ATC behavior by assigning runways dynamically, just as in actual flight operations.
 
+## AI Traffic
+
+??? info "What should I expect from AI Traffic?"
+    Traffic is currently available in alpha, this means its a really early version of the traffic product. We believe it will give you plenty of enjoyment in its current state but there will be issues, there may be crashes of BATC and features may be missing. If you find traffic in its current state does not enhance your experience, you can disable it from within the options menu or alternatively if you find the build unstable, switch back the core EA version from your accounts page.
+
+    We would greatly appreciate if you could send your reports, including log files and any other relevant information asked in the thread, in [⁠traffic-alpha-feedback](https://discord.com/channels/1082413096045391915/1280653893570658325). Your patience and understanding are invaluable as the dev team work on improving this feature.
+
+??? info "How can I get AI Traffic with BeyondATC?"
+    AI traffic is available for supporters only. To access this feature, you need to upgrade from the basic pack to the supporter pack for $29.99. Supporters can activate the experimental branch in the account section in BeyondATC.
+
+    Traffic will be available to everyone (basic pack) later at no extra cost.
+
+??? info "What is the traffic source?"
+    BeyondATC uses data from FlightRadar24, using a historic week of data. This includes all IFR flights, GA included. 
+
+??? info "Why are you not using live traffic? Are you planning to add it later?"
+    Various factors were evaluated such as costs, contracts, user feedback, system architecture, and development timeline. Based on these criteria, the choice was made not to use live traffic data.
+
+    Tests showed minimal differences that most users won't notice. This setup offers a seamless experience without the complexities and costs of live traffic, allowing users to choose their flight times and experience busy airports.
+
+    Currently, there are no plans to implement live traffic or support any other injectors. 
+
+??? info "Which models will BeyondATC use for AI Traffic?"
+    BeyondATC will use whatever models you have installed in your simulator, including any combination of AIG, FSLTL, and FS Traffic.
+
+??? info "Can AI traffic use ground services?"
+    Currently, AI traffic cannot use ground services or jetways due to how BeyondATC injects its traffic. Implementing this would require BeyondATC to inject its own pushback tug into the simulator, which might be considered later as an update. Keep in mind that the dev team will focus on core features before considering cosmetic enhancements. 
+
+??? info "What features are available with AI Traffic?"
+    - Traffic data for the globe based on live traffic from an historic week of data, limited to any aircraft flying IFR with an active transponder
+    - Ground, departure, arrival traffic to and from the airports you have planned in Simbrief for your flight
+    - Traffic fully managed by Beyond ATC including parking, runway and procedure assignments
+    - Parking spots represent the actual parking spot of the aircraft in real life, irrespective of the parking assignments in the airport scenery
+    - Support for FSLTL, AIG and FS Traffic models - at least one of which must be installed
+    - Initial separation handling of aircraft at injection
+    - Ability to use premium, basic or turn off voices entirely for traffic, separately from the voice setting being used for your the player.
+    - Traffic managed by ATC out to 200nm from the player even without those aircraft having to be present in the simulator, saving valuable sim resources.
+    - A slider that limits traffic based on a time range from our data set - the higher the slider, the further out the time range.
+
+??? info "What features will come in future builds for AI Traffic?"
+    - Enroute traffic not flying to or from either of the airports you have planned.
+    - Any ground services, in particular a tug for pushback
+    - Full separation handling through the entire traffic aircraft flight
+    - Continued improvements to handling procedures
+
+??? info "What features are available with AI Traffic?"
+    - Aircraft might float while on the ground at certain airports or with certain models
+    - Aircraft may follow strange flight plans
+    - Aircraft may enter the runway at the wrong point
+    - Aircraft may turn off abruptly or too fast from the runway on landing
+    - Aircraft may taxi through other parked aircraft at ramps that allow taxi through
+    - Aircraft may land too close together
+    - Aircraft may get stuck handing over to ground from tower on landing
+    - BATC may crash with fatal errors
+
+??? info "How do I set up everything to use traffic with BeyondATC?"
+    Please follow our setup guide [here](../onboarding/getting-started)
+
+??? info "How does the slider work?"
+    The slider controls the time range for aircraft parked at the gates. A setting of 1 represents a short time range, while 10 represents a longer one. The higher the slider value, the more aircraft will be parked at the gates. This is because planes will remain at the gates longer before their scheduled departure or after their arrival, based on real-world data.
+
+
 ## Troubleshooting issues
 
 ??? info "Why can't I type anything in the Simbrief ID field?"
@@ -98,7 +160,7 @@
     You can reset your password with the "forgot my password" button in BeyondATC. If this doesn't work or you created an account without an email please email support@beyondatc.net with a copy of your receipt.
 
 ??? info "Why are my frequencies switching back to something else?"
-    You need to disable ATC assistance options in MSFS settings. Please have a look at [our guide](../onboarding/getting-started/) to set everything up correctly.
+    You need to disable ATC assistance options in MSFS settings. Please have a look at [our guide](../onboarding/getting-started/#setting-up-ai-traffic) to set everything up correctly.
 
 ??? info "Simbrief cannot be reached. What can I do?"
     Make sure you have filed a flight plan in Simbrief and Detailed Navlog is checked.
