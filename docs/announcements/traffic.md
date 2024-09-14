@@ -32,4 +32,4 @@ We are continuously working on improving the Traffic feature, with upcoming addi
 
 ## Get started
 
-We recommend you to go through [our guide](/onboarding/getting-started/#setting-up-ai-traffic) to set everything up for traffic. For the best experience, start with shorter flights (1-2 hours), choose airports with moderate traffic at the time you are flying.
+We recommend you to go through [our guide](../../onboarding/getting-started/#setting-up-ai-traffic) to set everything up for traffic. For the best experience, start with shorter flights (1-2 hours), choose airports with moderate traffic at the time you are flying.
