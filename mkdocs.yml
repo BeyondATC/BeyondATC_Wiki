@@ -3,6 +3,8 @@ copyright: Created with 💜 by Dialex
 theme:
   name: material
   custom_dir: overrides
+  font: 
+    text: Albert Sans
   features:
   - content.code.annotate
   - content.code.copy
