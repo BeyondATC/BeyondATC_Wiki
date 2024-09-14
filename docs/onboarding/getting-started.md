@@ -73,9 +73,7 @@ Settings in details:
     | Setting                    | Detail                                                                                                    |
     | -------------------------- | --------------------------------------------------------------------------------------------------------- |
     | Traffic on                 | Activate or deactivate AI traffic.                                                                      |
-    | Traffic density            | The slider controls the time range for aircraft parked at the gates. A setting of 1 represents a short time range, while 10 represents a longer one. The higher the slider value, the more aircraft will be parked at the gates. This is because planes will remain at the gates longer before their scheduled departure or after their arrival, based on real-world data.
-    
-    Please note that this slider only affects how long aircraft stay parked at the gates; it does not influence the actual takeoffs or landings, which follow the real-world departure and arrival times for that time of day. |
+    | Traffic density            | The slider controls the time range for aircraft parked at the gates. A setting of 1 represents a short time range, while 10 represents a longer one. The higher the slider value, the more aircraft will be parked at the gates. This is because planes will remain at the gates longer before their scheduled departure or after their arrival, based on real-world data. <br><br>Please note that this slider only affects how long aircraft stay parked at the gates; it does not influence the actual takeoffs or landings, which follow the real-world departure and arrival times for that time of day. |
         
 ??? note "Voice Quality"
 
