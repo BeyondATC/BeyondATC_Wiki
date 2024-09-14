@@ -62,7 +62,6 @@ nav:
   - Support:
     - 'Bug reporting': 'support/bug-reporting.md'
     - 'FAQ': 'support/faq.md'
-    - 'Known issues': 'support/known-issues.md'
 
 extra:
   social:
