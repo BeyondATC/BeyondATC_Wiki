@@ -140,7 +140,7 @@
     - BATC may crash with fatal errors
 
 ??? info "How do I set up everything to use traffic with BeyondATC?"
-    Please follow our setup guide [here](../onboarding/getting-started)
+    Please follow our setup guide [here](../../onboarding/getting-started)
 
 ??? info "How does the slider work?"
     The slider controls the time range for aircraft parked at the gates. A setting of 1 represents a short time range, while 10 represents a longer one. The higher the slider value, the more aircraft will be parked at the gates. This is because planes will remain at the gates longer before their scheduled departure or after their arrival, based on real-world data.
@@ -160,7 +160,7 @@
     You can reset your password with the "forgot my password" button in BeyondATC. If this doesn't work or you created an account without an email please email support@beyondatc.net with a copy of your receipt.
 
 ??? info "Why are my frequencies switching back to something else?"
-    You need to disable ATC assistance options in MSFS settings. Please have a look at [our guide](../onboarding/getting-started/#setting-up-ai-traffic) to set everything up correctly.
+    You need to disable ATC assistance options in MSFS settings. Please have a look at [our guide](../../onboarding/getting-started/#setting-up-ai-traffic) to set everything up correctly.
 
 ??? info "Simbrief cannot be reached. What can I do?"
     Make sure you have filed a flight plan in Simbrief and Detailed Navlog is checked.
