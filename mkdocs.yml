@@ -51,6 +51,7 @@ nav:
     - 'Pricing': 'onboarding/pricing.md'
     - 'Getting started': 'onboarding/getting-started.md'
   - Beginner Guide:
+    - 'Overview': 'beginner-guide/overview.md'
     - 'Preflight': 'beginner-guide/preflight.md'
     - 'Departure': 'beginner-guide/departure.md'
     - 'Cruise': 'beginner-guide/cruise.md'
