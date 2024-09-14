@@ -41,8 +41,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Albert+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Albert Sans";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -80,6 +80,26 @@
       
     </div>
     <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+            
+    
+    <div id="announcement">
+        <div class="circle">
+            <div class="circle-wrapper pulsate-fwd"></div>
+          </div>
+          <div class="txt">
+              <p>AI Traffic is released in ALPHA for supporters! Read more <a href="/announcements/traffic">HERE</a></p>
+            </div>
+          </div>
+    </div>
+   
+
+          </div>
+          
+        </aside>
       
     </div>
     
@@ -234,7 +254,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../beginner-guide/preflight/" class="md-tabs__link">
+        <a href="../../beginner-guide/overview/" class="md-tabs__link">
           
   
     
@@ -501,6 +521,8 @@
       
         
       
+        
+      
     
     
       
@@ -533,6 +555,27 @@
             Beginner Guide
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../beginner-guide/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -842,6 +885,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#ai-traffic" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Traffic
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#troubleshooting-issues" class="md-nav__link">
     <span class="md-ellipsis">
       Troubleshooting issues
@@ -989,6 +1041,79 @@
 <p>In real-world aviation, runways are not pre-assigned in flight plans. Instead, they are determined by Air Traffic Control (ATC) based on current conditions like wind direction, runway availability, and traffic volume.</p>
 <p>SimBrief provides a suggested runway based on standard conditions at the time of planning, but the actual runway assignment can change when you’re closer to your departure or arrival. BeyondATC simulates this real-world ATC behavior by assigning runways dynamically, just as in actual flight operations.</p>
 </details>
+<h2 id="ai-traffic">AI Traffic</h2>
+<details class="info">
+<summary>What should I expect from AI Traffic?</summary>
+<p>Traffic is currently available in alpha, this means its a really early version of the traffic product. We believe it will give you plenty of enjoyment in its current state but there will be issues, there may be crashes of BATC and features may be missing. If you find traffic in its current state does not enhance your experience, you can disable it from within the options menu or alternatively if you find the build unstable, switch back the core EA version from your accounts page.</p>
+<p>We would greatly appreciate if you could send your reports, including log files and any other relevant information asked in the thread, in <a href="https://discord.com/channels/1082413096045391915/1280653893570658325">⁠traffic-alpha-feedback</a>. Your patience and understanding are invaluable as the dev team work on improving this feature.</p>
+</details>
+<details class="info">
+<summary>How can I get AI Traffic with BeyondATC?</summary>
+<p>AI traffic is available for supporters only. To access this feature, you need to upgrade from the basic pack to the supporter pack for $29.99. Supporters can activate the experimental branch in the account section in BeyondATC.</p>
+<p>Traffic will be available to everyone (basic pack) later at no extra cost.</p>
+</details>
+<details class="info">
+<summary>What is the traffic source?</summary>
+<p>BeyondATC uses data from FlightRadar24, using a historic week of data. This includes all IFR flights, GA included. </p>
+</details>
+<details class="info">
+<summary>Why are you not using live traffic? Are you planning to add it later?</summary>
+<p>Various factors were evaluated such as costs, contracts, user feedback, system architecture, and development timeline. Based on these criteria, the choice was made not to use live traffic data.</p>
+<p>Tests showed minimal differences that most users won't notice. This setup offers a seamless experience without the complexities and costs of live traffic, allowing users to choose their flight times and experience busy airports.</p>
+<p>Currently, there are no plans to implement live traffic or support any other injectors. </p>
+</details>
+<details class="info">
+<summary>Which models will BeyondATC use for AI Traffic?</summary>
+<p>BeyondATC will use whatever models you have installed in your simulator, including any combination of AIG, FSLTL, and FS Traffic.</p>
+</details>
+<details class="info">
+<summary>Can AI traffic use ground services?</summary>
+<p>Currently, AI traffic cannot use ground services or jetways due to how BeyondATC injects its traffic. Implementing this would require BeyondATC to inject its own pushback tug into the simulator, which might be considered later as an update. Keep in mind that the dev team will focus on core features before considering cosmetic enhancements. </p>
+</details>
+<details class="info">
+<summary>What features are available with AI Traffic?</summary>
+<ul>
+<li>Traffic data for the globe based on live traffic from an historic week of data, limited to any aircraft flying IFR with an active transponder</li>
+<li>Ground, departure, arrival traffic to and from the airports you have planned in Simbrief for your flight</li>
+<li>Traffic fully managed by Beyond ATC including parking, runway and procedure assignments</li>
+<li>Parking spots represent the actual parking spot of the aircraft in real life, irrespective of the parking assignments in the airport scenery</li>
+<li>Support for FSLTL, AIG and FS Traffic models - at least one of which must be installed</li>
+<li>Initial separation handling of aircraft at injection</li>
+<li>Ability to use premium, basic or turn off voices entirely for traffic, separately from the voice setting being used for your the player.</li>
+<li>Traffic managed by ATC out to 200nm from the player even without those aircraft having to be present in the simulator, saving valuable sim resources.</li>
+<li>A slider that limits traffic based on a time range from our data set - the higher the slider, the further out the time range.</li>
+</ul>
+</details>
+<details class="info">
+<summary>What features will come in future builds for AI Traffic?</summary>
+<ul>
+<li>Enroute traffic not flying to or from either of the airports you have planned.</li>
+<li>Any ground services, in particular a tug for pushback</li>
+<li>Full separation handling through the entire traffic aircraft flight</li>
+<li>Continued improvements to handling procedures</li>
+</ul>
+</details>
+<details class="info">
+<summary>What features are available with AI Traffic?</summary>
+<ul>
+<li>Aircraft might float while on the ground at certain airports or with certain models</li>
+<li>Aircraft may follow strange flight plans</li>
+<li>Aircraft may enter the runway at the wrong point</li>
+<li>Aircraft may turn off abruptly or too fast from the runway on landing</li>
+<li>Aircraft may taxi through other parked aircraft at ramps that allow taxi through</li>
+<li>Aircraft may land too close together</li>
+<li>Aircraft may get stuck handing over to ground from tower on landing</li>
+<li>BATC may crash with fatal errors</li>
+</ul>
+</details>
+<details class="info">
+<summary>How do I set up everything to use traffic with BeyondATC?</summary>
+<p>Please follow our setup guide <a href="../onboarding/getting-started">here</a></p>
+</details>
+<details class="info">
+<summary>How does the slider work?</summary>
+<p>The slider controls the time range for aircraft parked at the gates. A setting of 1 represents a short time range, while 10 represents a longer one. The higher the slider value, the more aircraft will be parked at the gates. This is because planes will remain at the gates longer before their scheduled departure or after their arrival, based on real-world data.</p>
+</details>
 <h2 id="troubleshooting-issues">Troubleshooting issues</h2>
 <details class="info">
 <summary>Why can't I type anything in the Simbrief ID field?</summary>
@@ -1005,7 +1130,7 @@
 </details>
 <details class="info">
 <summary>Why are my frequencies switching back to something else?</summary>
-<p>You need to disable ATC assistance options in MSFS settings. Please have a look at <a href="../onboarding/getting-started/">our guide</a> to set everything up correctly.</p>
+<p>You need to disable ATC assistance options in MSFS settings. Please have a look at <a href="../onboarding/getting-started/#setting-up-ai-traffic">our guide</a> to set everything up correctly.</p>
 </details>
 <details class="info">
 <summary>Simbrief cannot be reached. What can I do?</summary>
@@ -1148,7 +1273,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.code.copy", "content.tabs.link", "announce.dismiss", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "navigation.instant", "search.highlight", "search.share", "search.suggest", "toc.integrate", "instant"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.code.copy", "content.tabs.link", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "navigation.instant", "search.highlight", "search.share", "search.suggest", "toc.integrate", "instant"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
