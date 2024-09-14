@@ -9,7 +9,6 @@ theme:
   - content.code.annotate
   - content.code.copy
   - content.tabs.link
-  - announce.dismiss
   - navigation.footer
   - navigation.indexes
   - navigation.sections
