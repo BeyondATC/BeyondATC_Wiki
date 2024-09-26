@@ -58,6 +58,8 @@ nav:
     - 'Departure': 'beginner-guide/departure.md'
     - 'Cruise': 'beginner-guide/cruise.md'
     - 'Arrival': 'beginner-guide/arrival.md'
+  - Knowledge Base:
+    - 'knowledge-base/index.md'
   - Resources:
     - 'Resources': 'resources/resources.md'
   - Support:
