@@ -1,98 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://dialexch.github.com/BeyondATC_Wiki/</loc>
-         <lastmod>2024-09-14</lastmod>
+         <loc>https://wiki.beyondatc.net/</loc>
+         <lastmod>2024-09-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dialexch.github.com/BeyondATC_Wiki/announcements/traffic/</loc>
-         <lastmod>2024-09-14</lastmod>
+         <loc>https://wiki.beyondatc.net/announcements/traffic/</loc>
+         <lastmod>2024-09-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dialexch.github.com/BeyondATC_Wiki/beginner-guide/arrival/</loc>
-         <lastmod>2024-09-14</lastmod>
+         <loc>https://wiki.beyondatc.net/beginner-guide/arrival/</loc>
+         <lastmod>2024-09-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dialexch.github.com/BeyondATC_Wiki/beginner-guide/cruise/</loc>
-         <lastmod>2024-09-14</lastmod>
+         <loc>https://wiki.beyondatc.net/beginner-guide/cruise/</loc>
+         <lastmod>2024-09-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dialexch.github.com/BeyondATC_Wiki/beginner-guide/departure/</loc>
-         <lastmod>2024-09-14</lastmod>
+         <loc>https://wiki.beyondatc.net/beginner-guide/departure/</loc>
+         <lastmod>2024-09-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dialexch.github.com/BeyondATC_Wiki/beginner-guide/overview/</loc>
-         <lastmod>2024-09-14</lastmod>
+         <loc>https://wiki.beyondatc.net/beginner-guide/overview/</loc>
+         <lastmod>2024-09-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dialexch.github.com/BeyondATC_Wiki/beginner-guide/preflight/</loc>
-         <lastmod>2024-09-14</lastmod>
+         <loc>https://wiki.beyondatc.net/beginner-guide/preflight/</loc>
+         <lastmod>2024-09-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dialexch.github.com/BeyondATC_Wiki/onboarding/features/</loc>
-         <lastmod>2024-09-14</lastmod>
+         <loc>https://wiki.beyondatc.net/knowledge-base/</loc>
+         <lastmod>2024-09-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dialexch.github.com/BeyondATC_Wiki/onboarding/getting-started/</loc>
-         <lastmod>2024-09-14</lastmod>
+         <loc>https://wiki.beyondatc.net/onboarding/features/</loc>
+         <lastmod>2024-09-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dialexch.github.com/BeyondATC_Wiki/onboarding/overview/</loc>
-         <lastmod>2024-09-14</lastmod>
+         <loc>https://wiki.beyondatc.net/onboarding/getting-started/</loc>
+         <lastmod>2024-09-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dialexch.github.com/BeyondATC_Wiki/onboarding/pricing/</loc>
-         <lastmod>2024-09-14</lastmod>
+         <loc>https://wiki.beyondatc.net/onboarding/overview/</loc>
+         <lastmod>2024-09-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dialexch.github.com/BeyondATC_Wiki/resources/resources/</loc>
-         <lastmod>2024-09-14</lastmod>
+         <loc>https://wiki.beyondatc.net/onboarding/pricing/</loc>
+         <lastmod>2024-09-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dialexch.github.com/BeyondATC_Wiki/support/bug-reporting/</loc>
-         <lastmod>2024-09-14</lastmod>
+         <loc>https://wiki.beyondatc.net/resources/resources/</loc>
+         <lastmod>2024-09-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dialexch.github.com/BeyondATC_Wiki/support/faq/</loc>
-         <lastmod>2024-09-14</lastmod>
+         <loc>https://wiki.beyondatc.net/support/bug-reporting/</loc>
+         <lastmod>2024-09-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dialexch.github.com/BeyondATC_Wiki/support/common-issues/notraffic/</loc>
-         <lastmod>2024-09-14</lastmod>
+         <loc>https://wiki.beyondatc.net/support/faq/</loc>
+         <lastmod>2024-09-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dialexch.github.com/BeyondATC_Wiki/support/common-issues/output/</loc>
-         <lastmod>2024-09-14</lastmod>
+         <loc>https://wiki.beyondatc.net/support/common-issues/notraffic/</loc>
+         <lastmod>2024-09-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dialexch.github.com/BeyondATC_Wiki/support/common-issues/simbrief/</loc>
-         <lastmod>2024-09-14</lastmod>
+         <loc>https://wiki.beyondatc.net/support/common-issues/output/</loc>
+         <lastmod>2024-09-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dialexch.github.com/BeyondATC_Wiki/support/common-issues/simconnect/</loc>
-         <lastmod>2024-09-14</lastmod>
+         <loc>https://wiki.beyondatc.net/support/common-issues/simbrief/</loc>
+         <lastmod>2024-09-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dialexch.github.com/BeyondATC_Wiki/support/common-issues/update/</loc>
-         <lastmod>2024-09-14</lastmod>
+         <loc>https://wiki.beyondatc.net/support/common-issues/simconnect/</loc>
+         <lastmod>2024-09-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://wiki.beyondatc.net/support/common-issues/update/</loc>
+         <lastmod>2024-09-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
