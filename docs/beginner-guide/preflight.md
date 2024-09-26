@@ -43,10 +43,7 @@ There are two ways of setting your callsign depending on whether you’re flying
     To set up a GA callsign, follow these steps:
 
     1. Ensure that the airline, flight number, and ATC callsign fields are empty.
-    2. In Aircraft Info, click on **Open Airframe Editor** and edit the airframe you will be using.
-    3. Enter the registration number in the Registration field. Remove any hyphens, so HB-FLB would be entered as HBFLB.
-
-    ![Simbrief airframe info](../assets/tutorial/simbrief-airframe-info.png)
+    2. Enter the registration number in the Registration field. Remove any hyphens, so HB-FLB would be entered as HBFLB.
 
 
 ### Selections
