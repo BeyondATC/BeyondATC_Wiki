@@ -148,6 +148,13 @@
 	animation: pulsate-fwd 1.5s ease-in-out infinite both;
 }
 
+@media (max-width: 930px) {
+  #announcement {
+      height: 45px;
+      overflow: unset;
+  }
+}
+
 @-webkit-keyframes pulsate-fwd {
 	0% {
 		-webkit-transform: scale(1);
