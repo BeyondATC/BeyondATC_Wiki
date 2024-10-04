@@ -1347,7 +1347,7 @@
 <tbody>
 <tr>
 <td>Low performance mode</td>
-<td>Used to reduce computing power (but can affect quality of traffic movement)</td>
+<td>Used to reduce computing power (but can affect quality of traffic movement, as it will limit BeyondATC to 30 FPS)</td>
 </tr>
 <tr>
 <td>Streamer Mode</td>
@@ -1365,11 +1365,15 @@
 <td>Prefer VA Callsigns</td>
 <td>If you want to fly a virtual airline, you can activate this option. It will use any virtual airline callsign that is registered by BeyondATC</td>
 </tr>
+<tr>
+<td>Show FPS</td>
+<td>Displays frames per second for BeyondATC app, which is different than the FPS count from the simulator. The movement fidelity of traffic is based on this FPS count.</td>
+</tr>
 </tbody>
 </table>
 <div class="admonition question">
 <p class="admonition-title">How do I add a VA Callsign?</p>
-<p>You need to submit a request to the BeyondATC team. You can suggest a VA Callsign here: https://beyondatc.nolt.io</p>
+<p>You need to submit a request to the BeyondATC team. You can suggest a VA Callsign on the <a href="https://db.beyondatc.net:8000/login">Pilot Portal</a>. Make sure that your Virtual Airline is active and that you are not the only member. </p>
 </div>
 </details>
 <details class="note">
@@ -1441,8 +1445,20 @@
 <td>Activate or deactivate AI traffic.</td>
 </tr>
 <tr>
-<td>Traffic density</td>
-<td>The slider controls the time range for aircraft parked at the gates. A setting of 1 represents a short time range, while 10 represents a longer one. The higher the slider value, the more aircraft will be parked at the gates. This is because planes will remain at the gates longer before their scheduled departure or after their arrival, based on real-world data. <br><br>Please note that this slider only affects how long aircraft stay parked at the gates; it does not influence the actual takeoffs or landings, which follow the real-world departure and arrival times for that time of day.</td>
+<td>Parked density</td>
+<td>The slider controls the time range for aircraft parked at the gates. A setting of 1 represents a short time range, while 10 represents a longer one. The higher the slider value, the more aircraft will be parked at the gates.</td>
+</tr>
+<tr>
+<td>Departure density</td>
+<td>The slider controls the density of departing aircrafts. A setting of 10 will make all parked aircrafts depart as scheduled. A lower setting will limit how many aircrafts will depart from the airport, putting them in a queue.</td>
+</tr>
+<tr>
+<td>Arrival density</td>
+<td>The slider controls the density of arriving aircrafts. A setting of 10 will make all aircrafts arriving as scheduled. A lower setting will limit how many aircrafts will arrive at the airport, putting them in a queue.</td>
+</tr>
+<tr>
+<td>Enroute density</td>
+<td>The slider controls the density of enroute aircrafts. A setting of 10 will inject all aircrafts as scheduled. A lower setting will limit how many aircrafts will be injected during your flight.</td>
 </tr>
 </tbody>
 </table>
