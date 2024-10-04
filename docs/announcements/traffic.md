@@ -18,14 +18,13 @@ We are very happy to introduce the Alpha build of our new Traffic feature in Bey
 * **Realistic traffic data**: Experience global traffic based on live data from a historic week. This includes all IFR flights with active transponders.
 * **Aircrafts management**: Get ground, departure, and arrival traffic for airports planned in your Simbrief flight, with realistic parking and runway assignments.
 * **Model support**: Compatible with FSLTL, AIG, and FS Traffic models. You don't need to run any of their injectors.
-* **Voice options**: Customize traffic voices with premium, basic, or no voice options, independently from your player voice settings.
 * **Simulator resources management**: Traffic management extends up to 200nm from your aircraft, even when not visible, saving valuable simulation resources.
+* **Full enroute traffic**: Additional traffic beyond your planned airports
 
 ## Future enhancements
 
 We are continuously working on improving the Traffic feature, with upcoming additions including:
 
-* **Full enroute traffic**: Additional traffic beyond your planned airports
 * **Ground Services**: Features like pushback tugs and jetways.
 * **Separation Handling**: Dynamic speed management to handle separation between AI aircrafts and you
 * **Advanced procedures**: Traffic will be capable of following holding patterns, go-arounds, and more refined handling procedures.

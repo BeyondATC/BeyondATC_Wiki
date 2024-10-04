@@ -41,16 +41,17 @@ Settings in details:
 
 ??? note "General"
 
-    | Setting                             | Detail                                                                            |
-    | ----------------------------------- | --------------------------------------------------------------------------------- |
-    | Low performance mode                | Used to reduce computing power (but can affect quality of traffic movement)       |
-    | Streamer Mode                       | Hide the Simbrief ID on launch                                                    |
-    | Radio Degradation Simulation        | Simulates the loss of radio quality over large distances                          |
+    | Setting                             | Detail                                                                                                                  |
+    | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+    | Low performance mode                | Used to reduce computing power (but can affect quality of traffic movement, as it will limit BeyondATC to 30 FPS)       |
+    | Streamer Mode                       | Hide the Simbrief ID on launch                                                                                          |
+    | Radio Degradation Simulation        | Simulates the loss of radio quality over large distances                                                                |
     | Use International Basic Accents     | If this option is activated, accents will be used with Basic Voices. Please note that these accents may be difficult to understand as they are not natively english based models. *This option has no effects if you use Premium Voices* |
     | Prefer VA Callsigns                 | If you want to fly a virtual airline, you can activate this option. It will use any virtual airline callsign that is registered by BeyondATC |
+    | Show FPS                            | Displays frames per second for BeyondATC app, which is different than the FPS count from the simulator. The movement fidelity of traffic is based on this FPS count. |
     
     !!! question "How do I add a VA Callsign?"
-        You need to submit a request to the BeyondATC team. You can suggest a VA Callsign here: https://beyondatc.nolt.io
+        You need to submit a request to the BeyondATC team. You can suggest a VA Callsign on the [Pilot Portal](https://db.beyondatc.net:8000/login). Make sure that your Virtual Airline is active and that you are not the only member. 
         
 ??? note "Key Bindings"
 
@@ -70,10 +71,14 @@ Settings in details:
     | Auto Respond Voice         | You can select the voice that will be used with the auto respond function.                                |
         
 ??? note "AI Traffic"
-    | Setting                    | Detail                                                                                                    |
-    | -------------------------- | --------------------------------------------------------------------------------------------------------- |
-    | Traffic on                 | Activate or deactivate AI traffic.                                                                      |
-    | Traffic density            | The slider controls the time range for aircraft parked at the gates. A setting of 1 represents a short time range, while 10 represents a longer one. The higher the slider value, the more aircraft will be parked at the gates. This is because planes will remain at the gates longer before their scheduled departure or after their arrival, based on real-world data. <br><br>Please note that this slider only affects how long aircraft stay parked at the gates; it does not influence the actual takeoffs or landings, which follow the real-world departure and arrival times for that time of day. |
+    | Setting               | Detail                                                                                                    |
+    | --------------------- | --------------------------------------------------------------------------------------------------------- |
+    | Traffic on            | Activate or deactivate AI traffic.                                                                      |
+    | Parked density        | The slider controls the time range for aircraft parked at the gates. A setting of 1 represents a short time range, while 10 represents a longer one. The higher the slider value, the more aircraft will be parked at the gates. |
+    | Departure density     | The slider controls the density of departing aircrafts. A setting of 10 will make all parked aircrafts depart as scheduled. A lower setting will limit how many aircrafts will depart from the airport, putting them in a queue. |
+    | Arrival density       | The slider controls the density of arriving aircrafts. A setting of 10 will make all aircrafts arriving as scheduled. A lower setting will limit how many aircrafts will arrive at the airport, putting them in a queue. |
+    | Enroute density       | The slider controls the density of enroute aircrafts. A setting of 10 will inject all aircrafts as scheduled. A lower setting will limit how many aircrafts will be injected during your flight. |
+
         
 ??? note "Voice Quality"
 
