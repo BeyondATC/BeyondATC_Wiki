@@ -6,7 +6,7 @@ hide:
 
 # How to set the callsign
 
-This tutorial will help you to use the correct callsign for your flights.
+This tutorial will help you to use the correct callsign for your flights in Simbrief.
 
 ## Airliners callsign
 
@@ -17,6 +17,11 @@ To set an airliner callsign, use the ICAO three-letter prefix assigned to your a
 - For an EasyJet flight: EZY32ZR (ATC will call you Easy 32ZR)
 
 However, it’s important to note that **an airline's ATC callsign is not always the same as the flight number**. In some cases, airlines use different numbers or codes in their callsigns that do not match the flight number. For instance, a British Airways flight might be assigned a flight number **BA545**, but the ATC callsign could be **BAW5GU**. To reflect this, Simbrief allows you to manually override the default callsign by entering a custom one in the **ATC Callsign** field. This option ensures that your callsign matches real-world practices, where the flight number and callsign can differ.
+
+<figure markdown>
+  ![Flight plan with callsign and flight number](../assets/kb/sb_callsign.jpg)
+  <figcaption>Setting a realistic flight number and a callsign</figcaption>
+</figure>
 
 **Do not use the two-letter IATA code for your callsign, as it will not be recognized!**
 
@@ -35,6 +40,11 @@ To set up a GA callsign, follow these steps:
 
 1. Ensure that the airline, flight number, and ATC callsign fields are empty as you are flying GA
 2. Enter the registration number in the Registration field. Remove any hyphens, so HB-FLB would be entered as HBFLB.
+
+<figure markdown>
+  ![Flight plan with callsign and flight number](../assets/kb/sb_callsign_ga.jpg)
+  <figcaption>Setting a General Aviation callsign</figcaption>
+</figure>
 
 ## Virtual airlines callsign
 
