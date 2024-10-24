@@ -3,9 +3,9 @@
 {% block extrahead %}
 
     {% if page and page.meta and page.meta.og_title %}
-        <meta property="title" content="{{ page.meta.og_title }}" />
+        <meta namme="title" content="{{ page.meta.og_title }}" />
     {% elif page and page.meta and page.meta.title %}
-        <meta property="title" content="{{ page.meta.title }}" />
+        <meta name="title" content="{{ page.meta.title }}" />
     {% endif %}
 
     {% if page and page.meta and page.meta.og_title %}
@@ -38,12 +38,6 @@
         <meta property="og:description" content="{{ page.meta.description }}">
     {% elif config.site_description %}
         <meta property="og:description" content="{{ config.site_description }}">
-    {% endif %}
-
-    {% if page and page.meta and page.meta.description %}
-        <meta property="description" content="{{ page.meta.description }}">
-    {% elif config.site_description %}
-        <meta property="description" content="{{ config.site_description }}">
     {% endif %}
 
     <meta property="og:locale" content="en-GB" />
