@@ -17,7 +17,6 @@ The BeyondATC Core Engine has been reworked to prevent performance issues that c
 
 Switching the BeyondATC Core Engine might be necessary if:
 
-
 * You notice performance lags related to traffic (that you can check by enabling the BeyondATC FPS counter in settings)
 * The app freezes without any clear cause
 * BeyondATC crashes without showing an error message
@@ -34,5 +33,10 @@ For convenience, you can modify your BeyondATC shortcut to automatically launch 
 2. In the **Target** field, add the appropriate line based on your chosen engine:
     - For DirectX11, add `-force-d3d11` at the end of the target path.
     - For OpenGL, add `-force-opengl` at the end of the target path.
+
+<figure markdown>
+  ![BeyondATC shortcut edit](../assets/kb/beyondatc_app_engine.jpg)
+  <figcaption>Update the shortcut target to force the selected engine to run</figcaption>
+</figure>
 
 Now, your usual shortcut will automatically launch BeyondATC with the preferred engine.
