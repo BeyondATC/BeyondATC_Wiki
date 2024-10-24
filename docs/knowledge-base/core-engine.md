@@ -3,8 +3,9 @@ hide:
   - navigation
   - toc
 
-og_image: https://wiki.beyondatc.net/assets/card_core_engine.png
+og_image: https://wiki.beyondatc.net/assets/cards/card-core-engine.png
 og_description: This tutorial will help you to change the Core Engine if you are having performance issues or if you have any problem running BeyondATC on your computer.
+description: This tutorial will help you to change the Core Engine if you are having performance issues or if you have any problem running BeyondATC on your computer.
 
 ---
 
