@@ -6,17 +6,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Transform your virtual skies with a realistic Air Traffic Control!">
+        <meta name="description" content="The BeyondATC Core Engine has been reworked to prevent performance issues that can arise when it’s being throttled by certain system configurations. This typically happens when BeyondATC is competing for resources with other DirectX 3D applications, such as the Fenix, causing slowdowns. Since every system is unique, there isn’t a one-size-fits-all solution. To address this, BeyondATC gives you the option to choose between three 3D engines: Vulkan (default), OpenGL, or DirectX11.">
       
       
       
-        <link rel="canonical" href="https://wiki.beyondatc.net/onboarding/overview/">
+        <link rel="canonical" href="https://wiki.beyondatc.net/knowledge-base/core-engine/">
       
       
-        <link rel="prev" href="../..">
-      
-      
-        <link rel="next" href="../features/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +20,7 @@
     
     
       
-        <title>Overview - BeyondATC Help Center</title>
+        <title>Change the BeyondATC Core Engine - BeyondATC Help Center</title>
       
     
     
@@ -65,8 +61,10 @@
         <meta property="og:type" content="website" />
     
 
-    <meta property="og:url" content="https://wiki.beyondatc.net/onboarding/overview/" />
+    <meta property="og:url" content="https://wiki.beyondatc.net/knowledge-base/core-engine/" />
 
+    
+        <meta property="og:image:url" content="https://wiki.beyondatc.net/assets/card_core_engine.png" />
     
 
     
@@ -74,7 +72,7 @@
     
 
     
-        <meta property="og:description" content="Transform your virtual skies with a realistic Air Traffic Control!">
+        <meta property="og:description" content="The BeyondATC Core Engine has been reworked to prevent performance issues that can arise when it’s being throttled by certain system configurations. This typically happens when BeyondATC is competing for resources with other DirectX 3D applications, such as the Fenix, causing slowdowns. Since every system is unique, there isn’t a one-size-fits-all solution. To address this, BeyondATC gives you the option to choose between three 3D engines: Vulkan (default), OpenGL, or DirectX11.">
     
 
     <meta property="og:locale" content="en-GB" />
@@ -99,7 +97,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#what-is-beyondatc" class="md-skip">
+        <a href="#change-the-beyondatc-core-engine" class="md-skip">
           Skip to content
         </a>
       
@@ -152,7 +150,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overview
+              Change the BeyondATC Core Engine
             
           </span>
         </div>
@@ -255,13 +253,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../onboarding/overview/" class="md-tabs__link">
           
   
     
@@ -301,7 +297,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../knowledge-base/" class="md-tabs__link">
+        <a href="../" class="md-tabs__link">
           
   
     
@@ -365,7 +361,9 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -412,10 +410,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -430,22 +426,19 @@
     
     
       
-        
-        
-      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -456,7 +449,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Onboarding
@@ -467,30 +460,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Overview
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../onboarding/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -499,44 +472,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#why-choose-beyondatc" class="md-nav__link">
-    <span class="md-ellipsis">
-      Why choose BeyondATC?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#technical-information" class="md-nav__link">
-    <span class="md-ellipsis">
-      Technical information
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -549,7 +484,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../features/" class="md-nav__link">
+      <a href="../../onboarding/features/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -570,7 +505,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pricing/" class="md-nav__link">
+      <a href="../../onboarding/pricing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -591,7 +526,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../getting-started/" class="md-nav__link">
+      <a href="../../onboarding/getting-started/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -806,7 +741,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../knowledge-base/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1183,39 +1118,31 @@
                   
 
 
-<h1 id="what-is-beyondatc">What is BeyondATC?</h1>
-<p>Transform your virtual skies with a realistic Air Traffic Control!</p>
-<p>Take your flight simulation experience to the next level with BeyondATC, an add-on for Microsoft Flight Simulator that introduces a cutting-edge, realistic Air Traffic Control environment. Featuring over 100 ultra-realistic AI voices with regional accents and real-world phraseology, BeyondATC delivers authentic ATC communications, enhancing the immersion and realism of your virtual aviation experience.</p>
-<h2 id="why-choose-beyondatc">Why choose BeyondATC?</h2>
-<p>BeyondATC offers a significant upgrade to your flight simulation experience, combining advanced AI with real-world ATC procedures to deliver a high level of immersion. Whether you’re an experienced pilot or just starting, BeyondATC enhances your Microsoft Flight Simulator with realistic and engaging ATC interactions, making every flight more authentic.</p>
-<div class="admonition info">
-<p class="admonition-title">Early Access</p>
-<p>BeyondATC has always and will always be a program made by simmers for simmers. Because of this, we want your help in building this program and we launched BeyondATC in Early Access! We feel it's important to include the community in our development to help guide the direction of the program and ensure the most requested features are included.</p>
-<p>This means if you purchase BeyondATC, you are getting a program still under development. This program will include bugs and strange behavior. Please make sure you understand this before making your purchase decision.</p>
-</div>
-<h2 id="technical-information">Technical information</h2>
-<table>
-<thead>
-<tr>
-<th>Title</th>
-<th>Detail</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Compatibility</td>
-<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"/></svg></span> Microsoft Flight Simulator 2020 <br> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"/></svg></span> Microsoft Flight Simulator 2024 (planned)</td>
-</tr>
-<tr>
-<td>Platform</td>
-<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"/></svg></span> Steam <br> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"/></svg></span> Microsoft Store <br> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg></span> Xbox</td>
-</tr>
-<tr>
-<td>Requirements</td>
-<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"/></svg></span> Microsoft Flight Simulator<br><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"/></svg></span> Internet Connection<br><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"/></svg></span> Simbrief</td>
-</tr>
-</tbody>
-</table>
+<h1 id="change-the-beyondatc-core-engine">Change the BeyondATC Core Engine</h1>
+<p>The BeyondATC Core Engine has been reworked to prevent performance issues that can arise when it’s being throttled by certain system configurations. This typically happens when BeyondATC is competing for resources with other DirectX 3D applications, such as the Fenix, causing slowdowns. Since every system is unique, there isn’t a one-size-fits-all solution. To address this, BeyondATC gives you the option to choose between three 3D engines: Vulkan (default), OpenGL, or DirectX11.</p>
+<h2 id="when-should-i-consider-switching-the-core-engine">When should I consider switching the Core Engine?</h2>
+<p>Switching the BeyondATC Core Engine might be necessary if:</p>
+<ul>
+<li>You notice performance lags related to traffic (that you can check by enabling the BeyondATC FPS counter in settings)</li>
+<li>The app freezes without any clear cause</li>
+<li>BeyondATC crashes without showing an error message</li>
+</ul>
+<p>If you encounter any of these issues, follow the steps below to switch the 3D engine:</p>
+<ol>
+<li>You'll need to experiment to find out which engine works best for your system. Go to your BeyondATC installation folder. You will find two files: <code>BeyondATC_ForceDirectX11.bat</code> and <code>BeyondATC_ForceOpenGL.bat</code>. Running one of these files will force BeyondATC to use the respective engine.</li>
+<li>After launching BeyondATC using one of the .bat files, perform a complete flight and see if the issue persists.</li>
+<li>If no further problems occur during your test, you've successfully found the engine that works best for your system.</li>
+</ol>
+<p>For convenience, you can modify your BeyondATC shortcut to automatically launch the preferred engine without needing to run the <code>.bat</code> file every time. Here's how:</p>
+<ol>
+<li>Right-click on your BeyondATC shortcut and select <strong>Properties</strong>.</li>
+<li>In the <strong>Target</strong> field, add the appropriate line based on your chosen engine:<ul>
+<li>For DirectX11, add <code>-force-d3d11</code> at the end of the target path.</li>
+<li>For OpenGL, add <code>-force-opengl</code> at the end of the target path.</li>
+</ul>
+</li>
+</ol>
+<p>Now, your usual shortcut will automatically launch BeyondATC with the preferred engine.</p>
 
 
 
@@ -1228,6 +1155,8 @@
 
 
 
+
+  
 
 
 
@@ -1251,44 +1180,6 @@
       
         <footer class="md-footer">
   
-    
-      
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
-        
-          
-          <a href="../.." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-            </div>
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              <div class="md-ellipsis">
-                Home
-              </div>
-            </div>
-          </a>
-        
-        
-          
-          <a href="../features/" class="md-footer__link md-footer__link--next" aria-label="Next: Features">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                Features
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
     
   
   <div class="md-footer-meta md-typeset">
