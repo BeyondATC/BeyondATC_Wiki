@@ -12,9 +12,5 @@ In this section, you will find useful tutorials and information about how Beyond
 [How ATIS work in BeyondATC](atis.md)  
 [How are airport SOPs implemented](airport-sop.md)  
 [The use of squawk 1000 in Europe](squawk-1000.md)  
-<<<<<<< HEAD
 [How the traffic sliders work](traffic-slider.md)  
-=======
-[How the traffic sliders work](traffic-slider.md) 
->>>>>>> 4f5edd6217f21aaae3af4063c179a249ef1e7d4e
 [Change the BeyondATC Core Engine](core-engine.md)  
