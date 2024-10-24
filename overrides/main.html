@@ -4,8 +4,8 @@
 
     {% if page and page.meta and page.meta.og_title %}
         <meta property="og:title" content="{{ page.meta.og_title }}" />
-    {% elif page and page.meta and page.meta.title %}
-        <meta property="og:title" content="{{ page.meta.title }}" />
+    {% elif page and page.meta and page.title %}
+        <meta property="og:title" content="{{ page.title }} - {{ config.site_name }}" />
     {% endif %}
 
     {% if page and page.meta and page.meta.og_type %}
