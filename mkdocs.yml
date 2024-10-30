@@ -4,6 +4,7 @@ copyright: Created with 💜 by Dialex
 theme:
   name: material
   custom_dir: overrides
+  favicon: assets/favicon.png
   font: 
     text: Albert Sans
   features:
