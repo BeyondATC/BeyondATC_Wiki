@@ -6,6 +6,8 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Find all frequently asked questions about BeyondATC and their answers.">
+      
       
       
         <link rel="canonical" href="https://wiki.beyondatc.net/support/faq/">
@@ -59,6 +61,9 @@
     
 
     
+        <meta property="og:title" content="FAQ - BeyondATC Help Center" />
+        <meta name="twitter:title" content="FAQ - BeyondATC Help Center">
+    
 
     
         <meta property="og:type" content="website" />
@@ -67,11 +72,19 @@
     <meta property="og:url" content="https://wiki.beyondatc.net/support/faq/" />
 
     
+        <meta property="og:image" content="https://wiki.beyondatc.net/assets/cards/card-faq.png" />
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="https://wiki.beyondatc.net/assets/cards/card-faq.png">
+    
 
     
         <meta property="og:image:type" content="image/png" />
     
 
+    
+        <meta property="og:description" content="Find all frequently asked questions about BeyondATC and their answers.">
     
 
 
@@ -1286,6 +1299,10 @@
 <p>In real-world aviation, runways are not pre-assigned in flight plans. Instead, they are determined by Air Traffic Control (ATC) based on current conditions like wind direction, runway availability, and traffic volume.</p>
 <p>SimBrief provides a suggested runway based on standard conditions at the time of planning, but the actual runway assignment can change when you’re closer to your departure or arrival. BeyondATC simulates this real-world ATC behavior by assigning runways dynamically, just as in actual flight operations.</p>
 </details>
+<details class="info">
+<summary>Why is BeyondATC directing me to use incorrect taxiways?</summary>
+<p>BeyondATC relies on airport scenery data for taxiway routing, but currently, it doesn't use taxiway width information. This is because, in both third-party and default sceneries, taxiway sizing is often inaccurate or inconsistently defined. Attempting to use this incomplete data would likely lead to more routing issues, so BeyondATC focuses on the best available information without relying on potentially unreliable taxiway width data.</p>
+</details>
 <h2 id="ai-traffic">AI Traffic</h2>
 <details class="info">
 <summary>What should I expect from AI Traffic?</summary>
@@ -1390,12 +1407,20 @@
 <li>Open BATC, disconnect and reconnect your microphone</li>
 </ul>
 </details>
+<details class="info">
+<summary>Why is BeyondATC telling me that a runway does not exist?</summary>
+<p>BeyondATC uses data directly from MSFS scenery, so if a scenery is outdated or differs from what tools like SimBrief reference, it may result in runway discrepancies. BeyondATC can account for minor changes, such as a one-digit difference in runway numbers, but significant changes—like renaming 06 to 06L—are not recognized and will cause this error.</p>
+<p>To solve this error, you need to check if a custom scenery is available and up to date.</p>
+</details>
 
 
 
 
 
 
+
+  
+  
 
 
 
