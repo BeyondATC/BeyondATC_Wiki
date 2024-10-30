@@ -2,6 +2,11 @@
 hide:
   - navigation
   - toc
+
+og_image: https://wiki.beyondatc.net/assets/cards/card-callsign.png
+og_description: This tutorial will help you to use the correct callsign for your flights in Simbrief.
+description: This tutorial will help you to use the correct callsign for your flights in Simbrief.
+
 ---
 
 # How to set the callsign

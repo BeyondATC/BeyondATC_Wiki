@@ -2,6 +2,11 @@
 hide:
   - navigation
   - toc
+
+og_image: https://wiki.beyondatc.net/assets/cards/card-traffic-sliders.png
+og_description: Traffic slidesrs are a setting that manages a queue of data for that particular slider. We pull in data for around 5 hours future and 1 hour past at the airport you are at, and the sliders slice the data from that pool.
+description: Traffic slidesrs are a setting that manages a queue of data for that particular slider. We pull in data for around 5 hours future and 1 hour past at the airport you are at, and the sliders slice the data from that pool.
+
 ---
 
 # How the traffic sliders work?

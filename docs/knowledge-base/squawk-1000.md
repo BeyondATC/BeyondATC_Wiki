@@ -2,6 +2,11 @@
 hide:
   - navigation
   - toc
+
+og_image: https://wiki.beyondatc.net/assets/cards/card-squawk-1000.png
+og_description: Squawk 1000 is used between a few countries in Europe as part of a modernized air traffic management system. This code is specifically tied to the use of Mode S transponders.
+description: Squawk 1000 is used between a few countries in Europe as part of a modernized air traffic management system. This code is specifically tied to the use of Mode S transponders.
+
 ---
 
 # The use of squawk 1000 in Europe
@@ -33,6 +38,7 @@ Traditionally, aircraft are assigned different squawk codes to differentiate the
 **This behavior is modeled in BeyondATC**. Therefore, you will be assigned squawk 1000 if you are flying between these countries.
 
 Further reading:
-- [https://forums.vatsim.net/topic/27699-squawk-1000/](https://forums.vatsim.net/topic/27699-squawk-1000/)
-- [https://www.pprune.org/atc-issues/484742-squawk-1000-a.html](https://www.pprune.org/atc-issues/484742-squawk-1000-a.html)
-- [https://skybrary.aero/articles/mode-s](https://skybrary.aero/articles/mode-s)
+
+- [https://forums.vatsim.net/topic/27699-squawk-1000/](https://forums.vatsim.net/topic/27699-squawk-1000/)  
+- [https://www.pprune.org/atc-issues/484742-squawk-1000-a.html](https://www.pprune.org/atc-issues/484742-squawk-1000-a.html)  
+- [https://skybrary.aero/articles/mode-s](https://skybrary.aero/articles/mode-s)  

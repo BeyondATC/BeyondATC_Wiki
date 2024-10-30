@@ -2,6 +2,11 @@
 hide:
   - navigation
   - toc
+
+og_image: https://wiki.beyondatc.net/assets/cards/card-atis.png
+og_description: BeyondATC generates ATIS reports independently, relying on weather data (METAR) from aviationweather.gov (+ VATSIM as a second source) and available airport operations provided by the community. This system mimics how real-world controllers make decisions but does not aim to replicate real-time ATIS. This can lead to differences between the ATIS you receive from BeyondATC and the active runways information provided by real-world sources or flight planning tools like Simbrief or Navigraph.
+description: BeyondATC generates ATIS reports independently, relying on weather data (METAR) from aviationweather.gov (+ VATSIM as a second source) and available airport operations provided by the community. This system mimics how real-world controllers make decisions but does not aim to replicate real-time ATIS. This can lead to differences between the ATIS you receive from BeyondATC and the active runways information provided by real-world sources or flight planning tools like Simbrief or Navigraph.
+
 ---
 
 # How ATIS work in BeyondATC

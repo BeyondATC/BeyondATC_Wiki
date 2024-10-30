@@ -2,6 +2,11 @@
 hide:
   - navigation
   - toc
+
+og_image: https://wiki.beyondatc.net/assets/cards/card-airport-ops.png
+og_description: Airport standard operating procedures are used in BeyondATC to assign runways based on factors such as wind conditions and airport preferences. Currently, the airport SOPs implemented in BeyondATC are relatively simple in design, focusing primarily on essential factors.
+description: Airport standard operating procedures are used in BeyondATC to assign runways based on factors such as wind conditions and airport preferences. Currently, the airport SOPs implemented in BeyondATC are relatively simple in design, focusing primarily on essential factors.
+
 ---
 
 # How are airport SOPs implemented in BeyondATC

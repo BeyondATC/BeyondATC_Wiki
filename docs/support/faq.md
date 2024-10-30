@@ -1,3 +1,11 @@
+---
+
+og_image: https://wiki.beyondatc.net/assets/cards/card-faq.png
+og_description: Find all frequently asked questions about BeyondATC and their answers.
+description: Find all frequently asked questions about BeyondATC and their answers.
+
+---
+
 # Frequently asked questions
 
 ## General questions
@@ -83,6 +91,9 @@
     In real-world aviation, runways are not pre-assigned in flight plans. Instead, they are determined by Air Traffic Control (ATC) based on current conditions like wind direction, runway availability, and traffic volume.
 
     SimBrief provides a suggested runway based on standard conditions at the time of planning, but the actual runway assignment can change when you’re closer to your departure or arrival. BeyondATC simulates this real-world ATC behavior by assigning runways dynamically, just as in actual flight operations.
+
+??? info "Why is BeyondATC directing me to use incorrect taxiways?"
+    BeyondATC relies on airport scenery data for taxiway routing, but currently, it doesn't use taxiway width information. This is because, in both third-party and default sceneries, taxiway sizing is often inaccurate or inconsistently defined. Attempting to use this incomplete data would likely lead to more routing issues, so BeyondATC focuses on the best available information without relying on potentially unreliable taxiway width data.
 
 ## AI Traffic
 
@@ -171,3 +182,8 @@
     - Check that your microphone is connected and working
     - Go to Settings > Privacy and security > Microphone and check that apps are allowed to use the microphone (at the bottom of the section)
     - Open BATC, disconnect and reconnect your microphone
+
+??? info "Why is BeyondATC telling me that a runway does not exist?"
+    BeyondATC uses data directly from MSFS scenery, so if a scenery is outdated or differs from what tools like SimBrief reference, it may result in runway discrepancies. BeyondATC can account for minor changes, such as a one-digit difference in runway numbers, but significant changes—like renaming 06 to 06L—are not recognized and will cause this error.
+
+    To solve this error, you need to check if a custom scenery is available and up to date.
