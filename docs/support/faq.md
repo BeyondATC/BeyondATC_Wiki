@@ -27,9 +27,9 @@ description: Find all frequently asked questions about BeyondATC and their answe
     Yes, our voices use cloud-based technology and require an active connection to work.
 
 ??? info "Which simulators is BeyondATC be available for?"
-    BeyondATC is currently designed for Microsoft Flight Simulator 2020 and is also planned to support the upcoming 2024 edition.
+    BeyondATC is designed for Microsoft Flight Simulator 2020 and 2024 on PC.
 
-    We have not planned to support any other simulator.
+    We have not planned to support any other simulator or platform. It is technically not possible to support Xbox.
 
 ??? info "Is there a trial period?"
     We do not offer a trial period at this stage. You can search for BeyondATC videos and review to make your decision.
@@ -41,6 +41,23 @@ description: Find all frequently asked questions about BeyondATC and their answe
     You don’t need a Navigraph subscription to use BeyondATC. The software pulls information directly from your simulator, including airport data, approaches, waypoints, and more, using the scenery and AIRAC cycle already available in your sim. However, if you generate a flight plan in Simbrief using a different AIRAC cycle than what’s in your simulator, you may encounter specific discrepancies.
 
     If desired, you can opt for a one-month Navigraph subscription to update both your simulator and Simbrief with the latest AIRAC cycle, ensuring everything is synchronized to the same source.
+
+## Features
+
+??? info "How can I load a new flight plan for my next flight?"
+    You can load a new flight plan by using the escape key in BeyondATC. It will bring you to the main menu where you can load your new flight.
+
+??? info "Are diversions supported?"
+    Diversions are not supported at the moment and might be added later as part of the emergencies procedures. However, there is a workaround that you can use to make a diversion in the meantime:
+
+    - Enter in a holding pattern if necessary
+    - File a new Simbrief flight plan to your diversion airport
+    - Hit the escape key in BeyondATC to go back to the main menu
+    - Load your new flight plan and choose the correct flight phase
+    - You will be told to be off course and given a new direct to. Go direct to this fix and continue your flight to the alternate airport.
+
+??? info "Can I request a different approach?"
+    At the moment, it is not possible to change the approach you are assigned by ATC. This is a feature that is planned for later.
 
 ## ATC questions
 
