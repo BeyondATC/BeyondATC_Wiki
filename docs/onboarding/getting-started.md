@@ -139,31 +139,64 @@ To ensure BeyondATC functions correctly, you need to configure the following set
 
 Go to Options &gt; Assistance Options
 
-Under User Experience, turn off:  
+=== "MSFS 2020"
 
-- ATC Enforce flight plan
-- ATC UI Panel open at start
-- ATC Voices
+    Under User Experience, turn off:  
 
-Under Piloting, turn off:  
+    - ATC Enforce flight plan
+    - ATC UI Panel open at start
+    - ATC Voices
 
-- AI Radio Communications
+    Under Piloting, turn off:  
 
-![Assistance options to disable in user experience](../assets/getting-started/msfs-assistance-options-1.png)
-![Assistance option to disable in piloting](../assets/getting-started/msfs-assistance-options-2.png)
+    - AI Radio Communications
+
+=== "MSFS 2024"
+
+    1. **Settings > Accessibility**  
+        - Turn Subtitles: **OFF**  
+
+    2. **Settings > Assistance** (under Realism)  
+        - AI Radio Communications (ATC): **OFF**  
+        - ATC Enforce Flight Plan: **OFF**  
+
+    3. **Settings > General > Sound**  
+        - Set Character Voice to **0**  
+
 
 ### Disable traffic options
 
 **All traffic injectors should be disabled.** BeyondATC cannot detect, interact with, or manage any traffic that it has not injected itself. This means that third-party injectors such as FSLTL, MSFS live traffic, and similar are not supported.
 
-To adjust the traffic settings, follow these steps:
+=== "MSFS 2020"
 
-1. Go to **Options** > **General Options** > **Traffic**.
-2. Set the following options:
-    - **Aircraft Traffic Type**: OFF
-    - **Ground Aircraft Density**: 0
+    To adjust the traffic settings, follow these steps:
 
-Before starting your flight, on the world map, click on **Flight Conditions** and make sure that both **Multiplayer** and **Air Traffic** are set to OFF. Also, ensure that **Live Weather** is selected.
+    1. Go to **Options** > **General Options** > **Traffic**.
+    2. Set the following options:
+        - **Aircraft Traffic Type**: OFF
+        - **Ground Aircraft Density**: 0
+
+    Before starting your flight, on the world map, click on **Flight Conditions** and make sure that both **Multiplayer** and **Air Traffic** are set to OFF. Also, ensure that **Live Weather** is selected.
+
+=== "MSFS 2024"
+
+    1. **Settings > General > Graphics**  
+        - Traffic Airport Quality: **OFF**  
+        - Air Traffic: **OFF**  
+
+    2. **Settings > General > Online**  
+        - Aircraft Traffic Type: **OFF**  
+        - Multiplayer: **OFF**  
+
+    3. **Settings > VR > VR Graphics**  
+        - Traffic Airport Quality: **OFF**  
+        - Air Traffic: **OFF**  
+
+    **If AI aircraft are still visible around the airport**:  
+
+    - Return to the main menu and start a new flight.  
+    - Revisit each setting, scroll through to **OFF**, and save changes after resetting them.  
 
 !!! info
     BeyondATC only supports **Live Weather** due to MSFS limitations. For accurate weather reports from ATIS, Live Weather must be enabled. However, you can choose the time of day to reflect the desired traffic for that time
