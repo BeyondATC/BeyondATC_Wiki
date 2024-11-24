@@ -1558,6 +1558,9 @@ Toggle this setting to On to ensure that desktop applications, including BeyondA
 <p>To ensure BeyondATC functions correctly, you need to configure the following settings to prevent any interference or alterations by Microsoft Flight Simulator.</p>
 <h3 id="disable-atc-assistance-options">Disable ATC assistance options</h3>
 <p>Go to Options &gt; Assistance Options</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">MSFS 2020</label><label for="__tabbed_1_2">MSFS 2024</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>Under User Experience, turn off:  </p>
 <ul>
 <li>ATC Enforce flight plan</li>
@@ -1568,10 +1571,37 @@ Toggle this setting to On to ensure that desktop applications, including BeyondA
 <ul>
 <li>AI Radio Communications</li>
 </ul>
-<p><img alt="Assistance options to disable in user experience" src="../../assets/getting-started/msfs-assistance-options-1.png" />
-<img alt="Assistance option to disable in piloting" src="../../assets/getting-started/msfs-assistance-options-2.png" /></p>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>
+<p><strong>Settings &gt; Accessibility</strong>  </p>
+<ul>
+<li>Turn Subtitles: <strong>OFF</strong>  </li>
+</ul>
+</li>
+<li>
+<p><strong>Settings &gt; Assistance</strong> (under Realism)  </p>
+<ul>
+<li>AI Radio Communications (ATC): <strong>OFF</strong>  </li>
+<li>ATC Enforce Flight Plan: <strong>OFF</strong>  </li>
+</ul>
+</li>
+<li>
+<p><strong>Settings &gt; General &gt; Sound</strong>  </p>
+<ul>
+<li>Set Character Voice to <strong>0</strong>  </li>
+</ul>
+</li>
+</ol>
+</div>
+</div>
+</div>
 <h3 id="disable-traffic-options">Disable traffic options</h3>
 <p><strong>All traffic injectors should be disabled.</strong> BeyondATC cannot detect, interact with, or manage any traffic that it has not injected itself. This means that third-party injectors such as FSLTL, MSFS live traffic, and similar are not supported.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">MSFS 2020</label><label for="__tabbed_2_2">MSFS 2024</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>To adjust the traffic settings, follow these steps:</p>
 <ol>
 <li>Go to <strong>Options</strong> &gt; <strong>General Options</strong> &gt; <strong>Traffic</strong>.</li>
@@ -1582,6 +1612,39 @@ Toggle this setting to On to ensure that desktop applications, including BeyondA
 </li>
 </ol>
 <p>Before starting your flight, on the world map, click on <strong>Flight Conditions</strong> and make sure that both <strong>Multiplayer</strong> and <strong>Air Traffic</strong> are set to OFF. Also, ensure that <strong>Live Weather</strong> is selected.</p>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>
+<p><strong>Settings &gt; General &gt; Graphics</strong>  </p>
+<ul>
+<li>Traffic Airport Quality: <strong>OFF</strong>  </li>
+<li>Air Traffic: <strong>OFF</strong>  </li>
+</ul>
+</li>
+<li>
+<p><strong>Settings &gt; General &gt; Online</strong>  </p>
+<ul>
+<li>Aircraft Traffic Type: <strong>OFF</strong>  </li>
+<li>Multiplayer: <strong>OFF</strong>  </li>
+</ul>
+</li>
+<li>
+<p><strong>Settings &gt; VR &gt; VR Graphics</strong>  </p>
+<ul>
+<li>Traffic Airport Quality: <strong>OFF</strong>  </li>
+<li>Air Traffic: <strong>OFF</strong>  </li>
+</ul>
+</li>
+</ol>
+<p><strong>If AI aircraft are still visible around the airport</strong>:  </p>
+<ul>
+<li>Return to the main menu and start a new flight.  </li>
+<li>Revisit each setting, scroll through to <strong>OFF</strong>, and save changes after resetting them.  </li>
+</ul>
+</div>
+</div>
+</div>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>BeyondATC only supports <strong>Live Weather</strong> due to MSFS limitations. For accurate weather reports from ATIS, Live Weather must be enabled. However, you can choose the time of day to reflect the desired traffic for that time</p>
