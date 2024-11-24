@@ -2,132 +2,137 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://wiki.beyondatc.net/</loc>
-         <lastmod>2024-10-31</lastmod>
+         <lastmod>2024-11-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://wiki.beyondatc.net/announcements/msfs2024/</loc>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wiki.beyondatc.net/announcements/traffic/</loc>
-         <lastmod>2024-10-31</lastmod>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wiki.beyondatc.net/beginner-guide/arrival/</loc>
-         <lastmod>2024-10-31</lastmod>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wiki.beyondatc.net/beginner-guide/cruise/</loc>
-         <lastmod>2024-10-31</lastmod>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wiki.beyondatc.net/beginner-guide/departure/</loc>
-         <lastmod>2024-10-31</lastmod>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wiki.beyondatc.net/beginner-guide/overview/</loc>
-         <lastmod>2024-10-31</lastmod>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wiki.beyondatc.net/beginner-guide/preflight/</loc>
-         <lastmod>2024-10-31</lastmod>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wiki.beyondatc.net/knowledge-base/</loc>
-         <lastmod>2024-10-31</lastmod>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wiki.beyondatc.net/knowledge-base/airport-sop/</loc>
-         <lastmod>2024-10-31</lastmod>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wiki.beyondatc.net/knowledge-base/atis/</loc>
-         <lastmod>2024-10-31</lastmod>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wiki.beyondatc.net/knowledge-base/callsign/</loc>
-         <lastmod>2024-10-31</lastmod>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wiki.beyondatc.net/knowledge-base/core-engine/</loc>
-         <lastmod>2024-10-31</lastmod>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wiki.beyondatc.net/knowledge-base/squawk-1000/</loc>
-         <lastmod>2024-10-31</lastmod>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wiki.beyondatc.net/knowledge-base/traffic-slider/</loc>
-         <lastmod>2024-10-31</lastmod>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wiki.beyondatc.net/onboarding/features/</loc>
-         <lastmod>2024-10-31</lastmod>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wiki.beyondatc.net/onboarding/getting-started/</loc>
-         <lastmod>2024-10-31</lastmod>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wiki.beyondatc.net/onboarding/overview/</loc>
-         <lastmod>2024-10-31</lastmod>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wiki.beyondatc.net/onboarding/pricing/</loc>
-         <lastmod>2024-10-31</lastmod>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wiki.beyondatc.net/resources/resources/</loc>
-         <lastmod>2024-10-31</lastmod>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wiki.beyondatc.net/support/bug-reporting/</loc>
-         <lastmod>2024-10-31</lastmod>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wiki.beyondatc.net/support/faq/</loc>
-         <lastmod>2024-10-31</lastmod>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wiki.beyondatc.net/support/common-issues/notraffic/</loc>
-         <lastmod>2024-10-31</lastmod>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wiki.beyondatc.net/support/common-issues/output/</loc>
-         <lastmod>2024-10-31</lastmod>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wiki.beyondatc.net/support/common-issues/simbrief/</loc>
-         <lastmod>2024-10-31</lastmod>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wiki.beyondatc.net/support/common-issues/simconnect/</loc>
-         <lastmod>2024-10-31</lastmod>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://wiki.beyondatc.net/support/common-issues/update/</loc>
-         <lastmod>2024-10-31</lastmod>
+         <lastmod>2024-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
