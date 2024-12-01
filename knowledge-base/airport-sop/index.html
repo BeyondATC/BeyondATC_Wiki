@@ -1126,54 +1126,54 @@
 
 <h1 id="how-are-airport-sops-implemented-in-beyondatc">How are airport SOPs implemented in BeyondATC</h1>
 <p>Airport standard operating procedures are used in BeyondATC to assign runways based on factors such as wind conditions and airport preferences. Here’s an example of how airport data is defined for KLAX (Los Angeles):</p>
-<p><code>json
-{
-  "icao": "KLAX",
-  "low_wind_speed": 5,
-  "low_wind_runways": ["24L", "24R", "25L", "25R"],
-  "primary_departing_runways": ["25R", "24L", "07L", "06R"],
-  "primary_arrival_runways": ["25L", "24R", "06L", "07R"],
-  "frequencies": [
-    {
-      "runway": ["24L", "24R", "06R", "06L"],
-      "tower": {
-        "name": "Los Angeles",
-        "frequency": 133.9
-      },
-      "ground": {
-        "name": "Los Angeles",
-        "frequency": 121.65
-      },
-      "departure": {
-        "name": "SOCAL",
-        "frequency": 125.2
-      },
-      "approach": {
-        "name": "SOCAL Approach",
-        "frequency": 124.5
-      }
-    },
-    {
-      "runway": ["25L", "25R", "07L", "07R"],
-      "tower": {
-        "name": "Los Angeles",
-        "frequency": 119.8
-      },
-      "ground": {
-        "name": "Los Angeles",
-        "frequency": 121.75
-      },
-      "departure": {
-        "name": "SOCAL",
-        "frequency": 124.3
-      },
-      "approach": {
-        "name": "SOCAL",
-        "frequency": 124.9
-      }
-    }
-  ]
-}</code></p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;icao&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;KLAX&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;low_wind_speed&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;low_wind_runways&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;24L&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;24R&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;25L&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;25R&quot;</span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;primary_departing_runways&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;25R&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;24L&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;07L&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;06R&quot;</span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;primary_arrival_runways&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;25L&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;24R&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;06L&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;07R&quot;</span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;frequencies&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;runway&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;24L&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;24R&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;06R&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;06L&quot;</span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;tower&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Los Angeles&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;frequency&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">133.9</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;ground&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Los Angeles&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;frequency&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">121.65</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;departure&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SOCAL&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;frequency&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">125.2</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;approach&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SOCAL Approach&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;frequency&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">124.5</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;runway&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;25L&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;25R&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;07L&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;07R&quot;</span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;tower&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Los Angeles&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;frequency&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">119.8</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;ground&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Los Angeles&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;frequency&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">121.75</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;departure&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SOCAL&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;frequency&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">124.3</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;approach&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SOCAL&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;frequency&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">124.9</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
 <table>
 <thead>
 <tr>
