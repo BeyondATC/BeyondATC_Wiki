@@ -31,7 +31,7 @@ These advanced features may be added in future updates. For now, these limitatio
 
 Runway assignments in BeyondATC may not always match those in your Simbrief flight plan due to key differences in how each system handles runway selection. 
 
-Simbrief creates flight plans based on forecasted weather conditions at the time of planning, which might not reflect real-time conditions by the time of your flight. Additionally, the actual runway in use at an airport is determined by multiple factors: current METAR weather data, ATC decisions based on traffic flow and safety, and airport standard operating procedures (SOPs) with their current limitations. Because of these dynamic, real-time variables, the runway specified in your Simbrief plan may differ from the one currently in use. It’s important to understand that ATC has the final say on active runway assignments, prioritizing safety and efficiency over pre-planned routes.
+Simbrief creates flight plans based on forecasted weather conditions at the time of planning, which might not reflect real-time conditions by the time of your flight. Additionally, the actual runway in use at an airport is determined by multiple factors: current METAR weather data, ATC decisions based on traffic flow and safety, and airport standard operating procedures (SOPs) with their current limitations. Because of these dynamic, real-time variables, the runway specified in your Simbrief plan may differ from the one currently in use. It’s important to understand that ATC has the final say on active runway assignments.
 
 ## Why don't BeyondATC use real-world sources for active runways?
 
