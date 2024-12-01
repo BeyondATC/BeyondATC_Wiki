@@ -13,7 +13,7 @@ description: Airport standard operating procedures are used in BeyondATC to assi
 
 Airport standard operating procedures are used in BeyondATC to assign runways based on factors such as wind conditions and airport preferences. Here’s an example of how airport data is defined for KLAX (Los Angeles):
 
-```json
+``` json
 {
   "icao": "KLAX",
   "low_wind_speed": 5,
@@ -60,7 +60,8 @@ Airport standard operating procedures are used in BeyondATC to assign runways ba
       }
     }
   ]
-}```
+}
+```
 
 | Setting                      | Description             |
 | ---------------------------- | ----------------------- |
