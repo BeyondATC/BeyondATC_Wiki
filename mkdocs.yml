@@ -74,7 +74,7 @@ nav:
   - Knowledge Base:
     - 'knowledge-base/index.md'
   - Resources:
-    - 'Resources': 'resources/resources.md'
+    - 'Resources': 'resources/index.md'
   - Support:
     - 'Bug reporting': 'support/bug-reporting.md'
     - 'FAQ': 'support/faq.md'
