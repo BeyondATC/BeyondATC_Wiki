@@ -316,7 +316,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../resources/resources/" class="md-tabs__link">
+        <a href="../../resources/" class="md-tabs__link">
           
   
     
@@ -947,6 +947,8 @@
     
       
         
+          
+        
       
     
     
@@ -963,16 +965,19 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
-            
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../resources/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     Resources
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
@@ -981,25 +986,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../resources/resources/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Resources
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
           </ul>
@@ -1307,6 +1293,10 @@
 </ul>
 <p><strong>Do not use the two-letter IATA code for your callsign, as it will not be recognized!</strong></p>
 <p>Once you have chosen your callsign, you can enter it in the ATC Callsign field. This will override your airline and flight number set in the previous section.</p>
+<p><figure markdown>
+    <img alt="Flight plan with callsign and flight number" src="../../assets/kb/sb_callsign.jpg" />
+    <figcaption>Setting a realistic flight number and a callsign</figcaption>
+</figure></p>
 </details>
 <details class="note">
 <summary>Add an General Aviation callsign</summary>
@@ -1322,6 +1312,10 @@
 <li>Ensure that the airline, flight number, and ATC callsign fields are empty.</li>
 <li>Enter the registration number in the Registration field. Remove any hyphens, so HB-FLB would be entered as HBFLB.</li>
 </ol>
+<p><figure markdown>
+    <img alt="Flight plan with callsign and flight number" src="../../assets/kb/sb_callsign_ga.jpg" />
+    <figcaption>Setting a General Aviation callsign</figcaption>
+</figure></p>
 </details>
 <h3 id="selections">Selections</h3>
 <p><img alt="Simbrief selections" src="../../assets/tutorial/simbrief-selections.png" /></p>
@@ -1431,6 +1425,9 @@
 </li>
 <li>
 <p><strong>Contact clearance delivery:</strong> Make your call using the following format:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">ICAO Phraseology</label><label for="__tabbed_1_2">FAA Phraseology</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <table>
 <thead>
 <tr>
@@ -1453,10 +1450,40 @@
 <li><strong>With information Oscar</strong> means you have the current ATIS information Oscar.</li>
 <li><strong>Request IFR clearance to Schiphol</strong> specifies your destination airport.</li>
 </ul>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>Speaker</th>
+<th>Response</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.56 3.91c.59.59.59 1.54 0 2.12l-3.89 3.89 2.12 9.19-1.41 1.42-3.88-7.43L9.6 17l.36 2.47-1.07 1.06-1.76-3.18-3.19-1.77L5 14.5l2.5.37L11.37 11 3.94 7.09l1.42-1.41 9.19 2.12 3.89-3.89c.56-.58 1.56-.58 2.12 0Z"/></svg></span> UAL501</td>
+<td>Boston Clearance, United 501, A320 with information Quebec, request IFR clearance to San Francisco</td>
+</tr>
+</tbody>
+</table>
+<p>In this example:</p>
+<ul>
+<li><strong>Boston Clearance</strong> is the frequency or sector you are communicating with.</li>
+<li><strong>United 501</strong> is your aircraft’s callsign.</li>
+<li><strong>A320</strong> is the type of aircraft you are flying.</li>
+<li><strong>With information Quebec</strong> means you have the current ATIS information Quebec.</li>
+<li><strong>Request IFR clearance to San Francisco</strong> specifies your destination airport.</li>
+</ul>
+</div>
+</div>
+</div>
 </li>
 </ol>
 <h3 id="understanding-your-ifr-clearance">Understanding your IFR clearance</h3>
 <p>After requesting your IFR clearance, you will receive a response from Clearance Delivery with specific instructions. Here’s an example of what you might hear:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">ICAO Phraseology</label><label for="__tabbed_2_2">FAA Phraseology</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <table>
 <thead>
 <tr>
@@ -1482,7 +1509,42 @@
 <li><strong>"ARBO 8N departure":</strong> This specifies the departure procedure you are cleared to follow. The ARBO 8N is a Standard Instrument Departure (SID) that outlines the route you should follow immediately after takeoff. It’s important to review the SID chart, if available, to understand the route and any altitude or speed restrictions.</li>
 <li><strong>"Squawk 1000":</strong> This is the transponder code you need to set in your aircraft’s transponder. This code allows ATC to track your aircraft on radar. Enter the squawk code into your transponder and verify that it is active.</li>
 </ul>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>Speaker</th>
+<th>Response</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.733 11.831c.324 0 .442.028.564.084a.732.732 0 0 1 .3.249c.077.11.126.22.186.538l.265 1.415.015.081H2.937l.015-.08.265-1.416c.06-.318.109-.429.186-.538a.732.732 0 0 1 .3-.25c.122-.055.24-.083.564-.083zm1.149 3.052-1.227 1.743c-.174.246-.248.325-.343.401a.894.894 0 0 1-.315.163c-.117.034-.224.05-.525.05H5.528c-.301 0-.408-.016-.525-.05a.894.894 0 0 1-.315-.163c-.095-.076-.169-.155-.343-.401l-1.227-1.743-.007-.01h17.778a1.073 1.073 0 0 1-.007.01zM2.232 0h19.536c.482 0 .657.05.834.144a.983.983 0 0 1 .408.41c.095.176.145.35.145.833v.945c0 .482-.05.657-.145.833a.983.983 0 0 1-.408.409c-.177.094-.352.144-.834.144H2.232c-.482 0-.657-.05-.834-.144a.983.983 0 0 1-.408-.41c-.095-.175-.145-.35-.145-.832v-.945C.845.904.895.73.99.553a.983.983 0 0 1 .408-.409C1.575.05 1.75 0 2.232 0Zm5.273 4.733 1.028 6.422H4.637L2.75 4.731Zm8.651 0-1.088 6.422H9.209L8.121 4.732Zm5.094.002-1.88 6.422h-3.63l1.025-6.423zM8.106 18.254a17.992 17.992 0 0 1 1.567 5.45.338.338 0 0 0 .335.296h3.972c.17 0 .313-.127.334-.296a17.993 17.993 0 0 1 1.567-5.45z"/></svg></span> Seattle Clearance</td>
+<td>United 501, Seattle Clearance, cleared to San Francisco, HAROB6 departure, with the ERAVE transition, then as filed. Climb via SID except maintain 3,000. Departure frequency 133.65. Squawk 4231</td>
+</tr>
+</tbody>
+</table>
+<p>In this example: </p>
+<ul>
+<li><strong>"HAROB6 departure":</strong> This is the Standard Instrument Departure (SID) assigned to the aircraft. A SID is a pre-defined route that helps streamline departures from the airport and that the pilot should follow after take-off. It’s important to review the SID chart, if available, to understand the route and any altitude or speed restrictions.</li>
+<li><strong>"ERAVE transition":</strong> This specifies a waypoint or fix that the aircraft will navigate to after completing the HAROB6 SID. This transition connects the SID to the enroute portion of the flight.</li>
+<li><strong>"Then as filed":</strong> After reaching the ERAVE transition point, the aircraft will follow the route filed in its flight plan.</li>
+<li><strong>"Climb via SID except maintain 3,000":</strong> Instructs the pilot to follow the SID chart except for the initial climb altitude, limiting the aircraft to a maximum altitude of 3,000 feet until further instructions.</li>
+<li><strong>"Departure frequency 133.65":</strong> The frequency for departure control. Once airborne and handed off by the tower, the pilot will contact departure control on 133.65 for further instructions.</li>
+<li><strong>"Squawk 4231":</strong> This is the transponder code you need to set in your aircraft’s transponder. This code allows ATC to track your aircraft on radar. Enter the squawk code into your transponder and verify that it is active.</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Unlike standard ICAO phraseology, <strong>the assigned departure runway is not included in the initial clearance</strong>. Instead, you will receive your runway assignment when you request taxi instructions. This mirrors real-world procedures at many busy airports, where the departure runway may be determined closer to the time of taxi to account for operational factors like traffic flow, wind conditions, or runway availability.</p>
+</div>
+</div>
+</div>
+</div>
 <p>Following this, you will have to readback all the information to show that you understood correctly.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">ICAO Phraseology</label><label for="__tabbed_3_2">FAA Phraseology</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <table>
 <thead>
 <tr>
@@ -1497,7 +1559,29 @@
 </tr>
 </tbody>
 </table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>Speaker</th>
+<th>Response</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.56 3.91c.59.59.59 1.54 0 2.12l-3.89 3.89 2.12 9.19-1.41 1.42-3.88-7.43L9.6 17l.36 2.47-1.07 1.06-1.76-3.18-3.19-1.77L5 14.5l2.5.37L11.37 11 3.94 7.09l1.42-1.41 9.19 2.12 3.89-3.89c.56-.58 1.56-.58 2.12 0Z"/></svg></span> UAL501</td>
+<td>Cleared to San Francisco, HAROB6 departure, with the ERAVE transition, then as filed. Climb via SID except maintain 3,000. Departure frequency 133.65. Squawk 4231, United 501</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
 <p>ATC will confirm the readback:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">ICAO Phraseology</label><label for="__tabbed_4_2">FAA Phraseology</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <table>
 <thead>
 <tr>
@@ -1516,6 +1600,29 @@
 </tr>
 </tbody>
 </table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>Speaker</th>
+<th>Response</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.733 11.831c.324 0 .442.028.564.084a.732.732 0 0 1 .3.249c.077.11.126.22.186.538l.265 1.415.015.081H2.937l.015-.08.265-1.416c.06-.318.109-.429.186-.538a.732.732 0 0 1 .3-.25c.122-.055.24-.083.564-.083zm1.149 3.052-1.227 1.743c-.174.246-.248.325-.343.401a.894.894 0 0 1-.315.163c-.117.034-.224.05-.525.05H5.528c-.301 0-.408-.016-.525-.05a.894.894 0 0 1-.315-.163c-.095-.076-.169-.155-.343-.401l-1.227-1.743-.007-.01h17.778a1.073 1.073 0 0 1-.007.01zM2.232 0h19.536c.482 0 .657.05.834.144a.983.983 0 0 1 .408.41c.095.176.145.35.145.833v.945c0 .482-.05.657-.145.833a.983.983 0 0 1-.408.409c-.177.094-.352.144-.834.144H2.232c-.482 0-.657-.05-.834-.144a.983.983 0 0 1-.408-.41c-.095-.175-.145-.35-.145-.832v-.945C.845.904.895.73.99.553a.983.983 0 0 1 .408-.409C1.575.05 1.75 0 2.232 0Zm5.273 4.733 1.028 6.422H4.637L2.75 4.731Zm8.651 0-1.088 6.422H9.209L8.121 4.732Zm5.094.002-1.88 6.422h-3.63l1.025-6.423zM8.106 18.254a17.992 17.992 0 0 1 1.567 5.45.338.338 0 0 0 .335.296h3.972c.17 0 .313-.127.334-.296a17.993 17.993 0 0 1 1.567-5.45z"/></svg></span> Seattle Clearance</td>
+<td>United 501, readback correct. Contact ground 121.7 when ready for pushback or engine start</td>
+</tr>
+<tr>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.56 3.91c.59.59.59 1.54 0 2.12l-3.89 3.89 2.12 9.19-1.41 1.42-3.88-7.43L9.6 17l.36 2.47-1.07 1.06-1.76-3.18-3.19-1.77L5 14.5l2.5.37L11.37 11 3.94 7.09l1.42-1.41 9.19 2.12 3.89-3.89c.56-.58 1.56-.58 2.12 0Z"/></svg></span> UAL501</td>
+<td>121.7 when ready, United 501</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
 
 
 
