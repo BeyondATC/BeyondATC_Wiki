@@ -1384,6 +1384,10 @@
 <p>Currently, there are no plans to implement live traffic or support any other injectors. </p>
 </details>
 <details class="info">
+<summary>Will you update the traffic data?</summary>
+<p>We plan to update the dataset to provide more relevant traffic data for the simulator. However, please keep in mind that this data is costly, and while we are committed to making updates, we currently do not have a specific timeline for when this will happen as it has to be discussed with the data provider. </p>
+</details>
+<details class="info">
 <summary>Which models will BeyondATC use for AI Traffic?</summary>
 <p>BeyondATC will use whatever models you have installed in your simulator, including any combination of AIG, FSLTL, and FS Traffic.</p>
 </details>
@@ -1423,6 +1427,19 @@
 <details class="info">
 <summary>How do I set up everything to use traffic with BeyondATC?</summary>
 <p>Please follow our setup guide <a href="../../onboarding/getting-started">here</a></p>
+</details>
+<details class="info">
+<summary>There is not enough traffic</summary>
+<p>BeyondATC uses historical FR24 data, so traffic density may not always meet your expectations. Here are a few factors that might explain variations in traffic:  </p>
+<ol>
+<li><strong>Seasonal variations</strong>: Traffic density can be affected by the time of year, especially at airports with significant seasonal changes in activity. The data represents one week from earlier this year.  </li>
+<li><strong>Simulator time</strong>: Traffic is loaded according to the simulator's time setting. For example, if you spawn at night at an airport, you might see less traffic or no movement due to curfews.  </li>
+<li><strong>Model installation</strong>: Ensure your models are correctly installed. If a model is missing, fewer aircraft will be injected into the simulator.  </li>
+</ol>
+</details>
+<details class="info">
+<summary>Traffic is not moving</summary>
+<p>Injected aircraft will begin moving once they reach their scheduled departure time. It may take a little while before you notice movement at the airport.</p>
 </details>
 <details class="info">
 <summary>Can traffic backtrack on a runway?</summary>
