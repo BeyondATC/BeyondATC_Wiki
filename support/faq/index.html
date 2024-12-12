@@ -16,11 +16,11 @@
         <link rel="prev" href="../bug-reporting/">
       
       
-        <link rel="next" href="../common-issues/update/">
+        <link rel="next" href="../common-issues/stucklogin/">
       
       
       <link rel="icon" href="../../assets/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
     
     
       
@@ -28,7 +28,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.35f28582.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.3cba04c6.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -52,7 +52,7 @@
     
       <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -148,7 +148,7 @@
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -180,13 +180,13 @@
       
     
     
-      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
       <label class="md-header__button md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -195,20 +195,20 @@
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
           <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
             
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
           </a>
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
       
@@ -327,7 +327,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../resources/resources/" class="md-tabs__link">
+        <a href="../../resources/" class="md-tabs__link">
           
   
     
@@ -789,6 +789,8 @@
     
       
         
+          
+        
       
     
     
@@ -805,16 +807,19 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
-            
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../resources/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     Resources
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
@@ -823,25 +828,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../resources/resources/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Resources
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
           </ul>
@@ -1050,6 +1036,10 @@
       
         
       
+        
+      
+        
+      
     
     
       
@@ -1085,6 +1075,48 @@
             Common issues
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../common-issues/stucklogin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stuck in the login screen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../common-issues/fatal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fatal error
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -1230,12 +1262,20 @@
 </details>
 <details class="info">
 <summary>How much does BeyondATC cost?</summary>
-<p>The basic pack is priced at $29.99. This pack includes all core features, with no additional purchases required unless you choose to buy Premium Characters for enhanced voice options. Additionally, a Supporter Pack is available for $59.99, granting access to the experimental branch where new features are introduced first for testing.</p>
+<p>The basic pack is priced at $29.99. This pack includes all core features, with no additional purchases required unless you choose to buy Premium Characters for enhanced voice options. Additionally, a Supporter Pack is available for $59.99 if you want to support our development, granting access to the experimental branch where new features are introduced first for testing as a thank you.</p>
 <p>For detailed information on pricing and available options, please visit our <a href="../../onboarding/pricing/">pricing page</a>.</p>
 </details>
 <details class="info">
 <summary>Is BeyondATC a one-time purchase?</summary>
 <p>Yes! BeyondATC comes with a large amount of Premium Characters included in the base purchase (about an hour of speaking time), and that is yours to use from the moment you purchase the product. However, you are not required to use this voice model at all. The product works entirely from start to finish with the Basic Voice Model, and requires no additional purchases of any kind. Additionally, it will include all future updates and upcoming features!</p>
+</details>
+<details class="info">
+<summary>What is the Supporter's Pack?</summary>
+<p>The Supporter's Pack is a pack that you can buy to support the development of BeyondATC. We give access to the experimental branch as a 'thank you' to our users so you get something fun in return for your donation. What the experimental branch is NOT is a paywall for features. All features that start in experimental will end up in the public branch. So we want to encourage all users to think of the Supporter's Pack in this way - please do not purchase the Supporter's Pack to get a single feature. Do so only if you want to support our development. </p>
+</details>
+<details class="info">
+<summary>Is BeyondATC powered by AI?</summary>
+<p>We use the latest in AI technologies to process your voice, decide what the ATC should do, and generate highly realistic responses with AI voices. However, to keep the program affordable we do not use a LLM (Large Language Model) such as Gemini or ChatGPT.</p>
 </details>
 <details class="info">
 <summary>Does BeyondATC require an active internet connection?</summary>
@@ -1334,16 +1374,6 @@
 </details>
 <h2 id="ai-traffic">AI Traffic</h2>
 <details class="info">
-<summary>What should I expect from AI Traffic?</summary>
-<p>Traffic is currently available in alpha, this means its a really early version of the traffic product. We believe it will give you plenty of enjoyment in its current state but there will be issues, there may be crashes of BATC and features may be missing. If you find traffic in its current state does not enhance your experience, you can disable it from within the options menu or alternatively if you find the build unstable, switch back the core EA version from your accounts page.</p>
-<p>We would greatly appreciate if you could send your reports, including log files and any other relevant information asked in the thread, in <a href="https://discord.com/channels/1082413096045391915/1280653893570658325">⁠traffic-alpha-feedback</a>. Your patience and understanding are invaluable as the dev team work on improving this feature.</p>
-</details>
-<details class="info">
-<summary>How can I get AI Traffic with BeyondATC?</summary>
-<p>AI traffic is available for supporters only. To access this feature, you need to upgrade from the basic pack to the supporter pack for $29.99. Supporters can activate the experimental branch in the account section in BeyondATC.</p>
-<p>Traffic will be available to everyone (basic pack) later at no extra cost.</p>
-</details>
-<details class="info">
 <summary>What is the traffic source?</summary>
 <p>BeyondATC uses data from FlightRadar24, using a historic week of data. This includes all IFR flights, GA included. </p>
 </details>
@@ -1358,43 +1388,36 @@
 <p>BeyondATC will use whatever models you have installed in your simulator, including any combination of AIG, FSLTL, and FS Traffic.</p>
 </details>
 <details class="info">
+<summary>BeyondATC says that no traffic liveries are found</summary>
+<p>Make sure you have installed models for at least one provider (AIG, FSLTL or FS Traffic) in the community folder of the MSFS version you are using. If it still doesn't work, start BeyondATC as an administrator.</p>
+</details>
+<details class="info">
+<summary>Can BeyondATC use the new traffic models that come with MSFS 2024?</summary>
+<p>The new traffic models included with MSFS 2024 currently do not support external injection outside of the simulator’s default traffic engine. We are investigating this further, but as of now, they may not be usable by third-party applications. Updates will follow as we learn more.</p>
+</details>
+<details class="info">
 <summary>Can AI traffic use ground services?</summary>
 <p>Currently, AI traffic cannot use ground services or jetways due to how BeyondATC injects its traffic. Implementing this would require BeyondATC to inject its own pushback tug into the simulator, which might be considered later as an update. Keep in mind that the dev team will focus on core features before considering cosmetic enhancements. </p>
 </details>
 <details class="info">
 <summary>What features are available with AI Traffic?</summary>
 <ul>
-<li>Traffic data for the globe based on live traffic from an historic week of data, limited to any aircraft flying IFR with an active transponder</li>
-<li>Ground, departure, arrival traffic to and from the airports you have planned in Simbrief for your flight</li>
-<li>Traffic fully managed by Beyond ATC including parking, runway and procedure assignments</li>
-<li>Parking spots represent the actual parking spot of the aircraft in real life, irrespective of the parking assignments in the airport scenery</li>
-<li>Support for FSLTL, AIG and FS Traffic models - at least one of which must be installed</li>
-<li>Initial separation handling of aircraft at injection</li>
-<li>Ability to use premium, basic or turn off voices entirely for traffic, separately from the voice setting being used for your the player.</li>
-<li>Traffic managed by ATC out to 200nm from the player even without those aircraft having to be present in the simulator, saving valuable sim resources.</li>
-<li>A slider that limits traffic based on a time range from our data set - the higher the slider, the further out the time range.</li>
-</ul>
-</details>
-<details class="info">
-<summary>What features will come in future builds for AI Traffic?</summary>
-<ul>
-<li>Enroute traffic not flying to or from either of the airports you have planned.</li>
-<li>Any ground services, in particular a tug for pushback</li>
-<li>Full separation handling through the entire traffic aircraft flight</li>
-<li>Continued improvements to handling procedures</li>
-</ul>
-</details>
-<details class="info">
-<summary>What features are available with AI Traffic?</summary>
-<ul>
-<li>Aircraft might float while on the ground at certain airports or with certain models</li>
-<li>Aircraft may follow strange flight plans</li>
-<li>Aircraft may enter the runway at the wrong point</li>
-<li>Aircraft may turn off abruptly or too fast from the runway on landing</li>
-<li>Aircraft may taxi through other parked aircraft at ramps that allow taxi through</li>
-<li>Aircraft may land too close together</li>
-<li>Aircraft may get stuck handing over to ground from tower on landing</li>
-<li>BATC may crash with fatal errors</li>
+<li>A <strong>custom built injector</strong> just for BeyondATC using a comprehensive 3D simulation of every plane's logic and movement.</li>
+<li><strong>Flight operations from all over the world</strong>, boasting over 1 million+ flights from every part of the globe.</li>
+<li><strong>Gate-accurate airlines</strong> for every airport.</li>
+<li><strong>Airframe performance calculations</strong>, meaning each airframe type will takeoff, land, bank, and pitch according to its performance characteristics.</li>
+<li><strong>Full integration of traffic into the ATC system</strong>. All aircraft and ATC will call in and make requests for every stage of flight, accurate to its real world flight plan using the same system as the player.</li>
+<li><strong>Aircraft agnostic preferencin</strong>g - BeyondATC doesn't know the difference between the player's aircraft and traffic meaning it will handle and prioritize your plane in the same way it does traffic making for a very realistic simulation of action priority.</li>
+<li><strong>Taxi logic</strong> which will reserve paths along the airport and give way to passing aircraft, resulting in many fewer "standoff situations" than default traffic where aircraft will end up facing each other along a taxiway, unable to move.</li>
+<li><strong>Runway logic and simulation</strong>, aircraft are told to line up, hold short, cross runways (with a higher priority the longer they are waiting) and are given clearance according to a deep runway logic simulation. Runway simulation accounts for wake turbulence according to airframe, waiting for vortices to clear before releasing an aircraft for takeoff. An aircraft will be warned of wake turbulence if the preceding aircraft is of a larger airframe than its own.</li>
+<li><strong>"Bird's Eye Airport Logic"</strong> where each controller of an airport has situational awareness of what's happening in other sectors of the airport, coordinating their actions according to others situations.</li>
+<li><strong>Full traffic representation</strong> for all stages of flight; clearance, pushback, taxi, takeoff, departure, center, approach, landing, taxi in, shut down.</li>
+<li><strong>Traffic go arounds</strong>: traffic will be told to go around if the landing runway is occupied or unsafe. The traffic then flies the full vectored circuit back to the IAF where it will attempt another landing. The player will also be told to go around if traffic is on the runway or the runway deemed unsafe.</li>
+<li><strong>Multi-Frequency airport comms</strong>: airports are broken up into multiple comm frequencies as determined by custom ops data. This keeps comms clear and contextual to which runway the comm is assigned. (Data for this feature is continuing to be expanded. Currently we have data for about 25 airports).</li>
+<li><strong>Airplane sequencing</strong>, aircraft will be sequenced in to maintain a distance between them according to their speed and airframe. The player is included in these calculations. </li>
+<li><strong>Pushback tugs</strong>, tugs will pushback the aircraft from the gate.</li>
+<li><strong>Custom takeoff and landing animations</strong>, these animations are custom built per airframe. Aircraft will flare on landing, and pitch up before lifting off on takeoff. We believe no other traffic injector, including the MS default injector matches the quality and breadth of these animations.</li>
+<li><strong>Full integration of traffic into the local BeyondATC airport map</strong>, and a wider view enroute traffic map which can be downloaded <a href="https://www.beyondatc.net/download">here</a>.</li>
 </ul>
 </details>
 <details class="info">
@@ -1402,8 +1425,8 @@
 <p>Please follow our setup guide <a href="../../onboarding/getting-started">here</a></p>
 </details>
 <details class="info">
-<summary>How does the slider work?</summary>
-<p>The slider controls the time range for aircraft parked at the gates. A setting of 1 represents a short time range, while 10 represents a longer one. The higher the slider value, the more aircraft will be parked at the gates. This is because planes will remain at the gates longer before their scheduled departure or after their arrival, based on real-world data.</p>
+<summary>Can traffic backtrack on a runway?</summary>
+<p>At the moment, traffic cannot backtrack on a runway. You might experience weird traffic behaviors in airports where backtracking is mandatory.</p>
 </details>
 <h2 id="troubleshooting-issues">Troubleshooting issues</h2>
 <details class="info">
@@ -1461,14 +1484,14 @@
             </div>
           
           
-  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
 
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
   Back to top
 </button>
         
@@ -1484,7 +1507,7 @@
           <a href="../bug-reporting/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Bug reporting">
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
             <div class="md-footer__title">
               <span class="md-footer__direction">
@@ -1498,18 +1521,18 @@
         
         
           
-          <a href="../common-issues/update/" class="md-footer__link md-footer__link--next" aria-label="Next: BeyondATC update failed">
+          <a href="../common-issues/stucklogin/" class="md-footer__link md-footer__link--next" aria-label="Next: Stuck in the login screen">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                BeyondATC update failed
+                Stuck in the login screen
               </div>
             </div>
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
             </div>
           </a>
         
@@ -1542,7 +1565,7 @@
       
     
     <a href="https://discord.gg/beyondatc" target="_blank" rel="noopener" title="discord.gg" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485 485 0 0 0 404.081 32.03a1.82 1.82 0 0 0-1.923.91 338 338 0 0 0-14.9 30.6 447.9 447.9 0 0 0-134.426 0 310 310 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.7 483.7 0 0 0-119.688 37.107 1.7 1.7 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.02 2.02 0 0 0 .765 1.375 487.7 487.7 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348 348 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321 321 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251 251 0 0 0 9.109-7.137 1.82 1.82 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.81 1.81 0 0 1 1.924.233 235 235 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.4 301.4 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391 391 0 0 0 30.014 48.815 1.86 1.86 0 0 0 2.063.7A486 486 0 0 0 610.7 405.729a1.88 1.88 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541M222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241m195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"/></svg>
     </a>
   
 </div>
@@ -1557,10 +1580,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.code.copy", "content.tabs.link", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "navigation.instant", "search.highlight", "search.share", "search.suggest", "toc.integrate", "instant"], "search": "../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.code.copy", "content.tabs.link", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "navigation.instant", "search.highlight", "search.share", "search.suggest", "toc.integrate", "instant"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
+      <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
       
     
   </body>
