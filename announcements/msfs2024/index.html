@@ -1133,7 +1133,7 @@
 <p><strong>Traffic model issues</strong>:  </p>
 <ul>
 <li><strong>FSLTL and AIG Models</strong>: The current MSFS 2024 build has known issues with animations and lights for FSLTL and AIG traffic models. Both teams are actively working on fixes.  </li>
-<li><strong>FSLTL tyres sound</strong>: In external views, FSLTL models may produce a tyre sound, as if aircraft are continuously landing. This issue is being investigated.  </li>
+<li><strong>FSLTL tyres sound</strong>: In external views, FSLTL models may produce a tyre sound, as if aircraft are continuously landing. This issue is being investigated. A temporary fix is available below.</li>
 </ul>
 </li>
 <li>
@@ -1214,6 +1214,12 @@
 <p class="admonition-title">Using MSFS Addons Linker</p>
 <p>To avoid managing two separate addon locations and duplicating files, use <strong>MSFS Addons Linker</strong>, which now supports MSFS2024. This tool lets you store all your addons in one folder, no matter which simulator you launch. You can download it here: <a href="https://flightsim.to/file/1572/msfs-addons-linker">MSFS Addons Linker</a>.  </p>
 </div>
+<h3 id="fix-fsltl-tyres-sounds">Fix FSLTL tyres sounds</h3>
+<p>If you are running traffic while using the FSLTL model set, you will here a repeating 'barking dog' type sound while in the external view. We have a workaround for this issue.</p>
+<p>Download the <a href="https://discord.com/channels/1082413096045391915/1316526138180374598/1316526735763963955">attached zip</a> and extract the exe into the fsltl-traffic-base directory in your community folder. Run the exe while the sim is closed. </p>
+<p>If you wish to undo the change you will need to reinstall the FSLTL models from the FBW installer. </p>
+<p>This is a workaround while we work with Asobo on the underlying cause. The exe is a wrapped python script - it may trigger an AV warning that you would need to approve. The exe is signed with our BeyondATC code signature to try and avoid this.</p>
+<p><strong>This is only required if you are using MSFS2024 with FSLTL models and BATC traffic injection.</strong></p>
 <h2 id="faq">FAQ</h2>
 <p><strong>Q: Do I need to download a specific version of BeyondATC to make it work with MSFS 2024?</strong></p>
 <p>No, you can use the same BeyondATC app as you have used it in the past.</p>
