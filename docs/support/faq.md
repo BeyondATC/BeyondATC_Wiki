@@ -16,12 +16,18 @@ description: Find all frequently asked questions about BeyondATC and their answe
     **This means if you purchase BeyondATC, you are getting a program still under development. This program will include bugs and strange behavior. Please make sure you understand this before making your purchase decision.**
 
 ??? info "How much does BeyondATC cost?"
-    The basic pack is priced at $29.99. This pack includes all core features, with no additional purchases required unless you choose to buy Premium Characters for enhanced voice options. Additionally, a Supporter Pack is available for $59.99, granting access to the experimental branch where new features are introduced first for testing.
+    The basic pack is priced at $29.99. This pack includes all core features, with no additional purchases required unless you choose to buy Premium Characters for enhanced voice options. Additionally, a Supporter Pack is available for $59.99 if you want to support our development, granting access to the experimental branch where new features are introduced first for testing as a thank you.
 
     For detailed information on pricing and available options, please visit our [pricing page](../onboarding/pricing.md).
 
 ??? info "Is BeyondATC a one-time purchase?"
     Yes! BeyondATC comes with a large amount of Premium Characters included in the base purchase (about an hour of speaking time), and that is yours to use from the moment you purchase the product. However, you are not required to use this voice model at all. The product works entirely from start to finish with the Basic Voice Model, and requires no additional purchases of any kind. Additionally, it will include all future updates and upcoming features!
+
+??? info "What is the Supporter's Pack?"
+    The Supporter's Pack is a pack that you can buy to support the development of BeyondATC. We give access to the experimental branch as a 'thank you' to our users so you get something fun in return for your donation. What the experimental branch is NOT is a paywall for features. All features that start in experimental will end up in the public branch. So we want to encourage all users to think of the Supporter's Pack in this way - please do not purchase the Supporter's Pack to get a single feature. Do so only if you want to support our development. 
+
+??? info "Is BeyondATC powered by AI?"
+    We use the latest in AI technologies to process your voice, decide what the ATC should do, and generate highly realistic responses with AI voices. However, to keep the program affordable we do not use a LLM (Large Language Model) such as Gemini or ChatGPT.
 
 ??? info "Does BeyondATC require an active internet connection?"
     Yes, our voices use cloud-based technology and require an active connection to work.
@@ -114,16 +120,6 @@ description: Find all frequently asked questions about BeyondATC and their answe
 
 ## AI Traffic
 
-??? info "What should I expect from AI Traffic?"
-    Traffic is currently available in alpha, this means its a really early version of the traffic product. We believe it will give you plenty of enjoyment in its current state but there will be issues, there may be crashes of BATC and features may be missing. If you find traffic in its current state does not enhance your experience, you can disable it from within the options menu or alternatively if you find the build unstable, switch back the core EA version from your accounts page.
-
-    We would greatly appreciate if you could send your reports, including log files and any other relevant information asked in the thread, in [⁠traffic-alpha-feedback](https://discord.com/channels/1082413096045391915/1280653893570658325). Your patience and understanding are invaluable as the dev team work on improving this feature.
-
-??? info "How can I get AI Traffic with BeyondATC?"
-    AI traffic is available for supporters only. To access this feature, you need to upgrade from the basic pack to the supporter pack for $29.99. Supporters can activate the experimental branch in the account section in BeyondATC.
-
-    Traffic will be available to everyone (basic pack) later at no extra cost.
-
 ??? info "What is the traffic source?"
     BeyondATC uses data from FlightRadar24, using a historic week of data. This includes all IFR flights, GA included. 
 
@@ -137,41 +133,39 @@ description: Find all frequently asked questions about BeyondATC and their answe
 ??? info "Which models will BeyondATC use for AI Traffic?"
     BeyondATC will use whatever models you have installed in your simulator, including any combination of AIG, FSLTL, and FS Traffic.
 
+??? info "BeyondATC says that no traffic liveries are found"
+    Make sure you have installed models for at least one provider (AIG, FSLTL or FS Traffic) in the community folder of the MSFS version you are using. If it still doesn't work, start BeyondATC as an administrator.
+
+??? info "Can BeyondATC use the new traffic models that come with MSFS 2024?"
+    The new traffic models included with MSFS 2024 currently do not support external injection outside of the simulator’s default traffic engine. We are investigating this further, but as of now, they may not be usable by third-party applications. Updates will follow as we learn more.
+
 ??? info "Can AI traffic use ground services?"
     Currently, AI traffic cannot use ground services or jetways due to how BeyondATC injects its traffic. Implementing this would require BeyondATC to inject its own pushback tug into the simulator, which might be considered later as an update. Keep in mind that the dev team will focus on core features before considering cosmetic enhancements. 
 
 ??? info "What features are available with AI Traffic?"
-    - Traffic data for the globe based on live traffic from an historic week of data, limited to any aircraft flying IFR with an active transponder
-    - Ground, departure, arrival traffic to and from the airports you have planned in Simbrief for your flight
-    - Traffic fully managed by Beyond ATC including parking, runway and procedure assignments
-    - Parking spots represent the actual parking spot of the aircraft in real life, irrespective of the parking assignments in the airport scenery
-    - Support for FSLTL, AIG and FS Traffic models - at least one of which must be installed
-    - Initial separation handling of aircraft at injection
-    - Ability to use premium, basic or turn off voices entirely for traffic, separately from the voice setting being used for your the player.
-    - Traffic managed by ATC out to 200nm from the player even without those aircraft having to be present in the simulator, saving valuable sim resources.
-    - A slider that limits traffic based on a time range from our data set - the higher the slider, the further out the time range.
 
-??? info "What features will come in future builds for AI Traffic?"
-    - Enroute traffic not flying to or from either of the airports you have planned.
-    - Any ground services, in particular a tug for pushback
-    - Full separation handling through the entire traffic aircraft flight
-    - Continued improvements to handling procedures
-
-??? info "What features are available with AI Traffic?"
-    - Aircraft might float while on the ground at certain airports or with certain models
-    - Aircraft may follow strange flight plans
-    - Aircraft may enter the runway at the wrong point
-    - Aircraft may turn off abruptly or too fast from the runway on landing
-    - Aircraft may taxi through other parked aircraft at ramps that allow taxi through
-    - Aircraft may land too close together
-    - Aircraft may get stuck handing over to ground from tower on landing
-    - BATC may crash with fatal errors
+    - A **custom built injector** just for BeyondATC using a comprehensive 3D simulation of every plane's logic and movement.
+    - **Flight operations from all over the world**, boasting over 1 million+ flights from every part of the globe.
+    - **Gate-accurate airlines** for every airport.
+    - **Airframe performance calculations**, meaning each airframe type will takeoff, land, bank, and pitch according to its performance characteristics.
+    - **Full integration of traffic into the ATC system**. All aircraft and ATC will call in and make requests for every stage of flight, accurate to its real world flight plan using the same system as the player.
+    - **Aircraft agnostic preferencin**g - BeyondATC doesn't know the difference between the player's aircraft and traffic meaning it will handle and prioritize your plane in the same way it does traffic making for a very realistic simulation of action priority.
+    - **Taxi logic** which will reserve paths along the airport and give way to passing aircraft, resulting in many fewer "standoff situations" than default traffic where aircraft will end up facing each other along a taxiway, unable to move.
+    - **Runway logic and simulation**, aircraft are told to line up, hold short, cross runways (with a higher priority the longer they are waiting) and are given clearance according to a deep runway logic simulation. Runway simulation accounts for wake turbulence according to airframe, waiting for vortices to clear before releasing an aircraft for takeoff. An aircraft will be warned of wake turbulence if the preceding aircraft is of a larger airframe than its own.
+    - **"Bird's Eye Airport Logic"** where each controller of an airport has situational awareness of what's happening in other sectors of the airport, coordinating their actions according to others situations.
+    - **Full traffic representation** for all stages of flight; clearance, pushback, taxi, takeoff, departure, center, approach, landing, taxi in, shut down.
+    - **Traffic go arounds**: traffic will be told to go around if the landing runway is occupied or unsafe. The traffic then flies the full vectored circuit back to the IAF where it will attempt another landing. The player will also be told to go around if traffic is on the runway or the runway deemed unsafe.
+    - **Multi-Frequency airport comms**: airports are broken up into multiple comm frequencies as determined by custom ops data. This keeps comms clear and contextual to which runway the comm is assigned. (Data for this feature is continuing to be expanded. Currently we have data for about 25 airports).
+    - **Airplane sequencing**, aircraft will be sequenced in to maintain a distance between them according to their speed and airframe. The player is included in these calculations. 
+    - **Pushback tugs**, tugs will pushback the aircraft from the gate.
+    - **Custom takeoff and landing animations**, these animations are custom built per airframe. Aircraft will flare on landing, and pitch up before lifting off on takeoff. We believe no other traffic injector, including the MS default injector matches the quality and breadth of these animations.
+    - **Full integration of traffic into the local BeyondATC airport map**, and a wider view enroute traffic map which can be downloaded [here](https://www.beyondatc.net/download).
 
 ??? info "How do I set up everything to use traffic with BeyondATC?"
     Please follow our setup guide [here](../../onboarding/getting-started)
 
-??? info "How does the slider work?"
-    The slider controls the time range for aircraft parked at the gates. A setting of 1 represents a short time range, while 10 represents a longer one. The higher the slider value, the more aircraft will be parked at the gates. This is because planes will remain at the gates longer before their scheduled departure or after their arrival, based on real-world data.
+??? info "Can traffic backtrack on a runway?"
+    At the moment, traffic cannot backtrack on a runway. You might experience weird traffic behaviors in airports where backtracking is mandatory.
 
 
 ## Troubleshooting issues
