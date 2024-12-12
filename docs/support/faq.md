@@ -130,6 +130,9 @@ description: Find all frequently asked questions about BeyondATC and their answe
 
     Currently, there are no plans to implement live traffic or support any other injectors. 
 
+??? info "Will you update the traffic data?"
+    We plan to update the dataset to provide more relevant traffic data for the simulator. However, please keep in mind that this data is costly, and while we are committed to making updates, we currently do not have a specific timeline for when this will happen as it has to be discussed with the data provider. 
+
 ??? info "Which models will BeyondATC use for AI Traffic?"
     BeyondATC will use whatever models you have installed in your simulator, including any combination of AIG, FSLTL, and FS Traffic.
 
@@ -163,6 +166,16 @@ description: Find all frequently asked questions about BeyondATC and their answe
 
 ??? info "How do I set up everything to use traffic with BeyondATC?"
     Please follow our setup guide [here](../../onboarding/getting-started)
+
+??? info "There is not enough traffic"
+    BeyondATC uses historical FR24 data, so traffic density may not always meet your expectations. Here are a few factors that might explain variations in traffic:  
+
+    1. **Seasonal variations**: Traffic density can be affected by the time of year, especially at airports with significant seasonal changes in activity. The data represents one week from earlier this year.  
+    2. **Simulator time**: Traffic is loaded according to the simulator's time setting. For example, if you spawn at night at an airport, you might see less traffic or no movement due to curfews.  
+    3. **Model installation**: Ensure your models are correctly installed. If a model is missing, fewer aircraft will be injected into the simulator.  
+
+??? info "Traffic is not moving"
+    Injected aircraft will begin moving once they reach their scheduled departure time. It may take a little while before you notice movement at the airport.
 
 ??? info "Can traffic backtrack on a runway?"
     At the moment, traffic cannot backtrack on a runway. You might experience weird traffic behaviors in airports where backtracking is mandatory.
