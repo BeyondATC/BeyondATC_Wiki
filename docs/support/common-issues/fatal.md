@@ -1,7 +1,7 @@
 Fatal errors can be frustrating, but they can be resolvable with some troubleshooting. This guide will help you identify and address common causes of fatal errors in BeyondATC.
 
-## What is a Fatal Error?
-A fatal error is a critical issue that stops BeyondATC from running as expected. These errors can have various causes, so it's essential to review the logs to pinpoint the exact issue.
+## What is a fatal error?
+A fatal error is a critical issue that stops BeyondATC from running as expected. These errors can have various causes, so it's essential to review the logs to pinpoint the exact issue as the error message is generic.
 
 ## Steps to Troubleshoot Fatal Errors
 
