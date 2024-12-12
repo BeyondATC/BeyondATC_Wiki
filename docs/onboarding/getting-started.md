@@ -89,9 +89,6 @@ Settings in details:
 
 ### Setting up AI Traffic
 
-!!! info
-    AI Traffic is currently available only to owners of the **Supporters Pack**. It will be made available to all users later, at no additional cost.
-
 1. **Close any other traffic injector**  
    Make sure to close any other traffic injectors, but keep the aircraft models from your preferred injector. BeyondATC needs to have models from one of these injectors to work properly:
 
