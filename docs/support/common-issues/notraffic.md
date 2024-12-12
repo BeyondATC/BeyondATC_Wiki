@@ -7,5 +7,6 @@ If you don't see any traffic, please check the following:
     - Alpha India Group (AIG)
     - FS Traffic
 4. Make sure you launch BeyondATC as an administrator.
+5. If you have downsized the models, please reinstall them again without downsizing. As a reminder, FSLTL does not support any change to their models, which can bring other compatibility issues.
 
 If you don't see anything, try to reinstall BeyondATC. If you still don't manage to get traffic working, send your log files in [this discord channel](https://discord.com/channels/1082413096045391915/1316515604475416606)
