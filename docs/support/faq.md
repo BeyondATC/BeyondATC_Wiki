@@ -140,7 +140,7 @@ description: Find all frequently asked questions about BeyondATC and their answe
     The new traffic models included with MSFS 2024 currently do not support external injection outside of the simulator’s default traffic engine. We are investigating this further, but as of now, they may not be usable by third-party applications. Updates will follow as we learn more.
 
 ??? info "Can AI traffic use ground services?"
-    Currently, AI traffic cannot use ground services or jetways due to how BeyondATC injects its traffic. Implementing this would require BeyondATC to inject its own pushback tug into the simulator, which might be considered later as an update. Keep in mind that the dev team will focus on core features before considering cosmetic enhancements. 
+    Currently, AI traffic can utilize pushback tugs injected by BeyondATC. However, injected AI aircraft are not yet able to use jetways. This functionality requires an update from Asobo to enable third-party software to trigger jetway operations for non-player aircrafts.
 
 ??? info "What features are available with AI Traffic?"
 
