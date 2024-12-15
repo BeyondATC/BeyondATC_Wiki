@@ -104,13 +104,10 @@ Settings in details:
 3. **Disable MSFS Traffic**  
     Before starting your flight, make sure you have disabled all traffic settings in MSFS.
 
-4. **Switch to the Experimental Branch**  
-   Go to your account page in BeyondATC and switch to the **Experimental** version. Then, launch **BeyondATC** (you may need to run it as an administrator if you don't see any traffic).
-
-5. **Check traffic settings in BeyondATC**  
+4. **Check traffic settings in BeyondATC**  
    In BeyondATC’s settings, confirm that **Traffic** is turned **ON**. The recommended traffic density is set to **5** for optimal performance.
 
-6. **Launch your flight**  
+5. **Launch your flight**  
    You’re now ready to launch your flight and enjoy the AI traffic integration!
     
 ---
