@@ -84,6 +84,12 @@ This is not possible. The core ATC interactions are still handled outside the LL
 
 ---
 
+**Does this mean no more "request not understood" or "did not copy"?**
+
+Not anymore! The LLM now handles all requests that fall outside the scope of the current ATC actions, ensuring you'll always receive a response!
+
+---
+
 **When will this update be available?**
 
 The experimental branch release is scheduled for early January 2025 for all our supporters. After testing, it will be made available to all users as part of a **free update**.
