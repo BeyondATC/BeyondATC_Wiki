@@ -3,7 +3,7 @@ hide:
   - navigation
   - toc
 
-og_image: https://wiki.beyondatc.net/assets/cards/card-msfs2024.png
+og_image: https://wiki.beyondatc.net/assets/cards/card-llm.png
 og_description: We are thrilled to announce the integration of a Large Language Model (LLM) into BeyondATC! This groundbreaking update represents a significant leap forward in our mission to provide the most immersive and realistic air traffic control experience for flight simulation.
 description: We are thrilled to announce the integration of a Large Language Model (LLM) into BeyondATC! This groundbreaking update represents a significant leap forward in our mission to provide the most immersive and realistic air traffic control experience for flight simulation.
 
