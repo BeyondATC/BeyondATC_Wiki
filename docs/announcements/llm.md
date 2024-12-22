@@ -86,7 +86,7 @@ This is not possible. The core ATC interactions are still handled outside the LL
 
 **Does this mean no more "request not understood" or "did not copy"?**
 
-Not anymore! The LLM now handles all requests that fall outside the scope of the current ATC actions, ensuring you'll always receive a response!
+Not anymore! The LLM now handles all questions that fall outside the scope of the current ATC actions, ensuring you'll always receive a response! But remember that it will not be able to make any decision making. All the LLM will do is purely informational.
 
 ---
 
