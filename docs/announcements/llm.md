@@ -25,7 +25,7 @@ We have built a robust framework that gives the LLM a comprehensive understandin
 
 **Reduced costs**
 
-Our proprietary, homegrown LLM is specifically designed for BeyondATC’s unique requirements. By running directly on the user’s local machine instead of relying on expensive server infrastructure, we have significantly reduced operational costs. This cost-efficient design enables us to offer this update as a **free enhancement** to all users.
+Our proprietary, homegrown LLM is specifically designed for BeyondATC’s unique requirements. By running directly a distributed model instead of relying on expensive server infrastructure, we have significantly reduced operational costs. This enables us to offer this update as a **free enhancement** to all users.
 
 ## Key features
 
