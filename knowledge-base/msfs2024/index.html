@@ -6,11 +6,11 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="This tutorial will help you to change the Core Engine if you are having performance issues or if you have any problem running BeyondATC on your computer.">
+        <meta name="description" content="All information, known issues and guide to get started with MSFS2024 and BeyondATC">
       
       
       
-        <link rel="canonical" href="https://wiki.beyondatc.net/knowledge-base/core-engine/">
+        <link rel="canonical" href="https://wiki.beyondatc.net/knowledge-base/msfs2024/">
       
       
       
@@ -20,7 +20,7 @@
     
     
       
-        <title>Change the BeyondATC Core Engine - BeyondATC Help Center</title>
+        <title>Getting started with Microsoft Flight Simulator 2024 and BeyondATC - BeyondATC Help Center</title>
       
     
     
@@ -57,22 +57,22 @@
     
 
     
-        <meta property="og:title" content="Change the BeyondATC Core Engine - BeyondATC Help Center" />
-        <meta name="twitter:title" content="Change the BeyondATC Core Engine - BeyondATC Help Center">
+        <meta property="og:title" content="Getting started with Microsoft Flight Simulator 2024 and BeyondATC - BeyondATC Help Center" />
+        <meta name="twitter:title" content="Getting started with Microsoft Flight Simulator 2024 and BeyondATC - BeyondATC Help Center">
     
 
     
         <meta property="og:type" content="website" />
     
 
-    <meta property="og:url" content="https://wiki.beyondatc.net/knowledge-base/core-engine/" />
+    <meta property="og:url" content="https://wiki.beyondatc.net/knowledge-base/msfs2024/" />
 
     
-        <meta property="og:image" content="https://wiki.beyondatc.net/assets/cards/card-core-engine.png" />
+        <meta property="og:image" content="https://wiki.beyondatc.net/assets/cards/card-msfs2024.png" />
         <meta property="og:image:width" content="1200">
         <meta property="og:image:height" content="630">
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:image" content="https://wiki.beyondatc.net/assets/cards/card-core-engine.png">
+        <meta name="twitter:image" content="https://wiki.beyondatc.net/assets/cards/card-msfs2024.png">
     
 
     
@@ -80,7 +80,7 @@
     
 
     
-        <meta property="og:description" content="This tutorial will help you to change the Core Engine if you are having performance issues or if you have any problem running BeyondATC on your computer.">
+        <meta property="og:description" content="All information, known issues and guide to get started with MSFS2024 and BeyondATC">
     
 
 
@@ -103,7 +103,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#change-the-beyondatc-core-engine" class="md-skip">
+        <a href="#getting-started-with-microsoft-flight-simulator-2024-and-beyondatc" class="md-skip">
           Skip to content
         </a>
       
@@ -156,7 +156,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Change the BeyondATC Core Engine
+              Getting started with Microsoft Flight Simulator 2024 and BeyondATC
             
           </span>
         </div>
@@ -1156,36 +1156,123 @@
                   
 
 
-<h1 id="change-the-beyondatc-core-engine">Change the BeyondATC Core Engine</h1>
-<p>The BeyondATC Core Engine has been reworked to prevent performance issues that can arise when it’s being throttled by certain system configurations. This typically happens when BeyondATC is competing for resources with other DirectX 3D applications, such as the Fenix, causing slowdowns. Since every system is unique, there isn’t a one-size-fits-all solution. To address this, BeyondATC gives you the option to choose between three 3D engines: Vulkan (default), OpenGL, or DirectX11.</p>
-<h2 id="when-should-i-consider-switching-the-core-engine">When should I consider switching the Core Engine?</h2>
-<p>Switching the BeyondATC Core Engine might be necessary if:</p>
+<h1 id="getting-started-with-microsoft-flight-simulator-2024-and-beyondatc">Getting started with Microsoft Flight Simulator 2024 and BeyondATC</h1>
+<p>Microsoft Flight Simulator 2024 is here, and we know many of you are excited to experience BeyondATC in this brand-new simulator! We’re happy to confirm that <strong>BeyondATC is fully compatible with MSFS 2024</strong>. This guide will walk you through the current limitations and how to configure your simulator for the best experience with BeyondATC.  </p>
+<h2 id="known-issues">Known issues</h2>
+<p>Before diving in, <strong>please review the following known limitations when using BeyondATC with MSFS 2024</strong>:  </p>
 <ul>
-<li>You notice performance lags related to traffic (that you can check by enabling the BeyondATC FPS counter in settings)</li>
-<li>The app freezes without any clear cause</li>
-<li>BeyondATC crashes without showing an error message</li>
+<li>
+<p><strong>Traffic model issues</strong>:  </p>
+<ul>
+<li><strong>FSLTL and AIG Models</strong>: The current MSFS 2024 build has known issues with animations and lights for FSLTL and AIG traffic models. Both teams are actively working on fixes.  </li>
+<li><strong>FSLTL tyres sound</strong>: In external views, FSLTL models may produce a tyre sound, as if aircraft are continuously landing. This issue is being investigated. A temporary fix is available below.</li>
 </ul>
-<p>If you encounter any of these issues, follow the steps below to switch the 3D engine:</p>
+</li>
+<li>
+<p><strong>Included traffic models</strong>:  </p>
+<ul>
+<li>The new traffic models included with MSFS 2024 currently do not support external injection outside of the simulator’s default traffic engine. We are investigating this further, but as of now, they may not be usable by third-party applications. Updates will follow as we learn more.  </li>
+</ul>
+</li>
+</ul>
+<h2 id="setting-up-msfs2024">Setting up MSFS2024</h2>
+<h3 id="disable-ai-traffic">Disable AI Traffic</h3>
+<p>To ensure compatibility with BeyondATC, disable AI traffic as follows:  </p>
 <ol>
-<li>You'll need to experiment to find out which engine works best for your system. Go to your BeyondATC installation folder. You will find two files: <code>BeyondATC_ForceDirectX11.bat</code> and <code>BeyondATC_ForceOpenGL.bat</code>. Running one of these files will force BeyondATC to use the respective engine.</li>
-<li>After launching BeyondATC using one of the .bat files, perform a complete flight and see if the issue persists.</li>
-<li>If no further problems occur during your test, you've successfully found the engine that works best for your system.</li>
-</ol>
-<p>For convenience, you can modify your BeyondATC shortcut to automatically launch the preferred engine without needing to run the <code>.bat</code> file every time. Here's how:</p>
-<ol>
-<li>Right-click on your BeyondATC shortcut and select <strong>Properties</strong>.</li>
-<li>In the <strong>Target</strong> field, add the appropriate line based on your chosen engine:<ul>
-<li>For DirectX11, add <code>-force-d3d11</code> at the end of the target path.</li>
-<li>For OpenGL, add <code>-force-opengl</code> at the end of the target path.</li>
+<li>
+<p><strong>Settings &gt; General &gt; Graphics</strong>  </p>
+<ul>
+<li>Traffic Airport Quality: <strong>OFF</strong>  </li>
+<li>Air Traffic: <strong>OFF</strong>  </li>
+</ul>
+</li>
+<li>
+<p><strong>Settings &gt; General &gt; Online</strong>  </p>
+<ul>
+<li>Aircraft Traffic Type: <strong>OFF</strong>  </li>
+<li>Multiplayer: <strong>OFF</strong>  </li>
+</ul>
+</li>
+<li>
+<p><strong>Settings &gt; VR &gt; VR Graphics</strong>  </p>
+<ul>
+<li>Traffic Airport Quality: <strong>OFF</strong>  </li>
+<li>Air Traffic: <strong>OFF</strong>  </li>
 </ul>
 </li>
 </ol>
-<figure>
-<p><img alt="BeyondATC shortcut edit" src="../../assets/kb/beyondatc_app_engine.png" />
-  </p>
-<figcaption>Update the shortcut target to force the selected engine to run</figcaption>
-</figure>
-<p>Now, your usual shortcut will automatically launch BeyondATC with the preferred engine.</p>
+<p><strong>If AI aircraft are still visible around the airport</strong>:  </p>
+<ul>
+<li>Return to the main menu and start a new flight.  </li>
+<li>Revisit each setting, scroll through to <strong>OFF</strong>, and save changes after resetting them.  </li>
+</ul>
+<h3 id="disable-default-atc">Disable Default ATC</h3>
+<p>Follow these steps to disable the default ATC:  </p>
+<ol>
+<li>
+<p><strong>Settings &gt; Accessibility</strong>  </p>
+<ul>
+<li>Turn Subtitles: <strong>OFF</strong>  </li>
+</ul>
+</li>
+<li>
+<p><strong>Settings &gt; Assistance</strong> (under Realism)  </p>
+<ul>
+<li>AI Radio Communications (ATC): <strong>OFF</strong>  </li>
+<li>ATC Enforce Flight Plan: <strong>OFF</strong>  </li>
+</ul>
+</li>
+<li>
+<p><strong>Settings &gt; General &gt; Sound</strong>  </p>
+<ul>
+<li>Set Character Voice to <strong>0</strong>  </li>
+</ul>
+</li>
+</ol>
+<h3 id="traffic-models">Traffic Models</h3>
+<p>BeyondATC requires third-party traffic models to function. These models must be installed in the simulator’s community folder. Make sure they are correctly placed in the new MSFS2024 directory.  </p>
+<p>Here’s the default location of the community folder for MSFS2024:  </p>
+<ul>
+<li>
+<p><strong>Steam version</strong>:<br />
+<code>C:\Users\[Your Username]\AppData\Roaming\Microsoft Flight Simulator 2024\Packages\Community</code>  </p>
+</li>
+<li>
+<p><strong>Microsoft Store version</strong>:<br />
+<code>C:\Users\[Your Username]\AppData\Local\Packages\Microsoft.Limitless_8wekyb3d8bbwe\LocalCache\Packages\Community</code>  </p>
+</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Using MSFS Addons Linker</p>
+<p>To avoid managing two separate addon locations and duplicating files, use <strong>MSFS Addons Linker</strong>, which now supports MSFS2024. This tool lets you store all your addons in one folder, no matter which simulator you launch. You can download it here: <a href="https://flightsim.to/file/1572/msfs-addons-linker">MSFS Addons Linker</a>.  </p>
+</div>
+<h3 id="fix-fsltl-tyres-sounds">Fix FSLTL tyres sounds</h3>
+<p>If you are running traffic while using the FSLTL model set, you will here a repeating 'barking dog' type sound while in the external view. We have a workaround for this issue.</p>
+<p>Download the <a href="https://cdn.discordapp.com/attachments/1234931086996541472/1315129194262429807/RemoveGroundSounds.zip?ex=6766c3c1&amp;is=67657241&amp;hm=acacfd6cae15462772610287fa3c2e5b81b981bee554c651e7c9f8f4a3a7d421&amp;">attached zip</a> and extract the exe into the fsltl-traffic-base directory in your community folder. Run the exe while the sim is closed. </p>
+<p>If you wish to undo the change you will need to reinstall the FSLTL models from the FBW installer. </p>
+<p>This is a workaround while we work with Asobo on the underlying cause. The exe is a wrapped python script - it may trigger an AV warning that you would need to approve. The exe is signed with our BeyondATC code signature to try and avoid this.</p>
+<p><strong>This is only required if you are using MSFS2024 with FSLTL models and BATC traffic injection.</strong></p>
+<h2 id="faq">FAQ</h2>
+<p><strong>Q: Do I need to download a specific version of BeyondATC to make it work with MSFS 2024?</strong></p>
+<p>No, you can use the same BeyondATC app as you have used it in the past.</p>
+<hr />
+<p><strong>Q: Do I need to pay anything to have MSFS 2024 compatibility?</strong></p>
+<p>No, MSFS 2024 compatibility has always been planned to be included in your purchase. It is then free of charge for both the early access and experimental build.</p>
+<hr />
+<p><strong>Q: I can't see any traffic in MSFS 2024</strong></p>
+<p>It is very likely that you do not have any models in the new community folder for MSFS 2024. Please check the 2024 community folder and make sure models are installed there. If yes, try to run BeyondATC as an administrator.</p>
+<hr />
+<p><strong>Q: Can BeyondATC use the new traffic models that come with MSFS 2024?</strong></p>
+<p>The new traffic models included with MSFS 2024 currently do not support external injection outside of the simulator’s default traffic engine. We are investigating this further, but as of now, they may not be usable by third-party applications. Updates will follow as we learn more.</p>
+<hr />
+<p><strong>Q: Can BeyondATC use the new inbuilt flight planner available in MSFS 2024?</strong></p>
+<p>No, BeyondATC cannot currently use the new inbuilt flight planner in MSFS 2024 because the necessary data is not accessible through an API.</p>
+<hr />
+<p><strong>Q: Can I use it with the new Career mode instead of the default ATC?</strong></p>
+<p>If you want to have all the points in your mission, it will require to follow and interact with the default ATC. It is still unclear if MSFS will allow third party developers to integrate their own solution into career mode, especially for ATC.</p>
+<hr />
+<p><strong>Q: All frequencies disappeared! What can I do?</strong></p>
+<p>If you have copied the entire 2020 community folder into 2024, you have probably installed the navigation data from Navigraph, which is not supported. <strong>Please, keep in mind that you should not copy every single addon into 2024 community folder without checking its compatibility before.</strong></p>
 
 
 
