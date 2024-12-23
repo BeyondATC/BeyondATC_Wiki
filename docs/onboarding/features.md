@@ -16,10 +16,10 @@ List of all available features:
 - ILS Approaches, Visual Approaches based on weather, Vectors and more
 - Ever-expanding list of custom user data for Airport Specific SOPs
 - VR Interface (MSFS toolbar usable in VR)
+- Traffic injection and control
 
 List of features that are NOT available but are planned:
 
-- Traffic Injection and Control (available for supporters only as an experimental feature)
 - VFR Flights
 - Emergency Procedures
 - Oceanic Procedures

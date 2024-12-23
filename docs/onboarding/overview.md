@@ -17,6 +17,6 @@ BeyondATC offers a significant upgrade to your flight simulation experience, com
 
 | Title                     | Detail                                                                                                           |
 | ------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| Compatibility             | :material-check: Microsoft Flight Simulator 2020 <br> :material-check: Microsoft Flight Simulator 2024 (planned) |
+| Compatibility             | :material-check: Microsoft Flight Simulator 2020 <br> :material-check: Microsoft Flight Simulator 2024           |
 | Platform                  | :material-check: Steam <br> :material-check: Microsoft Store <br> :material-close: Xbox |
 | Requirements              | :material-check: Microsoft Flight Simulator<br>:material-check: Internet Connection<br>:material-check: Simbrief |
