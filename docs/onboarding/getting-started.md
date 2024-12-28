@@ -199,7 +199,7 @@ Go to Options &gt; Assistance Options
 
 ## BeyondATC interface
 
-![BeyondATC UI](../assets/getting-started/beyondatc-ui.jpg)
+![BeyondATC UI](../assets/getting-started/beyondatc-ui.png)
 
 ### 1. Main display area  
 This is the central information panel where communication with ATC and other important updates are displayed. It shows active communications, clearances, and ongoing messages during your flight. You can monitor all ATC interactions with you and traffic here.
