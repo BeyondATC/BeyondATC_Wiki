@@ -48,6 +48,8 @@
     
       <link rel="stylesheet" href="../../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../../stylesheets/spantable.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -1238,6 +1240,350 @@
 </table>
 <p>If wind speeds are below the specified threshold (<code>low_wind_speed</code>), the system will choose runways from the list of <code>low_wind_runways</code> for both arrivals and departures, unless there is a stronger tailwind.</p>
 <p>Currently, the airport SOPs implemented in BeyondATC are relatively simple in design, focusing primarily on essential factors such as wind conditions and runway assignments. However, there are plans to enhance and expand these procedures in the future to incorporate more complex decision-making processes and better simulate real-world operations.</p>
+<h2 id="list-of-airports-with-custom-operations">List of airports with custom operations</h2>
+<div class="span-table-wrapper">
+<table class="span-table">
+<tr>
+<td colspan="2">Continent</td>
+<td>Country</td>
+<td>Airports</td>
+</tr>
+<tr>
+<td colspan="2" rowspan="6">Africa</td>
+<td>Algeria</td>
+<td>DAAG</td>
+</tr>
+<tr>
+<td>Ethiopia</td>
+<td>HAAB</td>
+</tr>
+<tr>
+<td>Egypt</td>
+<td>HECA</td>
+</tr>
+<tr>
+<td>Kenya</td>
+<td>HKJK, HKMO</td>
+</tr>
+<tr>
+<td>South Africa</td>
+<td>FACT, FAOR</td>
+</tr>
+<tr>
+<td>Tunisia</td>
+<td>DTTA</td>
+</tr>
+<tr>
+<td colspan="2" rowspan="22">Asia</td>
+<td>Bahrain</td>
+<td>OBBI</td>
+</tr>
+<tr>
+<td>China</td>
+<td>ZBAA, ZBAD, ZGGG, ZJSY, ZSOF, ZSPD, ZUCK, ZUUU</td>
+</tr>
+<tr>
+<td>Hong Kong</td>
+<td>VHHH</td>
+</tr>
+<tr>
+<td>India</td>
+<td>VABB, VIDP, VOBL, VOHS, VOMM, VOVZ</td>
+</tr>
+<tr>
+<td>Indonesia</td>
+<td>WADD, WIII, WIMM, WIDD</td>
+</tr>
+<tr>
+<td>Iran</td>
+<td>OIIE</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>RJAA, RJBB, RJCC, RJCH, RJCO, RJFF, RJFO, RJFM, RJFK, RJFT, RJFU, RJGG, RJNK, RJOA, RJOB, RJOH, RJOO, RJOS, RJOT, RJSS, RJSN, RJTT</td>
+</tr>
+<tr>
+<td>Kuwait</td>
+<td>OKKK</td>
+</tr>
+<tr>
+<td>Lebanon</td>
+<td>OLBA</td>
+</tr>
+<tr>
+<td>Malaysia</td>
+<td>WMKK, WMKL</td>
+</tr>
+<tr>
+<td>Nepal</td>
+<td>VNLK, VNPL</td>
+</tr>
+<tr>
+<td>Oman</td>
+<td>OOMS</td>
+</tr>
+<tr>
+<td>Pakistan</td>
+<td>OPIS</td>
+</tr>
+<tr>
+<td>Philippines</td>
+<td>RPLL</td>
+</tr>
+<tr>
+<td>Saudi Arabia</td>
+<td>OEJN, OERK</td>
+</tr>
+<tr>
+<td>Singapore</td>
+<td>WSSS</td>
+</tr>
+<tr>
+<td>South Korea</td>
+<td>RKPC, RKTN, RKTU, RKJJ, RKPK, RKSI, RKSS</td>
+</tr>
+<tr>
+<td>Sri Lanka</td>
+<td>VCBI</td>
+</tr>
+<tr>
+<td>Taiwan</td>
+<td>RCSS, RCTP</td>
+</tr>
+<tr>
+<td>Thailand</td>
+<td>VTBD, VTBS, VTSP</td>
+</tr>
+<tr>
+<td>UAE</td>
+<td>OMDB, OMAA, OMSJ</td>
+</tr>
+<tr>
+<td>Vietnam</td>
+<td>VVDN, VVNB, VVTS</td>
+</tr>
+<tr>
+<td colspan="2" rowspan="33">Europe</td>
+<td>Austria</td>
+<td>LOWG, LOWS, LOWW</td>
+</tr>
+<tr>
+<td>Belgium</td>
+<td>EBBR, EBCI, EBLG</td>
+</tr>
+<tr>
+<td>Bulgaria</td>
+<td>LBSF, LBBG</td>
+</tr>
+<tr>
+<td>Croatia</td>
+<td>LDDU, LDOS, LDPL, LDRI, LDSP, LDZA, LDZD</td>
+</tr>
+<tr>
+<td>Cyprus</td>
+<td>LCPH, LCLK</td>
+</tr>
+<tr>
+<td>Czech Republic</td>
+<td>LKPR</td>
+</tr>
+<tr>
+<td>Denmark</td>
+<td>EKCH, EKYT</td>
+</tr>
+<tr>
+<td>Estonia</td>
+<td>EETN</td>
+</tr>
+<tr>
+<td>Finland</td>
+<td>EFHK, EFKT, EFIV, EFRO</td>
+</tr>
+<tr>
+<td>France</td>
+<td>LFBD, LFBE, LFBO, LFBZ, LFCK, LFKC, LFKJ, LFLC, LFLL, LFLS, LFML, LFMN, LFMP, LFMT, LFMU, LFPB, LFPG, LFPO, LFQQ, LFRN, LFRS, LFSB, LFST, LFTW</td>
+</tr>
+<tr>
+<td>Germany</td>
+<td>EDDB, EDDF, EDDG, EDDH, EDDK, EDDL, EDDM, EDDS, EDDV, EDXW</td>
+</tr>
+<tr>
+<td>Greece</td>
+<td>LGAV, LGIR, LGKL, LGKO, LGRP, LGKR, LGKV, LGMK, LGPZ, LGSA, LGSM, LGSR, LGTS, LGZA</td>
+</tr>
+<tr>
+<td>Hungary</td>
+<td>LHBP</td>
+</tr>
+<tr>
+<td>Ireland</td>
+<td>EICK, EIDW, EINN</td>
+</tr>
+<tr>
+<td>Italy</td>
+<td>LIBD, LIBP, LIBR, LICB, LICJ, LICT, LIMC, LIME, LIMF, LIMJ, LIML, LIMP, LIMZ, LIPE, LIPH, LIPR, LIPX, LIPY, LIPZ, LIRA, LIRF, LIRI, LIRN, LIRP, LIRQ, LIRZ</td>
+</tr>
+<tr>
+<td>Latvia</td>
+<td>EVRA</td>
+</tr>
+<tr>
+<td>Luxembourg</td>
+<td>ELLX</td>
+</tr>
+<tr>
+<td>Malta</td>
+<td>LMML</td>
+</tr>
+<tr>
+<td>Moldova</td>
+<td>LUKK</td>
+</tr>
+<tr>
+<td>Netherlands</td>
+<td>EHAM, EHGG</td>
+</tr>
+<tr>
+<td>Norway</td>
+<td>ENAL, ENBO, ENBR, ENCN, ENEV, ENGM, ENHD, ENKB, ENTO, ENVA, ENZV</td>
+</tr>
+<tr>
+<td>Poland</td>
+<td>EPGD, EPKK, EPKT, EPMO, EPPO, EPWA, EPWR</td>
+</tr>
+<tr>
+<td>Portugal</td>
+<td>LPPT, LPPR</td>
+</tr>
+<tr>
+<td>Romania</td>
+<td>LRCL, LROP, LRSB, LRTM</td>
+</tr>
+<tr>
+<td>Russia</td>
+<td>ULLI, URSS, UUDD, UUEE, UUWW</td>
+</tr>
+<tr>
+<td>Serbia</td>
+<td>LYBE</td>
+</tr>
+<tr>
+<td>Slovakia</td>
+<td>LZIB, LZKZ</td>
+</tr>
+<tr>
+<td>Slovenia</td>
+<td>LJLJ</td>
+</tr>
+<tr>
+<td>Spain</td>
+<td>LEAL, LEBB, LEBL, LEBZ, LEGR, LEMD, LEMG, LEPA, LERS, LESO, LEST, LESU, LEVC, LEVT, LEZG, LEZL</td>
+</tr>
+<tr>
+<td>Sweden</td>
+<td>ESGG, ESSA, ESSB</td>
+</tr>
+<tr>
+<td>Switzerland</td>
+<td>LSGG, LSGS, LSZA, LSZB, LSZH</td>
+</tr>
+<tr>
+<td>Turkey</td>
+<td>LTAC, LTAI, LTAU, LTBJ, LTBS, LTCC, LTCG, LTCI, LTFE, LTFG, LTFH, LTFJ, LTFM</td>
+</tr>
+<tr>
+<td>UK</td>
+<td>EGAA, EGAC, EGBB, EGCC, EGGD, EGGP, EGGW, EGHI, EGJB, EGJJ, EGKK, EGLL, EGNT, EGNX, EGPF, EGPH, EGPK, EGSS, EGTE</td>
+</tr>
+<tr>
+<td colspan="2" rowspan="7">North America</td>
+<td>Canada</td>
+<td>CYEG, CYHZ, CYOW, CYUL, CYVR, CYWG, CYYC, CYYZ</td>
+</tr>
+<tr>
+<td>Dominican Republic</td>
+<td>MDPC, MDPP, MDSD</td>
+</tr>
+<tr>
+<td>Honduras</td>
+<td>MHLM, MHTG</td>
+</tr>
+<tr>
+<td>Mexico</td>
+<td>MMGL, MMMX, MMMY, MMPR, MMSM, MMTJ, MMUN</td>
+</tr>
+<tr>
+<td>Nicaragua</td>
+<td>MNMG</td>
+</tr>
+<tr>
+<td>Panama</td>
+<td>MPTO</td>
+</tr>
+<tr>
+<td>USA</td>
+<td>KABQ, KAFW, KASE, KATL, KAUS, KAVL, KBDL, KBFI, KBFL, KBNA, KBOI, KBOS, KBUF, KBUR, KBWI, KCID, KCLE, KCLT, KCMA, KCNO, KCRP, KCRQ, KCVG, KDAB, KDAL, KDEN, KDCA, KDFW, KDTW, KEGE, KELP, KEUG, KEWR, KFAR, KFAT, KFLL, KGEG, KGFK, KGJT, KGSP, KHOU, KHPN, KIAD, KIAH, KILM, KIND, KJAN, KJAX, KJFK, KLAS, KLAX, KLGA, KLGB, KMCO, KMDW, KMEM, KMIA, KMCI, KMDT, KMKE, KMOT, KMSP, KMSY, KMYR, KOKC, KOAK, KOMA, KONT, KORD, KORF, KPAE, KPBI, KPDX, KPHL, KPHX, KPIT, KPVD, KRDU, KRIC, KRNO, KRNT, KROC, KRSW, KSAN, KSAT, KSAV, KSBA, KSBP, KSDF, KSEA, KSFO, KSGF, KSJC, KSMF, KSLC, KSMX, KSNA, KSTL, KSUX, KSYR, KTCM, KTEB, KTIW, KTLH, KTUS, KVNY, PAJN, PAFA, PANC</td>
+</tr>
+<tr>
+<td colspan="2" rowspan="6">Oceania</td>
+<td>Australia</td>
+<td>YBBN, YBCG, YBCS, YBMK, YMEN, YMML, YPAD, YPDN, YPJT, YPPH, YSBK, YSCB, YSSY</td>
+</tr>
+<tr>
+<td>Fiji</td>
+<td>NFFN</td>
+</tr>
+<tr>
+<td>French Polynesia</td>
+<td>NSFA</td>
+</tr>
+<tr>
+<td>Hawaii</td>
+<td>PHNL, PHOG, PHTO</td>
+</tr>
+<tr>
+<td>New Caledonia</td>
+<td>NWWW</td>
+</tr>
+<tr>
+<td>New Zealand</td>
+<td>NZAA, NZCH, NZHN, NZQN, NZWN</td>
+</tr>
+<tr>
+<td colspan="2" rowspan="8">South America</td>
+<td>Argentina</td>
+<td>SAAR, SACO, SAEZ, SASA, SASJ, SAWH</td>
+</tr>
+<tr>
+<td>Brazil</td>
+<td>SBAR, SBBE, SBBI, SBBR, SBCF, SBCG, SBCT, SBCY, SBEG, SBFI, SBFL, SBFZ, SBGL, SBGO, SBGR, SBJP, SBJR, SBJV, SBKP, SBNF, SBMN, SBMO, SBNT, SBPA, SBPS, SBPV, SBRF, SBRJ, SBRP, SBSG, SBSP, SBSV, SBTE, SBVT</td>
+</tr>
+<tr>
+<td>Chile</td>
+<td>SCCI, SCEL, SCFA, SCIE</td>
+</tr>
+<tr>
+<td>Colombia</td>
+<td>SKBO, SKCG, SKMD, SKRG</td>
+</tr>
+<tr>
+<td>Ecuador</td>
+<td>SEGU, SEQM</td>
+</tr>
+<tr>
+<td>Peru</td>
+<td>SPJC, SPZO</td>
+</tr>
+<tr>
+<td>Uruguay</td>
+<td>SUMU</td>
+</tr>
+<tr>
+<td>Venezuela</td>
+<td>SVMI</td>
+</tr>
+</table>
+</div>
 
 
 
