@@ -80,86 +80,64 @@ Currently, the airport SOPs implemented in BeyondATC are relatively simple in de
 ::spantable::
 | Continent @span | | Country | Airports |
 |-----------|-|---------|-----------|
-| Africa @span | | Algeria | DAAG |
+| North America @span | |  |  |
+| | | Canada | CYEG, CYHZ, CYOW, CYUL, CYVR, CYWG, CYYC, CYYZ |
+| | | USA | KABQ, KAFW, KASE, KATL, KAUS, KAVL, KBDL, KBFI, KBFL, KBNA, KBOI, KBOS, KBUF, KBUR, KBWI, KCID, KCLE, KCLT, KCMA, KCNO, KCRP, KCRQ, KCVG, KDAB, KDAL, KDCA, KDEN, KDFW, KDTW, KEGE, KELP, KEUG, KEWR, KFAR, KFAT, KFLL, KGEG, KGFK, KGJT, KGSP, KHOU, KHPN, KIAD, KIAH, KILM, KIND, KJAN, KJAX, KJFK, KLAS, KLAX, KLGA, KLGB, KMCI, KMCO, KMDT, KMDW, KMEM, KMIA, KMKE, KMSP, KMSY, KMYR, KOAK, KOKC, KOMA, KONT, KORD, KORF, KPAE, KPBI, KPDX, KPHL, KPHX, KPIT, KPVD, KRDU, KRIC, KRNO, KRNT, KROC, KRSW, KSAN, KSAT, KSAV, KSBA, KSBP, KSDF, KSEA, KSFO, KSGF, KSJC, KSLC, KSMF, KSMX, KSNA, KSTL, KSUX, KSYR, KTCM, KTEB, KTIW, KTLH, KTPA, KTUS, KVNY |
+| | | Mexico | MDPC, MDPP, MDSD, MHLM, MHTG, MMGL, MMMX, MMMY, MMPR, MMSM, MMTJ, MMUN, MNMG, MPTO, MRLB, MROC, MYNN |
+| Africa @span | |  |  |
+| | | Algeria | DAAG |
+| | | Tunisia | DTTA |
+| | | South Africa | FACT, FAOR |
+| | | Madagascar | FMEE |
 | | | Ethiopia | HAAB |
 | | | Egypt | HECA |
 | | | Kenya | HKJK, HKMO |
-| | | South Africa | FACT, FAOR |
-| | | Tunisia | DTTA |
-| Asia @span | | Bahrain | OBBI |
-| | | China | ZBAA, ZBAD, ZGGG, ZJSY, ZSOF, ZSPD, ZUCK, ZUUU |
-| | | Hong Kong | VHHH |
-| | | India | VABB, VIDP, VOBL, VOHS, VOMM, VOVZ |
-| | | Indonesia | WADD, WIII, WIMM, WIDD |
-| | | Iran | OIIE |
-| | | Japan | RJAA, RJBB, RJCC, RJCH, RJCO, RJFF, RJFO, RJFM, RJFK, RJFT, RJFU, RJGG, RJNK, RJOA, RJOB, RJOH, RJOO, RJOS, RJOT, RJSS, RJSN, RJTT |
-| | | Kuwait | OKKK |
-| | | Lebanon | OLBA |
-| | | Malaysia | WMKK, WMKL |
-| | | Nepal | VNLK, VNPL |
-| | | Oman | OOMS |
-| | | Pakistan | OPIS |
-| | | Philippines | RPLL |
-| | | Saudi Arabia | OEJN, OERK |
-| | | Singapore | WSSS |
-| | | South Korea | RKPC, RKTN, RKTU, RKJJ, RKPK, RKSI, RKSS |
-| | | Sri Lanka | VCBI |
-| | | Taiwan | RCSS, RCTP |
-| | | Thailand | VTBD, VTBS, VTSP |
-| | | UAE | OMDB, OMAA, OMSJ |
-| | | Vietnam | VVDN, VVNB, VVTS |
-| Europe @span | | Austria | LOWG, LOWS, LOWW |
+| Europe @span | |  |  |
 | | | Belgium | EBBR, EBCI, EBLG |
-| | | Bulgaria | LBSF, LBBG |
-| | | Croatia | LDDU, LDOS, LDPL, LDRI, LDSP, LDZA, LDZD |
-| | | Cyprus | LCPH, LCLK |
-| | | Czech Republic | LKPR |
-| | | Denmark | EKCH, EKYT |
-| | | Estonia | EETN |
-| | | Finland | EFHK, EFKT, EFIV, EFRO |
-| | | France | LFBD, LFBE, LFBO, LFBZ, LFCK, LFKC, LFKJ, LFLC, LFLL, LFLS, LFML, LFMN, LFMP, LFMT, LFMU, LFPB, LFPG, LFPO, LFQQ, LFRN, LFRS, LFSB, LFST, LFTW |
 | | | Germany | EDDB, EDDF, EDDG, EDDH, EDDK, EDDL, EDDM, EDDS, EDDV, EDXW |
-| | | Greece | LGAV, LGIR, LGKL, LGKO, LGRP, LGKR, LGKV, LGMK, LGPZ, LGSA, LGSM, LGSR, LGTS, LGZA |
-| | | Hungary | LHBP |
-| | | Ireland | EICK, EIDW, EINN |
-| | | Italy | LIBD, LIBP, LIBR, LICB, LICJ, LICT, LIMC, LIME, LIMF, LIMJ, LIML, LIMP, LIMZ, LIPE, LIPH, LIPR, LIPX, LIPY, LIPZ, LIRA, LIRF, LIRI, LIRN, LIRP, LIRQ, LIRZ |
-| | | Latvia | EVRA |
-| | | Luxembourg | ELLX |
-| | | Malta | LMML |
-| | | Moldova | LUKK |
+| | | UK | EGAA, EGAC, EGBB, EGCC, EGGD, EGGP, EGGW, EGHI, EGJB, EGJJ, EGKK, EGLL, EGNT, EGNX, EGPF, EGPH, EGPK, EGSS, EGTE |
 | | | Netherlands | EHAM, EHGG |
-| | | Norway | ENAL, ENBO, ENBR, ENCN, ENEV, ENGM, ENHD, ENKB, ENTO, ENVA, ENZV |
-| | | Poland | EPGD, EPKK, EPKT, EPMO, EPPO, EPWA, EPWR |
-| | | Portugal | LPPT, LPPR |
-| | | Romania | LRCL, LROP, LRSB, LRTM |
-| | | Russia | ULLI, URSS, UUDD, UUEE, UUWW |
-| | | Serbia | LYBE |
-| | | Slovakia | LZIB, LZKZ |
-| | | Slovenia | LJLJ |
+| | | Ireland | EICK, EIDW, EINN |
+| | | Denmark | EKCH, EKYT |
+| | | Latvia | EVRA |
 | | | Spain | LEAL, LEBB, LEBL, LEBZ, LEGR, LEMD, LEMG, LEPA, LERS, LESO, LEST, LESU, LEVC, LEVT, LEZG, LEZL |
-| | | Sweden | ESGG, ESSA, ESSB |
+| | | France | LFBD, LFBE, LFBO, LFBZ, LFCK, LFKC, LFKJ, LFLC, LFLL, LFLS, LFML, LFMN, LFMP, LFMT, LFPB, LFPG, LFPO, LFQQ, LFRN, LFRS, LFSB, LFST, LFTW |
+| | | Greece | LGAV, LGIR, LGKL, LGKO, LGKR, LGKV, LGMK, LGPZ, LGRP, LGSA, LGSM, LGSR, LGTS, LGZA |
+| | | Hungary | LHBP |
+| | | Italy | LIBD, LIBP, LIBR, LICB, LICJ, LICT, LIMC, LIME, LIMF, LIMJ, LIML, LIMP, LIMZ, LIPE, LIPH, LIPR, LIPX, LIPY, LIPZ, LIRA, LIRF, LIRI, LIRN, LIRP, LIRQ, LIRZ |
+| | | Czech Republic | LKPR |
+| | | Malta | LMML |
+| | | Portugal | LPPR, LPPT |
 | | | Switzerland | LSGG, LSGS, LSZA, LSZB, LSZH |
 | | | Turkey | LTAC, LTAI, LTAU, LTBJ, LTBS, LTCC, LTCG, LTCI, LTFE, LTFG, LTFH, LTFJ, LTFM |
-| | | UK | EGAA, EGAC, EGBB, EGCC, EGGD, EGGP, EGGW, EGHI, EGJB, EGJJ, EGKK, EGLL, EGNT, EGNX, EGPF, EGPH, EGPK, EGSS, EGTE |
-| North America @span | | Canada | CYEG, CYHZ, CYOW, CYUL, CYVR, CYWG, CYYC, CYYZ |
-| | | Dominican Republic | MDPC, MDPP, MDSD |
-| | | Honduras | MHLM, MHTG |
-| | | Mexico | MMGL, MMMX, MMMY, MMPR, MMSM, MMTJ, MMUN |
-| | | Nicaragua | MNMG |
-| | | Panama | MPTO |
-| | | USA | KABQ, KAFW, KASE, KATL, KAUS, KAVL, KBDL, KBFI, KBFL, KBNA, KBOI, KBOS, KBUF, KBUR, KBWI, KCID, KCLE, KCLT, KCMA, KCNO, KCRP, KCRQ, KCVG, KDAB, KDAL, KDEN, KDCA, KDFW, KDTW, KEGE, KELP, KEUG, KEWR, KFAR, KFAT, KFLL, KGEG, KGFK, KGJT, KGSP, KHOU, KHPN, KIAD, KIAH, KILM, KIND, KJAN, KJAX, KJFK, KLAS, KLAX, KLGA, KLGB, KMCO, KMDW, KMEM, KMIA, KMCI, KMDT, KMKE, KMOT, KMSP, KMSY, KMYR, KOKC, KOAK, KOMA, KONT, KORD, KORF, KPAE, KPBI, KPDX, KPHL, KPHX, KPIT, KPVD, KRDU, KRIC, KRNO, KRNT, KROC, KRSW, KSAN, KSAT, KSAV, KSBA, KSBP, KSDF, KSEA, KSFO, KSGF, KSJC, KSMF, KSLC, KSMX, KSNA, KSTL, KSUX, KSYR, KTCM, KTEB, KTIW, KTLH, KTUS, KVNY, PAJN, PAFA, PANC |
-| Oceania @span | | Australia | YBBN, YBCG, YBCS, YBMK, YMEN, YMML, YPAD, YPDN, YPJT, YPPH, YSBK, YSCB, YSSY |
+| Oceania @span | |  |  |
 | | | Fiji | NFFN |
-| | | French Polynesia | NSFA |
-| | | Hawaii | PHNL, PHOG, PHTO |
-| | | New Caledonia | NWWW |
-| | | New Zealand | NZAA, NZCH, NZHN, NZQN, NZWN |
-| South America @span | | Argentina | SAAR, SACO, SAEZ, SASA, SASJ, SAWH |
-| | | Brazil | SBAR, SBBE, SBBI, SBBR, SBCF, SBCG, SBCT, SBCY, SBEG, SBFI, SBFL, SBFZ, SBGL, SBGO, SBGR, SBJP, SBJR, SBJV, SBKP, SBNF, SBMN, SBMO, SBNT, SBPA, SBPS, SBPV, SBRF, SBRJ, SBRP, SBSG, SBSP, SBSV, SBTE, SBVT |
+| | | New Zealand | NSFA, NSTU |
+| | | Australia | YMEN, YMML |
+| Asia @span | |  |  |
+| | | Bahrain | OBBI |
+| | | Saudi Arabia | OEJN, OERK |
+| | | Iran | OIIE |
+| | | Kuwait | OKKK |
+| | | Lebanon | OLBA |
+| | | UAE | OMAA, OMDB, OMSJ |
+| | | Pakistan | OPIS |
+| | | Taiwan | RCSS, RCTP |
+| | | Japan | RJAA, RJBB, RJCC, RJCH, RJCO, RJFF, RJFK, RJFM, RJFO, RJFT, RJFU, RJGG, RJNK, RJOA, RJOB, RJOH, RJOO, RJOS, RJOT, RJSN, RJSS, RJTT |
+| | | South Korea | RKJJ, RKPC, RKPK, RKSI, RKSS, RKTN, RKTU |
+| | | Philippines | RPLL |
+| | | Nepal | VNKT, VNLK, VNPL |
+| | | India | VOBL, VOHS, VOMM, VOVZ |
+| | | Thailand | VTBD, VTBS, VTSP |
+| | | Vietnam | VVDN, VVNB, VVTS |
+| | | Indonesia | WIDD, WIHH, WIII, WIMM |
+| | | Malaysia | WMKK, WMKL |
+| | | China | ZSOF, ZSPD |
+| South America @span | |  |  |
+| | | Argentina | SAAR, SACO, SAEZ, SASA, SASJ, SAWH |
+| | | Brazil | SBAR, SBBE, SBBI, SBBR, SBCF, SBCG, SBCT, SBCY, SBEG, SBFI, SBFL, SBFZ, SBGL, SBGO, SBGR, SBJP, SBJR, SBJV, SBKP, SBMN, SBMO, SBNF, SBNT, SBPA, SBPS, SBPV, SBRF, SBRJ, SBRP, SBSG, SBSP, SBSV, SBTE, SBVT |
 | | | Chile | SCCI, SCEL, SCFA, SCIE |
-| | | Colombia | SKBO, SKCG, SKMD, SKRG |
 | | | Ecuador | SEGU, SEQM |
+| | | Colombia | SKBO, SKCG, SKMD, SKRG |
 | | | Peru | SPJC, SPZO |
-| | | Uruguay | SUMU |
-| | | Venezuela | SVMI |
 ::end-spantable::
