@@ -23,4 +23,4 @@ In this section, you will find useful tutorials and information about how Beyond
 ## Troubleshooting
 
 [Change the BeyondATC Core Engine](core-engine.md)  
-[Troubleshoot connection issuesC](../support/common-issues/simconnect.md)  
+[Troubleshoot connection issues](../support/common-issues/simconnect.md)  
