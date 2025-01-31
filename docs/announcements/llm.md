@@ -15,7 +15,7 @@ description: We are thrilled to announce the integration of a Large Language Mod
 
 We are thrilled to announce the integration of a Large Language Model (LLM) into BeyondATC! This groundbreaking update represents a significant leap forward in our mission to provide the most immersive and realistic air traffic control experience for flight simulation.
 
-This update will be available in the experimental branch for supporter users starting in early January 2025. After thorough testing, it will roll out to the main branch for all users at **no additional cost**. This LLM integration also paves the way for future features, including VFR functionality — a highly anticipated addition to our roadmap.
+This update is available in the experimental branch for supporter users. After thorough testing, it will roll out to the main branch for all users at **no additional cost**. This LLM integration also paves the way for future features, including VFR functionality — a highly anticipated addition to our roadmap.
 
 From the very beginning, we envisioned BeyondATC as a fully AI-powered tool. While earlier versions relied on carefully structured systems to ensure accuracy and functionality, the rapid advancement of AI technology has made it possible to reintroduce LLMs into the core of BeyondATC. Here's why now is the perfect time:
 
@@ -92,5 +92,5 @@ Not anymore! The LLM now handles all questions that fall outside the scope of th
 
 **When will this update be available?**
 
-The experimental branch release is scheduled for early January 2025 for all our supporters. After testing, it will be made available to all users as part of a **free update**.
+The experimental branch release is already available for all our supporters. After testing, it will be made available to all users as part of a **free update**.
 
