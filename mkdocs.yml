@@ -84,7 +84,7 @@ nav:
       - "Stuck in the login screen": 'support/common-issues/stucklogin.md'
       - "Fatal error": 'support/common-issues/fatal.md'
       - "BeyondATC update failed": 'support/common-issues/update.md'
-      - "Can't connect to the simulator": 'support/common-issues/simconnect.md'
+      - "Connection issues": 'support/common-issues/simconnect.md'
       - "Change the output device": 'support/common-issues/output.md'
       - "No AI traffic": 'support/common-issues/notraffic.md'
       - "Simbrief cannot be reached": 'support/common-issues/simbrief.md'
