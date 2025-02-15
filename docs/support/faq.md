@@ -27,7 +27,7 @@ description: Find all frequently asked questions about BeyondATC and their answe
     The Supporter's Pack is a pack that you can buy to support the development of BeyondATC. We give access to the experimental branch as a 'thank you' to our users so you get something fun in return for your donation. What the experimental branch is NOT is a paywall for features. All features that start in experimental will end up in the public branch. So we want to encourage all users to think of the Supporter's Pack in this way - please do not purchase the Supporter's Pack to get a single feature. Do so only if you want to support our development. 
 
 ??? info "Is BeyondATC powered by AI?"
-    We use the latest in AI technologies to process your voice, decide what the ATC should do, and generate highly realistic responses with AI voices. However, to keep the program affordable we do not use a LLM (Large Language Model) such as Gemini or ChatGPT.
+    We use the latest in AI technologies to process your voice, decide what the ATC should do, and generate highly realistic responses with AI voices. We are implementing a LLM to make communication more natural with ATC.
 
 ??? info "Does BeyondATC require an active internet connection?"
     Yes, our voices use cloud-based technology and require an active connection to work.
@@ -39,9 +39,6 @@ description: Find all frequently asked questions about BeyondATC and their answe
 
 ??? info "Is there a trial period?"
     We do not offer a trial period at this stage. You can search for BeyondATC videos and review to make your decision.
-
-??? info "Is BeyondATC powered by AI?"
-    We use the latest in AI technologies to process your voice, decide what the ATC should do, and generate highly realistic responses with AI voices. However, to keep the program affordable we do not use a LLM (Large Language Model) such as Gemini or ChatGPT.
 
 ??? info "Do I need a Navigraph subscription to use BeyondATC?"
     You don’t need a Navigraph subscription to use BeyondATC. The software pulls information directly from your simulator, including airport data, approaches, waypoints, and more, using the scenery and AIRAC cycle already available in your sim. However, if you generate a flight plan in Simbrief using a different AIRAC cycle than what’s in your simulator, you may encounter specific discrepancies.
@@ -177,9 +174,6 @@ description: Find all frequently asked questions about BeyondATC and their answe
 ??? info "Traffic is not moving"
     Injected aircraft will begin moving once they reach their scheduled departure time. It may take a little while before you notice movement at the airport.
 
-??? info "Can traffic backtrack on a runway?"
-    At the moment, traffic cannot backtrack on a runway. You might experience weird traffic behaviors in airports where backtracking is mandatory.
-
 
 ## Troubleshooting issues
 
@@ -211,3 +205,6 @@ description: Find all frequently asked questions about BeyondATC and their answe
     BeyondATC uses data directly from MSFS scenery, so if a scenery is outdated or differs from what tools like SimBrief reference, it may result in runway discrepancies. BeyondATC can account for minor changes, such as a one-digit difference in runway numbers, but significant changes—like renaming 06 to 06L—are not recognized and will cause this error.
 
     To solve this error, you need to check if a custom scenery is available and up to date.
+
+??? info "Loading the airport is stuck at 20% (LTFM, RKSI)"
+    Some airports, for example LTFM or RKSI, are poorly optimized and can take **up to 10 minutes** to build the taxiways map depending on your computer specs.
