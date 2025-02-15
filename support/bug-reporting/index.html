@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="When encountering issues with BeyondATC, providing a clear and detailed bug report will help the developers team to diagnose and patch the problem. Below are guidelines to help you create a useful bug report.">
+        <meta name="description" content="At BeyondATC, we do not use a formal ticketing system for bug tracking. Since our software is still in early access, many issues are general and may be resolved as development progresses. Instead, we rely on user-submitted bug reports to identify and address problems efficiently. Your reports are invaluable in helping us improve BeyondATC, but to be effective, they must be clear, concise, and include all necessary details to help the developers reproduce and fix the issue.">
       
       
       
@@ -80,7 +80,7 @@
     
 
     
-        <meta property="og:description" content="When encountering issues with BeyondATC, providing a clear and detailed bug report will help the developers team to diagnose and patch the problem. Below are guidelines to help you create a useful bug report.">
+        <meta property="og:description" content="At BeyondATC, we do not use a formal ticketing system for bug tracking. Since our software is still in early access, many issues are general and may be resolved as development progresses. Instead, we rely on user-submitted bug reports to identify and address problems efficiently. Your reports are invaluable in helping us improve BeyondATC, but to be effective, they must be clear, concise, and include all necessary details to help the developers reproduce and fix the issue.">
     
 
 
@@ -103,7 +103,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#how-to-report-bugs" class="md-skip">
+        <a href="#bug-reporting" class="md-skip">
           Skip to content
         </a>
       
@@ -1231,20 +1231,57 @@
                   
 
 
-<h1 id="how-to-report-bugs">How to report bugs</h1>
-<p>When encountering issues with BeyondATC, providing a clear and detailed bug report will help the developers team to diagnose and patch the problem. Below are guidelines to help you create a useful bug report.</p>
-<h2 id="where-to-report-bugs">Where to report bugs</h2>
-<p>For bug reporting, please use our Discord channel <em>?!-batc-support</em>. Here, both our team and community members are available to assist with troubleshooting steps and provide guidance. When reporting a bug, please ensure that your information is clear, concise, and includes the necessary details to reproduce the issue.</p>
-<h2 id="how-to-write-a-bug-report">How to write a bug report</h2>
-<p>To help us understand and resolve the problem, please include the following details in your bug report:</p>
+<h1 id="bug-reporting">Bug reporting</h1>
+<p>At BeyondATC, we do not use a formal ticketing system for bug tracking. Since our software is still in early access, many issues are general and may be resolved as development progresses. Instead, we rely on user-submitted bug reports to identify and address problems efficiently. Your reports are invaluable in helping us improve BeyondATC, but to be effective, <strong>they must be clear, concise, and include all necessary details</strong> to help the developers reproduce and fix the issue.</p>
+<p>What does that mean?</p>
 <ul>
-<li><strong>Summary</strong>: Provide a brief description of the issue. This should be a concise statement that clearly explains the problem.</li>
-<li><strong>Steps to reproduce</strong>: If applicable, outline the steps that you took leading up to the issue. Be as specific as possible so that we can replicate the problem on our end.</li>
-<li><strong>Expected result</strong>: Describe what you expected to happen when you followed the steps above.</li>
+<li><strong>We do not acknowledge every bug report individually</strong>. </li>
+<li><strong>We cannot always provide responses to every report</strong>.</li>
+<li><strong>We cannot guarantee a timeframe for fixes</strong>.</li>
 </ul>
-<div class="admonition tip">
-<p class="admonition-title">Additional tips for reporting bugs</p>
-<p>Include any other element that can help to understand the issue. For example, you can send a flight tracking map from Volanta to illustrate a problem with flight instructions.</p>
+<p>We truly appreciate everyone who takes the time to submit a bug report. We understand that not receiving direct feedback can be frustrating, but rest assured that all complete reports are reviewed. Reviewing and investigating bug reports requires time and effort, and prioritizing responses would take valuable resources away from fixing issues and developing new features.</p>
+<h2 id="where-to-report-bugs">Where to report bugs</h2>
+<p>For bug reporting, please use our Discord channel <em>?!-batc-support</em>. Here, both our team and community members are available to assist with troubleshooting steps and provide guidance. When submitting a report, ensure that it is easy to understand and contains all relevant details. Following the structured approach below will increase the likelihood of your bug being identified and fixed promptly.</p>
+<h2 id="how-to-write-a-bug-report">How to write a bug report</h2>
+<p>A well-written bug report helps developers reproduce and fix the issue quickly. It should be complete but concise - overly long reports with unnecessary details are not necessary and can bring confusion.</p>
+<p>Follow this checklist to make sure you are writing a good bug report:</p>
+<ul>
+<li><strong>Clearly describe the problem</strong>. Report only one issue per bug report.</li>
+<li><strong>Provide context</strong>. Explain what you were doing, where, and at what moment the issue occurred so developers can easily reproduce it.</li>
+<li><strong>State your expected outcome</strong>. This ensures that what you were expecting aligns with the intended behavior.</li>
+<li><strong>Attach log files</strong>. Log files are mandatory for <u>all bug reports</u> and provide essential details for debugging.</li>
+<li><strong>Include additional supporting materials if applicable</strong>. Screenshots, Volanta flight tracking, charts, or video recordings can help clarify the issue.</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Examples of bug reports</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">❌ Bad example</label><label for="__tabbed_1_2">✅ Good example</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<blockquote>
+<p><em>I was flying, and the ATC told me to descend too fast. It doesn’t work correctly. Please fix it</em></p>
+</blockquote>
+<p>Why is this bug report bad?</p>
+<ul>
+<li>We have no context: where that happened? Which flight plan? </li>
+<li>What does it mean "too fast"? It's subjective, a precise number/data should be provided so we can define if it is too fast or not</li>
+<li>No log file, no additional information that could help reproduce the issue</li>
+<li>No need to ask to fix it, the purpose of a bug report is to identify and fix bugs :-)</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<blockquote>
+<p><em>LEBL, downwind leg of the LES2W transition, I received first vectoring instructions but no further vectors after that. Continued as instructed, ATC told me I was off course and gave me a direct to BL419. Here's the log file and flight tracking map.</em></p>
+</blockquote>
+<p>Why is this bug report good?</p>
+<ul>
+<li>We know the problem, the location, and which instruction was incorrect or missing </li>
+<li>The message is concise and complete</li>
+<li>The log file is attached providing the full history of the flight</li>
+<li>A flight tracking map can help understand where the issue happened</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <h2 id="uploading-log-files">Uploading log files</h2>
 <p>Log files are very important in helping us identify the root cause of the issue. Please upload your log files along with your bug report. The logs contain detailed information about BATC operations, such as errors that occurred during your session, flight plan used and the full history of your flight.</p>
