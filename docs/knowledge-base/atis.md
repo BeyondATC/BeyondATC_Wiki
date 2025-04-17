@@ -58,6 +58,16 @@ Additionally, other platforms (like Navigraph or real-world ATIS feeds) may refl
 
 It’s important to remember that **runways are not part of a formal flight plan (OFP) in real-world operations**. They are assigned tactically by ATC based on current conditions. In both real life and BeyondATC, **the controller always has the final say**, and pilots are expected to follow those instructions even if they differ from what was pre-planned.
 
+### ➤ **Real-world ATIS and active runways**
+
+Real ATIS is controlled by live human ATC, which may:
+- Override standard procedures
+- Anticipate wind shifts
+- Close runways temporarily
+- Sequence based on real-time traffic conditions
+
+BeyondATC can’t mirror these real-time decisions. It uses a fixed set of community-defined SOP rules that simulate realistic usage patterns, but don’t adapt dynamically to all real-world changes.
+
 ---
 
 ## ⚠️ Current limitations
