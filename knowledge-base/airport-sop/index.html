@@ -1254,20 +1254,22 @@
 <span class="w">  </span><span class="nt">&quot;aircraft_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>In this case:
-- If winds are calm, it will choose a the standard flow (North concept) for low-wind situations during the defined day and time. This can result in a low tailwind until the wind speed exceed the low wind treshold set for this airport (6kt in this case)
-- If the wind is from 180° at 14 kt, it will switch to the South Wind Operations, which will now have the priority as all its criteria are met.</p>
+<p>In this case:</p>
+<ul>
+<li>If winds are calm, it will choose a the standard flow (North concept) for low-wind situations during the defined day and time. This can result in a low tailwind until the wind speed exceed the low wind treshold set for this airport (6kt in this case)</li>
+<li>If the wind is from 180° at 14 kt, it will switch to the South Wind Operations, which will now have the priority as all its criteria are met.</li>
+</ul>
 <hr />
 <h2 id="limitations-real-world-differences">⚠️ Limitations &amp; Real-World Differences</h2>
 <p>While BeyondATC SOPs are designed to closely mirror real-world procedures, there are a few limitations to keep in mind:</p>
 <ul>
 <li><strong>Live ATC decisions</strong> can change runway usage in real life on short notice due to traffic volume, noise abatement, runway closures, or airspace coordination. BeyondATC does not currently replicate those operational decisions dynamically.</li>
-<li><strong>Weather modeling</strong> in BeyondATC relies on available METAR data and simplified interpretation. Real controllers might anticipate wind shifts or apply runway changes more proactively.</li>
+<li><strong>Weather modeling</strong> in BeyondATC relies on available METAR data and simplified interpretation, within the limitation of the data that is available. Real controllers might anticipate wind shifts or apply runway changes more proactively.</li>
 <li><strong>Runway preferences</strong> may vary between airlines, time slots, or for sequencing efficiency. BeyondATC uses standardized logic, not airline-specific procedures.</li>
-<li><strong>Special operations</strong> like parallel departures, SID/STAR preferences, or deicing constraints are not yet dynamically modeled.</li>
+<li><strong>Special operations</strong> like runway attribution according to the departure/arrival direction are currently not supported.</li>
 </ul>
-<p><strong>These SOP flows are a best-effort simulation of reality, optimized for a smooth user experience and realistic traffic flow—but they won’t always match what’s happening at the actual airport in real time.</strong></p>
-<p>If you believe a SOP is wrong or could be improved, please share your log file and suggestion in <a href="https://discord.com/channels/1082413096045391915/1323284831550836838">our support channel on Discord</a>. <strong>Please note that without a log file, we won't be able to review your suggestion</strong>.</p>
+<p><strong>These SOP flows are a best-effort simulation of reality, optimized for a smooth user experience and realistic traffic flow — but they won’t always match what’s happening at the actual airport in real time.</strong> Keep in mind that the goal of BeyondATC is to provide a realistic experience within the simulator's constraints, rather than replicate real-time airport operations, where ATC controllers make decisions based on a much broader range of factors.</p>
+<p>If you believe a SOP is wrong or could be improved, please share your log file and suggestion in <a href="https://discord.com/channels/1082413096045391915/1323284831550836838">our support channel on Discord</a>. <strong>Please note that without a log file, we won't be able to review your suggestion/bug report</strong>.</p>
 <h2 id="list-of-airports-with-custom-operations">List of airports with custom operations</h2>
 <div class="span-table-wrapper">
 <table class="span-table">
