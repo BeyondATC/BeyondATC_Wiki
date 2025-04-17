@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Airport standard operating procedures are used in BeyondATC to assign runways based on factors such as wind conditions and airport preferences. Currently, the airport SOPs implemented in BeyondATC are relatively simple in design, focusing primarily on essential factors.">
+        <meta name="description" content="Airport standard operating procedures are used in BeyondATC to assign runways based on factors such as wind conditions and airport preferences.">
       
       
       
@@ -82,7 +82,7 @@
     
 
     
-        <meta property="og:description" content="Airport standard operating procedures are used in BeyondATC to assign runways based on factors such as wind conditions and airport preferences. Currently, the airport SOPs implemented in BeyondATC are relatively simple in design, focusing primarily on essential factors.">
+        <meta property="og:description" content="Airport standard operating procedures are used in BeyondATC to assign runways based on factors such as wind conditions and airport preferences.">
     
 
 
@@ -1159,87 +1159,115 @@
 
 
 <h1 id="how-are-airport-sops-implemented-in-beyondatc">How are airport SOPs implemented in BeyondATC</h1>
-<p>Airport standard operating procedures are used in BeyondATC to assign runways based on factors such as wind conditions and airport preferences. Here’s an example of how airport data is defined for KLAX (Los Angeles):</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;icao&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;KLAX&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;low_wind_speed&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;low_wind_runways&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;24L&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;24R&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;25L&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;25R&quot;</span><span class="p">],</span>
-<span class="w">  </span><span class="nt">&quot;primary_departing_runways&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;25R&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;24L&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;07L&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;06R&quot;</span><span class="p">],</span>
-<span class="w">  </span><span class="nt">&quot;primary_arrival_runways&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;25L&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;24R&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;06L&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;07R&quot;</span><span class="p">],</span>
-<span class="w">  </span><span class="nt">&quot;frequencies&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;runway&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;24L&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;24R&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;06R&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;06L&quot;</span><span class="p">],</span>
-<span class="w">      </span><span class="nt">&quot;tower&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Los Angeles&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;frequency&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">133.9</span>
-<span class="w">      </span><span class="p">},</span>
-<span class="w">      </span><span class="nt">&quot;ground&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Los Angeles&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;frequency&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">121.65</span>
-<span class="w">      </span><span class="p">},</span>
-<span class="w">      </span><span class="nt">&quot;departure&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SOCAL&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;frequency&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">125.2</span>
-<span class="w">      </span><span class="p">},</span>
-<span class="w">      </span><span class="nt">&quot;approach&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SOCAL Approach&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;frequency&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">124.5</span>
-<span class="w">      </span><span class="p">}</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;runway&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;25L&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;25R&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;07L&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;07R&quot;</span><span class="p">],</span>
-<span class="w">      </span><span class="nt">&quot;tower&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Los Angeles&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;frequency&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">119.8</span>
-<span class="w">      </span><span class="p">},</span>
-<span class="w">      </span><span class="nt">&quot;ground&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Los Angeles&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;frequency&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">121.75</span>
-<span class="w">      </span><span class="p">},</span>
-<span class="w">      </span><span class="nt">&quot;departure&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SOCAL&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;frequency&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">124.3</span>
-<span class="w">      </span><span class="p">},</span>
-<span class="w">      </span><span class="nt">&quot;approach&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SOCAL&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;frequency&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">124.9</span>
-<span class="w">      </span><span class="p">}</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">  </span><span class="p">]</span>
-<span class="p">}</span>
-</code></pre></div>
+<p>Standard Operating Procedures (SOPs) in BeyondATC allow each airport to dynamically select the most appropriate arrival and departure runways based on real-world-like logic. These procedures replicate local preferences and constraints while adapting to live weather, time, and traffic conditions.</p>
+<hr />
+<h2 id="how-the-sop-system-works">🧠 How the SOP system works</h2>
+<p>The SOP system evaluates a set of flows—predefined configurations that dictate which runways are used for arrivals and departures under certain conditions. The system continuously checks for the best matching flow based on the following criteria:</p>
+<ol>
+<li><strong>Wind direction and speed</strong></li>
+<li><strong>Time of day</strong></li>
+<li><strong>Day of the week</strong></li>
+<li><strong>Aircraft type</strong></li>
+</ol>
+<p>Once a match is found, BeyondATC applies the runways defined in that flow for all arriving and departing traffic.</p>
+<hr />
+<h2 id="flow-structure">📦 Flow structure</h2>
+<p>Each SOP flow is defined using the following parameters:</p>
 <table>
 <thead>
 <tr>
-<th>Setting</th>
+<th>Parameter</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Low wind speed</strong></td>
-<td>The wind speed threshold (in knots) for the preferential runway system. When the wind speed is below this threshold, specific low-wind runways are used.</td>
+<td><code>name</code></td>
+<td>A label for the flow (used internally and for debugging/logging)</td>
 </tr>
 <tr>
-<td><strong>Low wind runways</strong></td>
-<td>Runways used in calm wind conditions (when wind speed is below the defined low wind threshold) and during tailwind situations. These are the preferred runways in low-wind or tailwind scenarios.</td>
+<td><code>day_range</code></td>
+<td>Days when the flow is active (<code>0 = Sunday</code>, ..., <code>6 = Saturday</code>)</td>
 </tr>
 <tr>
-<td><strong>Primary departing runways</strong></td>
-<td>Runways designated for departures.</td>
+<td><code>time_range</code></td>
+<td>Time range during which the flow is valid (in 24h format)</td>
 </tr>
 <tr>
-<td><strong>Primary arrival runways</strong></td>
-<td>Runways designated for arrivals.</td>
+<td><code>wind_dir</code></td>
+<td>Wind direction range</td>
 </tr>
 <tr>
-<td><strong>Frequencies</strong></td>
-<td>This section groups communication frequencies based on the runway groups to separate communication between multiple frequencies in bigger airports.</td>
+<td><code>wind_speed</code></td>
+<td>Acceptable wind speed range (in knots)</td>
+</tr>
+<tr>
+<td><code>arrival_runways</code></td>
+<td>Runways to be used for arrivals</td>
+</tr>
+<tr>
+<td><code>departing_runways</code></td>
+<td>Runways to be used for departures</td>
+</tr>
+<tr>
+<td><code>aircraft_type</code></td>
+<td>If specified, applies only to these types (e.g. <code>heavy_jet</code>, <code>light_jet</code>)</td>
 </tr>
 </tbody>
 </table>
-<p>If wind speeds are below the specified threshold (<code>low_wind_speed</code>), the system will choose runways from the list of <code>low_wind_runways</code> for both arrivals and departures, unless there is a stronger tailwind.</p>
-<p>Currently, the airport SOPs implemented in BeyondATC are relatively simple in design, focusing primarily on essential factors such as wind conditions and runway assignments. However, there are plans to enhance and expand these procedures in the future to incorporate more complex decision-making processes and better simulate real-world operations.</p>
+<blockquote>
+<p>📝 The more specific the flow, the higher its priority when evaluating.</p>
+</blockquote>
+<h2 id="aircraft-categories">✈️ Aircraft Categories</h2>
+<p>SOPs can define restrictions for specific types of aircraft. The following categories are recognized:</p>
+<ul>
+<li><code>light_prop</code></li>
+<li><code>medium_prop</code></li>
+<li><code>heavy_prop</code></li>
+<li><code>light_turboprop</code></li>
+<li><code>medium_turboprop</code></li>
+<li><code>light_jet</code></li>
+<li><code>medium_jet</code></li>
+<li><code>heavy_jet</code></li>
+<li><code>super_jet</code></li>
+</ul>
+<p>880 individual aircraft types (i.e. different icao codes) are all put into one of those categories. This is especially useful when an airport restricts certain runways to lighter or heavier aircraft (e.g., at LSZH, RWY 16 is used only by heavy and super jets for departure).</p>
+<hr />
+<h2 id="example-how-it-all-comes-together">💡 Example: How it all comes together</h2>
+<p>Let’s say these two flows are defined at the airport:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;North Concept&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;day_range&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;time_range&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;07:00&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;21:00&quot;</span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;wind_speed&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">6</span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;wind_dir&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">360</span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;arrival_runways&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;14&quot;</span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;departing_runways&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;28&quot;</span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;South Wind Operations&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;wind_speed&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">6</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;wind_dir&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">120</span><span class="p">,</span><span class="w"> </span><span class="mi">210</span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;arrival_runways&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;34&quot;</span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;departing_runways&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;28&quot;</span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;aircraft_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>In this case:
+- If winds are calm, it will choose a the standard flow (North concept) for low-wind situations during the defined day and time. This can result in a low tailwind until the wind speed exceed the low wind treshold set for this airport (6kt in this case)
+- If the wind is from 180° at 14 kt, it will switch to the South Wind Operations, which will now have the priority as all its criteria are met.</p>
+<hr />
+<h2 id="limitations-real-world-differences">⚠️ Limitations &amp; Real-World Differences</h2>
+<p>While BeyondATC SOPs are designed to closely mirror real-world procedures, there are a few limitations to keep in mind:</p>
+<ul>
+<li><strong>Live ATC decisions</strong> can change runway usage in real life on short notice due to traffic volume, noise abatement, runway closures, or airspace coordination. BeyondATC does not currently replicate those operational decisions dynamically.</li>
+<li><strong>Weather modeling</strong> in BeyondATC relies on available METAR data and simplified interpretation. Real controllers might anticipate wind shifts or apply runway changes more proactively.</li>
+<li><strong>Runway preferences</strong> may vary between airlines, time slots, or for sequencing efficiency. BeyondATC uses standardized logic, not airline-specific procedures.</li>
+<li><strong>Special operations</strong> like parallel departures, SID/STAR preferences, or deicing constraints are not yet dynamically modeled.</li>
+</ul>
+<p><strong>These SOP flows are a best-effort simulation of reality, optimized for a smooth user experience and realistic traffic flow—but they won’t always match what’s happening at the actual airport in real time.</strong></p>
+<p>If you believe a SOP is wrong or could be improved, please share your log file and suggestion in <a href="https://discord.com/channels/1082413096045391915/1323284831550836838">our support channel on Discord</a>. <strong>Please note that without a log file, we won't be able to review your suggestion</strong>.</p>
 <h2 id="list-of-airports-with-custom-operations">List of airports with custom operations</h2>
 <div class="span-table-wrapper">
 <table class="span-table">
