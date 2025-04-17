@@ -91,6 +91,7 @@ Let’s say these two flows are defined at the airport:
 ```
 
 In this case:
+
 - If winds are calm, it will choose a the standard flow (North concept) for low-wind situations during the defined day and time. This can result in a low tailwind until the wind speed exceed the low wind treshold set for this airport (6kt in this case)
 - If the wind is from 180° at 14 kt, it will switch to the South Wind Operations, which will now have the priority as all its criteria are met.
 
@@ -101,13 +102,13 @@ In this case:
 While BeyondATC SOPs are designed to closely mirror real-world procedures, there are a few limitations to keep in mind:
 
 - **Live ATC decisions** can change runway usage in real life on short notice due to traffic volume, noise abatement, runway closures, or airspace coordination. BeyondATC does not currently replicate those operational decisions dynamically.
-- **Weather modeling** in BeyondATC relies on available METAR data and simplified interpretation. Real controllers might anticipate wind shifts or apply runway changes more proactively.
+- **Weather modeling** in BeyondATC relies on available METAR data and simplified interpretation, within the limitation of the data that is available. Real controllers might anticipate wind shifts or apply runway changes more proactively.
 - **Runway preferences** may vary between airlines, time slots, or for sequencing efficiency. BeyondATC uses standardized logic, not airline-specific procedures.
-- **Special operations** like parallel departures, SID/STAR preferences, or deicing constraints are not yet dynamically modeled.
+- **Special operations** like runway attribution according to the departure/arrival direction are currently not supported.
 
-**These SOP flows are a best-effort simulation of reality, optimized for a smooth user experience and realistic traffic flow—but they won’t always match what’s happening at the actual airport in real time.**
+**These SOP flows are a best-effort simulation of reality, optimized for a smooth user experience and realistic traffic flow — but they won’t always match what’s happening at the actual airport in real time.** Keep in mind that the goal of BeyondATC is to provide a realistic experience within the simulator's constraints, rather than replicate real-time airport operations, where ATC controllers make decisions based on a much broader range of factors.
 
-If you believe a SOP is wrong or could be improved, please share your log file and suggestion in [our support channel on Discord](https://discord.com/channels/1082413096045391915/1323284831550836838). **Please note that without a log file, we won't be able to review your suggestion**.
+If you believe a SOP is wrong or could be improved, please share your log file and suggestion in [our support channel on Discord](https://discord.com/channels/1082413096045391915/1323284831550836838). **Please note that without a log file, we won't be able to review your suggestion/bug report**.
 
 ## List of airports with custom operations
 
