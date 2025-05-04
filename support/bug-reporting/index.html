@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="At BeyondATC, we do not use a formal ticketing system for bug tracking. Since our software is still in early access, many issues are general and may be resolved as development progresses. Instead, we rely on user-submitted bug reports to identify and address problems efficiently. Your reports are invaluable in helping us improve BeyondATC, but to be effective, they must be clear, concise, and include all necessary details to help the developers reproduce and fix the issue.">
+        <meta name="description" content="Official guide about bug reporting and support for BeyondATC. An overview of how support and bug reporting work, including best practices, expectations, and how to contribute effectively during early access.">
       
       
       
@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../assets/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
     
     
       
@@ -28,7 +28,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.35f28582.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.3cba04c6.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -54,7 +54,7 @@
     
       <link rel="stylesheet" href="../../stylesheets/spantable.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -80,7 +80,7 @@
     
 
     
-        <meta property="og:description" content="At BeyondATC, we do not use a formal ticketing system for bug tracking. Since our software is still in early access, many issues are general and may be resolved as development progresses. Instead, we rely on user-submitted bug reports to identify and address problems efficiently. Your reports are invaluable in helping us improve BeyondATC, but to be effective, they must be clear, concise, and include all necessary details to help the developers reproduce and fix the issue.">
+        <meta property="og:description" content="Official guide about bug reporting and support for BeyondATC. An overview of how support and bug reporting work, including best practices, expectations, and how to contribute effectively during early access.">
     
 
 
@@ -103,7 +103,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#bug-reporting" class="md-skip">
+        <a href="#beyondatc-support-bug-reporting" class="md-skip">
           Skip to content
         </a>
       
@@ -144,7 +144,7 @@
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -176,13 +176,13 @@
       
     
     
-      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
       <label class="md-header__button md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -191,20 +191,20 @@
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
           <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
             
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
           </a>
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
       
@@ -939,27 +939,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#where-to-report-bugs" class="md-nav__link">
+  <a href="#how-support-works" class="md-nav__link">
     <span class="md-ellipsis">
-      Where to report bugs
+      📌 How support works
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-to-write-a-bug-report" class="md-nav__link">
+  <a href="#understanding-the-discord-support-flow" class="md-nav__link">
     <span class="md-ellipsis">
-      How to write a bug report
+      🧭 Understanding the Discord Support flow
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#uploading-log-files" class="md-nav__link">
+  <a href="#what-makes-a-report-useful" class="md-nav__link">
     <span class="md-ellipsis">
-      Uploading log files
+      📄 What makes a report useful?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-to-expect-realistically" class="md-nav__link">
+    <span class="md-ellipsis">
+      ❓ What to expect (realistically)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      🤝 Conclusion
     </span>
   </a>
   
@@ -1231,60 +1249,80 @@
                   
 
 
-<h1 id="bug-reporting">Bug reporting</h1>
-<p>At BeyondATC, we do not use a formal ticketing system for bug tracking. Since our software is still in early access, many issues are general and may be resolved as development progresses. Instead, we rely on user-submitted bug reports to identify and address problems efficiently. Your reports are invaluable in helping us improve BeyondATC, but to be effective, <strong>they must be clear, concise, and include all necessary details</strong> to help the developers reproduce and fix the issue.</p>
-<p>What does that mean?</p>
+<h1 id="beyondatc-support-bug-reporting">🛠️ BeyondATC Support &amp; Bug Reporting</h1>
+<p>Welcome to the official guide on how support works for BeyondATC. This page is designed to give you a clear understanding of:</p>
 <ul>
-<li><strong>We do not acknowledge every bug report individually</strong>. </li>
-<li><strong>We cannot always provide responses to every report</strong>.</li>
-<li><strong>We cannot guarantee a timeframe for fixes</strong>.</li>
+<li>✅ How to report issues and where to do it  </li>
+<li>🚫 What support does <em>not</em> include  </li>
+<li>💡 What makes a good report  </li>
 </ul>
-<p>We truly appreciate everyone who takes the time to submit a bug report. We understand that not receiving direct feedback can be frustrating, but rest assured that all complete reports are reviewed. Reviewing and investigating bug reports requires time and effort, and prioritizing responses would take valuable resources away from fixing issues and developing new features.</p>
-<h2 id="where-to-report-bugs">Where to report bugs</h2>
-<p>For bug reporting, please use our Discord channel <em>?!-batc-support</em>. Here, both our team and community members are available to assist with troubleshooting steps and provide guidance. When submitting a report, ensure that it is easy to understand and contains all relevant details. Following the structured approach below will increase the likelihood of your bug being identified and fixed promptly.</p>
-<h2 id="how-to-write-a-bug-report">How to write a bug report</h2>
-<p>A well-written bug report helps developers reproduce and fix the issue quickly. It should be complete but concise - overly long reports with unnecessary details are not necessary and can bring confusion.</p>
-<p>Follow this checklist to make sure you are writing a good bug report:</p>
+<hr />
+<h2 id="how-support-works">📌 How support works</h2>
+<p>Support for BeyondATC is <strong>community-driven and development-focused</strong>, not a traditional help desk.</p>
+<p>That means:</p>
 <ul>
-<li><strong>Clearly describe the problem</strong>. Report only one issue per bug report.</li>
-<li><strong>Provide context</strong>. Explain what you were doing, where, and at what moment the issue occurred so developers can easily reproduce it.</li>
-<li><strong>State your expected outcome</strong>. This ensures that what you were expecting aligns with the intended behavior.</li>
-<li><strong>Attach log files</strong>. Log files are mandatory for <u>all bug reports</u> and provide essential details for debugging.</li>
-<li><strong>Include additional supporting materials if applicable</strong>. Screenshots, Volanta flight tracking, charts, or video recordings can help clarify the issue.</li>
+<li>There is <strong>no ticketing system</strong>, and <strong>you may not get a personal response</strong> every time you publish a message.</li>
+<li>Devs <strong>do read bug reports</strong> — but their time is spent on investigation and fixes, not answering every message.</li>
+<li>Moderators, support staff and community members often help with <strong>troubleshooting and guidance</strong>, especially in the <code>#batc-support</code> channel.</li>
+<li>Bug reports that are <strong>logged in the correct forum threads</strong> are reviewed and used during development and testing.</li>
 </ul>
-<div class="admonition example">
-<p class="admonition-title">Examples of bug reports</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">❌ Bad example</label><label for="__tabbed_1_2">✅ Good example</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
 <blockquote>
-<p><em>I was flying, and the ATC told me to descend too fast. It doesn’t work correctly. Please fix it</em></p>
+<p><strong>Note:</strong><br />
+If you're expecting direct tech support or a guaranteed fix timeframe, this may not match your expectations. But if you want to contribute to a growing and evolving product, your reports <em>do</em> make a difference — even if you never hear back.</p>
 </blockquote>
-<p>Why is this bug report bad?</p>
+<hr />
+<h2 id="understanding-the-discord-support-flow">🧭 Understanding the Discord Support flow</h2>
+<p>The BeyondATC Discord uses different spaces for different needs. Here's how to navigate them effectively:</p>
+<table>
+<thead>
+<tr>
+<th>🧩 Situation</th>
+<th>✅ Where to Post</th>
+<th>❌ Where <em>Not</em> to Post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Need help understanding an error or feature</td>
+<td><code>#batc-support</code> channel</td>
+<td>General discussion or unrelated threads</td>
+</tr>
+<tr>
+<td>Found a bug during a flight</td>
+<td>Relevant support forum thread</td>
+<td><code>#batc-support</code> or casual discussions</td>
+</tr>
+<tr>
+<td>Want to give feedback or suggest improvements</td>
+<td>Discussions channels or the <a href="https://beyondatc.nolt.io">Nolt platform</a></td>
+<td>Random comments in unrelated threads</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Support threads</strong> are organized by category (e.g. Departures issues”, “Vectoring”, “Traffic movement”) and are the <strong>primary place</strong> where devs look for:</p>
 <ul>
-<li>We have no context: where that happened? Which flight plan? </li>
-<li>What does it mean "too fast"? It's subjective, a precise number/data should be provided so we can define if it is too fast or not</li>
-<li>No log file, no additional information that could help reproduce the issue</li>
-<li>No need to ask to fix it, the purpose of a bug report is to identify and fix bugs :-)</li>
+<li>Log files  </li>
+<li>Reproduction steps  </li>
+<li>Patterns across reports  </li>
+<li>Verification after a fix is deployed</li>
 </ul>
-</div>
-<div class="tabbed-block">
+<p>Think of these threads as <strong>categorized bug tracking</strong>, not conversation spaces.</p>
+<hr />
+<h2 id="what-makes-a-report-useful">📄 What makes a report useful?</h2>
+<p>You don’t have to write an essay. A good report is about clarity, not length.</p>
+<p>Include:</p>
+<ul>
+<li>What happened (in plain terms)</li>
+<li>What you expected instead</li>
+<li>When and where it happened (phase of flight, airport, etc.)</li>
+<li>Steps to reproduce (if known)</li>
+<li>Your <strong>log file</strong> – this is vital for devs</li>
+<li>Optionally: a screenshot, short video, or clip</li>
+</ul>
 <blockquote>
-<p><em>LEBL, downwind leg of the LES2W transition, I received first vectoring instructions but no further vectors after that. Continued as instructed, ATC told me I was off course and gave me a direct to BL419. Here's the log file and flight tracking map.</em></p>
+<p>💡 The goal isn’t to be perfect — it’s to provide enough context for devs to trace, understand and reproduce the issue.</p>
 </blockquote>
-<p>Why is this bug report good?</p>
-<ul>
-<li>We know the problem, the location, and which instruction was incorrect or missing </li>
-<li>The message is concise and complete</li>
-<li>The log file is attached providing the full history of the flight</li>
-<li>A flight tracking map can help understand where the issue happened</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<h2 id="uploading-log-files">Uploading log files</h2>
-<p>Log files are very important in helping us identify the root cause of the issue. Please upload your log files along with your bug report. The logs contain detailed information about BATC operations, such as errors that occurred during your session, flight plan used and the full history of your flight.</p>
+<p>Log files are very important in helping us identify the root cause of the issue. Please upload your log files along with your bug report. The logs contain detailed information about BeyondATC operations, such as errors that occurred during your session, flight plan used and the full history of your flight.</p>
 <p>Navigate to the log files on your computer:<br />
 <code>%userprofile%\appdata\locallow\Skirmish Mode Games, Inc\BeyondATC</code></p>
 <p>Find the following files in that directory:</p>
@@ -1293,8 +1331,52 @@
 <li><code>Player-prev.log</code>: contains the log from the flight preceding your most recent one. If you completed another flight after encountering the issue, please send this log instead</li>
 <li><code>beyondATC.log</code>: This log provides insights into the BeyondATC application’s operations. If this file is not empty, please include it with your report.</li>
 </ul>
-<p>Drag and drop these files directly into the Discord channel.</p>
-<p>Mention your bug report when uploading the logs so that our team can correlate the log data with your specific issue.</p>
+<hr />
+<h2 id="what-to-expect-realistically">❓ What to expect (realistically)</h2>
+<p>We want to set the right expectations. Here's what you <em>can</em> and <em>cannot</em> expect from reporting:</p>
+<table>
+<thead>
+<tr>
+<th>✅ You can expect...</th>
+<th>❌ You should not expect...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>That your report will be seen and considered</td>
+<td>A reply to every report or bug confirmation</td>
+</tr>
+<tr>
+<td>That forum threads are reviewed regularly</td>
+<td>That your issue will be prioritized instantly</td>
+</tr>
+<tr>
+<td>That bugs are tracked and fixed over time</td>
+<td>Immediate hotfixes for every report</td>
+</tr>
+<tr>
+<td>That reporting helps improve the product</td>
+<td>Personalized support or 1:1 conversations for every issue</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ <strong>Silence ≠ Ignorance</strong><br />
+A lack of response doesn’t mean your report is ignored. Devs prioritize work based on severity, frequency, complexity, and available data.</p>
+</blockquote>
+<hr />
+<h2 id="conclusion">🤝 Conclusion</h2>
+<p>BeyondATC support is built on <strong>shared responsibility</strong>:</p>
+<ul>
+<li>The devs focus on building and fixing  </li>
+<li>Mods, support staff and community members help organize and guide  </li>
+<li>Users can contribute — but aren’t obligated to  </li>
+<li>Discord is the hub — but only if used correctly  </li>
+</ul>
+<p>We may not reply to every post. We may not fix your bug right away. But every clear, helpful report builds a better product — not just for you, but for thousands of others.</p>
+<blockquote>
+<p>💡 Want to help? Log your issue. Attach a log. Add context. Post in the right place. That’s it!</p>
+</blockquote>
 
 
 
@@ -1315,14 +1397,14 @@
             </div>
           
           
-  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
 
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
   Back to top
 </button>
         
@@ -1338,7 +1420,7 @@
           <a href="../../resources/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Resources">
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
             <div class="md-footer__title">
               <span class="md-footer__direction">
@@ -1363,7 +1445,7 @@
             </div>
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
             </div>
           </a>
         
@@ -1396,7 +1478,7 @@
       
     
     <a href="https://discord.gg/beyondatc" target="_blank" rel="noopener" title="discord.gg" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485 485 0 0 0 404.081 32.03a1.82 1.82 0 0 0-1.923.91 338 338 0 0 0-14.9 30.6 447.9 447.9 0 0 0-134.426 0 310 310 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.7 483.7 0 0 0-119.688 37.107 1.7 1.7 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.02 2.02 0 0 0 .765 1.375 487.7 487.7 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348 348 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321 321 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251 251 0 0 0 9.109-7.137 1.82 1.82 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.81 1.81 0 0 1 1.924.233 235 235 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.4 301.4 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391 391 0 0 0 30.014 48.815 1.86 1.86 0 0 0 2.063.7A486 486 0 0 0 610.7 405.729a1.88 1.88 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541M222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241m195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"/></svg>
     </a>
   
 </div>
@@ -1411,10 +1493,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.code.copy", "content.tabs.link", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "navigation.instant", "search.highlight", "search.share", "search.suggest", "toc.integrate", "instant"], "search": "../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.code.copy", "content.tabs.link", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "navigation.instant", "search.highlight", "search.share", "search.suggest", "toc.integrate", "instant"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
+      <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
       
     
   </body>
