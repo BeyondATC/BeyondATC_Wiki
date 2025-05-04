@@ -27,11 +27,9 @@ It includes:
 
 You can buy Premium characters to use 250+ very high quality voices with accents from every country. **This is not needed to use BeyondATC. It is ONLY to use the high quality premium voices.** You can continue to enjoy BeyondATC with basic voices with no extra cost.
 
-WITH PREMIUM:
+With the Premium Voice Model, voice generation is priced based on character usage, allowing for a flexible, pay-as-you-go approach. We do not make any profit on these purchases: our goal is to provide the best possible voice quality at the lowest possible cost.
 
-- 1 Character Costs: $0.0000075.
-- 750,000 Characters Costs: $29.99
-- Average flight with or without traffic: 15k chars or about $0.45
+Each spoken character with Premium Voices uses 1 premium character. You can purchase character packs to top up your balance as needed. These packs are one-time purchases - no subscriptions or recurring charges. Once your balance runs out, you can simply top up again based on your usage!
 
 ### Top Up Premium Characters - $9.99
 
