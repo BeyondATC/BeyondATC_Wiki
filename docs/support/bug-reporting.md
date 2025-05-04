@@ -37,7 +37,7 @@ The BeyondATC Discord uses different spaces for different needs. Here's how to n
 
 | 🧩 Situation                                  | ✅ Where to Post               | ❌ Where *Not* to Post                    |
 |----------------------------------------------|----------------------------------|-------------------------------------------|
-| Need help understanding an error or feature  | `#batc-support` channel          | General discussion or unrelated threads   |
+| Need general support or help understanding an error  | `#batc-support` channel          | General discussion or unrelated threads   |
 | Found a bug during a flight                  | Relevant support forum thread    | `#batc-support` or casual discussions     |
 | Want to give feedback or suggest improvements| Discussions channels or the [Nolt platform](https://beyondatc.nolt.io) | Random comments in unrelated threads      |
 
