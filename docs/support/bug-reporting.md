@@ -1,55 +1,73 @@
-# Bug reporting
+---
 
-At BeyondATC, we do not use a formal ticketing system for bug tracking. Since our software is still in early access, many issues are general and may be resolved as development progresses. Instead, we rely on user-submitted bug reports to identify and address problems efficiently. Your reports are invaluable in helping us improve BeyondATC, but to be effective, **they must be clear, concise, and include all necessary details** to help the developers reproduce and fix the issue.
+og_description: Official guide about bug reporting and support for BeyondATC. An overview of how support and bug reporting work, including best practices, expectations, and how to contribute effectively during early access.
+description: Official guide about bug reporting and support for BeyondATC. An overview of how support and bug reporting work, including best practices, expectations, and how to contribute effectively during early access.
 
-What does that mean?
+---
 
-- **We do not acknowledge every bug report individually**. 
-- **We cannot always provide responses to every report**.
-- **We cannot guarantee a timeframe for fixes**.
+# 🛠️ BeyondATC Support & Bug Reporting
 
-We truly appreciate everyone who takes the time to submit a bug report. We understand that not receiving direct feedback can be frustrating, but rest assured that all complete reports are reviewed. Reviewing and investigating bug reports requires time and effort, and prioritizing responses would take valuable resources away from fixing issues and developing new features.
+Welcome to the official guide on how support works for BeyondATC. This page is designed to give you a clear understanding of:
 
-## Where to report bugs
-For bug reporting, please use our Discord channel *?!-batc-support*. Here, both our team and community members are available to assist with troubleshooting steps and provide guidance. When submitting a report, ensure that it is easy to understand and contains all relevant details. Following the structured approach below will increase the likelihood of your bug being identified and fixed promptly.
+- ✅ How to report issues and where to do it  
+- 🚫 What support does *not* include  
+- 💡 What makes a good report  
 
-## How to write a bug report
-A well-written bug report helps developers reproduce and fix the issue quickly. It should be complete but concise - overly long reports with unnecessary details are not necessary and can bring confusion.
+---
 
-Follow this checklist to make sure you are writing a good bug report:
+## 📌 How support works
 
-- **Clearly describe the problem**. Report only one issue per bug report.
-- **Provide context**. Explain what you were doing, where, and at what moment the issue occurred so developers can easily reproduce it.
-- **State your expected outcome**. This ensures that what you were expecting aligns with the intended behavior.
-- **Attach log files**. Log files are mandatory for <u>all bug reports</u> and provide essential details for debugging.
-- **Include additional supporting materials if applicable**. Screenshots, Volanta flight tracking, charts, or video recordings can help clarify the issue.
+Support for BeyondATC is **community-driven and development-focused**, not a traditional help desk.
 
-!!! example "Examples of bug reports"
+That means:
 
-    === "❌ Bad example"
+- There is **no ticketing system**, and **you may not get a personal response** every time you publish a message.
+- Devs **do read bug reports** — but their time is spent on investigation and fixes, not answering every message.
+- Moderators, support staff and community members often help with **troubleshooting and guidance**, especially in the `#batc-support` channel.
+- Bug reports that are **logged in the correct forum threads** are reviewed and used during development and testing.
 
-        > *I was flying, and the ATC told me to descend too fast. It doesn’t work correctly. Please fix it*
+> **Note:**  
+> If you're expecting direct tech support or a guaranteed fix timeframe, this may not match your expectations. But if you want to contribute to a growing and evolving product, your reports *do* make a difference — even if you never hear back.
 
-        Why is this bug report bad?
+---
 
-        - We have no context: where that happened? Which flight plan? 
-        - What does it mean "too fast"? It's subjective, a precise number/data should be provided so we can define if it is too fast or not
-        - No log file, no additional information that could help reproduce the issue
-        - No need to ask to fix it, the purpose of a bug report is to identify and fix bugs :-)
+## 🧭 Understanding the Discord Support flow
 
-    === "✅ Good example"
+The BeyondATC Discord uses different spaces for different needs. Here's how to navigate them effectively:
 
-        > *LEBL, downwind leg of the LES2W transition, I received first vectoring instructions but no further vectors after that. Continued as instructed, ATC told me I was off course and gave me a direct to BL419. Here's the log file and flight tracking map.*
+| 🧩 Situation                                  | ✅ Where to Post               | ❌ Where *Not* to Post                    |
+|----------------------------------------------|----------------------------------|-------------------------------------------|
+| Need help understanding an error or feature  | `#batc-support` channel          | General discussion or unrelated threads   |
+| Found a bug during a flight                  | Relevant support forum thread    | `#batc-support` or casual discussions     |
+| Want to give feedback or suggest improvements| Discussions channels or the [Nolt platform](https://beyondatc.nolt.io) | Random comments in unrelated threads      |
 
-        Why is this bug report good?
-        
-        - We know the problem, the location, and which instruction was incorrect or missing 
-        - The message is concise and complete
-        - The log file is attached providing the full history of the flight
-        - A flight tracking map can help understand where the issue happened
+**Support threads** are organized by category (e.g. Departures issues”, “Vectoring”, “Traffic movement”) and are the **primary place** where devs look for:
 
-## Uploading log files
-Log files are very important in helping us identify the root cause of the issue. Please upload your log files along with your bug report. The logs contain detailed information about BATC operations, such as errors that occurred during your session, flight plan used and the full history of your flight.
+- Log files  
+- Reproduction steps  
+- Patterns across reports  
+- Verification after a fix is deployed
+
+Think of these threads as **categorized bug tracking**, not conversation spaces.
+
+---
+
+## 📄 What makes a report useful?
+
+You don’t have to write an essay. A good report is about clarity, not length.
+
+Include:
+
+- What happened (in plain terms)
+- What you expected instead
+- When and where it happened (phase of flight, airport, etc.)
+- Steps to reproduce (if known)
+- Your **log file** – this is vital for devs
+- Optionally: a screenshot, short video, or clip
+
+> 💡 The goal isn’t to be perfect — it’s to provide enough context for devs to trace, understand and reproduce the issue.
+
+Log files are very important in helping us identify the root cause of the issue. Please upload your log files along with your bug report. The logs contain detailed information about BeyondATC operations, such as errors that occurred during your session, flight plan used and the full history of your flight.
 
 Navigate to the log files on your computer:  
 ```%userprofile%\appdata\locallow\Skirmish Mode Games, Inc\BeyondATC```
@@ -60,6 +78,33 @@ Find the following files in that directory:
 - ```Player-prev.log```: contains the log from the flight preceding your most recent one. If you completed another flight after encountering the issue, please send this log instead
 - ```beyondATC.log```: This log provides insights into the BeyondATC application’s operations. If this file is not empty, please include it with your report.
 
-Drag and drop these files directly into the Discord channel.
+---
 
-Mention your bug report when uploading the logs so that our team can correlate the log data with your specific issue.
+## ❓ What to expect (realistically)
+
+We want to set the right expectations. Here's what you *can* and *cannot* expect from reporting:
+
+| ✅ You can expect...                           | ❌ You should not expect...                    |
+|------------------------------------------------|------------------------------------------------|
+| That your report will be seen and considered   | A reply to every report or bug confirmation    |
+| That forum threads are reviewed regularly      | That your issue will be prioritized instantly  |
+| That bugs are tracked and fixed over time      | Immediate hotfixes for every report            |
+| That reporting helps improve the product       | Personalized support or 1:1 conversations for every issue     |
+
+> ⚠️ **Silence ≠ Ignorance**  
+> A lack of response doesn’t mean your report is ignored. Devs prioritize work based on severity, frequency, complexity, and available data.
+
+---
+
+## 🤝 Conclusion
+
+BeyondATC support is built on **shared responsibility**:
+
+- The devs focus on building and fixing  
+- Mods, support staff and community members help organize and guide  
+- Users can contribute — but aren’t obligated to  
+- Discord is the hub — but only if used correctly  
+
+We may not reply to every post. We may not fix your bug right away. But every clear, helpful report builds a better product — not just for you, but for thousands of others.
+
+> 💡 Want to help? Log your issue. Attach a log. Add context. Post in the right place. That’s it!
