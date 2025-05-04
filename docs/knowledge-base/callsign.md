@@ -56,4 +56,4 @@ To set up a GA callsign, follow these steps:
 If you fly a virtual airline, you can activate the option *Prefer VA callsign* in BeyondATC settings to use custom callsign for virtual airlines. Please note that the virtual airline should be registered by the BeyondATC dev team to work.
 
 !!! question "How do I add a VA Callsign?"
-    You need to submit a request to the BeyondATC team. You can suggest a VA Callsign on the [Pilot Portal](https://db.beyondatc.net:8000/login). Make sure that your Virtual Airline is active and that you are not the only member.
+    You need to submit a request to the BeyondATC team. You can suggest a VA Callsign on the [Pilot Portal](https://db.beyondatc.net/login). Make sure that your Virtual Airline is active and that you are not the only member.
