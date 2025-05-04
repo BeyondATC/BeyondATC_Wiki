@@ -52,7 +52,19 @@ Think of these threads as **categorized bug tracking**, not conversation spaces.
 
 ---
 
-## 📄 What makes a report useful?
+## 🤗 How to get help
+
+Not everything is a bug — sometimes you just need help understanding an error, a behavior, or need assistance with setting everything up correctly. That’s what the `#batc-support` channel is for.
+
+- 🧠 Ask your questions freely — no need to worry whether it’s “important enough”.  
+- 🛠️ Mods, experienced users, and community members regularly assist with troubleshooting.  
+- ❌ It’s fine if you don’t know whether it’s a bug — just describe the issue.
+
+> 💬 **While we can't guarantee an immediate answer, you're never bothering anyone by asking. This is the place to learn and get help. If you did not receive any response after a few hours, you are free to ask again.**
+
+---
+
+## 📄 How to make a bug report?
 
 You don’t have to write an essay. A good report is about clarity, not length.
 
@@ -64,6 +76,8 @@ Include:
 - Steps to reproduce (if known)
 - Your **log file** – this is vital for devs
 - Optionally: a screenshot, short video, or clip
+
+Post your report in the appropriate thread in the `Bug / Issue Reporting` section of the Discord.
 
 > 💡 The goal isn’t to be perfect — it’s to provide enough context for devs to trace, understand and reproduce the issue.
 
