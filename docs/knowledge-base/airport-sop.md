@@ -41,7 +41,7 @@ Each SOP flow is defined using the following parameters:
 | `wind_speed`      | Acceptable wind speed range (in knots)                                     |
 | `arrival_runways` | Runways to be used for arrivals                                            |
 | `departing_runways` | Runways to be used for departures                                        |
-| `aircraft_types`   | If specified, applies only to these types (e.g. `heavy_jet`, `light_jet`)  |
+| `aircraft_type`   | If specified, applies only to these types (e.g. `heavy_jet`, `light_jet`)  |
 
 > 📝 The more specific the flow, the higher its priority when evaluating.
 
@@ -86,7 +86,7 @@ Let’s say these two flows are defined at the airport:
   "wind_dir": [120, 210],
   "arrival_runways": ["34"],
   "departing_runways": ["28"],
-  "aircraft_types": []
+  "aircraft_type": []
 }
 ```
 
