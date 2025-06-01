@@ -1160,23 +1160,6 @@
 
 <h1 id="getting-started-with-microsoft-flight-simulator-2024-and-beyondatc">Getting started with Microsoft Flight Simulator 2024 and BeyondATC</h1>
 <p>Microsoft Flight Simulator 2024 is here, and we know many of you are excited to experience BeyondATC in this brand-new simulator! We’re happy to confirm that <strong>BeyondATC is fully compatible with MSFS 2024</strong>. This guide will walk you through the current limitations and how to configure your simulator for the best experience with BeyondATC.  </p>
-<h2 id="known-issues">Known issues</h2>
-<p>Before diving in, <strong>please review the following known limitations when using BeyondATC with MSFS 2024</strong>:  </p>
-<ul>
-<li>
-<p><strong>Traffic model issues</strong>:  </p>
-<ul>
-<li><strong>FSLTL and AIG Models</strong>: The current MSFS 2024 build has known issues with animations and lights for FSLTL and AIG traffic models. Both teams are actively working on fixes.  </li>
-<li><strong>FSLTL tyres sound</strong>: In external views, FSLTL models may produce a tyre sound, as if aircraft are continuously landing. This issue is being investigated. A temporary fix is available below.</li>
-</ul>
-</li>
-<li>
-<p><strong>Included traffic models</strong>:  </p>
-<ul>
-<li>The new traffic models included with MSFS 2024 currently do not support external injection outside of the simulator’s default traffic engine. We are investigating this further, but as of now, they may not be usable by third-party applications. Updates will follow as we learn more.  </li>
-</ul>
-</li>
-</ul>
 <h2 id="setting-up-msfs2024">Setting up MSFS2024</h2>
 <h3 id="disable-ai-traffic">Disable AI Traffic</h3>
 <p>To ensure compatibility with BeyondATC, disable AI traffic as follows:  </p>
@@ -1248,12 +1231,6 @@
 <p class="admonition-title">Using MSFS Addons Linker</p>
 <p>To avoid managing two separate addon locations and duplicating files, use <strong>MSFS Addons Linker</strong>, which now supports MSFS2024. This tool lets you store all your addons in one folder, no matter which simulator you launch. You can download it here: <a href="https://flightsim.to/file/1572/msfs-addons-linker">MSFS Addons Linker</a>.  </p>
 </div>
-<h3 id="fix-fsltl-tyres-sounds">Fix FSLTL tyres sounds</h3>
-<p>If you are running traffic while using the FSLTL model set, you will here a repeating 'barking dog' type sound while in the external view. We have a workaround for this issue.</p>
-<p>Download the <a href="https://95003bf2-7141-4d70-8f90-24472f894f92.usrfiles.com/archives/95003b_d0abf2061152467fb2cdba697523f3f8.zip">attached zip</a> and extract the exe into the fsltl-traffic-base directory in your community folder. Run the exe while the sim is closed. </p>
-<p>If you wish to undo the change you will need to reinstall the FSLTL models from the FBW installer. </p>
-<p>This is a workaround while we work with Asobo on the underlying cause. The exe is a wrapped python script - it may trigger an AV warning that you would need to approve. The exe is signed with our BeyondATC code signature to try and avoid this.</p>
-<p><strong>This is only required if you are using MSFS2024 with FSLTL models and BATC traffic injection.</strong></p>
 <h2 id="faq">FAQ</h2>
 <p><strong>Q: Do I need to download a specific version of BeyondATC to make it work with MSFS 2024?</strong></p>
 <p>No, you can use the same BeyondATC app as you have used it in the past.</p>
