@@ -23,7 +23,7 @@ Switching the BeyondATC Core Engine might be necessary if:
 
 If you encounter any of these issues, follow the steps below to switch the 3D engine:
 
-1. You'll need to experiment to find out which engine works best for your system. Go to your BeyondATC installation folder. You will find two files: `BeyondATC_ForceDirectX11.bat` and `BeyondATC_ForceOpenGL.bat`. Running one of these files will force BeyondATC to use the respective engine.
+1. You'll need to experiment to find out which engine works best for your system. Go to your BeyondATC installation folder. You will find three files: `BeyondATC_ForceDirectX11.bat`, `BeyondATC_ForceDirectX12.bat` and `BeyondATC_ForceOpenGL.bat`. Running one of these files will force BeyondATC to use the respective engine.
 2. After launching BeyondATC using one of the .bat files, perform a complete flight and see if the issue persists.
 3.  If no further problems occur during your test, you've successfully found the engine that works best for your system.
 
@@ -32,6 +32,7 @@ For convenience, you can modify your BeyondATC shortcut to automatically launch 
 1. Right-click on your BeyondATC shortcut and select **Properties**.
 2. In the **Target** field, add the appropriate line based on your chosen engine:
     - For DirectX11, add `-force-d3d11` at the end of the target path.
+    - For DirectX12, add `-force-d3d12` at the end of the target path.
     - For OpenGL, add `-force-opengl` at the end of the target path.
 
 <figure markdown>
