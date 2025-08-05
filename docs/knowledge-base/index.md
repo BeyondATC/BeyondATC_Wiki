@@ -365,6 +365,23 @@ hide:
                 </div>
             </a>
             
+            <a href="cpdlc" class="card" data-title="How to use CPDLC">
+                <div class="card-icon">📨</div>
+                <h3>How to use CPDLC</h3>
+                <p>Learn how to use CPDLC with BeyondATC's experimental feature</p>
+                <div class="card-footer">
+                    <div class="difficulty">
+                        <span>Intermediate</span>
+                        <div class="difficulty-dots">
+                            <span class="dot active"></span>
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <span class="arrow">→</span>
+                </div>
+            </a>
+
             <a href="msfs2024" class="card" data-title="Getting started with MSFS 2024">
                 <div class="card-icon">🚀</div>
                 <h3>Getting started with MSFS 2024</h3>
