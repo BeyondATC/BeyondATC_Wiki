@@ -295,6 +295,23 @@ hide:
             color: #b8c5d1;
             font-size: 0.9rem;
         }
+
+        /* Add the missing fadeIn animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Hidden cards during search */
+        .card.search-hidden {
+            display: none !important;
+        }
         
         @media (max-width: 768px) {
             .hero h1 {
@@ -487,7 +504,19 @@ hide:
 </div>
 
 <script>
+  // Global variables to track initialization
+  let searchInitialized = false;
+  let currentSearchHandler = null;
+
   function initCardScripts() {
+    // Clear any existing search handler to prevent duplicates
+    if (currentSearchHandler) {
+      const searchInput = document.querySelector('.search-input');
+      if (searchInput) {
+        searchInput.removeEventListener('input', currentSearchHandler);
+      }
+    }
+
     // Animation d'entrée des cartes
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -507,28 +536,73 @@ hide:
       observer.observe(card);
     });
 
-    // Recherche en temps réel
+    // Recherche en temps réel - improved version
     const searchInput = document.querySelector('.search-input');
     if (searchInput) {
-      searchInput.addEventListener('input', (e) => {
-        const searchTerm = e.target.value.toLowerCase();
+      // Create the search handler function
+      currentSearchHandler = function(e) {
+        const searchTerm = e.target.value.toLowerCase().trim();
+        
+        // Get fresh card list each time to ensure we have all cards
+        const currentCards = document.querySelectorAll('.card');
+        
+        currentCards.forEach(card => {
+          const title = card.querySelector('h3')?.textContent.toLowerCase() || '';
+          const description = card.querySelector('p')?.textContent.toLowerCase() || '';
 
-        cards.forEach(card => {
-          const title = card.querySelector('h3').textContent.toLowerCase();
-          const description = card.querySelector('p').textContent.toLowerCase();
-
-          if (title.includes(searchTerm) || description.includes(searchTerm)) {
+          if (searchTerm === '' || title.includes(searchTerm) || description.includes(searchTerm)) {
+            // Show the card
+            card.classList.remove('search-hidden');
             card.style.display = 'block';
             card.style.animation = 'fadeIn 0.3s ease';
           } else {
-            card.style.display = searchTerm === '' ? 'block' : 'none';
+            // Hide the card
+            card.classList.add('search-hidden');
           }
         });
-      });
+
+        // Optional: Show/hide entire sections if no cards are visible
+        const sections = document.querySelectorAll('.section');
+        sections.forEach(section => {
+          const visibleCards = section.querySelectorAll('.card:not(.search-hidden)');
+          const cardsGrid = section.querySelector('.cards-grid');
+          if (cardsGrid) {
+            cardsGrid.style.display = visibleCards.length > 0 ? 'grid' : 'none';
+          }
+        });
+      };
+
+      // Add the event listener
+      searchInput.addEventListener('input', currentSearchHandler);
+      
+      // Clear the search input on page load to ensure clean state
+      searchInput.value = '';
+      
+      searchInitialized = true;
+      console.log('Search functionality initialized successfully');
+    } else {
+      console.warn('Search input not found');
     }
   }
 
-  // Compatibilité avec MkDocs Material (navigation instantanée)
-  document.addEventListener("DOMContentLoaded", initCardScripts);
-  document.addEventListener("pjax:content", initCardScripts);
+  // Enhanced compatibility with MkDocs Material
+  function initializeWhenReady() {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initCardScripts);
+    } else {
+      // DOM is already loaded
+      initCardScripts();
+    }
+  }
+
+  // Initialize immediately
+  initializeWhenReady();
+
+  // Handle MkDocs Material instant navigation
+  document.addEventListener('pjax:content', initCardScripts);
+  
+  // Fallback for other navigation systems
+  if (typeof Navigation !== 'undefined') {
+    Navigation.addEventListener('contentUpdate', initCardScripts);
+  }
 </script>
