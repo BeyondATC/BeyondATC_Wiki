@@ -176,16 +176,16 @@ Go to Options &gt; Assistance Options
 === "MSFS 2024"
 
     1. **Settings > General > Graphics**  
-        - Traffic Airport Quality: **OFF**  
-        - Air Traffic: **OFF**  
+        - Parked Aircraft Quantity: **OFF**  
+        - Aircraft Traffic Quantity: **OFF** 
 
     2. **Settings > General > Online**  
         - Aircraft Traffic Type: **OFF**  
         - Multiplayer: **OFF**  
 
     3. **Settings > VR > VR Graphics**  
-        - Traffic Airport Quality: **OFF**  
-        - Air Traffic: **OFF**  
+        - Parked Aircraft Quantity: **OFF**  
+        - Aircraft Traffic Quantity: **OFF** 
 
     **If AI aircraft are still visible around the airport**:  
 
@@ -202,7 +202,7 @@ Go to Options &gt; Assistance Options
 ![BeyondATC UI](../assets/getting-started/beyondatc-ui.png)
 
 ### 1. Main display area  
-This is the central information panel where communication with ATC and other important updates are displayed. It shows active communications, clearances, and ongoing messages during your flight. You can monitor all ATC interactions with you and traffic here.
+This is the central information panel where communication with ATC and other important updates are displayed. It shows active communications, clearances, and ongoing messages during your flight. You can monitor all ATC interactions with you and traffic here. On the top left, you can also filter to hide AI aircrafts communications with ATC.
 
 ### 2. Last instruction  
 This section displays the **last instruction** received from ATC, with key information presented in boxes. This feature is especially useful when multiple communications are taking place, as new messages in the main area might push previous instructions out of view. The boxes keep important details easily accessible so you can refer to them quickly when needed.
