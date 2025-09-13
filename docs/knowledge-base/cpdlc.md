@@ -68,6 +68,8 @@ In your aircraft’s **ACARS settings**, choose **BeyondATC** as the CPDLC/ACARS
 **Supported aircraft (as of now):**
 
 - Fenix Simulations A319 / A320 / A321
+- iniBuilds A350
+- Fly the Maddog X MD–82 / MD–83 / MD–88
 
 #### 5. **Set up your aircraft’s FMC/MCDU**
 
