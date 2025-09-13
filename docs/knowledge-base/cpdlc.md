@@ -4,8 +4,8 @@ hide:
   - toc
 
 og_image: https://wiki.beyondatc.net/assets/cards/card-cpdlc.png
-og_description: Learn how to use CPDLC with BeyondATC's experimental feature for Pre-Departure Clearance (PDC).
-description: Learn how to use CPDLC with BeyondATC's experimental feature for Pre-Departure Clearance (PDC).
+og_description: Learn how to use CPDLC with BeyondATC's experimental feature.
+description: Learn how to use CPDLC with BeyondATC's experimental feature.
 ---
 
 # How to use CPDLC with BeyondATC
