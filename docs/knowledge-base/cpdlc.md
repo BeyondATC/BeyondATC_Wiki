@@ -4,17 +4,17 @@ hide:
   - toc
 
 og_image: https://wiki.beyondatc.net/assets/cards/card-cpdlc.png
-og_description: Learn how to use CPDLC with BeyondATC's experimental feature.
-description: Learn how to use CPDLC with BeyondATC's experimental feature.
+og_description: Learn how to use CPDLC with BeyondATC.
+description: Learn how to use CPDLC with BeyondATC.
 ---
 
 # How to use CPDLC with BeyondATC
 
 This guide shows you how to use CPDLC (Controller-Pilot Data Link Communications) with BeyondATC.  
-Currently, only **Pre-Departure Clearance (PDC)** is supported and available **on the experimental branch**.
 
-!!! info
-    **Important:** CPDLC is in early development and only available in the **experimental branch** of BeyondATC. Only **PDC (Pre-Departure Clearance)** is functional in this version. Station login and pilot requests are **not yet supported**.
+!!! info "This page is being updated soon"  
+    We’re working on expanding this page with tutorials for every CPDLC feature. At the moment, only PDC is explained. Thanks for your patience as we continue to build! 
+
 
 ---
 
@@ -25,20 +25,6 @@ Currently, only **Pre-Departure Clearance (PDC)** is supported and available **o
 - **Clearances**: Routing, altitude, speed instructions
 - **Requests**: Altitude changes, directs, etc.
 - **Pre-Departure Clearance (PDC)**: IFR clearance before departure without using voice comms
-
----
-
-## How CPDLC Works in BeyondATC
-
-BeyondATC will implement CPDLC in **three stages**:
-
-| Version | Features |
-|--------|----------|
-| **V1** | ✅ PDC (Pre-Departure Clearance) only *(available now)* |
-| **V2** | 🔜 Station login + instructions via CPDLC |
-| **V3** | 🔜 Pilot requests (altitude, directs, etc.) via CPDLC |
-
-This guide focuses on **V1 – PDC**.
 
 ---
 
@@ -113,11 +99,3 @@ Aircraft developers who want to support BeyondATC’s CPDLC system can contact u
 📧 **support@beyondatc.net**
 
 We aim to keep integration simple and offer direct support to developers.
-
----
-
-## 🐞 Feedback & Bugs
-
-CPDLC is still in **active development**. Expect occasional bugs or limitations.  
-To report issues or give feedback, visit our community thread:  
-🔗 [CPDLC Feedback on Discord](https://discord.com/channels/1082413096045391915/1401551261266084010)
