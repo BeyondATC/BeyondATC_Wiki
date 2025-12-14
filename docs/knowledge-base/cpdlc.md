@@ -6,30 +6,36 @@ description: Learn how to use CPDLC with BeyondATC.
 
 ---
 
-# How to use CPDLC with BeyondATC
+# How to use CPDLC/ACARS with BeyondATC
 
-This page explains how CPDLC works in BeyondATC, what it can do, and what you need to know before using it.  
+This page explains how CPDLC / ACARS works in BeyondATC, what it can do, and what you need to know before using it.  
 
 ---
 
-## What is CPDLC?
+## What is CPDLC/ACARS?
 
-**CPDLC** is a digital communication system that allows pilots and ATC to exchange messages via **text** rather than voice.  
-It is used heavily in modern aviation to:
+CPDLC (Controller–Pilot Data Link Communications) is a digital communication system that allows ATC and pilots to exchange operational ATC messages via text instead of voice.
 
-- Reduce radio congestion  
-- Improve clarity and reduce misunderstandings  
-- Provide an efficient alternative to voice in busy or high-workload environments  
+It is used in modern aviation to:
 
-CPDLC is commonly used for:
+- Reduce radio congestion
+- Improve clarity and reduce misunderstandings
+- Support operations in busy or high-workload environments
 
-- **Pre-Departure Clearances (PDC)**  
-- **DCL (Data Link Departure Clearance)**  
-- **Altitude, route, and speed instructions**  
-- **Pilot requests** (directs, altitude changes, etc.)  
-- **Information services** via ACARS (D-ATIS, METAR, etc.)
+CPDLC is used for ATC communications, including:
+
+- Altitude, route, and speed instructions
+- Frequency changes
+- Pilot requests (directs, climbs/descents, etc.)
 
 > **CPDLC supplements voice communication — it does not replace it.**
+
+ACARS (Aircraft Communications Addressing and Reporting System) is a data transmission system used to send and receive digital messages between aircraft and ground systems.
+
+ACARS acts as a transport layer and is used for a wide range of services, including:
+
+- Pre-Departure Clearances (PDC / DCL)
+- Information services (D-ATIS, METAR)
 
 ---
 
@@ -58,7 +64,6 @@ CPDLC is commonly used for:
 
     - Altitude change requests  
     - Direct-to waypoint requests  
-    - Speed change requests  
 
     ATC replies using CPDLC when appropriate.
 
@@ -77,7 +82,7 @@ CPDLC is commonly used for:
 
 ## Important Notes and Limitations
 
-### Aircraft Must Support BeyondATC CPDLC  
+### Aircraft Must Support BeyondATC CPDLC/ACARS
 BeyondATC’s CPDLC/ACARS system requires **aircraft developers** to implement support.  
 It is **not** plug-and-play.
 
@@ -117,7 +122,7 @@ Find the PDC / Departure request page in your aircraft system and fill in the fo
 You will then be able to send the request and receive your clearance. Acknowledge it by sending back WILCO. ATC will confirm your departure clearance.
 
 !!! info  
-    Messages through CPDLC/ACARS take a few seconds to be received.
+    Messages through CPDLC/ACARS can take up to 40 seconds for messages to be sent and received as this is not a instant system.
 
 ### 4. Logon to center
 Once you have departed, you will be able to logon to a center ATC.
@@ -127,7 +132,7 @@ Once you have departed, you will be able to logon to a center ATC.
 - Enter the center's logon code and notify
 - ATC will then confirm by accepting the logon
 
-Future instructions may arrive via text from now on.
+You'll start to see appropriate CPDLC instructions be sent over text instead of voice.
 
 ### 5. Receive, respond and make requests via CPDLC  
 
@@ -146,8 +151,7 @@ Aircraft-specific guides will show exact steps and menus. Find the request page 
 
 ## Developer Integration
 
-Aircraft developers can integrate BeyondATC’s CPDLC/ACARS features using our official documentation.  
-Support is available at:
+Aircraft developers can integrate BeyondATC’s CPDLC/ACARS by contacting us at:
 
 📧 **support@beyondatc.net**
 
