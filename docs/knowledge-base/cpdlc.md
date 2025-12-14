@@ -158,7 +158,7 @@ Support is available at:
 Here are the dedicated tutorials available:
 
 - [Fenix A320 Family](cpdlc-a320fenix.md)
-- iniBuilds A350 
+- iniBuilds A350 (work-in-progress)
 
 !!! info  
     More tutorials and details are coming as this is currently a work-in-progress. Thank you for your patience.
