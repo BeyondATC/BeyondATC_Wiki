@@ -109,7 +109,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#how-to-use-cpdlc-with-beyondatc" class="md-skip">
+        <a href="#how-to-use-cpdlcacars-with-beyondatc" class="md-skip">
           Skip to content
         </a>
       
@@ -821,9 +821,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-cpdlc" class="md-nav__link">
+  <a href="#what-is-cpdlcacars" class="md-nav__link">
     <span class="md-ellipsis">
-      What is CPDLC?
+      What is CPDLC/ACARS?
     </span>
   </a>
   
@@ -849,9 +849,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#aircraft-must-support-beyondatc-cpdlc" class="md-nav__link">
+  <a href="#aircraft-must-support-beyondatc-cpdlcacars" class="md-nav__link">
     <span class="md-ellipsis">
-      Aircraft Must Support BeyondATC CPDLC
+      Aircraft Must Support BeyondATC CPDLC/ACARS
     </span>
   </a>
   
@@ -1400,28 +1400,32 @@
                   
 
 
-<h1 id="how-to-use-cpdlc-with-beyondatc">How to use CPDLC with BeyondATC</h1>
-<p>This page explains how CPDLC works in BeyondATC, what it can do, and what you need to know before using it.  </p>
+<h1 id="how-to-use-cpdlcacars-with-beyondatc">How to use CPDLC/ACARS with BeyondATC</h1>
+<p>This page explains how CPDLC / ACARS works in BeyondATC, what it can do, and what you need to know before using it.  </p>
 <hr />
-<h2 id="what-is-cpdlc">What is CPDLC?</h2>
-<p><strong>CPDLC</strong> is a digital communication system that allows pilots and ATC to exchange messages via <strong>text</strong> rather than voice.<br />
-It is used heavily in modern aviation to:</p>
+<h2 id="what-is-cpdlcacars">What is CPDLC/ACARS?</h2>
+<p>CPDLC (Controller–Pilot Data Link Communications) is a digital communication system that allows ATC and pilots to exchange operational ATC messages via text instead of voice.</p>
+<p>It is used in modern aviation to:</p>
 <ul>
-<li>Reduce radio congestion  </li>
-<li>Improve clarity and reduce misunderstandings  </li>
-<li>Provide an efficient alternative to voice in busy or high-workload environments  </li>
+<li>Reduce radio congestion</li>
+<li>Improve clarity and reduce misunderstandings</li>
+<li>Support operations in busy or high-workload environments</li>
 </ul>
-<p>CPDLC is commonly used for:</p>
+<p>CPDLC is used for ATC communications, including:</p>
 <ul>
-<li><strong>Pre-Departure Clearances (PDC)</strong>  </li>
-<li><strong>DCL (Data Link Departure Clearance)</strong>  </li>
-<li><strong>Altitude, route, and speed instructions</strong>  </li>
-<li><strong>Pilot requests</strong> (directs, altitude changes, etc.)  </li>
-<li><strong>Information services</strong> via ACARS (D-ATIS, METAR, etc.)</li>
+<li>Altitude, route, and speed instructions</li>
+<li>Frequency changes</li>
+<li>Pilot requests (directs, climbs/descents, etc.)</li>
 </ul>
 <blockquote>
 <p><strong>CPDLC supplements voice communication — it does not replace it.</strong></p>
 </blockquote>
+<p>ACARS (Aircraft Communications Addressing and Reporting System) is a data transmission system used to send and receive digital messages between aircraft and ground systems.</p>
+<p>ACARS acts as a transport layer and is used for a wide range of services, including:</p>
+<ul>
+<li>Pre-Departure Clearances (PDC / DCL)</li>
+<li>Information services (D-ATIS, METAR)</li>
+</ul>
 <hr />
 <h2 id="what-cpdlcacars-can-do-in-beyondatc">What CPDLC/ACARS Can Do in BeyondATC</h2>
 <div class="grid cards">
@@ -1443,7 +1447,6 @@ It is used heavily in modern aviation to:</p>
 <ul>
 <li>Altitude change requests  </li>
 <li>Direct-to waypoint requests  </li>
-<li>Speed change requests  </li>
 </ul>
 <p>ATC replies using CPDLC when appropriate.</p>
 </li>
@@ -1460,7 +1463,7 @@ It is used heavily in modern aviation to:</p>
 </div>
 <hr />
 <h2 id="important-notes-and-limitations">Important Notes and Limitations</h2>
-<h3 id="aircraft-must-support-beyondatc-cpdlc">Aircraft Must Support BeyondATC CPDLC</h3>
+<h3 id="aircraft-must-support-beyondatc-cpdlcacars">Aircraft Must Support BeyondATC CPDLC/ACARS</h3>
 <p>BeyondATC’s CPDLC/ACARS system requires <strong>aircraft developers</strong> to implement support.<br />
 It is <strong>not</strong> plug-and-play.</p>
 <p><strong>Supported aircraft:</strong></p>
@@ -1491,7 +1494,7 @@ It is <strong>not</strong> plug-and-play.</p>
 <p>You will then be able to send the request and receive your clearance. Acknowledge it by sending back WILCO. ATC will confirm your departure clearance.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>Messages through CPDLC/ACARS take a few seconds to be received.</p>
+<p>Messages through CPDLC/ACARS can take up to 40 seconds for messages to be sent and received as this is not a instant system.</p>
 </div>
 <h3 id="4-logon-to-center">4. Logon to center</h3>
 <p>Once you have departed, you will be able to logon to a center ATC.</p>
@@ -1501,7 +1504,7 @@ It is <strong>not</strong> plug-and-play.</p>
 <li>Enter the center's logon code and notify</li>
 <li>ATC will then confirm by accepting the logon</li>
 </ul>
-<p>Future instructions may arrive via text from now on.</p>
+<p>You'll start to see appropriate CPDLC instructions be sent over text instead of voice.</p>
 <h3 id="5-receive-respond-and-make-requests-via-cpdlc">5. Receive, respond and make requests via CPDLC</h3>
 <h4 id="handoffs">Handoffs</h4>
 <p>You will receive handoffs instructions via CPDLC. Make sure to update the frequency and the logon code if you don't have auto-tune on. When joining a new frequency, you are expected to check in via voice (the instruction is CONTACT and not MONITOR).</p>
@@ -1512,8 +1515,7 @@ It is <strong>not</strong> plug-and-play.</p>
 <p>Aircraft-specific guides will show exact steps and menus. Find the request page in the ATC menu and fill the altitude you want to request.</p>
 <hr />
 <h2 id="developer-integration">Developer Integration</h2>
-<p>Aircraft developers can integrate BeyondATC’s CPDLC/ACARS features using our official documentation.<br />
-Support is available at:</p>
+<p>Aircraft developers can integrate BeyondATC’s CPDLC/ACARS by contacting us at:</p>
 <p>📧 <strong>support@beyondatc.net</strong></p>
 <hr />
 <h2 id="aircraft-specific-tutorials">Aircraft-Specific Tutorials</h2>
