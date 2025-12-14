@@ -75,6 +75,8 @@ nav:
     - 'Arrival': 'beginner-guide/arrival.md'
   - Knowledge Base:
     - 'knowledge-base/index.md'
+    - 'CPDLC' : 'knowledge-base/cpdlc.md'
+    - 'CPDLC Fenix A320 Family' : 'knowledge-base/cpdlc-a320fenix.md'
   - Resources:
     - 'Resources': 'resources/index.md'
   - Support:
