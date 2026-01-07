@@ -137,7 +137,7 @@ description: Find all frequently asked questions about BeyondATC and their answe
     Make sure you have installed models for at least one provider (AIG, FSLTL or FS Traffic) in the community folder of the MSFS version you are using. If it still doesn't work, start BeyondATC as an administrator.
 
 ??? info "Can BeyondATC use the new traffic models that come with MSFS 2024?"
-    The new traffic models included with MSFS 2024 currently do not support external injection outside of the simulator’s default traffic engine. We are investigating this further, but as of now, they may not be usable by third-party applications. Updates will follow as we learn more.
+    BeyondATC can use GA traffic models available in Microsoft Flight Simulator 2024. This option can be enabled in BeyondATC option tab. 
 
 ??? info "Can AI traffic use ground services?"
     Currently, AI traffic can utilize pushback tugs injected by BeyondATC. However, injected AI aircraft are not yet able to use jetways. This functionality requires an update from Asobo to enable third-party software to trigger jetway operations for non-player aircrafts.

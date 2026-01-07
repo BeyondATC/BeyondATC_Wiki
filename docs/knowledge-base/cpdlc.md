@@ -89,7 +89,9 @@ It is **not** plug-and-play.
 **Supported aircraft:**
 
 - Fenix A319 / A320 / A321  
+- FlyByWire A320  
 - iniBuilds A340 / A350  
+- Headwinds A330  
 - Fly the Maddog X MD-82 / MD-83 / MD-88  
 
 If your aircraft does not list BeyondATC as a CPDLC/ACARS provider, CPDLC will **not work**.
