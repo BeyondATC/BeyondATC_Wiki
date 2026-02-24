@@ -88,15 +88,27 @@ It is **not** plug-and-play.
 
 **Supported aircraft:**
 
+Natively supported:
+
 - Fenix A319 / A320 / A321  
 - FlyByWire A320  
+- FSLabs A320
 - iniBuilds A340 / A350  
 - Headwinds A330  
 - Fly the Maddog X MD-82 / MD-83 / MD-88  
 
+Supported with an additionnal addon:
+
+- Asobo Citation Longitude ([Garmin 3000/5000 CPDLC and Simbrief](https://flightsim.to/file/98506/garmin-3000-5000-cpdlc-and-simbrief))
+- Asobo Daher TBM9 ([Garmin 3000/5000 CPDLC and Simbrief](https://flightsim.to/file/98506/garmin-3000-5000-cpdlc-and-simbrief))
+- Liv2Air Cj3+ ([Garmin 3000/5000 CPDLC and Simbrief](https://flightsim.to/file/98506/garmin-3000-5000-cpdlc-and-simbrief))
+- Asobo Cirrus Vision Jet MSFS 2024 ([Garmin 3000/5000 CPDLC and Simbrief](https://flightsim.to/file/98506/garmin-3000-5000-cpdlc-and-simbrief))
+
+*Please note that this list might not be exhaustive. Check your aircraft addon if BeyondATC is listed as a CPDLC/ACARS provider. Let us know if any addon is missing!*
+
 If your aircraft does not list BeyondATC as a CPDLC/ACARS provider, CPDLC will **not work**.
 
-Aircraft developers can contact:  
+Aircraft developers can contact us to get all information about integrating BeyondATC in their aircraft systems on this email address:  
 📧 **support@beyondatc.net**
 
 ### ACARS Weather support is Early-Stage  
