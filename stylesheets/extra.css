@@ -93,6 +93,12 @@
   background-color: var(--md-primary-fg-color);
 }
 
+/* grid */
+
+.grid.cards>ul>li {
+  border: .05rem solid var(--md-primary-fg-color) !important;
+}
+
 /* Mobile Menu fix */
 
 @media screen and (max-width: 76.234375em) {
@@ -190,10 +196,4 @@
 		transform: scale(1);
 		-webkit-box-shadow: 0 0 0 0 rgba(12,136,74,0);
 	}
-}
-
-/* Grid cards */
-
-.md-typeset .grid.cards>ol>li, .md-typeset .grid.cards>ul>li, .md-typeset .grid>.card {
-    border: .05rem solid var(--md-primary-fg-color);
 }

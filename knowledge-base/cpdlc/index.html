@@ -13,22 +13,18 @@
         <link rel="canonical" href="https://wiki.beyondatc.net/knowledge-base/cpdlc/">
       
       
-        <link rel="prev" href="../">
-      
-      
-        <link rel="next" href="../cpdlc-a320fenix/">
       
       
       <link rel="icon" href="../../assets/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
     
     
       
-        <title>CPDLC - BeyondATC Help Center</title>
+        <title>How to use CPDLC/ACARS with BeyondATC - BeyondATC Help Center</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.3cba04c6.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.35f28582.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -54,7 +50,7 @@
     
       <link rel="stylesheet" href="../../stylesheets/spantable.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -63,8 +59,8 @@
     
 
     
-        <meta property="og:title" content="CPDLC - BeyondATC Help Center" />
-        <meta name="twitter:title" content="CPDLC - BeyondATC Help Center">
+        <meta property="og:title" content="How to use CPDLC/ACARS with BeyondATC - BeyondATC Help Center" />
+        <meta name="twitter:title" content="How to use CPDLC/ACARS with BeyondATC - BeyondATC Help Center">
     
 
     
@@ -130,7 +126,7 @@
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -142,7 +138,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              CPDLC
+              How to use CPDLC/ACARS with BeyondATC
             
           </span>
         </div>
@@ -162,13 +158,13 @@
       
     
     
-      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
       <label class="md-header__button md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -177,20 +173,20 @@
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
           <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
             
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
           </a>
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
       
@@ -285,12 +281,10 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../" class="md-tabs__link">
           
   
@@ -707,8 +701,6 @@
       
   
   
-    
-  
   
   
     
@@ -718,26 +710,19 @@
           
         
       
-        
-      
-        
-      
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           
@@ -752,264 +737,15 @@
 
             </a>
             
-              
-              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Knowledge Base
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    CPDLC
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    CPDLC
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-cpdlcacars" class="md-nav__link">
-    <span class="md-ellipsis">
-      What is CPDLC/ACARS?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-cpdlcacars-can-do-in-beyondatc" class="md-nav__link">
-    <span class="md-ellipsis">
-      What CPDLC/ACARS Can Do in BeyondATC
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#important-notes-and-limitations" class="md-nav__link">
-    <span class="md-ellipsis">
-      Important Notes and Limitations
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Important Notes and Limitations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#aircraft-must-support-beyondatc-cpdlcacars" class="md-nav__link">
-    <span class="md-ellipsis">
-      Aircraft Must Support BeyondATC CPDLC/ACARS
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#acars-weather-support-is-early-stage" class="md-nav__link">
-    <span class="md-ellipsis">
-      ACARS Weather support is Early-Stage
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#general-setup-flow-applies-to-all-aircraft" class="md-nav__link">
-    <span class="md-ellipsis">
-      General Setup Flow (applies to all aircraft)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="General Setup Flow (applies to all aircraft)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-select-beyondatc-as-cpdlcacars-provider" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Select BeyondATC as CPDLC/ACARS Provider
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-load-your-flight-plan" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Load your flight plan
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-request-pdc" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Request PDC
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-logon-to-center" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Logon to center
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-receive-respond-and-make-requests-via-cpdlc" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Receive, respond and make requests via CPDLC
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5. Receive, respond and make requests via CPDLC">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#handoffs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Handoffs
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#direct-to" class="md-nav__link">
-    <span class="md-ellipsis">
-      Direct-to
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#altitude-change" class="md-nav__link">
-    <span class="md-ellipsis">
-      Altitude change
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#developer-integration" class="md-nav__link">
-    <span class="md-ellipsis">
-      Developer Integration
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#aircraft-specific-tutorials" class="md-nav__link">
-    <span class="md-ellipsis">
-      Aircraft-Specific Tutorials
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../cpdlc-a320fenix/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    CPDLC Fenix A320 Family
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
           </ul>
@@ -1401,7 +1137,7 @@
 
 
 <h1 id="how-to-use-cpdlcacars-with-beyondatc">How to use CPDLC/ACARS with BeyondATC</h1>
-<p>This page explains how CPDLC / ACARS works in BeyondATC, what it can do, and what you need to know before using it.  </p>
+<p>This page explains how CPDLC / ACARS works in BeyondATC, what it can do, and what you need to know before using it.</p>
 <hr />
 <h2 id="what-is-cpdlcacars">What is CPDLC/ACARS?</h2>
 <p>CPDLC (Controller–Pilot Data Link Communications) is a digital communication system that allows ATC and pilots to exchange operational ATC messages via text instead of voice.</p>
@@ -1417,9 +1153,9 @@
 <li>Frequency changes</li>
 <li>Pilot requests (directs, climbs/descents, etc.)</li>
 </ul>
-<blockquote>
+<div class="admonition note">
 <p><strong>CPDLC supplements voice communication — it does not replace it.</strong></p>
-</blockquote>
+</div>
 <p>ACARS (Aircraft Communications Addressing and Reporting System) is a data transmission system used to send and receive digital messages between aircraft and ground systems.</p>
 <p>ACARS acts as a transport layer and is used for a wide range of services, including:</p>
 <ul>
@@ -1431,31 +1167,31 @@
 <div class="grid cards">
 <ul>
 <li>
-<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.5 19h19v2h-19v-2m19.57-9.36c-.21-.8-1.04-1.28-1.84-1.06L14.92 10 8 3.57l-1.91.51 4.14 7.17-4.97 1.33-1.97-1.54-1.45.39 1.82 3.16.77 1.33 1.6-.42 5.31-1.43 4.35-1.16L21 11.5c.81-.24 1.28-1.06 1.07-1.86Z"/></svg></span> <strong>Pre-Departure Clearance (PDC) / DCL</strong></p>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.5 19h19v2h-19zm19.57-9.36c-.21-.8-1.04-1.28-1.84-1.06L14.92 10 8 3.57l-1.91.51 4.14 7.17-4.97 1.33-1.97-1.54-1.45.39 1.82 3.16.77 1.33 1.6-.42 5.31-1.43 4.35-1.16L21 11.5c.81-.24 1.28-1.06 1.07-1.86"/></svg></span> <strong>Pre-Departure Clearance (PDC) / DCL</strong></p>
 <hr />
 <p>Receive your IFR clearance via text before pushback, instead of calling clearance delivery.</p>
 </li>
 <li>
-<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7 9.6 8.4l2.6 2.6H2v2h10.2l-2.6 2.6L11 17l5-5-5-5m9 12h-8v2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-8v2h8v14Z"/></svg></span> <strong>Controller Logon</strong></p>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7 9.6 8.4l2.6 2.6H2v2h10.2l-2.6 2.6L11 17l5-5zm9 12h-8v2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-8v2h8z"/></svg></span> <strong>Controller Logon</strong></p>
 <hr />
 <p>Log on to Center controllers using a <strong>logon code</strong> shown in the BeyondATC <strong>Frequencies</strong> menu. Once logged on, appropriate instructions may be delivered via text.</p>
 </li>
 <li>
-<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.56 3.91c.59.59.59 1.54 0 2.12l-3.89 3.89 2.12 9.19-1.41 1.42-3.88-7.43L9.6 17l.36 2.47-1.07 1.06-1.76-3.18-3.19-1.77L5 14.5l2.5.37L11.37 11 3.94 7.09l1.42-1.41 9.19 2.12 3.89-3.89c.56-.58 1.56-.58 2.12 0Z"/></svg></span> <strong>In-Flight Digital Requests</strong></p>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.56 3.91c.59.59.59 1.54 0 2.12l-3.89 3.89 2.12 9.19-1.41 1.42-3.88-7.43L9.6 17l.36 2.47-1.07 1.06-1.76-3.18-3.19-1.77L5 14.5l2.5.37L11.37 11 3.94 7.09l1.42-1.41 9.19 2.12 3.89-3.89c.56-.58 1.56-.58 2.12 0"/></svg></span> <strong>In-Flight Digital Requests</strong></p>
 <hr />
 <p>Send CPDLC messages such as:</p>
 <ul>
-<li>Altitude change requests  </li>
-<li>Direct-to waypoint requests  </li>
+<li>Altitude change requests</li>
+<li>Direct-to waypoint requests</li>
 </ul>
 <p>ATC replies using CPDLC when appropriate.</p>
 </li>
 <li>
-<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 13h1.5v2.82l2.44 1.41-.75 1.3L15 16.69V13m3.13-3.67C17.23 6.81 14.83 5 12 5 9.3 5 7 6.65 6 9c-2.76 0-5 2.24-5 5s2.24 5 5 5h3.68c1.13 2.36 3.53 4 6.32 4 3.87 0 7-3.13 7-7 0-3.12-2.04-5.76-4.87-6.67M6 17c-1.66 0-3-1.34-3-3s1.34-3 3-3c.37 0 .73.07 1.06.19A5.004 5.004 0 0 1 12 7c1.63 0 3.07.79 4 2-3.88 0-7 3.14-7 7 0 .34.03.67.08 1H6m10 4c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5Z"/></svg></span> <strong>ACARS Weather &amp; Information</strong></p>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.03 18c.05.7.21 1.38.47 2h-7c-1.5 0-2.81-.5-3.89-1.57C1.54 17.38 1 16.09 1 14.58q0-1.95 1.17-3.48C3.34 9.57 4 9.43 5.25 9.15c.42-1.53 1.25-2.77 2.5-3.72S10.42 4 12 4c1.95 0 3.6.68 4.96 2.04S19 9.05 19 11h.1c-.74.07-1.45.23-2.1.5V11c0-1.38-.5-2.56-1.46-3.54C14.56 6.5 13.38 6 12 6s-2.56.5-3.54 1.46C7.5 8.44 7 9.62 7 11h-.5c-.97 0-1.79.34-2.47 1.03-.69.68-1.03 1.5-1.03 2.47s.34 1.79 1.03 2.5c.68.66 1.5 1 2.47 1zM19 13.5V12l-2.25 2.25L19 16.5V15a2.5 2.5 0 0 1 2.5 2.5c0 .4-.09.78-.26 1.12l1.09 1.09c.42-.63.67-1.39.67-2.21 0-2.21-1.79-4-4-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5c0-.4.09-.78.26-1.12l-1.09-1.09c-.42.63-.67 1.39-.67 2.21 0 2.21 1.79 4 4 4V23l2.25-2.25L19 18.5z"/></svg></span> <strong>ACARS Weather &amp; Information</strong></p>
 <hr />
 <p>Receive:</p>
 <ul>
-<li><strong>D-ATIS</strong>  </li>
+<li><strong>D-ATIS</strong></li>
 <li><strong>METAR</strong></li>
 </ul>
 </li>
@@ -1464,19 +1200,19 @@
 <hr />
 <h2 id="important-notes-and-limitations">Important Notes and Limitations</h2>
 <h3 id="aircraft-must-support-beyondatc-cpdlcacars">Aircraft Must Support BeyondATC CPDLC/ACARS</h3>
-<p>BeyondATC’s CPDLC/ACARS system requires <strong>aircraft developers</strong> to implement support.<br />
+<p>BeyondATC's CPDLC/ACARS system requires <strong>aircraft developers</strong> to implement support.<br />
 It is <strong>not</strong> plug-and-play.</p>
 <p><strong>Supported aircraft:</strong></p>
 <p>Natively supported:</p>
 <ul>
-<li>Fenix A319 / A320 / A321  </li>
-<li>FlyByWire A320  </li>
-<li>FSLabs A320</li>
-<li>iniBuilds A340 / A350  </li>
-<li>Headwinds A330  </li>
-<li>Fly the Maddog X MD-82 / MD-83 / MD-88  </li>
+<li>Fenix A319 / A320 / A321</li>
+<li>FlyByWire A320</li>
+<li>FSLabs A320 / A321</li>
+<li>iniBuilds A340 / A350</li>
+<li>Headwinds A330</li>
+<li>Fly the Maddog X MD-82 / MD-83 / MD-88</li>
 </ul>
-<p>Supported with an additionnal addon:</p>
+<p>Supported with an additional addon:</p>
 <ul>
 <li>Asobo Citation Longitude (<a href="https://flightsim.to/file/98506/garmin-3000-5000-cpdlc-and-simbrief">Garmin 3000/5000 CPDLC and Simbrief</a>)</li>
 <li>Asobo Daher TBM9 (<a href="https://flightsim.to/file/98506/garmin-3000-5000-cpdlc-and-simbrief">Garmin 3000/5000 CPDLC and Simbrief</a>)</li>
@@ -1488,14 +1224,14 @@ It is <strong>not</strong> plug-and-play.</p>
 <p>Aircraft developers can contact us to get all information about integrating BeyondATC in their aircraft systems on this email address:<br />
 📧 <strong>support@beyondatc.net</strong></p>
 <h3 id="acars-weather-support-is-early-stage">ACARS Weather support is Early-Stage</h3>
-<p>Developers need time to add support for D-ATIS and METAR retrieval via BeyondATC’s ACARS system. Please wait until the aircraft developers have released the update to take advantage of this new feature.</p>
+<p>Developers need time to add support for D-ATIS and METAR retrieval via BeyondATC's ACARS system. Please wait until the aircraft developers have released the update to take advantage of this new feature.</p>
 <hr />
 <h2 id="general-setup-flow-applies-to-all-aircraft">General Setup Flow (applies to all aircraft)</h2>
 <p>Each aircraft has its own menus, but the overall process is the same:</p>
 <h3 id="1-select-beyondatc-as-cpdlcacars-provider">1. Select BeyondATC as CPDLC/ACARS Provider</h3>
-<p>In your aircraft’s ACARS or CPDLC settings, choose <strong>BeyondATC</strong>. This setting is either in the aircraft external app or in the EFB/aircraft system</p>
+<p>In your aircraft's ACARS or CPDLC settings, choose <strong>BeyondATC</strong>. This setting is either in the aircraft external app or in the EFB/aircraft system</p>
 <h3 id="2-load-your-flight-plan">2. Load your flight plan</h3>
-<p>Load your flight plan into both BeyondATC and your aircraft’s FMS/MCDU. Make sure all information in the FMS/MCDU is correct according to your flight plan (callsign and route).</p>
+<p>Load your flight plan into both BeyondATC and your aircraft's FMS/MCDU. Make sure all information in the FMS/MCDU is correct according to your flight plan (callsign and route).</p>
 <h3 id="3-request-pdc">3. Request PDC</h3>
 <p>Find the PDC / Departure request page in your aircraft system and fill in the following information</p>
 <ul>
@@ -1506,7 +1242,7 @@ It is <strong>not</strong> plug-and-play.</p>
 <p>You will then be able to send the request and receive your clearance. Acknowledge it by sending back WILCO. ATC will confirm your departure clearance.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>Messages through CPDLC/ACARS can take up to 40 seconds for messages to be sent and received as this is not a instant system.</p>
+<p>Messages through CPDLC/ACARS can take up to 40 seconds for messages to be sent and received as this is not an instant system.</p>
 </div>
 <h3 id="4-logon-to-center">4. Logon to center</h3>
 <p>Once you have departed, you will be able to logon to a center ATC.</p>
@@ -1523,17 +1259,17 @@ It is <strong>not</strong> plug-and-play.</p>
 <h4 id="direct-to">Direct-to</h4>
 <p>You can request a direct-to via CPDLC. Find the request page in the ATC menu and fill the direct-to field with the wanted fix.</p>
 <h4 id="altitude-change">Altitude change</h4>
-<p>You can change your cruise altitude via CPDLC. </p>
+<p>You can change your cruise altitude via CPDLC.</p>
 <p>Aircraft-specific guides will show exact steps and menus. Find the request page in the ATC menu and fill the altitude you want to request.</p>
 <hr />
 <h2 id="developer-integration">Developer Integration</h2>
-<p>Aircraft developers can integrate BeyondATC’s CPDLC/ACARS by contacting us at:</p>
+<p>Aircraft developers can integrate BeyondATC's CPDLC/ACARS by contacting us at:</p>
 <p>📧 <strong>support@beyondatc.net</strong></p>
 <hr />
 <h2 id="aircraft-specific-tutorials">Aircraft-Specific Tutorials</h2>
 <p>Here are the dedicated tutorials available:</p>
 <ul>
-<li><a href="../cpdlc-a320fenix/">Fenix A320 Family</a></li>
+<li><a href="cpdlc-a320fenix.md">Fenix A320 Family</a></li>
 <li>iniBuilds A350 (work-in-progress)</li>
 </ul>
 <div class="admonition info">
@@ -1560,14 +1296,14 @@ It is <strong>not</strong> plug-and-play.</p>
             </div>
           
           
-  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
 
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
   Back to top
 </button>
         
@@ -1575,44 +1311,6 @@ It is <strong>not</strong> plug-and-play.</p>
       
         <footer class="md-footer">
   
-    
-      
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
-        
-          
-          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Index">
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-            </div>
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              <div class="md-ellipsis">
-                Index
-              </div>
-            </div>
-          </a>
-        
-        
-          
-          <a href="../cpdlc-a320fenix/" class="md-footer__link md-footer__link--next" aria-label="Next: CPDLC Fenix A320 Family">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                CPDLC Fenix A320 Family
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -1641,7 +1339,7 @@ It is <strong>not</strong> plug-and-play.</p>
       
     
     <a href="https://discord.gg/beyondatc" target="_blank" rel="noopener" title="discord.gg" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485 485 0 0 0 404.081 32.03a1.82 1.82 0 0 0-1.923.91 338 338 0 0 0-14.9 30.6 447.9 447.9 0 0 0-134.426 0 310 310 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.7 483.7 0 0 0-119.688 37.107 1.7 1.7 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.02 2.02 0 0 0 .765 1.375 487.7 487.7 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348 348 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321 321 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251 251 0 0 0 9.109-7.137 1.82 1.82 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.81 1.81 0 0 1 1.924.233 235 235 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.4 301.4 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391 391 0 0 0 30.014 48.815 1.86 1.86 0 0 0 2.063.7A486 486 0 0 0 610.7 405.729a1.88 1.88 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541M222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241m195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241"/></svg>
     </a>
   
 </div>
@@ -1656,10 +1354,10 @@ It is <strong>not</strong> plug-and-play.</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.code.copy", "content.tabs.link", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "navigation.instant", "search.highlight", "search.share", "search.suggest", "toc.integrate", "instant"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.code.copy", "content.tabs.link", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "navigation.instant", "search.highlight", "search.share", "search.suggest", "toc.integrate", "instant"], "search": "../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
       
     
   </body>
