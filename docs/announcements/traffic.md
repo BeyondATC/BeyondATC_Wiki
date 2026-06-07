@@ -17,7 +17,7 @@ We are very happy to introduce the Alpha build of our new Traffic feature in Bey
 
 * **Realistic traffic data**: Experience global traffic based on live data from a historic week. This includes all IFR flights with active transponders.
 * **Aircrafts management**: Get ground, departure, and arrival traffic for airports planned in your Simbrief flight, with realistic parking and runway assignments.
-* **Model support**: Compatible with FSLTL, AIG, and FS Traffic models. You don't need to run any of their injectors.
+* **Model support**: Compatible with FSLTL, AIG, and FS Traffic models, as well as BravoAirspace Airline Traffic Global (ATG) on MSFS 2024. You don't need to run any of their injectors.
 * **Simulator resources management**: Traffic management extends up to 200nm from your aircraft, even when not visible, saving valuable simulation resources.
 * **Full enroute traffic**: Additional traffic beyond your planned airports
 

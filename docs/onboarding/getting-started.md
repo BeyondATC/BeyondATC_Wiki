@@ -90,13 +90,14 @@ Settings in details:
 ### Setting up AI Traffic
 
 1. **Close any other traffic injector**  
-   Make sure to close any other traffic injectors, but keep the aircraft models from your preferred injector. BeyondATC needs to have models from one of these injectors to work properly:
+   Make sure to close any other traffic injectors, but keep the aircraft models from your preferred source. BeyondATC needs to have models from one of these to work properly:
 
     - FSLTL
     - Alpha India Group (AIG)
     - FS Traffic
+    - BravoAirspace Airline Traffic Global (ATG) *(MSFS 2024 only)*
 
-    We currently recommend using **FSLTL models**, as they offer the best integration with the system.
+    We currently recommend using **FSLTL models**, as they offer the best integration with the system. On MSFS 2024 you can also use **BravoAirspace ATG**, which adds airline liveries to the simulator's built-in (native) traffic models.
 
 2. **Install models (if needed)**  
    If you don’t have any aircraft models installed, you can download the FBW installer and install the Base Models from **FSLTL traffic**:  [Download FBW Installer](https://api.flybywiresim.com/installer)

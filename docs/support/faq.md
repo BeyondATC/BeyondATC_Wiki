@@ -131,13 +131,18 @@ description: Find all frequently asked questions about BeyondATC and their answe
     We plan to update the dataset to provide more relevant traffic data for the simulator. However, please keep in mind that this data is costly, and while we are committed to making updates, we currently do not have a specific timeline for when this will happen as it has to be discussed with the data provider. 
 
 ??? info "Which models will BeyondATC use for AI Traffic?"
-    BeyondATC will use whatever models you have installed in your simulator, including any combination of AIG, FSLTL, and FS Traffic.
+    BeyondATC will use whatever models you have installed in your simulator, including any combination of AIG, FSLTL, and FS Traffic. On MSFS 2024 it can also use BravoAirspace Airline Traffic Global (ATG).
 
 ??? info "BeyondATC says that no traffic liveries are found"
-    Make sure you have installed models for at least one provider (AIG, FSLTL or FS Traffic) in the community folder of the MSFS version you are using. If it still doesn't work, start BeyondATC as an administrator.
+    Make sure you have installed models for at least one provider (AIG, FSLTL or FS Traffic) in the community folder of the MSFS version you are using — or, on MSFS 2024, BravoAirspace ATG. If it still doesn't work, start BeyondATC as an administrator.
 
 ??? info "Can BeyondATC use the new traffic models that come with MSFS 2024?"
-    The new traffic models included with MSFS 2024 currently do not support external injection outside of the simulator’s default traffic engine. We are investigating this further, but as of now, they may not be usable by third-party applications. Updates will follow as we learn more.
+    Yes, in two ways on MSFS 2024:
+
+    - **GA & bizjet models** — anyone can use the simulator's built-in GA and business-jet models by enabling the **Use MSFS 2024 GA Models** toggle in BeyondATC's options. No extra package is required.
+    - **Airliner models** — BeyondATC supports **BravoAirspace Airline Traffic Global (ATG)**, which adds airline liveries to the simulator's native models so BeyondATC can inject them.
+
+    The plain native airliner models on their own (without ATG) still can't be injected outside the simulator's default traffic engine, so ATG is the way to use them with BeyondATC.
 
 ??? info "Can AI traffic use ground services?"
     Currently, AI traffic can utilize pushback tugs injected by BeyondATC. However, injected AI aircraft are not yet able to use jetways. This functionality requires an update from Asobo to enable third-party software to trigger jetway operations for non-player aircrafts.

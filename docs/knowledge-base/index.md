@@ -440,6 +440,23 @@ hide:
                     <span class="arrow">→</span>
                 </div>
             </a>
+
+            <a href="live-traffic" class="card" data-title="Live Traffic (Coming Soon!)">
+                <div class="card-icon">🛰️</div>
+                <h3>Live Traffic (Coming Soon!)</h3>
+                <p>Fly alongside the aircraft that are airborne in the real world right now, using Navigraph's live traffic data.</p>
+                <div class="card-footer">
+                    <div class="difficulty">
+                        <span>Intermediate</span>
+                        <div class="difficulty-dots">
+                            <span class="dot active"></span>
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <span class="arrow">→</span>
+                </div>
+            </a>
             
             <a href="airport-sop" class="card" data-title="Airport SOPs implementation">
                 <div class="card-icon">✈️</div>
