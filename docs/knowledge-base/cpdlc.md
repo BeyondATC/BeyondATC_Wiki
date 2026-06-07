@@ -182,7 +182,7 @@ Aircraft developers can integrate BeyondATC's CPDLC/ACARS by contacting us at:
 
 Here are the dedicated tutorials available:
 
-- [Fenix A320 Family](cpdlc-a320fenix.md)
+- Fenix A320 Family (work-in-progress)
 - iniBuilds A350 (work-in-progress)
 
 !!! info
