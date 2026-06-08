@@ -459,9 +459,9 @@ hide:
                 </div>
             </a>
 
-            <a href="live-traffic" class="card" data-title="Live Traffic (Coming Soon!)">
+            <a href="live-traffic" class="card" data-title="Live Traffic (Experimental Feature)">
                 <div class="card-icon">🛰️</div>
-                <h3>Live Traffic (Coming Soon!)</h3>
+                <h3>Live Traffic (Experimental Feature!)</h3>
                 <p>Fly alongside the aircraft that are airborne in the real world right now, using Navigraph's live traffic data.</p>
                 <div class="card-footer">
                     <div class="difficulty">
