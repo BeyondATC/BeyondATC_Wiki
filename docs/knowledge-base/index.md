@@ -398,6 +398,24 @@ hide:
                     <span class="arrow">→</span>
                 </div>
             </a>
+
+            <a href="vfr" class="card" data-title="Flying VFR with BeyondATC">
+                <div class="card-icon">🛩️</div>
+                <h3>Flying VFR with BeyondATC</h3>
+                <p>Complete guide to VFR operations — from startup and taxi to circuit work and landing.</p>
+                <div class="card-footer">
+                    <div class="difficulty">
+                        <span>Intermediate</span>
+                        <div class="difficulty-dots">
+                            <span class="dot active"></span>
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <span class="arrow">→</span>
+                </div>
+            </a>
+
         </div>
     </section>
 
