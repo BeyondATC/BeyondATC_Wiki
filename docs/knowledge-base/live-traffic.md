@@ -10,12 +10,14 @@ description: Live Traffic injects real-world aircraft into your sim in their act
 
 # Live Traffic (Experimental Feature)
 
-**Live Traffic** fills your skies and airports with the aircraft that are *actually flying right now* in the real world. Instead of replaying a recorded week of schedules, BeyondATC pulls live positions from **Navigraph's real-time traffic** and builds the traffic around you from what's genuinely up there at this moment.
+**Live Traffic** fills your skies and airports with the aircraft that are *actually flying right now* in the real world. Instead of replaying a recorded week of schedules, BeyondATC pulls live (slightly delayed) positions from **Navigraph's real-world traffic** and builds the traffic around you from what's genuinely up there at this moment.
 
 That means when you push back at your departure airport, the aircraft you taxi past, the jet that lands ahead of you, and the traffic you hear on frequency are the real flights operating that route today — same callsigns, same aircraft types, same airlines.
 
 !!! info "How it differs from standard (scheduled) traffic"
-    Standard BeyondATC traffic is built from a **historic week** of real schedule data and is driven by the time of day you set in the sim. **Live Traffic** is built from **what is flying at this exact moment**, streamed live. The two work together: BeyondATC still seeds your departure airport with parked aircraft from the schedule so the ramp looks nice and full, and Live Traffic then **takes over those aircraft or adds to them** as the real-world flights call for it.
+    Standard BeyondATC traffic is built from a **historic week** of real schedule data and is driven by the time of day you set in the sim. **Live Traffic** is built from **what is flying at this exact moment**, streamed live. The two work together: BeyondATC still seeds your departure airport with parked aircraft from the schedule so the ramp looks nice and full, and Live Traffic then **takes over those aircraft or adds to them** as the real-world flights call for it. 
+    
+    **Important Note** that 'Live' means close to real time in this context, there is a latency in the data feeds that add some delay to the received data
 
 ---
 
@@ -23,7 +25,7 @@ That means when you push back at your departure airport, the aircraft you taxi p
 
 To use Live Traffic you need three things in place:
 
-1. **A Navigraph Unlimited subscription** — Live Traffic is powered by Navigraph's real-time traffic data, which is part of their **Unlimited** subscription. You can check your plan or upgrade on the [Navigraph website](https://navigraph.com).
+1. **A Navigraph Unlimited subscription** — Live Traffic is powered by Navigraph's near real-time traffic data, which is part of their **Unlimited** subscription. You can check your plan or upgrade on the [Navigraph website](https://navigraph.com).
 2. **Your Navigraph account linked to BeyondATC** — see below.
 3. **AI traffic models installed** — exactly like standard traffic, BeyondATC does **not** ship aircraft models. You need models from one of the supported sources:
     - FSLTL
