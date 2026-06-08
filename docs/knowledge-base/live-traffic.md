@@ -8,7 +8,7 @@ description: Live Traffic injects real-world aircraft into your sim in their act
 
 ---
 
-# Live Traffic (Coming Soon!)
+# Live Traffic (Experimental Feature)
 
 **Live Traffic** fills your skies and airports with the aircraft that are *actually flying right now* in the real world. Instead of replaying a recorded week of schedules, BeyondATC pulls live positions from **Navigraph's real-time traffic** and builds the traffic around you from what's genuinely up there at this moment.
 
@@ -23,7 +23,7 @@ That means when you push back at your departure airport, the aircraft you taxi p
 
 To use Live Traffic you need three things in place:
 
-1. **A Navigraph Ultimate subscription** — Live Traffic is powered by Navigraph's real-time traffic data, which is part of their **Ultimate** subscription. You can check your plan or upgrade on the [Navigraph website](https://navigraph.com).
+1. **A Navigraph Unlimited subscription** — Live Traffic is powered by Navigraph's real-time traffic data, which is part of their **Unlimited** subscription. You can check your plan or upgrade on the [Navigraph website](https://navigraph.com).
 2. **Your Navigraph account linked to BeyondATC** — see below.
 3. **AI traffic models installed** — exactly like standard traffic, BeyondATC does **not** ship aircraft models. You need models from one of the supported sources:
     - FSLTL
@@ -106,7 +106,7 @@ Live Traffic is about *who* is flying and *where they are*, not a perfect recrea
 ??? question "I turned it on but I don't see any live traffic"
     Check the following:
 
-    - You're **linked** to Navigraph and have a **Navigraph Ultimate** subscription (required for real-time traffic).
+    - You're **linked** to Navigraph and have a **Navigraph Unlimited** subscription (required for real-time traffic).
     - You have **traffic models** installed (FSLTL, AIG, FS Traffic, or BravoAirspace ATG on MSFS 2024).
     - Your **sim clock is set to real-world time** — at an off time there may genuinely be little or no matching real traffic.
     - Your **density sliders** aren't all at zero.
