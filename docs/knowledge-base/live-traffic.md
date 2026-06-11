@@ -19,6 +19,9 @@ That means when you push back at your departure airport, the aircraft you taxi p
     
     **Important Note** that 'Live' means close to real time in this context, there is a latency in the data feeds that add some delay to the received data
 
+!!! note "Experimental feature"
+    Please note that Navigraph live traffic is currently an experimental feature **available to our supporters only**. This feature will be released to the early access version as soon as it is stable and complete.
+
 ---
 
 ## What you need
