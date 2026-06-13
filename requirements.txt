@@ -1,0 +1,18 @@
+# BeyondATC Help Center — documentation build dependencies
+# Build/serve locally with:  pip install -r requirements.txt  &&  mkdocs serve
+
+# Core static-site generator
+mkdocs>=1.6
+
+# Material theme (provides the `material` theme, search features,
+# and the material.extensions.emoji twemoji index/generator used in mkdocs.yml)
+mkdocs-material>=9.5
+
+# Markdown extensions: pymdownx.details / superfences / emoji / tabbed
+pymdown-extensions>=10.0
+
+# `meta-descriptions` plugin (auto SEO meta descriptions)
+mkdocs-meta-descriptions-plugin>=3.0
+
+# `neoteroi.spantable` markdown extension (+ spantable.css)
+neoteroi-mkdocs>=1.0

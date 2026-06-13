@@ -2,10 +2,11 @@ If you don't see any traffic, please check the following:
 
 1. Check that Traffic is enabled in your BATC settings
 2. Check the time you are using. You need to make sure that the airport is busy at the time you are flying. Airports can have a very low activity at some hours of the day/night
-3. You need to have models from one injector installed in the community folder of the simulator you are currently using. BeyondATC does not provide them. Make sure that you have the models installed from at least one of these injectors:
-    - FSLTL
-    - Alpha India Group (AIG)
-    - FS Traffic
+3. You need to have models from one source installed for the simulator you are currently using. BeyondATC does not provide them. Make sure that you have models installed from at least one of these:
+    - FSLTL *(community folder)*
+    - Alpha India Group (AIG) *(community folder)*
+    - FS Traffic *(community folder)*
+    - BravoAirspace Airline Traffic Global (ATG) *(MSFS 2024 only)*
 4. Make sure you launch BeyondATC as an administrator.
 5. If you have downsized the models, please reinstall them again without downsizing. As a reminder, FSLTL does not support any change to their models, which can bring other compatibility issues.
 

@@ -36,7 +36,7 @@ For convenience, you can modify your BeyondATC shortcut to automatically launch 
     - For OpenGL, add `-force-opengl` at the end of the target path.
 
 <figure markdown>
-  ![BeyondATC shortcut edit](../../assets/kb/beyondatc_app_engine.png)
+  ![BeyondATC shortcut edit](../assets/kb/beyondatc_app_engine.png)
   <figcaption>Update the shortcut target to force the selected engine to run</figcaption>
 </figure>
 

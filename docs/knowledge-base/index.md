@@ -398,6 +398,24 @@ hide:
                     <span class="arrow">→</span>
                 </div>
             </a>
+
+            <a href="vfr" class="card" data-title="Flying VFR with BeyondATC">
+                <div class="card-icon">🛩️</div>
+                <h3>Flying VFR with BeyondATC</h3>
+                <p>Complete guide to VFR operations — from startup and taxi to circuit work and landing.</p>
+                <div class="card-footer">
+                    <div class="difficulty">
+                        <span>Intermediate</span>
+                        <div class="difficulty-dots">
+                            <span class="dot active"></span>
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <span class="arrow">→</span>
+                </div>
+            </a>
+
         </div>
     </section>
 
@@ -428,6 +446,23 @@ hide:
                 <div class="card-icon">🚦</div>
                 <h3>How the traffic sliders work</h3>
                 <p>Understand how traffic sliders influence the density and realism of your flying environment.</p>
+                <div class="card-footer">
+                    <div class="difficulty">
+                        <span>Intermediate</span>
+                        <div class="difficulty-dots">
+                            <span class="dot active"></span>
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <span class="arrow">→</span>
+                </div>
+            </a>
+
+            <a href="live-traffic" class="card" data-title="Live Traffic (Experimental Feature)">
+                <div class="card-icon">🛰️</div>
+                <h3>Live Traffic (Experimental Feature!)</h3>
+                <p>Fly alongside the aircraft that are airborne in the real world right now, using Navigraph's live traffic data.</p>
                 <div class="card-footer">
                     <div class="difficulty">
                         <span>Intermediate</span>

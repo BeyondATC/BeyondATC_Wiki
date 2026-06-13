@@ -93,6 +93,12 @@
   background-color: var(--md-primary-fg-color);
 }
 
+/* grid */
+
+.grid.cards>ul>li {
+  border: .05rem solid var(--md-primary-fg-color) !important;
+}
+
 /* Mobile Menu fix */
 
 @media screen and (max-width: 76.234375em) {
