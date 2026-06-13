@@ -6,7 +6,7 @@
     --md-default-fg-color--light: rgb(235, 235, 235);
     --md-default-fg-color--lighter: rgb(245, 245, 245);
     --md-default-fg-color--lightest: rgb(255, 255, 255);
-    --md-default-bg-color: hsl(229 17% 16% / 1);
+    --md-default-bg-color: #1d232a;
     --md-default-bg-color--light: hsla(var(--md-hue),15%,14%,0.54);
     --md-default-bg-color--lighter: hsla(var(--md-hue),15%,14%,0.26);
     --md-default-bg-color--lightest: hsla(var(--md-hue),15%,14%,0.07);
@@ -27,7 +27,7 @@
     --md-code-hl-generic-color: var(--md-default-fg-color--light);
     --md-code-hl-variable-color: var(--md-default-fg-color--light);
     --md-typeset-color: var(--md-default-fg-color);
-    --md-typeset-a-color: #c990ff;
+    --md-typeset-a-color: hsl(291 75% 75% / 1);
     --md-typeset-kbd-color: hsla(var(--md-hue),15%,90%,0.12);
     --md-typeset-kbd-accent-color: hsla(var(--md-hue),15%,90%,0.2);
     --md-typeset-kbd-border-color: hsla(var(--md-hue),15%,14%,1);
@@ -61,7 +61,7 @@
 /* Titles & text */
 
 .md-typeset h1, .md-typeset h2, .md-typeset h3{
-  color: hsl(269.13deg 80% 75%);
+  color: hsl(291 75% 75% / 1);
   font-weight: 500;
 }
 
@@ -79,7 +79,7 @@
 /* Navigation */
 
 .md-tabs__item--active, .md-tabs__item:focus, .md-tabs__item:hover {
-  border-bottom: 2px solid #b362ff;
+  border-bottom: 2px solid hsl(291 75% 75% / 1);
 }
 
 /* Separator */
