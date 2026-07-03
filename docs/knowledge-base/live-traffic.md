@@ -8,7 +8,7 @@ description: Live Traffic injects real-world aircraft into your sim in their act
 
 ---
 
-# Live Traffic (Experimental Feature)
+# Live Traffic
 
 **Live Traffic** fills your skies and airports with the aircraft that are *actually flying right now* in the real world. Instead of replaying a recorded week of schedules, BeyondATC pulls live (slightly delayed) positions from **Navigraph's real-world traffic** and builds the traffic around you from what's genuinely up there at this moment.
 
@@ -18,9 +18,6 @@ That means when you push back at your departure airport, the aircraft you taxi p
     Standard BeyondATC traffic is built from a **historic week** of real schedule data and is driven by the time of day you set in the sim. **Live Traffic** is built from **what is flying at this exact moment**, streamed live. The two work together: BeyondATC still seeds your departure airport with parked aircraft from the schedule so the ramp looks nice and full, and Live Traffic then **takes over those aircraft or adds to them** as the real-world flights call for it. 
     
     **Important Note** that 'Live' means close to real time in this context, there is a latency in the data feeds that add some delay to the received data
-
-!!! note "Experimental feature"
-    Please note that Navigraph live traffic is currently an experimental feature **available to our supporters only**. This feature will be released to the early access version as soon as it is stable and complete.
 
 ---
 

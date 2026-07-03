@@ -368,7 +368,7 @@ hide:
             <a href="cpdlc" class="card" data-title="How to use CPDLC">
                 <div class="card-icon">📨</div>
                 <h3>How to use CPDLC</h3>
-                <p>Learn how to use CPDLC with BeyondATC's experimental feature</p>
+                <p>Learn how to use CPDLC with BeyondATC</p>
                 <div class="card-footer">
                     <div class="difficulty">
                         <span>Intermediate</span>
@@ -459,9 +459,9 @@ hide:
                 </div>
             </a>
 
-            <a href="live-traffic" class="card" data-title="Live Traffic (Experimental Feature)">
+            <a href="live-traffic" class="card" data-title="Live Traffic">
                 <div class="card-icon">🛰️</div>
-                <h3>Live Traffic (Experimental Feature!)</h3>
+                <h3>Live Traffic</h3>
                 <p>Fly alongside the aircraft that are airborne in the real world right now, using Navigraph's live traffic data.</p>
                 <div class="card-footer">
                     <div class="difficulty">
