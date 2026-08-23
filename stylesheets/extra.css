@@ -203,3 +203,11 @@
 .md-typeset .grid.cards>ol>li, .md-typeset .grid.cards>ul>li, .md-typeset .grid>.card {
     border: .05rem solid var(--md-primary-fg-color);
 }
+
+/* VFR stage table */
+.vfr-stages table { width: 100%; border-collapse: collapse; }
+.vfr-stages th, .vfr-stages td { border-bottom: .1rem solid var(--md-typeset-table-color); }
+.vfr-stages th small { font-weight: 400; font-size: .7em; opacity: .85; }
+.vfr-stages .twemoji svg { width: 1.5em; height: 1.5em; }
+.vfr-stages .vfr-done svg { fill: var(--md-accent-fg-color); }
+.vfr-stages .vfr-blank svg { fill: var(--md-default-fg-color--light); }
