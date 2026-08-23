@@ -9,4 +9,4 @@ You need to make sure that you have filed a flight plan on [Simbrief](https://di
 5. Click generate flight
 6. Start a flight in BeyondATC 
 
-You need more help or more information to create your flight plan? Read our [beginner guide](../../../beginner-guide/preflight/#creating-your-flight-plan)!
+You need more help or more information to create your flight plan? Read our [beginner guide](../../../ifr/preflight/#creating-your-flight-plan)!

@@ -28,7 +28,7 @@ BeyondATC loads the flight plan from [Simbrief](https://www.simbrief.com), which
 You need to insert your [Simbrief Pilot ID](https://dispatch.simbrief.com/account) in BeyondATC window (numbers only).
 
 !!! tip "Setting up your flight plan"
-    If you don't know how to properly set up your flight plan, please follow our [beginner guide](../beginner-guide/preflight.md) that will explain you how to create a fully working flight plan for BeyondATC.
+    If you don't know how to properly set up your flight plan, please follow our [beginner guide](../ifr/preflight.md) that will explain you how to create a fully working flight plan for BeyondATC.
 
 
 ### BeyondATC settings

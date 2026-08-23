@@ -16,3 +16,6 @@ mkdocs-meta-descriptions-plugin>=3.0
 
 # `neoteroi.spantable` markdown extension (+ spantable.css)
 neoteroi-mkdocs>=1.0
+
+# `redirects` plugin (historical URLs: beginner-guide -> ifr, knowledge-base/vfr -> vfr)
+mkdocs-redirects>=1.2

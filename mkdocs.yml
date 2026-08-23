@@ -52,6 +52,19 @@ markdown_extensions:
 
 plugins:
   - search
+  # Redirect for old links..
+  # Beginner Guide became the IFR tab
+  # VFR knowledge-base page became the VFR tab.
+  - redirects:
+      redirect_maps:
+        'beginner-guide/index.md': 'ifr/overview.md'
+        'beginner-guide/overview.md': 'ifr/overview.md'
+        'beginner-guide/preflight.md': 'ifr/preflight.md'
+        'beginner-guide/departure.md': 'ifr/departure.md'
+        'beginner-guide/cruise.md': 'ifr/cruise.md'
+        'beginner-guide/arrival.md': 'ifr/arrival.md'
+        'knowledge-base/vfr.md': 'vfr/index.md'
+        'knowledge-base/vfr-stage-two.md': 'vfr/index.md'
   - meta-descriptions:
       export_csv: false
       quiet: false
@@ -67,16 +80,31 @@ nav:
     - 'Features': 'onboarding/features.md'
     - 'Pricing': 'onboarding/pricing.md'
     - 'Getting started': 'onboarding/getting-started.md'
-  - Beginner Guide:
-    - 'Overview': 'beginner-guide/overview.md'
-    - 'Preflight': 'beginner-guide/preflight.md'
-    - 'Departure': 'beginner-guide/departure.md'
-    - 'Cruise': 'beginner-guide/cruise.md'
-    - 'Arrival': 'beginner-guide/arrival.md'
+  - IFR:
+    - 'Overview': 'ifr/overview.md'
+    - 'Preflight': 'ifr/preflight.md'
+    - 'Departure': 'ifr/departure.md'
+    - 'Cruise': 'ifr/cruise.md'
+    - 'Arrival': 'ifr/arrival.md'
+  - VFR:
+    - 'vfr/index.md'
+    - 'Setting Up Your Flight': 'vfr/setting-up.md'
+    - By region:
+      - 'United States': 'vfr/united-states.md'
+      - 'United Kingdom': 'vfr/united-kingdom.md'
+      - 'Australia': 'vfr/australia.md'
+    - Everywhere:
+      - 'Uncontrolled Fields & Aerodrome Services': 'vfr/uncontrolled-fields.md'
+      - 'Radios & COM2': 'vfr/radios.md'
+      - 'Circuit Holds, Go-Arounds & Changes': 'vfr/sequencing-and-holds.md'
+      - 'Callsigns & Squawks': 'vfr/callsigns-and-squawks.md'
+      - 'Quick Reference': 'vfr/quick-reference.md'
   - Knowledge Base:
     - 'knowledge-base/index.md'
-    - 'CPDLC' : 'knowledge-base/cpdlc.md'
-    - 'CPDLC Fenix A320 Family' : 'knowledge-base/cpdlc-a320fenix.md'
+    - 'Toolbar': 'knowledge-base/toolbar.md'
+    - CPDLC:
+      - 'CPDLC' : 'knowledge-base/cpdlc.md'
+      - 'Fenix A320 Family' : 'knowledge-base/cpdlc-a320fenix.md'
   - Resources:
     - 'Resources': 'resources/index.md'
   - Support:

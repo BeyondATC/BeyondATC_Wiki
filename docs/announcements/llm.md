@@ -15,7 +15,7 @@ description: We are thrilled to announce the integration of a Large Language Mod
 
 We are thrilled to announce the integration of a Large Language Model (LLM) into BeyondATC! This groundbreaking update represents a significant leap forward in our mission to provide the most immersive and realistic air traffic control experience for flight simulation.
 
-This update is available in the experimental branch for supporter users. After thorough testing, it will roll out to the main branch for all users at **no additional cost**. This LLM integration also paves the way for future features, including VFR functionality — a highly anticipated addition to our roadmap.
+This update is available to all users at **no additional cost**. This LLM integration also paves the way for future features, including VFR functionality — a highly anticipated addition to our roadmap.
 
 From the very beginning, we envisioned BeyondATC as a fully AI-powered tool. While earlier versions relied on carefully structured systems to ensure accuracy and functionality, the rapid advancement of AI technology has made it possible to reintroduce LLMs into the core of BeyondATC. Here's why now is the perfect time:
 
@@ -32,7 +32,7 @@ Our proprietary, homegrown LLM is specifically designed for BeyondATC’s unique
 - **Context-aware responses**: The LLM processes situational data directly from BeyondATC’s 3D engine, ensuring it understands and reacts appropriately to the current environment.
 - **Flexible communication options**: Users can interact via voice, text, or a mix of both. An on-screen keyboard is now available for those who prefer typing.
 - **Enhanced realism**: The LLM’s responses are informed by the same rigorous structure that governs BeyondATC. The LLM is not involved in any decision making, it is primarily used for its speaking versatility. You will now be able to receive a response to any questions you ask and that is not falling into the flow of what it has been implemented.
-- **No additional costs**: This update will be included with your existing purchase of BeyondATC. There are no ongoing subscription fees. It will be first released to the experimental branch for our Supporters' users, but will be rolled out to everybody once it is stable, at no extra cost.
+- **No additional costs**: This update is included with your existing purchase of BeyondATC. There are no ongoing subscription fees.
 
 ## FAQ
 
@@ -50,13 +50,13 @@ The LLM brings open-ended communication to BeyondATC, allowing users to interact
 
 **Will this update cost extra?**
 
-No, the LLM integration is a free update for all BeyondATC users. It will be first available in the experimental branch available to all our Supporters. This update will then be included in the early access version at no extra cost.
+No, the LLM integration is a free update for all BeyondATC users.
 
 ---
 
 **Is the LLM always accurate?**
 
-While the LLM is built on a solid framework to ensure reliability, minor bugs and inconsistencies may occur, especially during the experimental phase. We’ll continuously improve the system based on user feedback.
+While the LLM is built on a solid framework to ensure reliability, minor bugs and inconsistencies may occur. We’ll continuously improve the system based on user feedback.
 
 ---
 
@@ -74,7 +74,7 @@ This does not affect how BeyondATC operates. Core ATC interactions remain handle
 
 **Why is the controller not saying the fix name/numbers correctly?**
 
-This is an experimental feature that is still being refined. As with any experimental functionality, adjustments are needed to ensure consistent performance. These details will be addressed when the development team focuses on finalizing the feature.
+This is still being refined; adjustments are needed to ensure consistent performance. These details will be addressed as the development team continues to improve the feature.
 
 ---
 
@@ -92,5 +92,5 @@ Not anymore! The LLM now handles all questions that fall outside the scope of th
 
 **When will this update be available?**
 
-The experimental branch release is already available for all our supporters. After testing, it will be made available to all users as part of a **free update**.
+The update is available now for all users as a **free update**.
 

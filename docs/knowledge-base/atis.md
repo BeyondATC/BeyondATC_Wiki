@@ -31,6 +31,20 @@ The ATIS you receive will match the conditions and logic currently used by Beyon
 
 ---
 
+### Example
+
+A METAR is the coded weather observation BeyondATC starts from:
+
+> METAR KPAO 231750Z 27010KT 10SM SKC 18/09 A2992
+
+From that observation (plus the airport's SOP-selected runway), BeyondATC generates and broadcasts the ATIS. As shown in the message log:
+
+| Speaker | Broadcast |
+|---|---|
+| :simple-tower: Palo Alto ATIS | KPAO ATIS A 1750Z 27010KT 10SM SKC 18/9 2992 VFR RWY 31 IN USE ACKNOWLEDGE RECEIPT OF INFORMATION A AND ADVISE AIRCRAFT TYPE ON FIRST CONTACT |
+
+The voice broadcast reads the same elements in full: *"Palo Alto Airport information Alpha… Sky condition clear… Landing and departing runway 31… Advise on initial contact you have information Alpha."*
+
 ## 🛫 How active runways are chosen
 
 The runways broadcast in ATIS are determined by the same SOP system that governs all aircraft operations in BeyondATC.
@@ -68,6 +82,32 @@ Real ATIS is controlled by live human ATC, which may:
 - Sequence based on real-time traffic conditions
 
 BeyondATC can’t mirror these real-time decisions. It uses a fixed set of community-defined SOP rules that simulate realistic usage patterns, but don’t adapt dynamically to all real-world changes.
+
+---
+
+## 📻 ASOS, AWOS, AWIS and AWIB
+
+Not every airport has an ATIS. Smaller fields often carry an automated weather broadcast instead: a report of the current conditions, with no runway or operational information. BeyondATC models these too, generated from the same live weather data as the ATIS.
+
+Tune the frequency (on COM1 or COM2) and the broadcast plays automatically, looping just like an ATIS. The wording follows the regional format. See example broadcasts below.
+
+| Type | Name | Where |
+|---|---|---|
+| **AWOS** | Automated Weather Observing System | United States and others |
+| **ASOS** | Automated Surface Observing System | United States |
+| **AWIS** | Automated Weather Information Service | Australia |
+| **AWIB** | Aerodrome and Weather Information Broadcast | New Zealand |
+
+The station type comes from the airport's navigation data, so each broadcast introduces itself with the correct name for its region. Unlike the ATIS, these broadcasts carry no information letter and no runway selection; they are weather only.
+
+**Example broadcasts** (as shown in the message log; the voice reads the same elements). The AWIS follows the Bureau of Meteorology format, with rainfall included when the field reports it; the AWIB uses the same format with the New Zealand title and no rainfall element:
+
+| Speaker | Broadcast |
+|---|---|
+| :simple-tower: Livermore AWOS | KLVK automated weather observation 1750Z. Wind 27010KT. Visibility 10. Sky clear. Temperature 18 Celsius. Dew point 9 Celsius. Altimeter 2992. |
+| :simple-tower: Half Moon Bay ASOS | KHAF automated weather observation 1750Z. Wind 27010KT. Visibility 10. Sky clear. Temperature 18 Celsius. Dew point 9 Celsius. Altimeter 2992. |
+| :simple-tower: Bankstown AWIS | Automated weather information service. Bankstown Airport. Time 1750 zulu. Wind 270 degrees magnetic at 10 knots. Visibility 25 kilometres. Present weather no significant weather. Cloud clear below 10,000 feet. Temperature 18. Dew point 9. QNH 1019 hectopascals. Rainfall last 10 minutes 0.2 millimetres. |
+| :simple-tower: Milford Sound AWIB | Aerodrome and weather information broadcast. Milford Sound Airport. Time 1750 zulu. Wind 270 degrees magnetic at 10 knots. Visibility 25 kilometres. Present weather no significant weather. Cloud clear below 10,000 feet. Temperature 18. Dew point 9. QNH 1019 hectopascals. |
 
 ---
 

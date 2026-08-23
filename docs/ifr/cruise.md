@@ -1,3 +1,7 @@
+---
+title: "IFR | Cruise"
+---
+
 # Cruise
 
 ## Handoffs

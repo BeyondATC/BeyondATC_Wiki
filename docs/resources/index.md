@@ -16,8 +16,7 @@ description: Have a look at useful resources that will enhance your experience w
 Download the latest version of our softwares:
 
 - [Download BeyondATC](https://www.beyondatc.net/download)
-- [Download VR Toolbar](https://www.beyondatc.net/download): This MSFS toolbar let you interact with BeyondATC from MSFS, very useful for VR users!
-- [Download Traffic Map](https://www.beyondatc.net/download): The traffic map will allow you to see all traffic that is managed by BeyondATC, whether it is injected or not in the simulator.
+- [Download our Toolbar](https://www.beyondatc.net/download): Our MSFS toolbar lets you control BeyondATC from within the sim, especially useful for VR and sim pits. Check out how to [Use the BeyondATC Toolbar](../knowledge-base/toolbar.md).
 
 ---
 

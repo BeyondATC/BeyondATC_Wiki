@@ -2,7 +2,7 @@
 
 Transform your virtual skies with a realistic Air Traffic Control!
 
-Take your flight simulation experience to the next level with BeyondATC, an add-on for Microsoft Flight Simulator that introduces a cutting-edge, realistic Air Traffic Control environment. Featuring over 100 ultra-realistic AI voices with regional accents and real-world phraseology, BeyondATC delivers authentic ATC communications, enhancing the immersion and realism of your virtual aviation experience.
+Take your flight simulation experience to the next level with BeyondATC, an add-on for Microsoft Flight Simulator that introduces a cutting-edge, realistic Air Traffic Control environment. Featuring hundreds of ultra-realistic AI voices with regional accents and real-world phraseology, BeyondATC delivers authentic ATC communications, enhancing the immersion and realism of your virtual aviation experience.
 
 ## Why choose BeyondATC?
 

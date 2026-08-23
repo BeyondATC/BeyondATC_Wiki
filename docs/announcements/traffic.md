@@ -6,6 +6,9 @@ hide:
 
 # Release of AI Traffic in alpha
 
+!!! warning "This page is outdated"
+    This is the original AI Traffic alpha announcement. Traffic has long since left alpha and this page is no longer maintained. For current information see the [FAQ](../support/faq.md) and the [Getting Started guide](../onboarding/getting-started.md).
+
 ![Image of traffic](../assets/traffic.jpg)
 
 We are very happy to introduce the Alpha build of our new Traffic feature in BeyondATC! This is an exciting first step in our journey to enhance your flight simulation experience with dynamic and realistic air traffic. This feature is currently available for all our supporters.

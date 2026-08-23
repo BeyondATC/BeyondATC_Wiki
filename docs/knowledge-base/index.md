@@ -399,23 +399,6 @@ hide:
                 </div>
             </a>
 
-            <a href="vfr" class="card" data-title="Flying VFR with BeyondATC">
-                <div class="card-icon">🛩️</div>
-                <h3>Flying VFR with BeyondATC</h3>
-                <p>Complete guide to VFR operations — from startup and taxi to circuit work and landing.</p>
-                <div class="card-footer">
-                    <div class="difficulty">
-                        <span>Intermediate</span>
-                        <div class="difficulty-dots">
-                            <span class="dot active"></span>
-                            <span class="dot active"></span>
-                            <span class="dot"></span>
-                        </div>
-                    </div>
-                    <span class="arrow">→</span>
-                </div>
-            </a>
-
         </div>
     </section>
 
@@ -425,6 +408,23 @@ hide:
             Useful information
         </h2>
         <div class="cards-grid">
+            <a href="toolbar" class="card" data-title="Using the BeyondATC Toolbar">
+                <div class="card-icon">🧰</div>
+                <h3>Using the BeyondATC Toolbar</h3>
+                <p>Install the in-sim toolbar and use it to start flights, read the ATC log, tune frequencies, and send requests from the cockpit.</p>
+                <div class="card-footer">
+                    <div class="difficulty">
+                        <span>Easy</span>
+                        <div class="difficulty-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <span class="arrow">→</span>
+                </div>
+            </a>
+
             <a href="atis" class="card" data-title="How ATIS works in BeyondATC">
                 <div class="card-icon">🏗️</div>
                 <h3>How ATIS works in BeyondATC</h3>

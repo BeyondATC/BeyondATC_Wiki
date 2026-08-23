@@ -1,3 +1,7 @@
+---
+title: "IFR | Preflight"
+---
+
 # Preflight
 
 ## Creating your flight plan

@@ -60,7 +60,7 @@ description: Find all frequently asked questions about BeyondATC and their answe
     - You will be told to be off course and given a new direct to. Go direct to this fix and continue your flight to the alternate airport.
 
 ??? info "Can I request a different approach?"
-    At the moment, it is not possible to change the approach you are assigned by ATC. This is a feature that is planned for later.
+    Yes. Once ATC has assigned you an approach, use the **Request Approach Change** button (or ask by voice) and ATC will offer the available approaches for your runway.
 
 ## ATC questions
 
@@ -105,7 +105,7 @@ description: Find all frequently asked questions about BeyondATC and their answe
 ??? info "Should ATC instruct me when I have to descend?"
     As the pilot in command, **it is your responsibility to request descent when needed**. While ATC typically prompts you to descend, there may be times when they don't, or when their instruction comes later than you require. This can happen for several reasons, one being that ATC does not have precise knowledge of your TOD. The TOD is specific to your aircraft's performance and the descent planning you've calculated, which ATC cannot determine. Therefore, it’s essential to monitor your descent profile and, when necessary, report that you are ready for descent so ATC can issue the appropriate clearance.
 
-    You can read our [Beginner Guide about descent planning](../../beginner-guide/cruise/#descent-planning) if you need help.
+    You can read our [Beginner Guide about descent planning](../../ifr/cruise/#descent-planning) if you need help.
 
 ??? info "Why isn't BeyondATC using the runway specified in my flight plan?"
     In real-world aviation, runways are not pre-assigned in flight plans. Instead, they are determined by Air Traffic Control (ATC) based on current conditions like wind direction, runway availability, and traffic volume.
@@ -120,18 +120,16 @@ description: Find all frequently asked questions about BeyondATC and their answe
 ??? info "What is the traffic source?"
     BeyondATC uses data from FlightRadar24, using a historic week of data. This includes all IFR flights, GA included. 
 
-??? info "Why are you not using live traffic? Are you planning to add it later?"
-    Various factors were evaluated such as costs, contracts, user feedback, system architecture, and development timeline. Based on these criteria, the choice was made not to use live traffic data.
+??? info "Do you support live traffic?"
+    Live traffic is supported through the **Navigraph Live Traffic** integration, available with a Navigraph Unlimited subscription. Enable it in the settings and BeyondATC injects and controls real-world traffic; see [Live Traffic](../knowledge-base/live-traffic.md) for setup.
 
-    Tests showed minimal differences that most users won't notice. This setup offers a seamless experience without the complexities and costs of live traffic, allowing users to choose their flight times and experience busy airports.
-
-    Currently, there are no plans to implement live traffic or support any other injectors. 
+    **BeyondATC does not require you to have Navigraph to use traffic however**, outside of Live traffic we use historical FR24 schedule data. This offers a large traffic data set for those who do not have Navigraph Unlimited, do not want to use live traffic, or who want to fly at specific times.
 
 ??? info "Will you update the traffic data?"
     We plan to update the dataset to provide more relevant traffic data for the simulator. However, please keep in mind that this data is costly, and while we are committed to making updates, we currently do not have a specific timeline for when this will happen as it has to be discussed with the data provider. 
 
 ??? info "Which models will BeyondATC use for AI Traffic?"
-    BeyondATC will use whatever models you have installed in your simulator, including any combination of AIG, FSLTL, and FS Traffic. On MSFS 2024 it can also use BravoAirspace Airline Traffic Global (ATG).
+    BeyondATC will use whatever models you have installed in your simulator, including any combination of AIG, FSLTL, and FS Traffic. On MSFS 2024 you can also use BravoAirspace Airline Traffic Global (ATG).
 
 ??? info "BeyondATC says that no traffic liveries are found"
     Make sure you have installed models for at least one provider (AIG, FSLTL or FS Traffic) in the community folder of the MSFS version you are using — or, on MSFS 2024, BravoAirspace ATG. If it still doesn't work, start BeyondATC as an administrator.
@@ -164,7 +162,7 @@ description: Find all frequently asked questions about BeyondATC and their answe
     - **Airplane sequencing**, aircraft will be sequenced in to maintain a distance between them according to their speed and airframe. The player is included in these calculations. 
     - **Pushback tugs**, tugs will pushback the aircraft from the gate.
     - **Custom takeoff and landing animations**, these animations are custom built per airframe. Aircraft will flare on landing, and pitch up before lifting off on takeoff. We believe no other traffic injector, including the MS default injector matches the quality and breadth of these animations.
-    - **Full integration of traffic into the local BeyondATC airport map**, and a wider view enroute traffic map which can be downloaded [here](https://www.beyondatc.net/download).
+    - **Full integration of traffic into the local BeyondATC airport map**, and a wider view enroute traffic map, included within BeyondATC.
 
 ??? info "How do I set up everything to use traffic with BeyondATC?"
     Please follow our setup guide [here](../../onboarding/getting-started)
