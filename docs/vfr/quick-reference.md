@@ -12,7 +12,7 @@ Each of these also exists as a button. Saying the full phrase skips the button s
 |---|---|
 | Taxi for pattern work | *"Request taxi for closed traffic"* (US) / *"…for circuits"* (UK/AU) |
 | Taxi for a departure | *"Request taxi for VFR departure"* |
-| Flight following (US/AU) | *"Request flight following to {destination}"* |
+| Flight following (US/AU) | Full call grants at once: *"{type}, {position}, {altitude}, request flight following to {destination}"*. A bare *"request flight following"* gets *"go ahead"* first. |
 | Basic / Traffic Service (UK) | *"Request basic service"* / *"Request traffic service"* |
 | Class B/C departure clearance (US) | *"{Clearance}, {callsign}, {type}, with information {ATIS}, VFR to {destination}"* |
 | Airspace transition (US) | *"Request transition through the Class {Bravo/Charlie/Delta}"* |

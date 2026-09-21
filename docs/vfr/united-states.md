@@ -145,7 +145,7 @@ If you are departing the area (not doing closed traffic):
 | **Class B/C** | Tower hands you to Departure once you are airborne and about half a mile from the field: *"contact Burbank Departure 124.6."* Check in with **Announce On Frequency** (*"Burbank Departure, N123AB, off Burbank, passing 1,500"*) and you will get *"radar contact"*, along with flight following if you asked for it. |
 
 !!! tip "Requesting flight following after departure"
-    You can ask for flight following in the air if you didn't ask for it on the ground, click the "Request Flight Following" button or ask by voice.
+    You can ask for flight following in the air if you didn't ask for it on the ground. Click **VFR Request** to open the call, then **Request Flight Following** when the controller answers, or ask by voice. See [Flight Following](#flight-following).
 
 ### Returning to the field
 
@@ -332,18 +332,22 @@ Flight following allows you to receive radar advisories from Approach or Center 
 |---|---|
 | **On the ground, with your taxi call** | *"…request taxi for VFR departure to the north, with flight following."* |
 | **With your Class B/C departure clearance** | Use the **VFR Departure + Flight Following** button. |
-| **In the air** | Call the overlying radar facility: *"SoCal Approach, N123AB, request flight following to Santa Monica."* |
+| **In the air** | Open a call to the overlying radar facility with the **VFR Request** button, then ask when the controller answers. |
 
-After asking ATC for flight following they will want further information, use the **Pass Message** or give your type, route, position and altitude. ATC then assigns a squawk, radar-identifies you, and starts calling traffic to you:
+In the air, the exchange follows real FAA practice: your opening call is just the facility and your callsign. The controller assumes you are VFR, and knows a request is coming. When they answer, two buttons appear: **Request Flight Following**, which sends your type, position, altitude and the request in one transmission, or **Nevermind** to withdraw. ATC then assigns a squawk, radar-identifies you, and starts calling traffic to you:
 
 | Speaker                       | Response                                                                          |
 | ----------------------------- | --------------------------------------------------------------------------------- |
-| :simple-tower: SoCal Approach | N123AB, SoCal Approach, go ahead.                                                 |
-| :material-airplane: N123AB    | N123AB, Cessna 172, from Burbank to Santa Monica, 12 miles west of Van Nuys, altitude 4,500 feet, VFR. |
+| :material-airplane: N123AB    | SoCal Approach, N123AB.                                                           |
+| :simple-tower: SoCal Approach | N123AB, SoCal Approach.                                                           |
+| :material-airplane: N123AB    | N123AB, Cessna 172, 12 miles west of Van Nuys, altitude 4,500 feet, request flight following to Santa Monica. |
 | :simple-tower: SoCal Approach | N123AB, squawk 4521 and ident.                                                    |
 | :material-airplane: N123AB    | Squawk 4521 and ident, N123AB.                                                    |
 | :simple-tower: SoCal Approach | N123AB, radar contact, 12 miles west of Van Nuys, altimeter 29.92.                |
 | :simple-tower: SoCal Approach | N3AB, traffic two o'clock, three miles, opposite direction, 4,500.                |
+
+!!! tip "Say it all in one call"
+    You can skip the exchange above by voicing the whole request at once. If your call carries a position ("12 miles west of Van Nuys") and an altitude, ATC grants it straight away. A bare *"request flight following"* gets *"go ahead"* first, and the two buttons then appear.
 
 Respond with **Traffic In Sight** (*"traffic in sight"*) or **Looking for Aircraft** (*"looking for traffic"*). You'll be handed between sectors as you fly. Check in on each new sector, and cancel any time with *"cancel flight following"*:
 

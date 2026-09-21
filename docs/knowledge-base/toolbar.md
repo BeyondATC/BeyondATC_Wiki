@@ -40,7 +40,8 @@ The BeyondATC Toolbar is an in-sim panel for Microsoft Flight Simulator 2020 and
 
 Click the BeyondATC icon in the sim toolbar at the top of the screen. The panel can be dragged and resized like any other toolbar panel, and works in VR.
 
-You can also open and close the panel with the sim's ATC menu key (Scroll Lock by default). This is the same key that opens the default MSFS ATC window.
+!!! info "Keyboard shortcut"
+    The panel can also be shown and hidden with the sim control **ATC Panel Choice 0**. The default key is **0**. To change it, open the MSFS Controls options, search for "ATC Panel Choice 0", and bind it to any key or button you like. The panel must have been opened once from the sim toolbar first.
 
 ![The BeyondATC icon in the sim toolbar](../assets/kb/toolbar-icon.png)
 

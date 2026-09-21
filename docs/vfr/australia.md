@@ -315,16 +315,19 @@ At **Class C** aerodromes the inbound call belongs to Approach. Call before the 
 
 ## Surveillance Information Service
 
-The Australian equivalent of flight following, requested from Centre with **Request Flight Following**. Centre asks for your message, assigns a squawk, and identifies you:
+The Australian equivalent of flight following, requested from Centre. Open the call with the **VFR Request** button: it transmits just the station and your callsign, and Centre invites your request. Two buttons then appear: **Request Flight Following**, which sends your type, position, altitude and the request in one transmission, or **Nevermind** to withdraw. Centre assigns a squawk and identifies you:
 
 | Speaker                          | Response                                                                                                 |
 | -------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| :material-airplane: VH-ABC       | Melbourne Centre, VH-ABC, request flight following.                                                      |
-| :simple-tower: Melbourne Centre  | VH-ABC, Melbourne Centre, pass your message.                                                             |
-| :material-airplane: VH-ABC       | VH-ABC, Piper Archer, from Bankstown to Canberra, 20 miles south-west of Bankstown, altitude 4,500 feet, VFR. |
+| :material-airplane: VH-ABC       | Melbourne Centre, VH-ABC.                                                                                |
+| :simple-tower: Melbourne Centre  | VH-ABC, Melbourne Centre, go ahead with your request.                                                    |
+| :material-airplane: VH-ABC       | VH-ABC, Piper Archer, 20 miles south-west of Bankstown, altitude 4,500 feet, request flight following to Canberra. |
 | :simple-tower: Melbourne Centre  | VH-ABC, squawk 3651.                                                                                     |
 | :material-airplane: VH-ABC       | Squawk 3651, VH-ABC.                                                                                     |
 | :simple-tower: Melbourne Centre  | VH-ABC, identified, 20 miles south-west of Bankstown.                                                    |
+
+!!! tip "Say it all in one call"
+    Voicing the whole request at once, with a position and an altitude in the call, skips the invitation and is granted straight away. A bare *"request flight following"* gets the invitation first.
 
 Centre will then monitor and call out relevant traffic to you. Where you can respond with **Traffic In Sight** or **Looking for Aircraft**. You are handed between sectors as you fly, and to your destination Approach if it's at a Class C aerodrome. Cancel this enroute service at any time with *"terminate surveillance service."*
 

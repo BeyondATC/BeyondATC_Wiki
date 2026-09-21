@@ -21,7 +21,7 @@ Before launching your flight, you must configure the Fenix aircraft to use Beyon
 3. Under **ACARS Provider**, select **BeyondATC**
 
 <figure markdown>
-  ![Fenix app](../../assets/kb/cpdlc-fenixapp.png)
+  ![Fenix app](../assets/kb/cpdlc-fenixapp.png)
   <figcaption>ACARS provider selection in the Fenix App</figcaption>
 </figure>
 
@@ -37,7 +37,7 @@ In the Fenix A320, CPDLC/ACARS communication with BeyondATC is handled through:
 - **DCDU** (Data Communication Display Unit), used to receive and acknowledge ATC messages
 
 <figure markdown>
-  ![Fenix Airbus cockpit](../../assets/kb/cpdlc-fenix-cockpit.png)
+  ![Fenix Airbus cockpit](../assets/kb/cpdlc-fenix-cockpit.png)
   <figcaption>MCDU and DCDU location on the Airbus A320 family</figcaption>
 </figure>
 
@@ -53,7 +53,7 @@ From the cockpit, access the `MCDU MENU`, then open the `AOC MENU` and navigate 
 Selecting `INIT DATA REQ` sends a request to Simbrief and loads your flight information into the aircraft.
 
 <figure markdown>
-  ![AOC FLT INIT](../../assets/kb/cpdlc-fenix-aocfltinit.png)
+  ![AOC FLT INIT](../assets/kb/cpdlc-fenix-aocfltinit.png)
   <figcaption>AOC flight initialization page</figcaption>
 </figure>
 
@@ -66,7 +66,7 @@ The commercial flight number is not used by ATC and should not be entered here.
 You should also confirm the `Cost Index` and `Cruise Level`, usually taken directly from Simbrief.
 
 <figure markdown>
-  ![FLT INIT](../../assets/kb/cpdlc-fenix-init.png)
+  ![FLT INIT](../assets/kb/cpdlc-fenix-init.png)
   <figcaption>Flight initialization page</figcaption>
 </figure>
 
@@ -78,7 +78,7 @@ From the `MCDU MENU`, open the `AOC MENU`, then select `ATC REQ` and choose `PRE
 This page allows you to provide the final operational details required by ATC.
 
 <figure markdown>
-  ![AOC DEPARTURE REQUEST](../../assets/kb/cpdlc-fenix-predepclearance-request.png)
+  ![AOC DEPARTURE REQUEST](../assets/kb/cpdlc-fenix-predepclearance-request.png)
   <figcaption>Pre-departure clearance request page</figcaption>
 </figure>
 
@@ -91,7 +91,7 @@ After a short delay, ATC will respond via CPDLC.
 The clearance message appears on the **DCDU**, not on the MCDU itself.
 
 <figure markdown>
-  ![DCDU ATC response](../../assets/kb/cpdlc-fenix-predepclearance-dcdu-1.png)
+  ![DCDU ATC response](../assets/kb/cpdlc-fenix-predepclearance-dcdu-1.png)
   <figcaption>Pre-departure clearance received on the DCDU</figcaption>
 </figure>
 
@@ -103,7 +103,7 @@ Once you are ready, acknowledge the clearance by selecting `WILCO` on the DCDU.
 ATC will then send a confirmation message indicating that your clearance has been accepted.
 
 <figure markdown>
-  ![DCDU ATC response](../../assets/kb/cpdlc-fenix-predepclearance-dcdu-2.png)
+  ![DCDU ATC response](../assets/kb/cpdlc-fenix-predepclearance-dcdu-2.png)
   <figcaption>Clearance confirmation from ATC</figcaption>
 </figure>
 
@@ -120,14 +120,14 @@ Navigate to the `ATC COMM` page, then select `CONNECTION` followed by `NOTIFICAT
 Once the correct center code is entered, select `NOTIFY` to send the logon request.
 
 <figure markdown>
-  ![ATC Notification page](../../assets/kb/cpdlc-fenix-logon-notificationpage.png)
+  ![ATC Notification page](../assets/kb/cpdlc-fenix-logon-notificationpage.png)
   <figcaption>Notify ATC to establish a CPDLC connection</figcaption>
 </figure>
 
 If the logon is successful, ATC will confirm the connection via a message on the **DCDU**. This confirms that CPDLC is now active with the current Center controller.
 
 <figure markdown>
-  ![ATC logon accepted](../../assets/kb/cpdlc-fenix-logon-accepted.png)
+  ![ATC logon accepted](../assets/kb/cpdlc-fenix-logon-accepted.png)
   <figcaption>ATC confirms the CPDLC logon</figcaption>
 </figure>
 
@@ -140,7 +140,7 @@ Once accepted, you may begin receiving CPDLC messages in parallel with normal vo
 During the flight, ATC will transfer you from one Center to another. When CPDLC is active, these handoffs are delivered via text on the DCDU.
 
 <figure markdown>
-  ![Handoff](../../assets/kb/cpdlc-fenix-handoff.png)
+  ![Handoff](../assets/kb/cpdlc-fenix-handoff.png)
   <figcaption>CPDLC handoff message from ATC</figcaption>
 </figure>
 
@@ -166,14 +166,14 @@ To create a request, open the `ATC COMM` page on the MCDU and select `REQUEST`. 
 Once the request details are entered, select `XFR TO DCDU`. This transfers the request from the MCDU to the DCDU for review before transmission.
 
 <figure markdown>
-  ![Request page](../../assets/kb/cpdlc-fenix-requests.png)
+  ![Request page](../assets/kb/cpdlc-fenix-requests.png)
   <figcaption>CPDLC request entry page</figcaption>
 </figure>
 
 After transferring the request, it will appear on the **DCDU**. Review the message and select `SEND` to transmit it to ATC.
 
 <figure markdown>
-  ![Request on the DCDU](../../assets/kb/cpdlc-fenix-dcdu-request.png)
+  ![Request on the DCDU](../assets/kb/cpdlc-fenix-dcdu-request.png)
   <figcaption>CPDLC request displayed on the DCDU</figcaption>
 </figure>
 
