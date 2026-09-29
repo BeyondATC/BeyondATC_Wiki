@@ -535,6 +535,23 @@ hide:
                 </div>
             </a>
             
+            <a href="navdata-integrity" class="card" data-title="Navigation data problem warning">
+                <div class="card-icon">🧭</div>
+                <h3>Navigation data problem warning</h3>
+                <p>What the navigation data warning means, and how to clear the simulator's scenery indexes to fix missing or broken procedures.</p>
+                <div class="card-footer">
+                    <div class="difficulty">
+                        <span>Easy</span>
+                        <div class="difficulty-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <span class="arrow">→</span>
+                </div>
+            </a>
+
             <a href="../support/common-issues/simconnect" class="card" data-title="Troubleshoot connection issues">
                 <div class="card-icon">🔌</div>
                 <h3>Troubleshoot connection issues</h3>
