@@ -107,6 +107,7 @@ nav:
       - 'Fenix A320 Family' : 'knowledge-base/cpdlc-a320fenix.md'
   - Resources:
     - 'Resources': 'resources/index.md'
+    - 'Third-Party Apps & Add-ons': 'resources/third-party.md'
   - Support:
     - 'Bug reporting': 'support/bug-reporting.md'
     - 'FAQ': 'support/faq.md'

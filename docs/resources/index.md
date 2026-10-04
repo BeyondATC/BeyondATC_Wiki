@@ -20,6 +20,12 @@ Download the latest version of our softwares:
 
 ---
 
+## Third-Party Apps & Add-ons
+
+Looking for community-made tools that work with BeyondATC, like phone companions, airport profiles and traffic models? See [Third-Party Apps & Add-ons](third-party.md). Please note these are made and supported by their own authors, not by BeyondATC.
+
+---
+
 ## Phraseology Cheat Sheet
 
 Need help communicating with ATC? Download our handy cheat sheet for ICAO and FAA phraseology — it’s designed to fit on a two-sided page, so you can print it out and have it ready whenever you need!
