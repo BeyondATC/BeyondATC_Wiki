@@ -16,7 +16,7 @@
         <link rel="prev" href="../bug-reporting/">
       
       
-        <link rel="next" href="../common-issues/stucklogin/">
+        <link rel="next" href="../xplane12/">
       
       
         
@@ -1657,6 +1657,8 @@
       
         
       
+        
+      
     
     
     
@@ -1869,6 +1871,34 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../xplane12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    X-Plane 12 (Experimental)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     
     
       
@@ -1902,10 +1932,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_4" >
         
           
-          <label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_7_4" id="__nav_7_4_label" tabindex="">
             
   
   
@@ -1923,8 +1953,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_3">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_4">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2193,7 +2223,8 @@
 <details class="info">
 <summary>Which simulators is BeyondATC be available for?</summary>
 <p>BeyondATC is designed for Microsoft Flight Simulator 2020 and 2024 on PC.</p>
-<p>We have not planned to support any other simulator or platform. It is technically not possible to support Xbox.</p>
+<p>X-Plane 12 is also supported as an <strong>experimental</strong> feature. See <a href="../xplane12/">X-Plane 12</a> for the setup and the current limitations.</p>
+<p>It is technically not possible to support Xbox.</p>
 </details>
 <details class="info">
 <summary>Is there a trial period?</summary>
@@ -2294,23 +2325,30 @@
 <details class="info">
 <summary>Which models will BeyondATC use for AI Traffic?</summary>
 <p>BeyondATC will use whatever models you have installed in your simulator, including any combination of AIG, FSLTL, and FS Traffic. On MSFS 2024 you can also use BravoAirspace Airline Traffic Global (ATG).</p>
+<p>On X-Plane 12, BeyondATC uses Bluebell CSL, X-CSL and Traffic Global models. See <a href="../xplane12/#traffic-models">Traffic models on X-Plane 12</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Traffic Global (Just Flight) on X-Plane 12</p>
+<p>For the Just Flight Traffic Global models, disable the Traffic Global plugin itself so that it does not inject its own traffic. The recommended way is to rename <code>X-Plane 12\Resources\plugins\Traffic Global\win_x64\Traffic Global.xpl</code> to <code>Traffic Global.bak</code>, which you can rename back at any time. Disabling it in <strong>Plugins &gt; Plugin Admin</strong> also works, but has to be done again every time you restart X-Plane. See <a href="../xplane12/#traffic-global">Traffic Global</a>.</p>
+</div>
 </details>
 <details class="info">
 <summary>BeyondATC says that no traffic liveries are found</summary>
-<p>Make sure you have installed models for at least one provider (AIG, FSLTL or FS Traffic) in the community folder of the MSFS version you are using — or, on MSFS 2024, BravoAirspace ATG. If it still doesn't work, start BeyondATC as an administrator.</p>
+<p>Make sure you have installed models for at least one provider (AIG, FSLTL or FS Traffic) in the community folder of the MSFS version you are using - or, on MSFS 2024, BravoAirspace ATG. If it still doesn't work, start BeyondATC as an administrator.</p>
+<p>On X-Plane 12, see <a href="../xplane12/#traffic-models">Traffic models on X-Plane 12</a>.</p>
 </details>
 <details class="info">
 <summary>Can BeyondATC use the new traffic models that come with MSFS 2024?</summary>
 <p>Yes, in two ways on MSFS 2024:</p>
 <ul>
-<li><strong>GA &amp; bizjet models</strong> — anyone can use the simulator's built-in GA and business-jet models by enabling the <strong>Use MSFS 2024 GA Models</strong> toggle in BeyondATC's options. No extra package is required.</li>
-<li><strong>Airliner models</strong> — BeyondATC supports <strong>BravoAirspace Airline Traffic Global (ATG)</strong>, which adds airline liveries to the simulator's native models so BeyondATC can inject them.</li>
+<li><strong>GA &amp; bizjet models</strong> - anyone can use the simulator's built-in GA and business-jet models by enabling the <strong>Use MSFS 2024 GA Models</strong> toggle in BeyondATC's options. No extra package is required.</li>
+<li><strong>Airliner models</strong> - BeyondATC supports <strong>BravoAirspace Airline Traffic Global (ATG)</strong>, which adds airline liveries to the simulator's native models so BeyondATC can inject them.</li>
 </ul>
 <p>The plain native airliner models on their own (without ATG) still can't be injected outside the simulator's default traffic engine, so ATG is the way to use them with BeyondATC.</p>
 </details>
 <details class="info">
 <summary>Can AI traffic use ground services?</summary>
 <p>Currently, AI traffic can utilize pushback tugs injected by BeyondATC. However, injected AI aircraft are not yet able to use jetways. This functionality requires an update from Asobo to enable third-party software to trigger jetway operations for non-player aircrafts.</p>
+<p>On X-Plane 12, AI traffic also uses pushback tugs (X-Plane's default tug).</p>
 </details>
 <details class="info">
 <summary>What features are available with AI Traffic?</summary>
@@ -2366,7 +2404,7 @@
 </details>
 <details class="info">
 <summary>Why are my frequencies switching back to something else?</summary>
-<p>You need to disable ATC assistance options in MSFS settings. Please have a look at <a href="../../onboarding/getting-started/#setting-up-ai-traffic">our guide</a> to set everything up correctly.</p>
+<p>You need to disable the ATC assistance options in your simulator's settings. Please have a look at <a href="../../onboarding/getting-started/#disable-atc-assistance-options">our guide</a> to set everything up correctly.</p>
 </details>
 <details class="info">
 <summary>Simbrief cannot be reached. What can I do?</summary>
@@ -2383,7 +2421,7 @@
 </details>
 <details class="info">
 <summary>Why is BeyondATC telling me that a runway does not exist?</summary>
-<p>BeyondATC uses data directly from MSFS scenery, so if a scenery is outdated or differs from what tools like SimBrief reference, it may result in runway discrepancies. BeyondATC can account for minor changes, such as a one-digit difference in runway numbers, but significant changes—like renaming 06 to 06L—are not recognized and will cause this error.</p>
+<p>BeyondATC uses data directly from your simulator's scenery, so if a scenery is outdated or differs from what tools like SimBrief reference, it may result in runway discrepancies. BeyondATC can account for minor changes, such as a one-digit difference in runway numbers, but significant changes-like renaming 06 to 06L-are not recognized and will cause this error.</p>
 <p>To solve this error, you need to check if a custom scenery is available and up to date.</p>
 </details>
 <details class="info">
@@ -2447,13 +2485,13 @@
         
         
           
-          <a href="../common-issues/stucklogin/" class="md-footer__link md-footer__link--next" aria-label="Next: Stuck in the login screen">
+          <a href="../xplane12/" class="md-footer__link md-footer__link--next" aria-label="Next: X-Plane 12 (Experimental)">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Stuck in the login screen
+                X-Plane 12 (Experimental)
               </div>
             </div>
             <div class="md-footer__button md-icon">

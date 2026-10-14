@@ -1645,6 +1645,8 @@
       
         
       
+        
+      
     
     
     
@@ -1752,6 +1754,34 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../support/xplane12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    X-Plane 12 (Experimental)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     
     
       
@@ -1782,10 +1812,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_4" >
         
           
-          <label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7_4" id="__nav_7_4_label" tabindex="0">
             
   
   
@@ -1803,8 +1833,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_3">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_4">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2046,7 +2076,7 @@
 
 <h1 id="live-traffic">Live Traffic</h1>
 <p><strong>Live Traffic</strong> fills your skies and airports with the aircraft that are <em>actually flying right now</em> in the real world. Instead of replaying a recorded week of schedules, BeyondATC pulls live (slightly delayed) positions from <strong>Navigraph's real-world traffic</strong> and builds the traffic around you from what's genuinely up there at this moment.</p>
-<p>That means when you push back at your departure airport, the aircraft you taxi past, the jet that lands ahead of you, and the traffic you hear on frequency are the real flights operating that route today — same callsigns, same aircraft types, same airlines.</p>
+<p>That means when you push back at your departure airport, the aircraft you taxi past, the jet that lands ahead of you, and the traffic you hear on frequency are the real flights operating that route today - same callsigns, same aircraft types, same airlines.</p>
 <div class="admonition info">
 <p class="admonition-title">How it differs from standard (scheduled) traffic</p>
 <p>Standard BeyondATC traffic is built from a <strong>historic week</strong> of real schedule data and is driven by the time of day you set in the sim. <strong>Live Traffic</strong> is built from <strong>what is flying at this exact moment</strong>, streamed live. The two work together: BeyondATC still seeds your departure airport with parked aircraft from the schedule so the ramp looks nice and full, and Live Traffic then <strong>takes over those aircraft or adds to them</strong> as the real-world flights call for it. </p>
@@ -2056,29 +2086,33 @@
 <h2 id="what-you-need">What you need</h2>
 <p>To use Live Traffic you need three things in place:</p>
 <ol>
-<li><strong>A Navigraph Unlimited subscription</strong> — Live Traffic is powered by Navigraph's near real-time traffic data, which is part of their <strong>Unlimited</strong> subscription. You can check your plan or upgrade on the <a href="https://navigraph.com">Navigraph website</a>.</li>
-<li><strong>Your Navigraph account linked to BeyondATC</strong> — see below.</li>
+<li><strong>A Navigraph Unlimited subscription</strong> - Live Traffic is powered by Navigraph's near real-time traffic data, which is part of their <strong>Unlimited</strong> subscription. You can check your plan or upgrade on the <a href="https://navigraph.com">Navigraph website</a>.</li>
+<li><strong>Your Navigraph account linked to BeyondATC</strong> - see below.</li>
 <li>
-<p><strong>AI traffic models installed</strong> — exactly like standard traffic, BeyondATC does <strong>not</strong> ship aircraft models. You need models from one of the supported sources:</p>
+<p><strong>AI traffic models installed</strong> - exactly like standard traffic, BeyondATC does <strong>not</strong> ship aircraft models. You need models from one of the supported sources:</p>
 <ul>
 <li>FSLTL</li>
 <li>Alpha India Group (AIG)</li>
 <li>FS Traffic</li>
 <li>BravoAirspace Airline Traffic Global (ATG) <em>(MSFS 2024 only)</em></li>
 </ul>
-<p>You must <strong>not</strong> run any injector from these packages — BeyondATC handles injecting the aircraft.</p>
+<p>You must <strong>not</strong> run any injector from these packages - BeyondATC handles injecting the aircraft.</p>
 <div class="admonition tip">
 <p class="admonition-title">BravoAirspace ATG on MSFS 2024</p>
 <p>BravoAirspace ATG uses the simulator's built-in (native) traffic models, so it's available on <strong>MSFS 2024</strong> only. </p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">X-Plane 12</p>
+<p>On X-Plane 12, BeyondATC uses Bluebell CSL, X-CSL or Traffic Global models instead. See <a href="../../support/xplane12/#traffic-models">Traffic models on X-Plane 12</a>.</p>
 </div>
 </li>
 </ol>
 <hr />
 <h2 id="linking-your-navigraph-account">Linking your Navigraph account</h2>
-<p>Live Traffic needs your Navigraph account linked to BeyondATC. There are two ways to start it — both open the same quick browser sign-in:</p>
+<p>Live Traffic needs your Navigraph account linked to BeyondATC. There are two ways to start it - both open the same quick browser sign-in:</p>
 <ul>
-<li><strong>From the Live Traffic toggle (easiest)</strong> — just switch <strong>Live Traffic</strong> on in the traffic options (see below). If you aren't linked yet, BeyondATC opens the Navigraph linking page for you automatically.</li>
-<li><strong>From the Account window</strong> — open the <strong>Account</strong> window, find the <strong>Navigraph</strong> row and click <strong>Link</strong>.</li>
+<li><strong>From the Live Traffic toggle (easiest)</strong> - just switch <strong>Live Traffic</strong> on in the traffic options (see below). If you aren't linked yet, BeyondATC opens the Navigraph linking page for you automatically.</li>
+<li><strong>From the Account window</strong> - open the <strong>Account</strong> window, find the <strong>Navigraph</strong> row and click <strong>Link</strong>.</li>
 </ul>
 <p>Either way, the sign-in is the same:</p>
 <ol>
@@ -2095,8 +2129,8 @@
 <li>Open <strong>Options</strong> and go to the <strong>Traffic</strong> settings.</li>
 <li>Switch on the <strong>Live Traffic</strong> toggle.</li>
 </ol>
-<p>If you're <strong>already linked</strong> to Navigraph, that's it — on your next flight BeyondATC populates the world from the live feed.</p>
-<p>If you're <strong>not linked yet</strong>, switching it on won't enable it straight away — instead BeyondATC opens the Navigraph linking page in your browser. Once you've finished linking, switch the toggle on again and it will stay on.</p>
+<p>If you're <strong>already linked</strong> to Navigraph, that's it - on your next flight BeyondATC populates the world from the live feed.</p>
+<p>If you're <strong>not linked yet</strong>, switching it on won't enable it straight away - instead BeyondATC opens the Navigraph linking page in your browser. Once you've finished linking, switch the toggle on again and it will stay on.</p>
 <div class="admonition note">
 <p class="admonition-title">The toggle won't stay on</p>
 <p>Live Traffic can't run without a live data source, so the switch only stays on once your Navigraph account is linked. Flipping it on while unlinked kicks off the linking process for you. After you link, switch it on again and it works normally.</p>
@@ -2108,40 +2142,40 @@
 <hr />
 <h2 id="what-live-traffic-does">What Live Traffic does</h2>
 <ul>
-<li><strong>A full, real airport</strong> — your departure airport is seeded with parked aircraft from the schedule so the ramp looks busy, and Live Traffic then takes over those airframes (or adds new ones) to match what's really happening on the ground.</li>
-<li><strong>Real positions as a starting point</strong> — airborne aircraft are placed where the real flights actually are when they come into range. From there BeyondATC takes control and flies them, so they may drift from the exact real-world track — though in practice usually not by much.</li>
-<li><strong>Real departures</strong> — a parked aircraft only departs when its real-world counterpart actually starts moving on the ground. If a real flight is already taxiing when you load in, BeyondATC drops it onto the taxiway where it really is.</li>
-<li><strong>Arrivals and enroute traffic</strong> — aircraft inbound to your airports, and traffic passing through the area around you, are brought in based on the live feed, nearest to you first.</li>
-<li><strong>Coverage around you</strong> — BeyondATC manages live traffic in a bubble around your aircraft (out to roughly 200 nm), and that bubble grows as you climb, so you still get traffic at cruise.</li>
-<li><strong>Your density sliders still apply</strong> — the Parked, Departures, Arrivals and Enroute sliders work exactly as they do for standard traffic, so you stay in control of how busy things get. See <a href="../traffic-slider/">How the traffic sliders work</a>.</li>
+<li><strong>A full, real airport</strong> - your departure airport is seeded with parked aircraft from the schedule so the ramp looks busy, and Live Traffic then takes over those airframes (or adds new ones) to match what's really happening on the ground.</li>
+<li><strong>Real positions as a starting point</strong> - airborne aircraft are placed where the real flights actually are when they come into range. From there BeyondATC takes control and flies them, so they may drift from the exact real-world track - though in practice usually not by much.</li>
+<li><strong>Real departures</strong> - a parked aircraft only departs when its real-world counterpart actually starts moving on the ground. If a real flight is already taxiing when you load in, BeyondATC drops it onto the taxiway where it really is.</li>
+<li><strong>Arrivals and enroute traffic</strong> - aircraft inbound to your airports, and traffic passing through the area around you, are brought in based on the live feed, nearest to you first.</li>
+<li><strong>Coverage around you</strong> - BeyondATC manages live traffic in a bubble around your aircraft (out to roughly 200 nm), and that bubble grows as you climb, so you still get traffic at cruise.</li>
+<li><strong>Your density sliders still apply</strong> - the Parked, Departures, Arrivals and Enroute sliders work exactly as they do for standard traffic, so you stay in control of how busy things get. See <a href="../traffic-slider/">How the traffic sliders work</a>.</li>
 </ul>
 <hr />
 <h2 id="what-live-traffic-doesnt-do">What Live Traffic doesn't do</h2>
 <p>Live Traffic is about <em>who</em> is flying and <em>where they are</em>, not a perfect recreation of every real-world flight plan. A few things to be aware of:</p>
 <ul>
-<li><strong>It doesn't fly the exact real filed route.</strong> The live feed provides each aircraft's position, callsign, type and origin/destination — but <strong>not</strong> its actual filed route. BeyondATC uses the real position as a starting point and then flies the aircraft itself along a sensible route between the two airports, so its exact track and cruise altitude can drift from the real flight. In practice the difference is often small, but it can be more noticeable on long-haul.</li>
+<li><strong>It doesn't fly the exact real filed route.</strong> The live feed provides each aircraft's position, callsign, type and origin/destination - but <strong>not</strong> its actual filed route. BeyondATC uses the real position as a starting point and then flies the aircraft itself along a sensible route between the two airports, so its exact track and cruise altitude can drift from the real flight. In practice the difference is often small, but it can be more noticeable on long-haul.</li>
 <li><strong>It isn't a continuous live mirror.</strong> Positions refresh every 20–60 seconds, so traffic moves on BeyondATC's own smooth path between updates rather than being a frame-by-frame copy of the real world.</li>
-<li><strong>Live traffic always runs on real-world time, not your sim time.</strong> The initial parked aircraft that seed your airport come from BeyondATC's schedule and match the time of day set in your sim — but everything live is whatever is genuinely flying right now in the real world. The two only line up when your sim clock is set to live/real time. If they're far apart you'll get an odd mix: for example, fly with your sim set to 3 PM while it's 3 AM at that airport in real life and the ramp will look busy from the scheduled parked aircraft, but there'll be very little live traffic actually moving, because hardly anything is flying there at that hour.</li>
+<li><strong>Live traffic always runs on real-world time, not your sim time.</strong> The initial parked aircraft that seed your airport come from BeyondATC's schedule and match the time of day set in your sim - but everything live is whatever is genuinely flying right now in the real world. The two only line up when your sim clock is set to live/real time. If they're far apart you'll get an odd mix: for example, fly with your sim set to 3 PM while it's 3 AM at that airport in real life and the ramp will look busy from the scheduled parked aircraft, but there'll be very little live traffic actually moving, because hardly anything is flying there at that hour.</li>
 <li><strong>It won't inject your own flight.</strong> If you're flying a real-world callsign that also appears in the live feed, BeyondATC excludes it so you never see a copy of yourself.</li>
-<li><strong>It still needs traffic models.</strong> No models in your community folder means no aircraft to show — just like standard traffic.</li>
+<li><strong>It still needs traffic models.</strong> No models installed in your simulator means no aircraft to show - just like standard traffic.</li>
 </ul>
 <div class="admonition info">
 <p class="admonition-title">A reminder on intent</p>
-<p>Live Traffic is here to give you realistic, current traffic to share the skies with — not a pixel-perfect plane-spotting mirror of the real world. If a particular flight's route or timing isn't exact, that's expected.</p>
+<p>Live Traffic is here to give you realistic, current traffic to share the skies with - not a pixel-perfect plane-spotting mirror of the real world. If a particular flight's route or timing isn't exact, that's expected.</p>
 </div>
 <hr />
 <h2 id="troubleshooting">Troubleshooting</h2>
 <details class="question">
 <summary>The Live Traffic toggle won't stay on</summary>
-<p>Your Navigraph account isn't linked yet. Switch the toggle on once to open the Navigraph linking page automatically (or link from the <strong>Account</strong> window), complete the sign-in, then switch Live Traffic on again — it will now stay on.</p>
+<p>Your Navigraph account isn't linked yet. Switch the toggle on once to open the Navigraph linking page automatically (or link from the <strong>Account</strong> window), complete the sign-in, then switch Live Traffic on again - it will now stay on.</p>
 </details>
 <details class="question">
 <summary>I turned it on but I don't see any live traffic</summary>
 <p>Check the following:</p>
 <ul>
 <li>You're <strong>linked</strong> to Navigraph and have a <strong>Navigraph Unlimited</strong> subscription (required for real-time traffic).</li>
-<li>You have <strong>traffic models</strong> installed (FSLTL, AIG, FS Traffic, or BravoAirspace ATG on MSFS 2024).</li>
-<li>Your <strong>sim clock is set to real-world time</strong> — at an off time there may genuinely be little or no matching real traffic.</li>
+<li>You have <strong>traffic models</strong> installed (FSLTL, AIG, FS Traffic, or BravoAirspace ATG on MSFS 2024; Bluebell CSL, X-CSL or Traffic Global on X-Plane 12).</li>
+<li>Your <strong>sim clock is set to real-world time</strong> - at an off time there may genuinely be little or no matching real traffic.</li>
 <li>Your <strong>density sliders</strong> aren't all at zero.</li>
 <li>You launched BeyondATC <strong>as administrator</strong>.</li>
 </ul>
@@ -2149,7 +2183,7 @@
 </details>
 <details class="question">
 <summary>The aircraft aren't flying the routes I'd expect</summary>
-<p>This is expected — the live feed doesn't include real filed routes, so BeyondATC generates its own. See <a href="#what-live-traffic-doesnt-do">What Live Traffic doesn't do</a> above.</p>
+<p>This is expected - the live feed doesn't include real filed routes, so BeyondATC generates its own. See <a href="#what-live-traffic-doesnt-do">What Live Traffic doesn't do</a> above.</p>
 </details>
 <p>If you're still stuck, please share your log files in our <a href="https://discord.gg/beyondatc">Discord</a>.</p>
 

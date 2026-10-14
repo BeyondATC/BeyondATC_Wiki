@@ -1,0 +1,2735 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Set up BeyondATC with X-Plane 12: the BeyondATC plugin, traffic models, what works differently from MSFS, and how to fix common problems.">
+      
+      
+      
+        <link rel="canonical" href="https://wiki.beyondatc.net/support/xplane12/">
+      
+      
+        <link rel="prev" href="../faq/">
+      
+      
+        <link rel="next" href="../common-issues/stucklogin/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>X-Plane 12 (Experimental) - BeyondATC Help Center</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Albert+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Albert Sans";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/spantable.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+
+    
+        <meta property="og:title" content="X-Plane 12 (Experimental) - BeyondATC Help Center" />
+        <meta name="twitter:title" content="X-Plane 12 (Experimental) - BeyondATC Help Center">
+    
+
+    
+        <meta property="og:type" content="website" />
+    
+
+    <meta property="og:url" content="https://wiki.beyondatc.net/support/xplane12/" />
+
+    
+
+    
+        <meta property="og:image:type" content="image/png" />
+    
+
+    
+        <meta property="og:description" content="Set up BeyondATC with X-Plane 12: the BeyondATC plugin, traffic models, what works differently from MSFS, and how to fix common problems.">
+    
+
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="batc-dark" data-md-color-primary="indigo" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#x-plane-12-experimental" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="BeyondATC Help Center" class="md-header__button md-logo" aria-label="BeyondATC Help Center" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BeyondATC Help Center
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              X-Plane 12 (Experimental)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="batc-dark" data-md-color-primary="indigo" data-md-color-accent="deep-purple"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../onboarding/overview/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Onboarding
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ifr/overview/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  IFR
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../vfr/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  VFR
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../knowledge-base/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Knowledge Base
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../resources/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Resources
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../bug-reporting/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Support
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="BeyondATC Help Center" class="md-nav__button md-logo" aria-label="BeyondATC Help Center" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    BeyondATC Help Center
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Onboarding
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Onboarding
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../onboarding/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../onboarding/features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Features
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../onboarding/pricing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pricing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../onboarding/getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IFR
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    IFR
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ifr/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ifr/preflight/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Preflight
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ifr/departure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Departure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ifr/cruise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cruise
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ifr/arrival/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arrival
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../vfr/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VFR
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    VFR
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vfr/setting-up/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Setting Up Your Flight
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    By region
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    By region
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vfr/united-states/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    United States
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vfr/united-kingdom/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    United Kingdom
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vfr/australia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Australia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Everywhere
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Everywhere
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vfr/uncontrolled-fields/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Uncontrolled Fields & Aerodrome Services
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vfr/radios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Radios & COM2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vfr/sequencing-and-holds/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Circuit Holds, Go-Arounds & Changes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vfr/callsigns-and-squawks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Callsigns & Squawks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vfr/quick-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../knowledge-base/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Knowledge Base
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Knowledge Base
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../knowledge-base/toolbar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Toolbar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CPDLC
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    CPDLC
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../knowledge-base/cpdlc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CPDLC
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../knowledge-base/cpdlc-a320fenix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fenix A320 Family
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../resources/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resources
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Resources
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/third-party/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Third-Party Apps & Add-ons
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Support
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Support
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bug-reporting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bug reporting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    X-Plane 12 (Experimental)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    X-Plane 12 (Experimental)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requirements
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-the-beyondatc-plugin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installing the BeyondATC plugin
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installing the BeyondATC plugin">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#with-the-installer-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        With the installer (recommended)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manually" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Manually
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checking-the-plugin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checking the plugin
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#traffic-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Traffic models
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Traffic models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bluebell-csl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bluebell CSL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#x-csl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        X-CSL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#traffic-global" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Traffic Global
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-x-plane-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setting up X-Plane 12
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flight-plans" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flight plans
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#starting-a-flight" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Starting a flight
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-different-from-msfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What's different from MSFS
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#known-limitations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Known limitations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uninstalling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Uninstalling
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reporting-a-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reporting a problem
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_4" id="__nav_7_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Common issues
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Common issues
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../common-issues/stucklogin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stuck in the login screen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../common-issues/fatal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fatal error
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../common-issues/update/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BeyondATC update failed
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../common-issues/simconnect/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Connection issues
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../common-issues/output/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Change the output device
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../common-issues/notraffic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    No AI traffic
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../common-issues/simbrief/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Simbrief cannot be reached
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="x-plane-12-experimental">X-Plane 12 (Experimental)</h1>
+<div class="admonition warning">
+<p class="admonition-title">Experimental feature</p>
+<p>X-Plane 12 support is an <strong>experimental</strong> feature. To use BeyondATC with X-Plane 12 at the moment you require the supporters edition of BeyondATC. X-Plane 12 support will come to all base edition holders for free once it is ready for full release. Please report any bugs via our <a href="#reporting-a-problem">bug reporting process</a>.</p>
+</div>
+<p>BeyondATC works with X-Plane 12 through the <strong>BeyondATC plugin</strong>, which is a small X-Plane plugin that allows BeyondATC to communicate with X-Plane. This page explains what you need, how to install the plugin and traffic models, what works differently from Microsoft Flight Simulator, and how to fix common problems.</p>
+<hr />
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li><strong>X-Plane 12</strong> on Windows. Version <strong>12.04 or later</strong> is supported</li>
+<li>The <strong>BeyondATC plugin</strong>, which can be installed through the BeyondATC installer (see below)</li>
+<li><strong>Traffic models</strong> for X-Plane (see <a href="#traffic-models">Traffic models</a>)</li>
+<li>A <strong>flight plan</strong>: SimBrief for IFR flights, and SimBrief or a flight plan file for VFR flights (see <a href="#flight-plans">Flight plans</a>)</li>
+</ul>
+<hr />
+<h2 id="installing-the-beyondatc-plugin">Installing the BeyondATC plugin</h2>
+<h3 id="with-the-installer-recommended">With the installer (recommended)</h3>
+<p>When you run the BeyondATC installer, it looks for your X-Plane 12 installations. If it finds any, it shows an <strong>X-Plane 12 plugin</strong> page which allows you to select which installations should have the BeyondATC plugin.</p>
+<p>X-Plane must be closed to install or update the plugin.</p>
+<div class="admonition info">
+<p class="admonition-title">Your Bluebell models will not be overwritten</p>
+<p>The installer only writes the plugin's own files. It never changes the <code>CSL</code> folder where you keep your Bluebell models.</p>
+</div>
+<h3 id="manually">Manually</h3>
+<p>If the installer did not find your X-Plane 12 installation, you can copy the plugin yourself:</p>
+<ol>
+<li>Close X-Plane.</li>
+<li>Copy and overwrite the <code>BeyondATC</code> folder from the <code>X-Plane Plugin</code> folder in your BeyondATC installation directory (by default <code>C:\BeyondATC\X-Plane Plugin\BeyondATC</code>) into <code>X-Plane 12\Resources\plugins\</code>.</li>
+<li>Check that the following file exists: <code>X-Plane 12\Resources\plugins\BeyondATC\win_x64\BeyondATC.xpl</code>.</li>
+</ol>
+<h3 id="checking-the-plugin">Checking the plugin</h3>
+<p>Start X-Plane and open <strong>Plugins &gt; BeyondATC</strong>. The first line shows the plugin version, for example <strong>BeyondATC Plugin v1.0.0</strong>. The menu also has:</p>
+<table>
+<thead>
+<tr>
+<th>Menu item</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Show Traffic Labels</strong></td>
+<td>Shows labels on BeyondATC traffic within 5 NM. This is defaulted to off.</td>
+</tr>
+<tr>
+<td><strong>Show Connection Stats</strong></td>
+<td>Opens a small about window with the plugin version, the number of active aircraft, and the data sent and received.</td>
+</tr>
+<tr>
+<td><strong>Show Aircraft List</strong></td>
+<td>Allows you to view the BeyondATC traffic that X-Plane is drawing, with callsign, type and phase of flight.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Cannot see the plugin menu?</p>
+<p>If <strong>BeyondATC</strong> is not in the Plugins menu, open <strong>Plugins &gt; Plugin Admin</strong> and check that the plugin is installed and enabled. If you cannot see it in Plugin Admin, try running the installer again.</p>
+</div>
+<hr />
+<h2 id="traffic-models">Traffic models</h2>
+<p>Like MSFS, BeyondATC uses supported models to show our traffic within the simulator. We only support models made and licensed for the simulator used. On X-Plane 12 we support the following models:</p>
+<table>
+<thead>
+<tr>
+<th>Library</th>
+<th>Where to install</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Bluebell CSL</strong></td>
+<td><code>X-Plane 12\Resources\plugins\BeyondATC\CSL\</code></td>
+</tr>
+<tr>
+<td><strong>X-CSL</strong></td>
+<td>Installed with the X-CSL updater. BeyondATC uses the installed location automatically.</td>
+</tr>
+<tr>
+<td><strong>Traffic Global</strong> (Just Flight)</td>
+<td>Install as normal, in <code>X-Plane 12\Aircraft\Traffic Global</code>.</td>
+</tr>
+</tbody>
+</table>
+<p>To see BeyondATC traffic, you need at least one of them. If you have more than one, you can choose which BeyondATC prefers in <strong>Options &gt; X-Plane Matching Priority</strong>. By default, Traffic Global is matched first, then X-CSL, then Bluebell.</p>
+<h3 id="bluebell-csl">Bluebell CSL</h3>
+<p>Download the Bluebell packages from the <a href="https://github.com/oktal3700/bluebell">Bluebell project</a> and put each <code>BB_...</code> package folder directly in <code>X-Plane 12\Resources\plugins\BeyondATC\CSL\</code> (create the <code>CSL</code> folder if it does not exist). BeyondATC only uses this folder: models in the folders of other plugins, such as LiveTraffic or xPilot, are not used.</p>
+<div class="admonition warning">
+<p class="admonition-title">The Airbus and Boeing packages may come in parts</p>
+<p><code>BB_Airbus</code> and <code>BB_Boeing</code> are split into parts (<code>BB_Airbus1</code>, <code>BB_Airbus2</code>, <code>BB_Boeing1</code> to <code>BB_Boeing3</code>). Each package must be in <strong>one</strong> folder, or the aircraft in parts 2 and 3 are not loaded. That includes many wide-bodies and the A321.</p>
+<ol>
+<li>Copy the contents of <code>BB_Airbus2\BB_Airbus</code> into <code>BB_Airbus1\BB_Airbus</code>.</li>
+<li>Copy the contents of <code>BB_Boeing2\BB_Boeing</code> and <code>BB_Boeing3\BB_Boeing</code> into <code>BB_Boeing1\BB_Boeing</code>.</li>
+<li>Delete the <code>BB_Airbus2</code>, <code>BB_Boeing2</code> and <code>BB_Boeing3</code> folders.</li>
+</ol>
+<p>To check, open X-Plane's <code>Log.txt</code> and look for <strong>BATC: Total CSL models loaded:</strong>. With the full Bluebell set it should say <strong>2027</strong>.</p>
+</div>
+<h3 id="x-csl">X-CSL</h3>
+<p>Install X-CSL with the X-CSL updater as normal.</p>
+<h3 id="traffic-global">Traffic Global</h3>
+<p>Install Traffic Global as normal, then disable the <strong>Traffic Global plugin</strong> (see the note below). If it stays enabled, you will see its own traffic as well as BeyondATC's. BeyondATC cannot see or control traffic injected by other injectors.</p>
+<div class="admonition note">
+<p class="admonition-title">Disable the Traffic Global plugin</p>
+<p>For the Just Flight Traffic Global models, you need to disable the Traffic Global plugin itself so that it does not inject its own traffic. BeyondATC still uses the models. There are two ways:</p>
+<ul>
+<li><strong>Rename the plugin file (recommended).</strong> Rename <code>X-Plane 12\Resources\plugins\Traffic Global\win_x64\Traffic Global.xpl</code> to <code>Traffic Global.bak</code>. It then stays disabled, and you can rename it back at any time.</li>
+<li><strong>Plugin Admin.</strong> Disable the <strong>Traffic Global</strong> plugin in <strong>Plugins &gt; Plugin Admin</strong>. This has to be done again every time you restart X-Plane.</li>
+</ul>
+</div>
+<hr />
+<h2 id="setting-up-x-plane-12">Setting up X-Plane 12</h2>
+<ul>
+<li><strong>Disable other traffic plugins.</strong> In <strong>Plugins &gt; Plugin Admin</strong>, disable or do not run products such as LiveTraffic, xPilot, X-IvAp/Altitude, swift, the Traffic Global plugin etc. If you run these programs with BeyondATC the plugins will fight for X-Plane's TCAS and/or show their own traffic that BeyondATC cannot see or control.</li>
+<li><strong>Turn off X-Plane's own ATC.</strong> In <strong>Settings &gt; Sound</strong>, under <strong>Air Traffic Control</strong>, turn off <strong>Enable verbal ATC messages</strong> and <strong>Auto-show ATC message history</strong>.</li>
+<li><strong>Use real weather.</strong> Historic weather is currently not supported.</li>
+<li><strong>Set the appropriate time.</strong> Like MSFS, scheduled traffic will be injected following X-Plane's sim time.</li>
+</ul>
+<hr />
+<h2 id="flight-plans">Flight plans</h2>
+<ul>
+<li><strong>IFR flights</strong> use your <strong>SimBrief</strong> flight plan.</li>
+<li><strong>VFR flights</strong> can use <strong>SimBrief</strong> or a <strong>flight plan file</strong>. Select <strong>VFR</strong> on the BeyondATC main menu, choose the file option and select your file. These file types are supported:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>File type</th>
+<th>Extension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>X-Plane Flight Plan</td>
+<td><code>.fms</code>, v11 format (X-Plane 12 saves these in <code>X-Plane 12\Output\FMS plans</code>)</td>
+</tr>
+<tr>
+<td>MSFS Flight Plan</td>
+<td><code>.pln</code></td>
+</tr>
+<tr>
+<td>Little Nav Map Plan</td>
+<td><code>.lnmpln</code></td>
+</tr>
+</tbody>
+</table>
+<p>The flight plan must start and end at an airport. With a flight plan file, BeyondATC reads your aircraft type and tail number, for your callsign, from X-Plane, so your aircraft must have a tail number set. The <strong>MSFS World Map</strong> option is for MSFS only.</p>
+<hr />
+<h2 id="starting-a-flight">Starting a flight</h2>
+<ol>
+<li>Start <strong>X-Plane 12</strong> and load your flight.</li>
+<li>Start <strong>BeyondATC</strong> and click <strong>Fly</strong>.</li>
+</ol>
+<p>BeyondATC will show <strong>Connecting to X-Plane 12...</strong> and then <strong>Connected to X-Plane 12</strong> at the top right. If X-Plane 12 and Microsoft Flight Simulator are both running, you will be asked which simulator you want BeyondATC to use.</p>
+<div class="admonition info">
+<p class="admonition-title">Pausing is not supported</p>
+<p>As with MSFS, pausing is not currently supported: BeyondATC's controllers and traffic keep running while X-Plane is paused, so the traffic will have moved on when you unpause. If you need to pause for an extended period, you can exit BeyondATC and start mid-flight at any time.</p>
+</div>
+<hr />
+<h2 id="whats-different-from-msfs">What's different from MSFS</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>On X-Plane 12</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>In-sim toolbar</td>
+<td>Not available. Use the BeyondATC app.</td>
+</tr>
+<tr>
+<td>In-sim taxi arrows</td>
+<td>In-sim taxi arrows are currently not available.</td>
+</tr>
+<tr>
+<td>Flight plan import</td>
+<td>SimBrief, and for VFR flights a flight plan file (<code>.fms</code>, <code>.pln</code> or <code>.lnmpln</code>). The MSFS world map import is MSFS only.</td>
+</tr>
+<tr>
+<td>Weather</td>
+<td>X-Plane supports live weather only. The MSFS 2024 <strong>Enable Historic Weather</strong> option has no effect.</td>
+</tr>
+<tr>
+<td>Aircraft with custom datarefs</td>
+<td>Some aircraft use their own radio systems and may not follow frequency changes from BeyondATC. If you find BeyondATC cannot read or send frequencies from your X-Plane aircraft, please submit a bug report.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="known-limitations">Known limitations</h2>
+<p>As an experimental feature, X-Plane 12 support has some known limitations:</p>
+<ul>
+<li>Some older models do not animate their gear, wheels or engines. Where the model supports it, BeyondATC animates flaps, slats, spoilers, reversers, lights and wheels on traffic.</li>
+<li>There is no tire smoke on landing and no engine heat haze for BeyondATC injected traffic.</li>
+<li>Some airports may contain incomplete taxi data. BeyondATC warns you before the flight. You can still use these airports; however, you will be told to taxi at your discretion, and AI traffic will despawn when off the runway.</li>
+<li>After you update your Navigraph data in X-Plane, restart BeyondATC.</li>
+</ul>
+<hr />
+<h2 id="troubleshooting">Troubleshooting</h2>
+<details class="question">
+<summary>Error: Cannot establish a connection with X-Plane</summary>
+<p>BeyondATC could not reach the plugin.</p>
+<ul>
+<li>Check that X-Plane 12 is running with a flight loaded.</li>
+<li>Check that <strong>Plugins &gt; BeyondATC</strong> exists in X-Plane. If not, install the plugin (see <a href="#installing-the-beyondatc-plugin">Installing the BeyondATC plugin</a>) and check <strong>Plugins &gt; Plugin Admin</strong>.</li>
+<li>Restart X-Plane, then start BeyondATC again.</li>
+</ul>
+</details>
+<details class="question">
+<summary>Could not connect to a flight simulator</summary>
+<p>BeyondATC did not find a running simulator. Start X-Plane 12 and load your flight <strong>before</strong> you click <strong>Fly</strong> in BeyondATC.</p>
+</details>
+<details class="question">
+<summary>Your BeyondATC X-Plane plugin is outdated</summary>
+<p>Your version of BeyondATC needs a newer plugin. Close X-Plane, run the BeyondATC installer again with your X-Plane installation checked on the <strong>X-Plane 12 plugin</strong> page, then start X-Plane and BeyondATC again.</p>
+</details>
+<details class="question">
+<summary>Does BeyondATC support other X-Plane versions?</summary>
+<p>No, BeyondATC supports X-Plane 12 only.</p>
+</details>
+<details class="question">
+<summary>What operating systems does BeyondATC support?</summary>
+<p>BeyondATC is currently only available on the Windows operating system.</p>
+</details>
+<details class="question">
+<summary>No traffic models found, traffic will not be displayed</summary>
+<p>BeyondATC did not find any models it can use. Install at least one library (see <a href="#traffic-models">Traffic models</a>) and restart X-Plane and BeyondATC. For Bluebell, check that the <code>BB_...</code> folders are directly in <code>X-Plane 12\Resources\plugins\BeyondATC\CSL\</code>.</p>
+</details>
+<details class="question">
+<summary>X-Plane 12 was not found, so the traffic models could not be checked</summary>
+<p>BeyondATC could not find your X-Plane 12 installation. If you have freshly installed X-Plane 12, start X-Plane at least once before you start BeyondATC.</p>
+</details>
+<details class="question">
+<summary>X-Plane denied TCAS to BeyondATC</summary>
+<p>Another traffic plugin is holding X-Plane's TCAS. Disable LiveTraffic, xPilot, X-IvAp/Altitude and swift in <strong>Plugins &gt; Plugin Admin</strong>, then restart BeyondATC.</p>
+</details>
+<details class="question">
+<summary>The Traffic Global plugin is running in X-Plane</summary>
+<p>You see Traffic Global's own traffic as well as BeyondATC's. Disable the Traffic Global plugin: the recommended way is to rename <code>X-Plane 12\Resources\plugins\Traffic Global\win_x64\Traffic Global.xpl</code> to <code>Traffic Global.bak</code>, so it stays disabled (you can rename it back at any time). Disabling it in <strong>Plugins &gt; Plugin Admin</strong> also works, but has to be done again every time you restart X-Plane. BeyondATC still uses the Traffic Global models. See <a href="#traffic-global">Traffic Global</a>.</p>
+</details>
+<details class="question">
+<summary>Failed to open the connection to the BeyondATC plugin</summary>
+<p>Another program may be blocking the connection between BeyondATC and the plugin. Close other flight simulation tools, restart your PC, and try again. If it keeps happening, <a href="#reporting-a-problem">report a problem</a> with your logs.</p>
+</details>
+<details class="question">
+<summary>Many wide-bodies or A321s are missing</summary>
+<p>If using Bluebell models, your Airbus or Boeing package is probably still split into parts. See <a href="#bluebell-csl">The Airbus and Boeing packages may come in parts</a>.</p>
+</details>
+<details class="question">
+<summary>Aircraft registration could not be detected from X-Plane</summary>
+<p>You started a VFR flight with a flight plan file, and your aircraft has no tail number set in X-Plane. Use an aircraft with a tail number, or use a SimBrief flight plan instead.</p>
+</details>
+<details class="question">
+<summary>The MSFS World Map flight plan is only available with MSFS</summary>
+<p>The <strong>MSFS World Map</strong> option of a VFR flight reads the flight plan from MSFS. On X-Plane 12, select a flight plan file or use SimBrief (see <a href="#flight-plans">Flight plans</a>).</p>
+</details>
+<details class="question">
+<summary>This X-Plane flight plan uses an old format</summary>
+<p>BeyondATC reads X-Plane flight plans in the v11 <code>.fms</code> format, the format that X-Plane 11 and X-Plane 12 save. Older <code>.fms</code> formats are not supported. Save the flight plan again from X-Plane 12 or export it from your flight planner in the correct format.</p>
+</details>
+<details class="question">
+<summary>The installer did not show the X-Plane 12 plugin page</summary>
+<p>The installer did not find an X-Plane 12 installation. Start X-Plane 12 once, close it, and run the installer again, or <a href="#manually">install the plugin manually</a>.</p>
+</details>
+<hr />
+<h2 id="uninstalling">Uninstalling</h2>
+<p>When you uninstall BeyondATC, it also removes the BeyondATC plugin from your X-Plane 12 installations. If X-Plane is running, you are asked to close it first. You are then asked whether to also remove the Bluebell models in the plugin's <code>CSL</code> folder. If you select <strong>No</strong>, they stay on your computer.</p>
+<hr />
+<h2 id="reporting-a-problem">Reporting a problem</h2>
+<p>X-Plane 12 support is experimental, so your reports help us a lot. When you report a problem, include:</p>
+<ul>
+<li>Your BeyondATC log files (see <a href="../bug-reporting/#how-to-get-your-log-files">How to get your log files</a>).</li>
+<li>X-Plane's <code>Log.txt</code>, in your X-Plane 12 folder.</li>
+</ul>
+<p>Please report problems in our <a href="https://discord.gg/beyondatc">Discord</a>, following the <a href="../bug-reporting/">bug reporting guide</a>.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../faq/" class="md-footer__link md-footer__link--prev" aria-label="Previous: FAQ">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                FAQ
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../common-issues/stucklogin/" class="md-footer__link md-footer__link--next" aria-label="Next: Stuck in the login screen">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Stuck in the login screen
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Created with 💜 by Dialex
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://discord.gg/beyondatc" target="_blank" rel="noopener" title="discord.gg" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M492.5 69.8c-.2-.3-.4-.6-.8-.7-38.1-17.5-78.4-30-119.7-37.1-.4-.1-.8 0-1.1.1s-.6.4-.8.8c-5.5 9.9-10.5 20.2-14.9 30.6-44.6-6.8-89.9-6.8-134.4 0-4.5-10.5-9.5-20.7-15.1-30.6-.2-.3-.5-.6-.8-.8s-.7-.2-1.1-.2C162.5 39 122.2 51.5 84.1 69c-.3.1-.6.4-.8.7C7.1 183.5-13.8 294.6-3.6 404.2c0 .3.1.5.2.8s.3.4.5.6c44.4 32.9 94 58 146.8 74.2.4.1.8.1 1.1 0s.7-.4.9-.7c11.3-15.4 21.4-31.8 30-48.8.1-.2.2-.5.2-.8s0-.5-.1-.8-.2-.5-.4-.6-.4-.3-.7-.4c-15.8-6.1-31.2-13.4-45.9-21.9-.3-.2-.5-.4-.7-.6s-.3-.6-.3-.9 0-.6.2-.9.3-.5.6-.7c3.1-2.3 6.2-4.7 9.1-7.1.3-.2.6-.4.9-.4s.7 0 1 .1c96.2 43.9 200.4 43.9 295.5 0 .3-.1.7-.2 1-.2s.7.2.9.4c2.9 2.4 6 4.9 9.1 7.2.2.2.4.4.6.7s.2.6.2.9-.1.6-.3.9-.4.5-.6.6c-14.7 8.6-30 15.9-45.9 21.8-.2.1-.5.2-.7.4s-.3.4-.4.7-.1.5-.1.8.1.5.2.8c8.8 17 18.8 33.3 30 48.8.2.3.6.6.9.7s.8.1 1.1 0c52.9-16.2 102.6-41.3 147.1-74.2.2-.2.4-.4.5-.6s.2-.5.2-.8c12.3-126.8-20.5-236.9-86.9-334.5zm-302 267.7c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.4 59.2-52.8 59.2m195.4 0c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.2 59.2-52.8 59.2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.annotate", "content.code.copy", "content.tabs.link", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "navigation.instant", "search.highlight", "search.share", "search.suggest", "toc.integrate", "instant"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
