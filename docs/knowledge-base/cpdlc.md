@@ -27,7 +27,7 @@ CPDLC is used for ATC communications, including:
 - Pilot requests (directs, climbs/descents, etc.)
 
 !!! note ""
-    **CPDLC supplements voice communication — it does not replace it.**
+    **CPDLC supplements voice communication - it does not replace it.**
 
 ACARS (Aircraft Communications Addressing and Reporting System) is a data transmission system used to send and receive digital messages between aircraft and ground systems.
 
@@ -104,6 +104,9 @@ Supported with an additional addon:
 - Asobo Cirrus Vision Jet MSFS 2024 ([Garmin 3000/5000 CPDLC and Simbrief](https://flightsim.to/file/98506/garmin-3000-5000-cpdlc-and-simbrief))
 
 *Please note that this list might not be exhaustive. Check your aircraft addon if BeyondATC is listed as a CPDLC/ACARS provider. Let us know if any addon is missing!*
+
+!!! info "X-Plane 12"
+    The aircraft above are MSFS add-ons. We are looking at establishing contacts in the space to bring CPDLC to X-Plane.
 
 If your aircraft does not list BeyondATC as a CPDLC/ACARS provider, CPDLC will **not work**.
 

@@ -23,6 +23,9 @@ The BeyondATC Toolbar is an in-sim panel for Microsoft Flight Simulator 2020 and
 !!! info "Note"
     The toolbar is a companion to the app, not a replacement. BeyondATC must be running on the same PC. All settings remain available in the app.
 
+!!! info "X-Plane 12"
+    The toolbar is available for MSFS only. On X-Plane 12, use the BeyondATC app. See [X-Plane 12](../support/xplane12.md).
+
 ## Download and installation
 
 1. Download the toolbar from the [BeyondATC download page](https://www.beyondatc.net/download).

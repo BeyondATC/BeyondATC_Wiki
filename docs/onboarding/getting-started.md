@@ -6,6 +6,9 @@ Download the latest version of the installer here: [https://www.beyondatc.net/do
 
 Launch the installer as an administrator and install the software.
 
+!!! info "X-Plane 12 (experimental)"
+    If you fly X-Plane 12 and have access to the experimental branch, you can use BeyondATC with X-Plane 12. See [X-Plane 12](../support/xplane12.md) for the full setup.
+
 ---
 
 ## License purchase
@@ -99,11 +102,14 @@ Settings in details:
 
     We currently recommend using **FSLTL models**, as they offer the best integration with the system. On MSFS 2024 you can also use **BravoAirspace ATG**, which adds airline liveries to the simulator's built-in (native) traffic models.
 
+    !!! info "X-Plane 12"
+        On X-Plane 12, BeyondATC uses different models: **Bluebell CSL**, **X-CSL** or **Traffic Global**. See [Traffic models on X-Plane 12](../support/xplane12.md#traffic-models).
+
 2. **Install models (if needed)**  
    If you don’t have any aircraft models installed, you can download the FBW installer and install the Base Models from **FSLTL traffic**:  [Download FBW Installer](https://api.flybywiresim.com/installer)
 
-3. **Disable MSFS Traffic**  
-    Before starting your flight, make sure you have disabled all traffic settings in MSFS.
+3. **Disable the simulator's traffic**  
+    Before starting your flight, make sure you have disabled all traffic settings in your simulator (see [Disable traffic options](#disable-traffic-options)).
 
 4. **Check traffic settings in BeyondATC**  
    In BeyondATC’s settings, confirm that **Traffic** is turned **ON**. The recommended traffic density is set to **5** for optimal performance.
@@ -126,9 +132,9 @@ Toggle this setting to On to ensure that desktop applications, including BeyondA
 
 ---
 
-## Setting up MSFS
+## Setting up your simulator
 
-To ensure BeyondATC functions correctly, you need to configure the following settings to prevent any interference or alterations by Microsoft Flight Simulator.
+To ensure BeyondATC functions correctly, you need to configure the following settings to prevent any interference or alterations by your simulator.
 
 ### Disable ATC assistance options
 
@@ -157,6 +163,12 @@ Go to Options &gt; Assistance Options
 
     3. **Settings > General > Sound**  
         - Set Character Voice to **0**  
+
+=== "X-Plane 12"
+
+    1. **Settings > Sound** (under Air Traffic Control)  
+        - Enable verbal ATC messages: **OFF**  
+        - Auto-show ATC message history: **OFF**  
 
 
 ### Disable traffic options
@@ -193,8 +205,15 @@ Go to Options &gt; Assistance Options
     - Return to the main menu and start a new flight.  
     - Revisit each setting, scroll through to **OFF**, and save changes after resetting them.  
 
+=== "X-Plane 12"
+
+    1. **Plugins > Plugin Admin**  
+        - Disable other traffic plugins: **LiveTraffic**, **xPilot**, **X-IvAp/Altitude**, **swift** and the **Traffic Global** plugin.  
+
+    See [X-Plane 12](../support/xplane12.md#setting-up-x-plane-12) for the full setup.
+
 !!! info
-    BeyondATC only supports **Live Weather** due to MSFS limitations. For accurate weather reports from ATIS, Live Weather must be enabled. However, you can choose the time of day to reflect the desired traffic for that time
+    On MSFS, BeyondATC only supports **Live Weather** due to MSFS limitations. For accurate weather reports from ATIS, Live Weather must be enabled. On X-Plane 12, use **real weather**. In both simulators, you can choose the time of day to reflect the desired traffic for that time.
 
 ---
 

@@ -17,14 +17,15 @@ BeyondATC provides the following:
 - Dynamic Runway/SID/STAR selection based on our own extensive collection of airport ops
 - PIREPS, Direct-Tos, Altitude Changes and more
 - ILS Approaches, Visual Approaches based on weather, vectoring and more
-- An in-sim toolbar to control BeyondATC (especially useful for VR and sim pits)
+- An in-sim toolbar to control BeyondATC (especially useful for VR and sim pits) *(MSFS only)*
 - Custom Traffic injection and control based on up to worldwide traffic schedules
 - Live traffic injection for those with a Navigraph Unlimited subscription 
 - Support for multi-leg flights with turnarounds
 - CPDLC (with compatible aircraft)
-- GSX Integration
+- GSX Integration *(MSFS only)*
 - Independent COM1 and COM2 radio support (COM2 is monitor only) 
 - Supports MSFS 2020 and MSFS 2024
+- Supports X-Plane 12 *(experimental, see [X-Plane 12](../support/xplane12.md))*
 
 On our experimental branch, we are currently working on:
 

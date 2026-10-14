@@ -8,7 +8,7 @@ og_description: "How to load a VFR flight into BeyondATC from the MSFS world map
 
 ## Using the MSFS World Map
 
-BeyondATC can automatically import a flight plan you set up in the MSFS world map:
+BeyondATC can automatically import a flight plan you set up in the MSFS world map. This option is for MSFS only.
 
 !!! warning "Important"
     When using the MSFS world map option, you must set both your departure and destination airport.

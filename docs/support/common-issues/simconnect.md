@@ -2,6 +2,9 @@
 
 If you're having trouble connecting to BeyondATC or if BeyondATC is unable to connect to your simulator, please follow these steps to diagnose and resolve the issue.  
 
+!!! info "X-Plane 12"
+    On X-Plane 12, BeyondATC connects through the BeyondATC plugin. If BeyondATC cannot connect to X-Plane, see the [X-Plane 12 troubleshooting](../xplane12.md#troubleshooting) first.
+
 ---
 
 ## 1. Check if the services are online  
@@ -34,14 +37,14 @@ If a file is quarantined:
 
 To ensure proper connection, follow these steps in order:  
 
-1. **Start your simulator** (MSFS should be at least in the main menu, preferably with your aircraft loaded at the departure airport).  
-2. **Start BeyondATC**, ensure you have a valid **SimBrief flight plan**, and click **Fly**.  
+1. **Start your simulator** Ensure you are spawned into your aircraft before clicking **Fly** in BeyondATC.  
+2. **Start BeyondATC**, ensure you have a valid **SimBrief flight plan** (SimBrief is required for IFR flights; for VFR flights, see the [supported flight plan options](../../vfr/setting-up.md)), and click **Fly**.  
 
 ---
 
 ## 5. SimConnect process issue  
 
-Sometimes, lingering processes may interfere with connectivity.  
+Sometimes, lingering processes may interfere with connectivity. This step is for MSFS only.  
 
 ### Steps to resolve:  
 1. **Close** MSFS and BeyondATC.  

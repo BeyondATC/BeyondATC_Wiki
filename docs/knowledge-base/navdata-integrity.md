@@ -8,7 +8,7 @@ description: Why BeyondATC warns about a navigation data problem at your airport
 
 ---
 
-# Navigation data problem warning
+# Navigation data problem warning (MSFS)
 
 !!! warning "Did BeyondATC send you here?"
     If you opened this page from the warning in BeyondATC, please complete the steps in [How to fix it](#how-to-fix-it) before you fly. Until you do, ATC at the affected airport will not work correctly. The steps involve restarting the simulator, so you will need to load your flight again afterwards.

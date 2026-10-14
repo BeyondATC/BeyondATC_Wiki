@@ -35,7 +35,9 @@ description: Find all frequently asked questions about BeyondATC and their answe
 ??? info "Which simulators is BeyondATC be available for?"
     BeyondATC is designed for Microsoft Flight Simulator 2020 and 2024 on PC.
 
-    We have not planned to support any other simulator or platform. It is technically not possible to support Xbox.
+    X-Plane 12 is also supported as an **experimental** feature. See [X-Plane 12](xplane12.md) for the setup and the current limitations.
+
+    It is technically not possible to support Xbox.
 
 ??? info "Is there a trial period?"
     We do not offer a trial period at this stage. You can search for BeyondATC videos and review to make your decision.
@@ -131,19 +133,28 @@ description: Find all frequently asked questions about BeyondATC and their answe
 ??? info "Which models will BeyondATC use for AI Traffic?"
     BeyondATC will use whatever models you have installed in your simulator, including any combination of AIG, FSLTL, and FS Traffic. On MSFS 2024 you can also use BravoAirspace Airline Traffic Global (ATG).
 
+    On X-Plane 12, BeyondATC uses Bluebell CSL, X-CSL and Traffic Global models. See [Traffic models on X-Plane 12](xplane12.md#traffic-models).
+
+    !!! note "Traffic Global (Just Flight) on X-Plane 12"
+        For the Just Flight Traffic Global models, disable the Traffic Global plugin itself so that it does not inject its own traffic. The recommended way is to rename `X-Plane 12\Resources\plugins\Traffic Global\win_x64\Traffic Global.xpl` to `Traffic Global.bak`, which you can rename back at any time. Disabling it in **Plugins > Plugin Admin** also works, but has to be done again every time you restart X-Plane. See [Traffic Global](xplane12.md#traffic-global).
+
 ??? info "BeyondATC says that no traffic liveries are found"
-    Make sure you have installed models for at least one provider (AIG, FSLTL or FS Traffic) in the community folder of the MSFS version you are using — or, on MSFS 2024, BravoAirspace ATG. If it still doesn't work, start BeyondATC as an administrator.
+    Make sure you have installed models for at least one provider (AIG, FSLTL or FS Traffic) in the community folder of the MSFS version you are using - or, on MSFS 2024, BravoAirspace ATG. If it still doesn't work, start BeyondATC as an administrator.
+
+    On X-Plane 12, see [Traffic models on X-Plane 12](xplane12.md#traffic-models).
 
 ??? info "Can BeyondATC use the new traffic models that come with MSFS 2024?"
     Yes, in two ways on MSFS 2024:
 
-    - **GA & bizjet models** — anyone can use the simulator's built-in GA and business-jet models by enabling the **Use MSFS 2024 GA Models** toggle in BeyondATC's options. No extra package is required.
-    - **Airliner models** — BeyondATC supports **BravoAirspace Airline Traffic Global (ATG)**, which adds airline liveries to the simulator's native models so BeyondATC can inject them.
+    - **GA & bizjet models** - anyone can use the simulator's built-in GA and business-jet models by enabling the **Use MSFS 2024 GA Models** toggle in BeyondATC's options. No extra package is required.
+    - **Airliner models** - BeyondATC supports **BravoAirspace Airline Traffic Global (ATG)**, which adds airline liveries to the simulator's native models so BeyondATC can inject them.
 
     The plain native airliner models on their own (without ATG) still can't be injected outside the simulator's default traffic engine, so ATG is the way to use them with BeyondATC.
 
 ??? info "Can AI traffic use ground services?"
     Currently, AI traffic can utilize pushback tugs injected by BeyondATC. However, injected AI aircraft are not yet able to use jetways. This functionality requires an update from Asobo to enable third-party software to trigger jetway operations for non-player aircrafts.
+
+    On X-Plane 12, AI traffic also uses pushback tugs (X-Plane's default tug).
 
 ??? info "What features are available with AI Traffic?"
 
@@ -192,7 +203,7 @@ description: Find all frequently asked questions about BeyondATC and their answe
     You can reset your password with the "forgot my password" button in BeyondATC. If this doesn't work or you created an account without an email please email support@beyondatc.net with a copy of your receipt.
 
 ??? info "Why are my frequencies switching back to something else?"
-    You need to disable ATC assistance options in MSFS settings. Please have a look at [our guide](../../onboarding/getting-started/#setting-up-ai-traffic) to set everything up correctly.
+    You need to disable the ATC assistance options in your simulator's settings. Please have a look at [our guide](../onboarding/getting-started.md#disable-atc-assistance-options) to set everything up correctly.
 
 ??? info "Simbrief cannot be reached. What can I do?"
     Make sure you have filed a flight plan in Simbrief and Detailed Navlog is checked.
@@ -205,7 +216,7 @@ description: Find all frequently asked questions about BeyondATC and their answe
     - Open BATC, disconnect and reconnect your microphone
 
 ??? info "Why is BeyondATC telling me that a runway does not exist?"
-    BeyondATC uses data directly from MSFS scenery, so if a scenery is outdated or differs from what tools like SimBrief reference, it may result in runway discrepancies. BeyondATC can account for minor changes, such as a one-digit difference in runway numbers, but significant changes—like renaming 06 to 06L—are not recognized and will cause this error.
+    BeyondATC uses data directly from your simulator's scenery, so if a scenery is outdated or differs from what tools like SimBrief reference, it may result in runway discrepancies. BeyondATC can account for minor changes, such as a one-digit difference in runway numbers, but significant changes-like renaming 06 to 06L-are not recognized and will cause this error.
 
     To solve this error, you need to check if a custom scenery is available and up to date.
 

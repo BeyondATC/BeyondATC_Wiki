@@ -111,6 +111,7 @@ nav:
   - Support:
     - 'Bug reporting': 'support/bug-reporting.md'
     - 'FAQ': 'support/faq.md'
+    - 'X-Plane 12 (Experimental)': 'support/xplane12.md'
     - 'Common issues':
       - "Stuck in the login screen": 'support/common-issues/stucklogin.md'
       - "Fatal error": 'support/common-issues/fatal.md'

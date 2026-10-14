@@ -1,4 +1,4 @@
-# BeyondATC Help Center — documentation build dependencies
+# BeyondATC Help Center - documentation build dependencies
 # Build/serve locally with:  pip install -r requirements.txt  &&  mkdocs serve
 
 # Core static-site generator

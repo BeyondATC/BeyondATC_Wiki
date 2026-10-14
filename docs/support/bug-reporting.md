@@ -13,11 +13,11 @@ Support for BeyondATC is **community-based and development-focused**. We can’t
 
 ## 🤗 How to get help
 
-Not everything is a bug — sometimes you just need help understanding an error, a behavior, or need assistance with setting everything up correctly. That’s what the `#batc-support` channel is for.
+Not everything is a bug - sometimes you just need help understanding an error, a behavior, or need assistance with setting everything up correctly. That’s what the `#batc-support` channel is for.
 
-- 🧠 Ask your questions freely — no need to worry whether it’s “important enough”.  
+- 🧠 Ask your questions freely - no need to worry whether it’s “important enough”.  
 - 🛠️ Mods, experienced users, and community members regularly assist with troubleshooting.  
-- ❌ It’s fine if you don’t know whether it’s a bug — just describe the issue.
+- ❌ It’s fine if you don’t know whether it’s a bug - just describe the issue.
 
 > 💬 **While we can't guarantee an immediate answer, you're never bothering anyone by asking. This is the place to learn and get help. If you did not receive any response after a few hours, you are free to ask again.**
 
@@ -35,7 +35,7 @@ Before opening a bug report, please follow this flow:
 
 3. **Use [#batc-support](https://discord.com/channels/1082413096045391915/1234729569270104144) for questions & basic troubleshooting**  
     - Post general questions and setup/troubleshooting requests here.  
-    - **Always attach your log file** — it’s essential for effective help.  
+    - **Always attach your log file** - it’s essential for effective help.  
 
 4. **If it appears to be a bug → open a ticket**  
     - Go to [#submit-a-bug](https://discord.com/channels/1082413096045391915/1402345783256420392).  
@@ -60,6 +60,9 @@ Find the following files in that directory:
 - ```Player-prev.log```: contains the log from the flight preceding your most recent one. If you completed another flight after encountering the issue, please send this log instead
 - ```beyondATC.log```: This log provides insights into the BeyondATC application’s operations. If this file is not empty, please include it with your report.
 
+!!! info "X-Plane 12"
+    If you fly X-Plane 12, please also upload X-Plane's ```Log.txt``` from your X-Plane 12 folder.
+
 ---
 
 ## 🤝 Conclusion
@@ -68,6 +71,6 @@ BeyondATC support is built on **shared responsibility**:
 
 - The devs focus on building and fixing  
 - Mods, support staff and community members help organize and guide  
-- Users can contribute — but aren’t obligated to  
+- Users can contribute - but aren’t obligated to  
 
-We may not reply to every post. We may not fix your bug right away. But every clear, helpful report builds a better product — not just for you, but for thousands of others.
+We may not reply to every post. We may not fix your bug right away. But every clear, helpful report builds a better product - not just for you, but for thousands of others.

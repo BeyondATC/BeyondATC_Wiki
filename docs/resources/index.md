@@ -16,7 +16,7 @@ description: Have a look at useful resources that will enhance your experience w
 Download the latest version of our softwares:
 
 - [Download BeyondATC](https://www.beyondatc.net/download)
-- [Download our Toolbar](https://www.beyondatc.net/download): Our MSFS toolbar lets you control BeyondATC from within the sim, especially useful for VR and sim pits. Check out how to [Use the BeyondATC Toolbar](../knowledge-base/toolbar.md).
+- [Download our MSFS Toolbar](https://www.beyondatc.net/download): Our MSFS toolbar lets you control BeyondATC from within the sim, especially useful for VR and sim pits. Check out how to [Use the BeyondATC Toolbar](../knowledge-base/toolbar.md).
 
 ---
 
@@ -28,7 +28,7 @@ Looking for community-made tools that work with BeyondATC, like phone companions
 
 ## Phraseology Cheat Sheet
 
-Need help communicating with ATC? Download our handy cheat sheet for ICAO and FAA phraseology — it’s designed to fit on a two-sided page, so you can print it out and have it ready whenever you need!
+Need help communicating with ATC? Download our handy cheat sheet for ICAO and FAA phraseology - it’s designed to fit on a two-sided page, so you can print it out and have it ready whenever you need!
 
 - [ICAO Cheat Sheet](../assets/resources/cheatsheet-ifr-icao-batc.pdf)
 - [FAA Cheat Sheet (US)](../assets/resources/cheatsheet-ifr-faa-batc.pdf)

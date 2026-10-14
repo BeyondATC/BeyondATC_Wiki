@@ -17,7 +17,7 @@ Standard Operating Procedures (SOPs) in BeyondATC allow each airport to dynamica
 
 ## 🧠 How the SOP system works
 
-The SOP system evaluates a set of flows—predefined configurations that dictate which runways are used for arrivals and departures under certain conditions. The system continuously checks for the best matching flow based on the following criteria:
+The SOP system evaluates a set of flows-predefined configurations that dictate which runways are used for arrivals and departures under certain conditions. The system continuously checks for the best matching flow based on the following criteria:
 
 1. **Wind direction and speed**
 2. **Time of day**
@@ -106,7 +106,7 @@ While BeyondATC SOPs are designed to closely mirror real-world procedures, there
 - **Runway preferences** may vary between airlines, time slots, or for sequencing efficiency. BeyondATC uses standardized logic, not airline-specific procedures.
 - **Special operations** like runway attribution according to the departure/arrival direction are currently not supported.
 
-**These SOP flows are a best-effort simulation of reality, optimized for a smooth user experience and realistic traffic flow — but they won’t always match what’s happening at the actual airport in real time.** Keep in mind that the goal of BeyondATC is to provide a realistic experience within the simulator's constraints, rather than replicate real-time airport operations, where ATC controllers make decisions based on a much broader range of factors.
+**These SOP flows are a best-effort simulation of reality, optimized for a smooth user experience and realistic traffic flow - but they won’t always match what’s happening at the actual airport in real time.** Keep in mind that the goal of BeyondATC is to provide a realistic experience within the simulator's constraints, rather than replicate real-time airport operations, where ATC controllers make decisions based on a much broader range of factors.
 
 If you believe a SOP is wrong or could be improved, please share your log file and suggestion in [our support channel on Discord](https://discord.com/channels/1082413096045391915/1323284831550836838). **Please note that without a log file, we won't be able to review your suggestion/bug report**.
 

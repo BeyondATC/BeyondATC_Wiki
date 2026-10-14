@@ -2,7 +2,7 @@
 
 Transform your virtual skies with a realistic Air Traffic Control!
 
-Take your flight simulation experience to the next level with BeyondATC, an add-on for Microsoft Flight Simulator that introduces a cutting-edge, realistic Air Traffic Control environment. Featuring hundreds of ultra-realistic AI voices with regional accents and real-world phraseology, BeyondATC delivers authentic ATC communications, enhancing the immersion and realism of your virtual aviation experience.
+Take your flight simulation experience to the next level with BeyondATC, an add-on for Microsoft Flight Simulator and X-Plane 12 (currently in the experimental branch) that introduces a cutting-edge, realistic Air Traffic Control environment. Featuring hundreds of ultra-realistic AI voices with regional accents and real-world phraseology, BeyondATC delivers authentic ATC communications, enhancing the immersion and realism of your virtual aviation experience.
 
 ## Why choose BeyondATC?
 
@@ -17,6 +17,6 @@ BeyondATC offers a significant upgrade to your flight simulation experience, com
 
 | Title                     | Detail                                                                                                           |
 | ------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| Compatibility             | :material-check: Microsoft Flight Simulator 2020 <br> :material-check: Microsoft Flight Simulator 2024           |
-| Platform                  | :material-check: Steam <br> :material-check: Microsoft Store <br> :material-close: Xbox |
-| Requirements              | :material-check: Microsoft Flight Simulator<br>:material-check: Internet Connection<br>:material-check: Simbrief |
+| Compatibility             | :material-check: Microsoft Flight Simulator 2020 <br> :material-check: Microsoft Flight Simulator 2024 <br> :material-check: X-Plane 12 ([experimental branch](../support/xplane12.md)) |
+| Platform                  | :material-check: Steam (MSFS 2020 / MSFS 2024 / X-Plane 12) <br> :material-check: Microsoft Store (MSFS 2020 / MSFS 2024) <br> :material-check: PC (X-Plane 12) <br> :material-close: Xbox |
+| Requirements              | :material-check: Microsoft Flight Simulator or X-Plane 12<br>:material-check: Internet Connection<br>:material-check: Simbrief |

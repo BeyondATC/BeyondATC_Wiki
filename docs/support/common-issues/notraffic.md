@@ -7,6 +7,7 @@ If you don't see any traffic, please check the following:
     - Alpha India Group (AIG) *(community folder)*
     - FS Traffic *(community folder)*
     - BravoAirspace Airline Traffic Global (ATG) *(MSFS 2024 only)*
+    - On X-Plane 12: Bluebell CSL, X-CSL or Traffic Global (see [Traffic models on X-Plane 12](../xplane12.md#traffic-models))
 4. Make sure you launch BeyondATC as an administrator.
 5. If you have downsized the models, please reinstall them again without downsizing. As a reminder, FSLTL does not support any change to their models, which can bring other compatibility issues.
 
