@@ -62,7 +62,7 @@ Like MSFS, BeyondATC uses supported models to show our traffic within the simula
 | Library | Where to install |
 |---|---|
 | **Bluebell CSL** | `X-Plane 12\Resources\plugins\BeyondATC\CSL\` |
-| **X-CSL** | Installed with the X-CSL updater. BeyondATC uses the installed location automatically. |
+| **X-CSL** | Install with the X-CSL updater pointed at your X-Plane executable, into `X-Plane 12\Resources\plugins\IVAO_CSL\CSL\` (see below). We're looking at supporting custom locations. |
 | **Traffic Global** (Just Flight) | Install as normal, in `X-Plane 12\Aircraft\Traffic Global`. |
 
 To see BeyondATC traffic, you need at least one of them. If you have more than one, you can choose which BeyondATC prefers in **Options > X-Plane Matching Priority**. By default, Traffic Global is matched first, then X-CSL, then Bluebell.
@@ -82,7 +82,12 @@ Download the Bluebell packages from the [Bluebell project](https://github.com/ok
 
 ### X-CSL
 
-Install X-CSL with the X-CSL updater as normal.
+Install X-CSL with the X-CSL updater as normal: press **Browse** and select your X-Plane executable (`X-Plane.exe`). The updater then installs the models in `X-Plane 12\Resources\plugins\IVAO_CSL\CSL\`.
+
+!!! warning "Do not use Set Custom Path"
+    BeyondATC cannot find X-CSL models installed with **Menu > Set Custom Path** in the X-CSL updater. If you have used it, select your X-Plane executable with **Browse** again and update the packages. We are looking into supporting custom locations.
+
+If you want to keep the models on a different drive, install them as above first, then see [Using models from another folder (junctions & symbolic links)](#using-models-from-another-folder-junctions-symbolic-links).
 
 ### Traffic Global
 
@@ -93,6 +98,33 @@ Install Traffic Global as normal, then disable the **Traffic Global plugin** (se
 
     - **Rename the plugin file (recommended).** Rename `X-Plane 12\Resources\plugins\Traffic Global\win_x64\Traffic Global.xpl` to `Traffic Global.bak`. It then stays disabled, and you can rename it back at any time.
     - **Plugin Admin.** Disable the **Traffic Global** plugin in **Plugins > Plugin Admin**. This has to be done again every time you restart X-Plane.
+
+### Using models from another folder (junctions & symbolic links)
+
+If you already have models in a different location, for example Bluebell models installed in another plugin's folder, or you store models on a different drive, you can make a junction or symbolic link instead. Symbolic links are a part of Windows that let you point (link) one folder to another folder ([Microsoft: Symbolic links](https://learn.microsoft.com/en-us/windows/win32/fileio/symbolic-links)). To set up a symbolic link you can do the following.
+
+1. Close X-Plane.
+2. Make sure there is no existing folder that will conflict, for example if you are linking Bluebell models from another place, rename or delete the empty `X-Plane 12\Resources\plugins\BeyondATC\CSL\` folder (if it exists).
+3. Open **Command Prompt** (search for `cmd` in the Start menu).
+4. Type the command below, **replace drive paths as required**, and press Enter. The first path is the link you want to make, the second path is the folder where the models are already installed.
+
+    For example, say I have my Bluebell CSL models in `D:\My CSL Models`, and I have my X-Plane install in `C:\X-Plane 12\` - I will need to run the following:
+
+    ```
+    mklink /J "C:\X-Plane 12\Resources\plugins\BeyondATC\CSL" "D:\My CSL Models"
+    ```
+
+    Make sure you put paths in quotation marks (") when they have spaces in them. When the link is created you will see `Junction created for ...`.
+
+5. Start X-Plane. To check it has worked, open X-Plane's `Log.txt` and look for **BATC: Total CSL models loaded:**.
+
+You can do the same for X-CSL. Make the link at the folder the X-CSL updater installed to (by default `X-Plane 12\Resources\plugins\IVAO_CSL\CSL`), pointing to the folder where your X-CSL models are.
+
+!!! note "About links"
+    - `mklink /J` makes a **junction**. It does not need administrator rights, and works with any drive in your PC, **but not with network drives**.
+    - `mklink /D` makes a **symbolic link**, which also works, including with network drives. It needs a Command Prompt opened with **Run as administrator**.
+    - The rules for the models are the same through a link. For example, the Bluebell `BB_Airbus` and `BB_Boeing` packages must still each be in one folder (see above).
+    - To remove a link, type `rmdir` and the path of the link in Command Prompt, for example `rmdir "C:\X-Plane 12\Resources\plugins\BeyondATC\CSL"`. This removes only the link, not the models it points to. If you uninstall BeyondATC and choose to remove the Bluebell models, only the link is removed as well.
 
 ---
 
