@@ -13,11 +13,14 @@ description: Why BeyondATC warns about a navigation data problem at your airport
 !!! warning "Did BeyondATC send you here?"
     If you opened this page from the warning in BeyondATC, please complete the steps in [How to fix it](#how-to-fix-it) before you fly. Until you do, ATC at the affected airport will not work correctly. The steps involve restarting the simulator, so you will need to load your flight again afterwards.
 
-When you load a flight, BeyondATC reads the procedures for your departure and arrival airports (SIDs, STARs and approaches) directly from the simulator. Sometimes the simulator hands over these procedures with the positions of many of their waypoints missing: the waypoint names are there, but their locations are blank.
+When you load a flight, BeyondATC reads the procedures for your departure and arrival airports (SIDs, STARs and approaches) directly from the simulator. The warning appears when that data is broken in one of two ways:
 
-When that happens, BeyondATC cannot rebuild the published routes, so an approach can end up as little more than a straight line to the runway. The problem is in the data the simulator provides, not in your flight plan, and it has been seen with up-to-date navigation data. It most often appears after an AIRAC cycle update, when MSFS keeps using stale scenery indexes.
+- **Waypoint positions are missing.** The procedures are there, but the locations of many of their waypoints are blank. BeyondATC cannot rebuild the published routes, so an approach can end up as little more than a straight line to the runway. This has been seen with up-to-date navigation data, and most often appears after an AIRAC cycle update, when MSFS keeps using stale scenery indexes.
+- **The airport has no procedures at all.** Your flight plan uses a SID or STAR at the airport, but the simulator did not provide a single departure, arrival or approach for it. BeyondATC cannot follow your filed procedures, so ATC gives you radar vectors instead.
 
-BeyondATC checks both airports each time it loads them and shows this warning when it finds the problem. BeyondATC does not stop your flight, but ATC at the affected airport will not behave as expected until the problem is fixed.
+In both cases the problem is in the data the simulator provides, not in your flight plan. Your aircraft's FMS may still show your SID and STAR, because many aircraft use their own navigation database rather than the simulator's.
+
+BeyondATC checks both airports each time it loads them. When it finds a problem, it pauses loading your flight so you can cancel the flight or continue anyway. If you continue, ATC at the affected airport will not behave as expected until the problem is fixed.
 
 !!! info "Help get this fixed in the simulator"
     We have reported this problem to Asobo: [Facilities API returns wrong/corrupt navdata after AIRAC updates](https://devsupport.flightsimulator.com/t/facilities-api-returns-wrong-corrupt-navdata-after-airac-updates/18552). If you've seen this warning, please sign in to the MSFS DevSupport forum and **vote for the report**. The more votes it gets, the more likely it is to be prioritised for a fix.
@@ -25,6 +28,7 @@ BeyondATC checks both airports each time it loads them and shows this warning wh
 ## What you may notice
 
 - SIDs or STARs missing, or not matching your chart
+- Radar vectors instead of your filed SID or STAR
 - Being vectored to the wrong end of the runway
 - Being told you've flown through the final approach course, or an unexpected missed approach
 - AI traffic divebombing on approach
@@ -73,4 +77,4 @@ For step 1, try **option A** first. Only use **option B** if the problem is stil
 Start the simulator, then BeyondATC, and load your flight again. BeyondATC reads the airport data from the simulator afresh every time a flight is loaded, so if the warning no longer appears, the problem is fixed.
 
 !!! tip "Still seeing the warning?"
-    If the warning comes back after following every step, please [report it](../support/bug-reporting.md) and include your `Player.log`. The log records exactly which airport failed the check and why, which helps us pass the problem on to the right people.
+    If the warning comes back after following every step, please [report it](../support/bug-reporting.md) and include your `Player.log`. The log records exactly which airport failed the check, why, and how many procedures the simulator provided, which helps us pass the problem on to the right people.
