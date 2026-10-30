@@ -17,13 +17,31 @@ The flight sim community has built some great tools that work alongside BeyondAT
 
     - **No support from BeyondATC.** We cannot help with installing, configuring, or troubleshooting third-party software. Please contact the author directly, using the link on each entry.
     - **Use at your own risk.** BeyondATC is not responsible for any malware, data loss, system instability, simulator problems, or any other harm caused by installing or using third-party software.
-    - **Not an endorsement.** Being listed here does not mean we have tested, approved, or vouch for an app, its safety, or its author.
+    - **Not an endorsement.** Being listed here does not mean we have tested, approved, or vouch for an app, its safety, or its author. The only exceptions are entries marked **Endorsed by BeyondATC**, and even those are still supported by their own authors, not by us.
     - **Updates can break things.** A BeyondATC or simulator update may stop a third-party tool from working. Only its author can fix that.
 
     Only download from the author's official page, and scan anything you download before you run it.
 
 !!! tip "Reporting a BeyondATC bug?"
     Before you [report a bug](../support/bug-reporting.md), turn off or uninstall any third-party tools and check that the problem still happens. This helps us make sure the problem is in BeyondATC and not in an add-on.
+
+---
+
+## ApronLife PRO
+
+!!! success "Endorsed by BeyondATC"
+    ApronLife PRO uses BeyondATC's traffic departures to time its turnarounds, so ground services finish when BeyondATC's traffic is ready to push back.
+
+Adds ground services to parked AI aircraft in MSFS 2020 and 2024, so the apron around you looks busy. It also adds passengers, jet bridges and a departures board. It works with the traffic BeyondATC injects. GSX is optional. ApronLife PRO is a paid add-on and is the version fully integrated with BeyondATC. A free version called ApronLife covers the basic turnarounds.
+
+**Author:** Nicolas Costa · **Support:** via the ApronLife Discord, linked from the author's website
+
+<a class="tp-preview" href="https://apronlifepro.com/" target="_blank" rel="noopener nofollow">
+  <span class="tp-preview__site">apronlifepro.com</span>
+  <span class="tp-preview__title">ApronLife PRO</span>
+  <span class="tp-preview__desc">Ground services for parked AI traffic, timed to BeyondATC's departures.</span>
+  <span class="tp-preview__url">apronlifepro.com</span>
+</a>
 
 ---
 
@@ -131,6 +149,7 @@ A long-running community project that publishes AI traffic models and liveries, 
 </a>
 
 ---
+
 
 ## Made something for BeyondATC?
 
