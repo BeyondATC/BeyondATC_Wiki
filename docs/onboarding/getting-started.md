@@ -208,7 +208,7 @@ Go to Options &gt; Assistance Options
 === "X-Plane 12"
 
     1. **Plugins > Plugin Admin**  
-        - Disable other traffic plugins: **LiveTraffic**, **xPilot**, **X-IvAp/Altitude**, **swift** and the **Traffic Global** plugin.  
+        - Disable the **Traffic Global** plugin, and do not run other traffic plugins (**LiveTraffic**, **xPilot**, **X-IvAp/Altitude**, **swift**) during a BeyondATC flight.  
 
     See [X-Plane 12](../support/xplane12.md#setting-up-x-plane-12) for the full setup.
 

@@ -130,10 +130,16 @@ You can do the same for X-CSL. Make the link at the folder the X-CSL updater ins
 
 ## Setting up X-Plane 12
 
-- **Disable other traffic plugins.** In **Plugins > Plugin Admin**, disable or do not run products such as LiveTraffic, xPilot, X-IvAp/Altitude, swift, the Traffic Global plugin etc. If you run these programs with BeyondATC the plugins will fight for X-Plane's TCAS and/or show their own traffic that BeyondATC cannot see or control.
+- **Do not run other traffic plugins during a BeyondATC flight.** Do not connect or run products such as LiveTraffic, xPilot, X-IvAp/Altitude or swift while you fly with BeyondATC. They show their own traffic that BeyondATC cannot see or control, and only one plugin can have X-Plane's TCAS. You can keep them installed: BeyondATC only takes TCAS while a BeyondATC flight with traffic is running, so you can use them at any other time (see [Using other traffic plugins](#using-other-traffic-plugins)). The **Traffic Global plugin** is different: keep it disabled (see [Traffic Global](#traffic-global)).
 - **Turn off X-Plane's own ATC.** In **Settings > Sound**, under **Air Traffic Control**, turn off **Enable verbal ATC messages** and **Auto-show ATC message history**.
 - **Use real weather.** Historic weather is currently not supported.
 - **Set the appropriate time.** Like MSFS, scheduled traffic will be injected following X-Plane's sim time.
+
+### Using other traffic plugins
+
+X-Plane's TCAS (and the traffic on X-Plane's map) can be used by one plugin at a time. The BeyondATC plugin only takes it while a BeyondATC flight with traffic is running. It gives it back when you return to the BeyondATC menu, turn BeyondATC traffic off, or close BeyondATC. So you can, for example, fly online with xPilot, disconnect, then start a BeyondATC flight, and use xPilot again after it.
+
+If another plugin has TCAS when your BeyondATC flight starts, or takes it during the flight, BeyondATC turns its traffic off to avoid two sets of traffic, and tells you which plugin has it. Stop or disconnect that plugin, then turn traffic back on in **Options**.
 
 ---
 
@@ -214,8 +220,11 @@ As an experimental feature, X-Plane 12 support has some known limitations:
 ??? question "X-Plane 12 was not found, so the traffic models could not be checked"
     BeyondATC could not find your X-Plane 12 installation. If you have freshly installed X-Plane 12, start X-Plane at least once before you start BeyondATC.
 
-??? question "X-Plane denied TCAS to BeyondATC"
-    Another traffic plugin is holding X-Plane's TCAS. Disable LiveTraffic, xPilot, X-IvAp/Altitude and swift in **Plugins > Plugin Admin**, then restart BeyondATC.
+??? question "X-Plane denied TCAS control to BeyondATC"
+    Another plugin (the message names it, for example xPilot or LiveTraffic) had X-Plane's TCAS when your flight started, so BeyondATC turned its traffic off. Stop or disconnect that plugin, then turn traffic back on in **Options**. See [Using other traffic plugins](#using-other-traffic-plugins).
+
+??? question "The following plugin has taken TCAS control from BeyondATC"
+    Another plugin (the message names it, for example xPilot when you connect to an online network) asked X-Plane for TCAS during your flight. BeyondATC gave it TCAS and turned its traffic off. Stop or disconnect that plugin, then turn traffic back on in **Options**. See [Using other traffic plugins](#using-other-traffic-plugins).
 
 ??? question "The Traffic Global plugin is running in X-Plane"
     You see Traffic Global's own traffic as well as BeyondATC's. Disable the Traffic Global plugin: the recommended way is to rename `X-Plane 12\Resources\plugins\Traffic Global\win_x64\Traffic Global.xpl` to `Traffic Global.bak`, so it stays disabled (you can rename it back at any time). Disabling it in **Plugins > Plugin Admin** also works, but has to be done again every time you restart X-Plane. BeyondATC still uses the Traffic Global models. See [Traffic Global](#traffic-global).

@@ -62,7 +62,7 @@ description: Find all frequently asked questions about BeyondATC and their answe
     - You will be told to be off course and given a new direct to. Go direct to this fix and continue your flight to the alternate airport.
 
 ??? info "Can I request a different approach?"
-    Yes. Once ATC has assigned you an approach, use the **Request Approach Change** button (or ask by voice) and ATC will offer the available approaches for your runway.
+    Yes. From ATC's arrival call until you are cleared for the approach, use the **Request Approach Change** button to pick from the approaches available for your runway, or ask by voice. The request only shows when there is another approach available to pick.
 
 ## ATC questions
 
@@ -137,6 +137,11 @@ description: Find all frequently asked questions about BeyondATC and their answe
 
     !!! note "Traffic Global (Just Flight) on X-Plane 12"
         For the Just Flight Traffic Global models, disable the Traffic Global plugin itself so that it does not inject its own traffic. The recommended way is to rename `X-Plane 12\Resources\plugins\Traffic Global\win_x64\Traffic Global.xpl` to `Traffic Global.bak`, which you can rename back at any time. Disabling it in **Plugins > Plugin Admin** also works, but has to be done again every time you restart X-Plane. See [Traffic Global](xplane12.md#traffic-global).
+
+??? info "Can I use xPilot, LiveTraffic or other traffic plugins on X-Plane 12 with BeyondATC installed?"
+    Yes. The BeyondATC plugin only takes X-Plane's TCAS while a BeyondATC flight with traffic is running, and gives it back when you return to the BeyondATC menu, turn traffic off, or close BeyondATC. Use the other plugin when you are not flying with BeyondATC, not at the same time.
+
+    If another plugin has TCAS when your BeyondATC flight starts, or takes it during the flight, BeyondATC turns its traffic off and tells you which plugin has it. Stop or disconnect that plugin, then turn traffic back on in **Options**. See [Using other traffic plugins](xplane12.md#using-other-traffic-plugins).
 
 ??? info "BeyondATC says that no traffic liveries are found"
     Make sure you have installed models for at least one provider (AIG, FSLTL or FS Traffic) in the community folder of the MSFS version you are using - or, on MSFS 2024, BravoAirspace ATG. If it still doesn't work, start BeyondATC as an administrator.
