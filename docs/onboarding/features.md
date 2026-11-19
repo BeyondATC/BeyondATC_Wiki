@@ -25,7 +25,7 @@ BeyondATC provides the following:
 - GSX Integration *(MSFS only)*
 - Independent COM1 and COM2 radio support (COM2 is monitor only) 
 - Supports MSFS 2020 and MSFS 2024
-- Supports X-Plane 12 *(experimental, see [X-Plane 12](../support/xplane12.md))*
+- Supports X-Plane 12 *(see [X-Plane 12](../support/xplane12.md))*
 
 On our experimental branch, we are currently working on:
 

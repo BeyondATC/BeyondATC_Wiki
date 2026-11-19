@@ -3,10 +3,7 @@ description: "Set up BeyondATC with X-Plane 12: the BeyondATC plugin, traffic mo
 og_description: "Set up BeyondATC with X-Plane 12: the BeyondATC plugin, traffic models, what works differently from MSFS, and how to fix common problems."
 ---
 
-# X-Plane 12 (Experimental)
-
-!!! warning "Experimental feature"
-    X-Plane 12 support is an **experimental** feature. To use BeyondATC with X-Plane 12 at the moment you require the supporters edition of BeyondATC. X-Plane 12 support will come to all base edition holders for free once it is ready for full release. Please report any bugs via our [bug reporting process](#reporting-a-problem).
+# X-Plane 12
 
 BeyondATC works with X-Plane 12 through the **BeyondATC plugin**, which is a small X-Plane plugin that allows BeyondATC to communicate with X-Plane. This page explains what you need, how to install the plugin and traffic models, what works differently from Microsoft Flight Simulator, and how to fix common problems.
 
@@ -184,7 +181,7 @@ BeyondATC will show **Connecting to X-Plane 12...** and then **Connected to X-Pl
 
 ## Known limitations
 
-As an experimental feature, X-Plane 12 support has some known limitations:
+X-Plane 12 support currently has some known limitations:
 
 - Some older models do not animate their gear, wheels or engines. Where the model supports it, BeyondATC animates flaps, slats, spoilers, reversers, lights and wheels on traffic.
 - There is no tire smoke on landing and no engine heat haze for BeyondATC injected traffic.
@@ -257,7 +254,7 @@ When you uninstall BeyondATC, it also removes the BeyondATC plugin from your X-P
 
 ## Reporting a problem
 
-X-Plane 12 support is experimental, so your reports help us a lot. When you report a problem, include:
+Your reports help us improve X-Plane 12 support. When you report a problem, include:
 
 - Your BeyondATC log files (see [How to get your log files](bug-reporting.md#how-to-get-your-log-files)).
 - X-Plane's `Log.txt`, in your X-Plane 12 folder.

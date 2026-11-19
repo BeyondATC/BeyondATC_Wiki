@@ -6,8 +6,8 @@ Download the latest version of the installer here: [https://www.beyondatc.net/do
 
 Launch the installer as an administrator and install the software.
 
-!!! info "X-Plane 12 (experimental)"
-    If you fly X-Plane 12 and have access to the experimental branch, you can use BeyondATC with X-Plane 12. See [X-Plane 12](../support/xplane12.md) for the full setup.
+!!! info "X-Plane 12"
+    If you fly X-Plane 12, you can use BeyondATC with X-Plane 12. See [X-Plane 12](../support/xplane12.md) for the full setup.
 
 ---
 
