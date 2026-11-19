@@ -1879,7 +1879,7 @@
   <span class="md-ellipsis">
     
   
-    X-Plane 12 (Experimental)
+    X-Plane 12
   
 
     
@@ -2223,7 +2223,7 @@
 <details class="info">
 <summary>Which simulators is BeyondATC be available for?</summary>
 <p>BeyondATC is designed for Microsoft Flight Simulator 2020 and 2024 on PC.</p>
-<p>X-Plane 12 is also supported as an <strong>experimental</strong> feature. See <a href="../xplane12/">X-Plane 12</a> for the setup and the current limitations.</p>
+<p>X-Plane 12 is also supported. See <a href="../xplane12/">X-Plane 12</a> for the setup and the current limitations.</p>
 <p>It is technically not possible to support Xbox.</p>
 </details>
 <details class="info">
@@ -2253,7 +2253,7 @@
 </details>
 <details class="info">
 <summary>Can I request a different approach?</summary>
-<p>Yes. Once ATC has assigned you an approach, use the <strong>Request Approach Change</strong> button (or ask by voice) and ATC will offer the available approaches for your runway.</p>
+<p>Yes. From ATC's arrival call until you are cleared for the approach, use the <strong>Request Approach Change</strong> button to pick from the approaches available for your runway, or ask by voice. The request only shows when there is another approach available to pick.</p>
 </details>
 <h2 id="atc-questions">ATC questions</h2>
 <details class="info">
@@ -2330,6 +2330,11 @@
 <p class="admonition-title">Traffic Global (Just Flight) on X-Plane 12</p>
 <p>For the Just Flight Traffic Global models, disable the Traffic Global plugin itself so that it does not inject its own traffic. The recommended way is to rename <code>X-Plane 12\Resources\plugins\Traffic Global\win_x64\Traffic Global.xpl</code> to <code>Traffic Global.bak</code>, which you can rename back at any time. Disabling it in <strong>Plugins &gt; Plugin Admin</strong> also works, but has to be done again every time you restart X-Plane. See <a href="../xplane12/#traffic-global">Traffic Global</a>.</p>
 </div>
+</details>
+<details class="info">
+<summary>Can I use xPilot, LiveTraffic or other traffic plugins on X-Plane 12 with BeyondATC installed?</summary>
+<p>Yes. The BeyondATC plugin only takes X-Plane's TCAS while a BeyondATC flight with traffic is running, and gives it back when you return to the BeyondATC menu, turn traffic off, or close BeyondATC. Use the other plugin when you are not flying with BeyondATC, not at the same time.</p>
+<p>If another plugin has TCAS when your BeyondATC flight starts, or takes it during the flight, BeyondATC turns its traffic off and tells you which plugin has it. Stop or disconnect that plugin, then turn traffic back on in <strong>Options</strong>. See <a href="../xplane12/#using-other-traffic-plugins">Using other traffic plugins</a>.</p>
 </details>
 <details class="info">
 <summary>BeyondATC says that no traffic liveries are found</summary>
@@ -2485,13 +2490,13 @@
         
         
           
-          <a href="../xplane12/" class="md-footer__link md-footer__link--next" aria-label="Next: X-Plane 12 (Experimental)">
+          <a href="../xplane12/" class="md-footer__link md-footer__link--next" aria-label="Next: X-Plane 12">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                X-Plane 12 (Experimental)
+                X-Plane 12
               </div>
             </div>
             <div class="md-footer__button md-icon">

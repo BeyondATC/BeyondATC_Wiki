@@ -27,7 +27,7 @@
     
     
       
-        <title>X-Plane 12 (Experimental) - BeyondATC Help Center</title>
+        <title>X-Plane 12 - BeyondATC Help Center</title>
       
     
     
@@ -65,8 +65,8 @@
     
 
     
-        <meta property="og:title" content="X-Plane 12 (Experimental) - BeyondATC Help Center" />
-        <meta name="twitter:title" content="X-Plane 12 (Experimental) - BeyondATC Help Center">
+        <meta property="og:title" content="X-Plane 12 - BeyondATC Help Center" />
+        <meta name="twitter:title" content="X-Plane 12 - BeyondATC Help Center">
     
 
     
@@ -105,7 +105,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#x-plane-12-experimental" class="md-skip">
+        <a href="#x-plane-12" class="md-skip">
           Skip to content
         </a>
       
@@ -138,7 +138,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              X-Plane 12 (Experimental)
+              X-Plane 12
             
           </span>
         </div>
@@ -1780,7 +1780,7 @@
   <span class="md-ellipsis">
     
   
-    X-Plane 12 (Experimental)
+    X-Plane 12
   
 
     
@@ -1798,7 +1798,7 @@
   <span class="md-ellipsis">
     
   
-    X-Plane 12 (Experimental)
+    X-Plane 12
   
 
     
@@ -1953,6 +1953,23 @@
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Setting up X-Plane 12">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-other-traffic-plugins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using other traffic plugins
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2341,11 +2358,7 @@
 
 
 
-<h1 id="x-plane-12-experimental">X-Plane 12 (Experimental)</h1>
-<div class="admonition warning">
-<p class="admonition-title">Experimental feature</p>
-<p>X-Plane 12 support is an <strong>experimental</strong> feature. To use BeyondATC with X-Plane 12 at the moment you require the supporters edition of BeyondATC. X-Plane 12 support will come to all base edition holders for free once it is ready for full release. Please report any bugs via our <a href="#reporting-a-problem">bug reporting process</a>.</p>
-</div>
+<h1 id="x-plane-12">X-Plane 12</h1>
 <p>BeyondATC works with X-Plane 12 through the <strong>BeyondATC plugin</strong>, which is a small X-Plane plugin that allows BeyondATC to communicate with X-Plane. This page explains what you need, how to install the plugin and traffic models, what works differently from Microsoft Flight Simulator, and how to fix common problems.</p>
 <hr />
 <h2 id="requirements">Requirements</h2>
@@ -2484,11 +2497,14 @@
 <hr />
 <h2 id="setting-up-x-plane-12">Setting up X-Plane 12</h2>
 <ul>
-<li><strong>Disable other traffic plugins.</strong> In <strong>Plugins &gt; Plugin Admin</strong>, disable or do not run products such as LiveTraffic, xPilot, X-IvAp/Altitude, swift, the Traffic Global plugin etc. If you run these programs with BeyondATC the plugins will fight for X-Plane's TCAS and/or show their own traffic that BeyondATC cannot see or control.</li>
+<li><strong>Do not run other traffic plugins during a BeyondATC flight.</strong> Do not connect or run products such as LiveTraffic, xPilot, X-IvAp/Altitude or swift while you fly with BeyondATC. They show their own traffic that BeyondATC cannot see or control, and only one plugin can have X-Plane's TCAS. You can keep them installed: BeyondATC only takes TCAS while a BeyondATC flight with traffic is running, so you can use them at any other time (see <a href="#using-other-traffic-plugins">Using other traffic plugins</a>). The <strong>Traffic Global plugin</strong> is different: keep it disabled (see <a href="#traffic-global">Traffic Global</a>).</li>
 <li><strong>Turn off X-Plane's own ATC.</strong> In <strong>Settings &gt; Sound</strong>, under <strong>Air Traffic Control</strong>, turn off <strong>Enable verbal ATC messages</strong> and <strong>Auto-show ATC message history</strong>.</li>
 <li><strong>Use real weather.</strong> Historic weather is currently not supported.</li>
 <li><strong>Set the appropriate time.</strong> Like MSFS, scheduled traffic will be injected following X-Plane's sim time.</li>
 </ul>
+<h3 id="using-other-traffic-plugins">Using other traffic plugins</h3>
+<p>X-Plane's TCAS (and the traffic on X-Plane's map) can be used by one plugin at a time. The BeyondATC plugin only takes it while a BeyondATC flight with traffic is running. It gives it back when you return to the BeyondATC menu, turn BeyondATC traffic off, or close BeyondATC. So you can, for example, fly online with xPilot, disconnect, then start a BeyondATC flight, and use xPilot again after it.</p>
+<p>If another plugin has TCAS when your BeyondATC flight starts, or takes it during the flight, BeyondATC turns its traffic off to avoid two sets of traffic, and tells you which plugin has it. Stop or disconnect that plugin, then turn traffic back on in <strong>Options</strong>.</p>
 <hr />
 <h2 id="flight-plans">Flight plans</h2>
 <ul>
@@ -2563,7 +2579,7 @@
 </table>
 <hr />
 <h2 id="known-limitations">Known limitations</h2>
-<p>As an experimental feature, X-Plane 12 support has some known limitations:</p>
+<p>X-Plane 12 support currently has some known limitations:</p>
 <ul>
 <li>Some older models do not animate their gear, wheels or engines. Where the model supports it, BeyondATC animates flaps, slats, spoilers, reversers, lights and wheels on traffic.</li>
 <li>There is no tire smoke on landing and no engine heat haze for BeyondATC injected traffic.</li>
@@ -2606,8 +2622,12 @@
 <p>BeyondATC could not find your X-Plane 12 installation. If you have freshly installed X-Plane 12, start X-Plane at least once before you start BeyondATC.</p>
 </details>
 <details class="question">
-<summary>X-Plane denied TCAS to BeyondATC</summary>
-<p>Another traffic plugin is holding X-Plane's TCAS. Disable LiveTraffic, xPilot, X-IvAp/Altitude and swift in <strong>Plugins &gt; Plugin Admin</strong>, then restart BeyondATC.</p>
+<summary>X-Plane denied TCAS control to BeyondATC</summary>
+<p>Another plugin (the message names it, for example xPilot or LiveTraffic) had X-Plane's TCAS when your flight started, so BeyondATC turned its traffic off. Stop or disconnect that plugin, then turn traffic back on in <strong>Options</strong>. See <a href="#using-other-traffic-plugins">Using other traffic plugins</a>.</p>
+</details>
+<details class="question">
+<summary>The following plugin has taken TCAS control from BeyondATC</summary>
+<p>Another plugin (the message names it, for example xPilot when you connect to an online network) asked X-Plane for TCAS during your flight. BeyondATC gave it TCAS and turned its traffic off. Stop or disconnect that plugin, then turn traffic back on in <strong>Options</strong>. See <a href="#using-other-traffic-plugins">Using other traffic plugins</a>.</p>
 </details>
 <details class="question">
 <summary>The Traffic Global plugin is running in X-Plane</summary>
@@ -2642,7 +2662,7 @@
 <p>When you uninstall BeyondATC, it also removes the BeyondATC plugin from your X-Plane 12 installations. If X-Plane is running, you are asked to close it first. You are then asked whether to also remove the Bluebell models in the plugin's <code>CSL</code> folder. If you select <strong>No</strong>, they stay on your computer.</p>
 <hr />
 <h2 id="reporting-a-problem">Reporting a problem</h2>
-<p>X-Plane 12 support is experimental, so your reports help us a lot. When you report a problem, include:</p>
+<p>Your reports help us improve X-Plane 12 support. When you report a problem, include:</p>
 <ul>
 <li>Your BeyondATC log files (see <a href="../bug-reporting/#how-to-get-your-log-files">How to get your log files</a>).</li>
 <li>X-Plane's <code>Log.txt</code>, in your X-Plane 12 folder.</li>
