@@ -332,7 +332,7 @@ The Australian equivalent of flight following, requested from Centre. Open the c
 Centre will then monitor and call out relevant traffic to you. Where you can respond with **Traffic In Sight** or **Looking for Aircraft**. You are handed between sectors as you fly, and to your destination Approach if it's at a Class C aerodrome. Cancel this enroute service at any time with *"terminate surveillance service."*
 
 !!! info "AWIS"
-    Australia also has **[AWIS](../knowledge-base/atis/#asos-awos-awis-and-awib)**, automated aerodrome weather stations, which provide aerodrome weather information for smaller fields
+    Australia also has **[AWIS](../knowledge-base/atis.md#asos-awos-awis-and-awib)**, automated aerodrome weather stations, which provide aerodrome weather information for smaller fields
 
 ---
 

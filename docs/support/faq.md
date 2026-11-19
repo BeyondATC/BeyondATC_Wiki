@@ -107,7 +107,7 @@ description: Find all frequently asked questions about BeyondATC and their answe
 ??? info "Should ATC instruct me when I have to descend?"
     As the pilot in command, **it is your responsibility to request descent when needed**. While ATC typically prompts you to descend, there may be times when they don't, or when their instruction comes later than you require. This can happen for several reasons, one being that ATC does not have precise knowledge of your TOD. The TOD is specific to your aircraft's performance and the descent planning you've calculated, which ATC cannot determine. Therefore, it’s essential to monitor your descent profile and, when necessary, report that you are ready for descent so ATC can issue the appropriate clearance.
 
-    You can read our [Beginner Guide about descent planning](../../ifr/cruise/#descent-planning) if you need help.
+    You can read our [Beginner Guide about descent planning](../ifr/cruise.md#descent-planning) if you need help.
 
 ??? info "Why isn't BeyondATC using the runway specified in my flight plan?"
     In real-world aviation, runways are not pre-assigned in flight plans. Instead, they are determined by Air Traffic Control (ATC) based on current conditions like wind direction, runway availability, and traffic volume.
@@ -181,7 +181,7 @@ description: Find all frequently asked questions about BeyondATC and their answe
     - **Full integration of traffic into the local BeyondATC airport map**, and a wider view enroute traffic map, included within BeyondATC.
 
 ??? info "How do I set up everything to use traffic with BeyondATC?"
-    Please follow our setup guide [here](../../onboarding/getting-started)
+    Please follow our setup guide [here](../onboarding/getting-started.md)
 
 ??? info "There is not enough traffic"
     BeyondATC uses historical FR24 data, so traffic density may not always meet your expectations. Here are a few factors that might explain variations in traffic:  

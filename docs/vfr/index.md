@@ -73,7 +73,7 @@ We also have topic pages that apply no matter where you are flying: [Setting Up 
 - **Uncontrolled fields**: CTAF/UNICOM self-announcement frequencies with the ability to make blind calls (currently player only; AI VFR traffic arrives in Stage Three)
 - **Aerodrome services**: AFIS/FISO ("Information"), Air/Ground radio, and US Flight Service Stations
 - **COM2**: monitor any frequency on your second radio
-- **Broadcast stations**: [AWOS, ASOS, and AWIS](../knowledge-base/atis/#asos-awos-awis-and-awib) weather frequencies
+- **Broadcast stations**: [AWOS, ASOS, and AWIS](../knowledge-base/atis.md#asos-awos-awis-and-awib) weather frequencies
 
 **General:**
 
