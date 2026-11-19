@@ -35,7 +35,7 @@ description: Find all frequently asked questions about BeyondATC and their answe
 ??? info "Which simulators is BeyondATC be available for?"
     BeyondATC is designed for Microsoft Flight Simulator 2020 and 2024 on PC.
 
-    X-Plane 12 is also supported as an **experimental** feature. See [X-Plane 12](xplane12.md) for the setup and the current limitations.
+    X-Plane 12 is also supported. See [X-Plane 12](xplane12.md) for the setup and the current limitations.
 
     It is technically not possible to support Xbox.
 

@@ -399,9 +399,9 @@ hide:
                 </div>
             </a>
 
-            <a href="../support/xplane12" class="card" data-title="X-Plane 12 (Experimental)">
+            <a href="../support/xplane12" class="card" data-title="X-Plane 12">
                 <div class="card-icon">🛩️</div>
-                <h3>X-Plane 12 (Experimental)</h3>
+                <h3>X-Plane 12</h3>
                 <p>Install the BeyondATC plugin and traffic models, and fix common problems with X-Plane 12</p>
                 <div class="card-footer">
                     <div class="difficulty">
